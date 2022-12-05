@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="libs/owl.carousel.min.css">
 	<link rel="stylesheet" href="libs/aos.css">
     <link rel="stylesheet" href="libs/animations.css">
+    <link rel="stylesheet" href="libs/jquery.raty.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Samsung Galaxy S22 Ultra</title>
 </head>
@@ -21,7 +22,7 @@
             <img src="img/header-decor.png" alt="" class="header__decor header__decor-3">
             <div class="header__content">
                 <div class="header__discount">
-                    70%
+                    <span class="pulse">70%</span> 
                 </div>
                 <img src="img/logo-mag.png" alt="" class="header__mag">
                 <img src="img/main-logo.png" alt="" class="header__main-logo">
@@ -391,17 +392,37 @@
                     <img src="img/header-icon-3.png" alt="">
                     Ваша экономия: 2341 грн
                 </p>
+                <div class="card__right">
+                    <img src="img/card-logo-white.png" alt="" class="card__logo-left">
+                    <img src="img/card-mob-white.png" alt="" class="card__logo-right">
+                    <img 
+                        src="img/white.png"
+                        data-white="img/white.png"
+                        data-black="img/black.png" 
+                        data-gold="img/gold.png"  
+                        alt="" 
+                        class="card__prod"
+                    >
+                    <img src="img/card-prod-right.png" alt="" class="card__prod-right">
+                    <div class="header__discount">
+                        <span class="pulse">70%</span> 
+                    </div>
+                    <div class="card__right-info">
+                        <img src="img/box.png" alt="">
+                        <span>Bebas biaya kirim</span>
+                    </div>
+                </div>
                 <div class="card__color-wrapper">
                     <span class="card__color-text">
                         Выберите цвет:
                     </span>
-                    <button type="button" class="card__color white active">
+                    <button type="button" data-color="white" class="card__color white active">
                         <img src="img/ok-blue.png" alt="">
                     </button>
-                    <button type="button" class="card__color black">
-                        <img src="img/ok-blue.png" alt="">
+                    <button type="button" data-color="black" class="card__color black">
+                        <img src="img/ok-white.png" alt="">
                     </button>
-                    <button type="button" class="card__color gold">
+                    <button type="button" data-color="gold" class="card__color gold">
                         <img src="img/ok-blue.png" alt="">
                     </button>
                 </div>
@@ -424,9 +445,166 @@
         </div>
     </div>
 </section>
-            
+            <section class="review__section">
+    <div class="container">
+        <div class="review__section-wrapper">
+            <img src="img/review__mob-1.png" alt="" class="review__mob-1">
+            <img src="img/review__mob-2.png" alt="" class="review__mob-2">
+            <img src="img/advantage-decor.png" alt="" class="review__decor-1">
+            <img src="img/advantage-decor.png" alt="" class="review__decor-2">
+            <h2 class="review__section-title">
+                Ulasan Pelanggan
+            </h2>
+            <div class="review__slider owl-carousel">
+                <div class="review__slide">
+                    <img src="img/review/1.jpg" alt="" class="review__img">
+                    <div class="review__name">
+                        <img src="img/quote.png" alt="" class="card__quote">
+                        <p class="review__name-text">
+                            Sultan Hizbulah 35 tahun <br>
+                            Kota Bandung
+                        </p>
+                    </div>
+                    <div class="review__raiting">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                    </div>
+                    <p class="review__text">
+                        Aku emang Samsung user dari dulu karena udah nyaman aja pakenya, dan saat nyoba upgrade ke S 22 Ultra ini bikin aku semakin sayang sama smarphone ini. Desainnya yang ciamik dan kualitas kamera yang keren bikin aku pede ambil momen kapan saja. Guyss, beli disini aja lebih irit, beneran deh!
+                    </p>
+                </div>
+                <div class="review__slide">
+                    <img src="img/review/2.jpg" alt="" class="review__img">
+                    <div class="review__name">
+                        <img src="img/quote.png" alt="" class="card__quote">
+                        <p class="review__name-text">
+                            Sultan Hizbulah 35 tahun <br>
+                            Kota Bandung
+                        </p>
+                    </div>
+                    <div class="review__raiting">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star-half.png" alt="">
+                    </div>
+                    <p class="review__text">
+                        Aku emang Samsung user dari dulu karena udah nyaman aja pakenya, dan saat nyoba upgrade ke S 22 Ultra ini bikin aku semakin sayang sama smarphone ini. Desainnya yang ciamik dan kualitas kamera yang keren bikin aku pede ambil momen kapan saja. Guyss, beli disini aja lebih irit, beneran deh!
+                    </p>
+                </div>
+                <div class="review__slide">
+                    <img src="img/review/3.jpg" alt="" class="review__img">
+                    <div class="review__name">
+                        <img src="img/quote.png" alt="" class="card__quote">
+                        <p class="review__name-text">
+                            Sultan Hizbulah 35 tahun <br>
+                            Kota Bandung
+                        </p>
+                    </div>
+                    <div class="review__raiting">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star-opacity.png" alt="">
+                    </div>
+                    <p class="review__text">
+                        Aku emang Samsung user dari dulu karena udah nyaman aja pakenya, dan saat nyoba upgrade ke S 22 Ultra ini bikin aku semakin sayang sama smarphone ini. Desainnya yang ciamik dan kualitas kamera yang keren bikin aku pede ambil momen kapan saja. Guyss, beli disini aja lebih irit, beneran deh!
+                    </p>
+                </div>
+                <div class="review__slide">
+                    <img src="img/review/4.jpg" alt="" class="review__img">
+                    <div class="review__name">
+                        <img src="img/quote.png" alt="" class="card__quote">
+                        <p class="review__name-text">
+                            Sultan Hizbulah 35 tahun <br>
+                            Kota Bandung
+                        </p>
+                    </div>
+                    <div class="review__raiting">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star-half.png" alt="">
+                    </div>
+                    <p class="review__text">
+                        Aku emang Samsung user dari dulu karena udah nyaman aja pakenya, dan saat nyoba upgrade ke S 22 Ultra ini bikin aku semakin sayang sama smarphone ini. Desainnya yang ciamik dan kualitas kamera yang keren bikin aku pede ambil momen kapan saja. Guyss, beli disini aja lebih irit, beneran deh!
+                    </p>
+                </div>
+            </div>
+            <button type="button" class="add__review">
+                Оставить отзыв
+            </button>
+        </div>
+    </div>
+</section> 
 		</main>
-		
+		<footer class="footer__section">
+    <div class="container">
+        <div class="footer__section-wrapper">
+            <div class="header__content">
+                <div class="header__discount">
+                    <span class="pulse">70%</span> 
+                </div>
+                <img src="img/logo-mag.png" alt="" class="header__mag">
+                <img src="img/main-logo-blue.png" alt="" class="header__main-logo">
+                <img src="img/mob-logo-blue.png" alt="" class="header__mob-logo">
+                <img src="img/footer-prod.png" alt="" class="header__prod">
+                <div class="header__items">
+                    <div class="header__item header__item-1">
+                        <div class="header__item-img">
+                            <img src="img/header-icon-1.png" alt="">
+                        </div>
+                        <p class="header__item-text">
+                            Replika Samsung <br>
+                            berkualitas tinggi!
+                        </p>
+                    </div>
+                    <div class="header__item header__item-2">
+                        <div class="header__item-img">
+                            <img src="img/header-icon-2.png" alt="">
+                        </div>
+                        <p class="header__item-text">
+                            Made in <br>
+                            South Korea
+                        </p>
+                    </div>
+                </div>
+                <div class="header__info-wrapper">
+                    <div class="header__price">
+                        <div class="price">
+                            <div class="new__price-wrapper">
+                                Цена: &nbsp;
+                                <span class="new__price">1234 грн</span>
+                            </div>
+                            <div class="old__price-wrapper">
+                                Старая цена: &nbsp;
+                                <span class="old__price">4321 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="header__info">
+                        <img src="img/header-icon-3-yellow.png" alt="">
+                        Ваша экономия: 2341 грн
+                    </p>
+                    <a href="#card" class="order__btn">
+                        заказать по скидке
+                    </a>
+                    <p class="header__quantity">
+                        Hanya ada <span class="quantity">9</span> ponsel yang tersisa 
+                        di saham dengan harga tetap
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 <!-- <div class="footer__line">
@@ -476,6 +654,9 @@
                 </div>
                 <span>Додати фото</span> 
             </label>
+            <div class="modal__star-raiting">
+                Рейтинг: <div class="modal__raiting"></div>
+            </div>
             <textarea cols="30" rows="10" class="modal__area" placeholder="Ваш відгук..."></textarea>
             <button type="submit" class="send">Надіслати</button>
         </form>
@@ -600,8 +781,7 @@
   
     <script src="libs/jquery.min.js"></script>
 	<script src="libs/aos.js"></script>
-    <script src="libs/carousel.js"></script>
-    <script src="libs/jquery.events.touch.min.js"></script>
+    <script src="libs/jquery.raty.js"></script>
     <script src="libs/jquery.fancybox.min.js"></script>
     <script src="libs/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>

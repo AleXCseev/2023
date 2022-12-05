@@ -1,0 +1,50 @@
+.footer__section {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #171430 0%, #362D84 100%);
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 966px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url(../img/header-right.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+    }
+}
+
+.footer__section-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 50px 0 96px;
+
+    .header__prod {
+        width: 656px;
+        height: auto;
+        right: -700px;
+        top: 55%;
+    }
+
+    .header__item-text {
+        color: #FFFFFF;
+    }
+
+    .new__price-wrapper, .old__price-wrapper {
+        color: #FFFFFF;
+    }
+
+    .header__info {
+        color: #FFB800;
+    }
+
+    .new__price {
+        color: #FFB800;
+    }
+}
