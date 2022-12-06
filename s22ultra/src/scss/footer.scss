@@ -16,6 +16,7 @@
         background-position: center;
         background-size: cover;
         z-index: 1;
+        pointer-events: none;
     }
 }
 
@@ -46,5 +47,81 @@
 
     .new__price {
         color: #FFB800;
+    }
+
+    .old__price {
+        color: #FFFFFF;
+    }
+
+    .order__btn {
+        background: #FF0000;
+
+        &:hover {
+            background: #FF2E00;
+        }
+    }
+    .header__quantity {
+        color: #FFFFFF;
+        width: 75%;
+    }
+
+    .quantity {
+        background: #FF4D00;
+    }
+}
+
+.footer__decor-1 {
+    position: absolute;
+    width: 368px;
+    height: auto;
+    bottom: -21px;
+    left: -410px;
+}
+
+.footer__decor-2 {
+    position: absolute;
+    width: 240px;
+    height: auto;
+    top: -20px;
+    left: -320px;
+    transform: rotate(40deg);
+}
+
+.footer__decor-3 {
+    position: absolute;
+    width: 240px;
+    height: auto;
+    top: 40px;
+    right: -140px;
+    transform: rotate(-120deg);
+}
+
+.footer__line {
+    width: 100%;
+    height: auto;
+    background: #302779;
+}
+
+.footer__line-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 100px;
+}
+
+.footer__line-text {
+    display: inline-block;
+    width: auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #8D8D8D;
+
+    a {
+        text-decoration: underline;
+        cursor: pointer;
     }
 }

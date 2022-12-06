@@ -9,39 +9,18 @@ var landingFunctions = {
 	}, 
 
 	initLibraris: function() {
-		if ($(window).width() > 700) {
-			$('[href*="#"]').on('click', function (e) {
-				var fixedOffset = 2;
-				// var cardHeight = $(this).outerHeight(false)
-				// var windowHeight = $(window).height()
-				$('html, body')
-					.stop()
-					// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-					.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
-				e.preventDefault();
-			})
-		} else {
-			$('[href*="#"]').on('click', function (e) {
-				var fixedOffset = 20;
-				var cardHeight = $("#card").outerHeight(false)
-				var windowHeight = $(window).height()
-
-				$('html, body')
-					.stop()
-					.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-					// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
-				e.preventDefault();
-			})
-		}
 		
+		$('[href*="#"]').on('click', function (e) {
+			var fixedOffset = 20;
+			var cardHeight = $("#card").outerHeight(false)
+			var windowHeight = $(window).height()
 
-		// $(".header__tab-btn").click( function() {
-		// 	$(".header__tab-btn").removeClass("active");
-		// 	$(".header__tab-card").removeClass("active");
-		// 	$(this).addClass("active");
-		// 	$(this).closest(".header__tab").find(".header__tab-card").addClass("active");
-		// })
-
+			$('html, body')
+				.stop()
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+			e.preventDefault();
+		})
 		
 		var owl = $(".galary__slider").owlCarousel({
 			loop: true,
@@ -91,14 +70,6 @@ var landingFunctions = {
 		$('.galary__nav-prev').click(function() {
 			owl.trigger('prev.owl.carousel');
 		})
-
-		// owl.on("changed.owl.carousel", function(e) {
-		// 	$(".galary__slider .owl-item").removeClass("margin-bottom")
-		// 	$(".galary__slider .owl-item.active").eq(1).addClass("margin-bottom")
-		// 	// $(".galary__slider .owl-item.active").eq(2).removeClass("margin-bottom")
-		// 	$(".galary__slider .owl-item.active").eq(3).addClass("margin-bottom")
-		// 	// $(".galary__slider .owl-item.active").eq(4).removeClass("margin-bottom")
-		// });
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
 
@@ -211,7 +182,6 @@ var landingFunctions = {
 		}
 		
 		cardImg(".card")
-		// cardImg(".card__3")
 	},
 
 	modal: function() {

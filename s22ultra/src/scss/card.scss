@@ -1,6 +1,7 @@
 .card__section {
     width: 100%;
     height: auto;
+    overflow: hidden;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), linear-gradient(90deg, #88E9F5 0%, #55DCE8 100%);
 }
 
