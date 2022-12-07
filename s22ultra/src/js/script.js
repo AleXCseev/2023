@@ -25,7 +25,7 @@ var landingFunctions = {
 		var owl = $(".galary__slider").owlCarousel({
 			loop: true,
 			nav: false,
-			dots: true,
+			dots: false,
 			dotsEach: true,
 			items: 1,
 			margin: 0,
@@ -36,6 +36,14 @@ var landingFunctions = {
 			mouseDrag: false,
 			touchDrag: false,
 			animateOut: 'fadeOut',
+			responsive:{
+				0: {
+					dots: true,
+				},
+				1025: {
+					dots: false,
+				}
+			}
 		});
 
 		$(".review__slider").owlCarousel({
