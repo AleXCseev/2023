@@ -39,9 +39,13 @@ var landingFunctions = {
 			responsive:{
 				0: {
 					dots: true,
+					mouseDrag: true,
+					touchDrag: true,
 				},
 				1025: {
 					dots: false,
+					mouseDrag: false,
+					touchDrag: false,
 				}
 			}
 		});
@@ -59,9 +63,13 @@ var landingFunctions = {
 				0:{
 					items: 1,
 					// autoHeight: true,
+					dots: true,
+					stagePadding: 15,
 				},
-				700: {
+				1024: {
 					items: 2,
+					dots: false,
+					stagePadding: 25,
 					// autoHeight: true,
 				},
 				// 1081:{
