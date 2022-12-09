@@ -655,6 +655,8 @@ body {
   background: -webkit-linear-gradient(top, #171430 0%, #362D84 100%);
   background: -moz-linear-gradient(top, #171430 0%, #362D84 100%);
   background: linear-gradient(180deg, #171430 0%, #362D84 100%);
+  position: relative;
+  z-index: 1;
 }
 
 .info__section-wrapper {
@@ -2050,10 +2052,10 @@ body {
   color: #FFFFFF;
 }
 .footer__section-wrapper .order__btn {
-  background: #FF0000;
+  background: #FF2E00;
 }
 .footer__section-wrapper .order__btn:hover {
-  background: #FF2E00;
+  background: #FF0000;
 }
 .footer__section-wrapper .header__quantity {
   color: #FFFFFF;
@@ -3644,6 +3646,10 @@ body {
         -ms-transform: rotate(-250deg);
          -o-transform: rotate(-250deg);
             transform: rotate(-250deg);
+  }
+  .advantage {
+    position: relative;
+    z-index: 5;
   }
   .advantage__section-title {
     font-size: 8vw;

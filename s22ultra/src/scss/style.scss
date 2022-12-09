@@ -716,6 +716,10 @@
         width: 200px;
         transform: rotate(-250deg);
     }
+    .advantage {
+        position: relative;
+        z-index: 5;
+    }
     .advantage__section-title {
         font-size: 8vw;
         margin-bottom: 7vw;

@@ -3,6 +3,8 @@
     height: auto;
     background: linear-gradient(180deg, #171430 0%, #362D84 100%);
     // margin-bottom: 1000px;
+    position: relative;
+    z-index: 1;
 }
 
 .info__section-wrapper {
