@@ -1,0 +1,156 @@
+.header-mini {
+    width: 100%;
+    background-color: #8BC120;
+    padding: 8px 0;
+    color: #fff;
+}
+
+.header-image img {
+    display: block;
+    width: 100%;
+}
+
+.header-mini-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.header-nav .nav-link {
+    display: block;
+    width: calc(100% / 4);
+    border-right: 1px solid #fff;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.header-nav .nav-link:last-child {
+    border-right: none;
+}
+
+.header-nav .nav-link:nth-child(1) {
+    background-color: #5E777C;
+}
+
+.header-nav .nav-link:nth-child(2) {
+    background-color: #7D9297;
+}
+
+.header-nav .nav-link:nth-child(3) {
+    background-color: #9EB1B7;
+}
+
+.header-nav .nav-link:nth-child(4) {
+    background-color: #BAC9D0;
+}
+
+.breadcrumbs-wrapp {
+    color: #fff;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+    background-color: #A8A8A8;
+    padding: 5px 15px 7px;
+    font-family: 'Noto Sans KR', 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+}
+
+.breadcrumbs li {
+    position: relative;
+}
+
+.breadcrumbs li:after {
+    position: relative;
+    top: 0;
+    right: 0;
+    content: ">";
+    margin: 0 17px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.breadcrumbs li:last-child:after {
+    display: none;
+}
+
+.article-head {
+    font-size: 14px;
+    border-bottom: 1px solid #0081BD;
+}
+
+.article-head .col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 1.7;
+    border-bottom: 1px solid #0081BD;
+    margin-top: 5px;
+}
+
+.article-head .col a {
+    padding: 5px 0;
+}
+
+.article-head .col:first-child {
+    margin-top: 0;
+}
+
+.article-head .right {
+    text-align: right;
+}
+
+.article-head-tabs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.article-head-tabs > a {
+    display: block;
+    margin-right: 5px;
+}
+
+.article-head-tabs > a img {
+    display: block;
+}
+
+.article-head-links {
+    display: flex;
+    align-items: center;
+}
+
+.article-head-links > a {
+    display: block;
+    margin-left: 5px;
+}
+
+.article-head-links > a img {
+    display: block;
+}
+
+.header__copyright {
+    width: 100%;
+    height: auto;
+}
+
+.header__copyright-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #666666;
+    margin-top: 16px;
+    margin-bottom: 11px;
+}
+
