@@ -1,0 +1,32 @@
+.footer-tabs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-top: 1px solid #CCCCCC;
+    padding: 15px 0;
+}
+
+.footer-tabs .tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 8px 0;
+    height: 40px;
+    width: calc(100% / 6 - 10px);
+    border: 1px solid #CCCCCC;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.footer-tabs .tab img {
+    max-width: 100%;
+}
+
+.footer-info {
+    text-align: center;
+    font-size: 14px;
+    width: 33%;
+}

@@ -2247,6 +2247,101 @@ body {
   .comparison__header {
     padding: 15px 20px;
   }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-tabs--one .tab {
+    width: -moz-calc(33.3333333333% - 10px);
+    width: calc(33.3333333333% - 10px);
+  }
+}
+@media (max-width: 767px) {
+  .footer-tabs--one {
+    display: none;
+  }
+  .footer-tabs .tab {
+    width: -moz-calc(50% - 10px);
+    width: calc(50% - 10px);
+  }
+  .footer-info {
+    -webkit-order: 1;
+    -webkit-box-ordinal-group: 2;
+       -moz-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+  }
+  .header,
+  .breadcrumbs {
+    position: relative;
+  }
+}
+@media (max-width: 575px) {
+  .header-nav {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header-nav .nav-link {
+    width: -webkit-calc(100% / 2);
+    width: 50%;
+  }
+  .header-nav .nav-link:nth-child(even) {
+    border-right: 0;
+  }
+}
+@media (max-width: 413px) {
+  .footer-tabs .tab {
+    width: 100%;
+  }
+}
+@media (max-width: 540px) {
+  .img__text {
+    font-size: 24px;
+    padding: 9px 20px 13px;
+  }
+  .info__stage {
+    width: 100%;
+    height: auto;
+  }
+  .info__stage p {
+    min-height: 73px;
+  }
+  .info__graph-items {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .info__doctor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info__doctor img {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
   .comparison__header-1 {
     width: 30vw;
   }
@@ -2374,100 +2469,5 @@ body {
     top: auto;
     right: auto;
     margin-top: 11px;
-  }
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  .footer-tabs--one .tab {
-    width: -moz-calc(33.3333333333% - 10px);
-    width: calc(33.3333333333% - 10px);
-  }
-}
-@media (max-width: 767px) {
-  .footer-tabs--one {
-    display: none;
-  }
-  .footer-tabs .tab {
-    width: -moz-calc(50% - 10px);
-    width: calc(50% - 10px);
-  }
-  .footer-info {
-    -webkit-order: 1;
-    -webkit-box-ordinal-group: 2;
-       -moz-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    width: 100%;
-  }
-  .header,
-  .breadcrumbs {
-    position: relative;
-  }
-}
-@media (max-width: 575px) {
-  .header-nav {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .header-nav .nav-link {
-    width: -webkit-calc(100% / 2);
-    width: 50%;
-  }
-  .header-nav .nav-link:nth-child(even) {
-    border-right: 0;
-  }
-}
-@media (max-width: 413px) {
-  .footer-tabs .tab {
-    width: 100%;
-  }
-}
-@media (max-width: 540px) {
-  .img__text {
-    font-size: 24px;
-    padding: 9px 20px 13px;
-  }
-  .info__stage {
-    width: 100%;
-    height: auto;
-  }
-  .info__stage p {
-    min-height: 73px;
-  }
-  .info__graph-items {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-       -moz-box-orient: vertical;
-       -moz-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-       -moz-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .info__doctor {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-       -moz-box-orient: vertical;
-       -moz-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .info__doctor img {
-    width: 100%;
-    height: auto;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    border-radius: 20px;
   }
 }

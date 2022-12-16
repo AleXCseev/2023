@@ -109,7 +109,109 @@
     .comparison__header {
         padding: 15px 20px;
     }
-   
+    .comparison__header-1 {
+        width: 30vw;
+    }
+    .comparison__header-text {
+        font-size: 4vw;
+    }
+    .comparison__header-2 {
+        width: auto;
+        max-width: 64%;
+        display: inline-block;
+    }
+    .comparison__stage-text {
+        font-size: 4vw;
+    }
+    .comparison__block {
+        height: 40px;
+    }
+    .comparison__block-bg span {
+        right: 5px;
+        font-size: 3.6vw;
+    }
+    .card {
+        padding: 30px 20px 27px;
+    }
+    .card__items {
+        flex-wrap: wrap;
+    }
+    .card__item {
+        width: 48%;
+    }
+    .card__title {
+        font-size: 5.8vw;
+    }
+    .old__price {
+        font-size: 6.5vw;
+    }
+    .new__price {
+        font-size: 8vw;
+    }
+    .card__input-wrapper {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .card__inputs {
+        flex-direction: column;
+    }
+    .card__submit {
+        margin-top: 10px;
+    }
+    .card__item-text {
+        font-size: 4.5vw;
+    }
+    .card__date {
+        font-size: 4.8vw;
+    }
+    .info__doctor-2 img {
+        width: 400px;
+    }
+    .review__control {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .review__input-wrapper {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .review__photo {
+        margin-bottom: 0;
+        order: 3;
+    }
+    .review__input-name {
+        order: 1;
+    } 
+    .review__input-massage {
+        order: 2;
+    }
+    .review__raiting-wrapper {
+        order: 4;
+        // margin-right: 30px;
+    }
+    .review__control-raiting {
+        margin: 0;
+    }
+    .review__submit {
+        order: 5;
+        width: 60px;
+        display: inline-block;
+        text-align: center;
+
+        img {
+            margin: auto;
+        }
+    }
+    .review {
+        padding: 20px;
+    }
+    .review__date {
+        font-size: 12px;
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 11px;
+    }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -193,106 +295,5 @@
         margin-right: 0px;
         margin-bottom: 10px;
         border-radius: 20px;
-    }
-
-    .comparison__header-1 {
-        width: 30vw;
-    }
-    .comparison__header-text {
-        font-size: 4vw;
-    }
-    .comparison__header-2 {
-        width: auto;
-        max-width: 64%;
-        display: inline-block;
-    }
-    .comparison__stage-text {
-        font-size: 4vw;
-    }
-    .comparison__block {
-        height: 40px;
-    }
-    .comparison__block-bg span {
-        right: 5px;
-        font-size: 3.6vw;
-    }
-    .card {
-        padding: 30px 20px 27px;
-    }
-    .card__items {
-        flex-wrap: wrap;
-    }
-    .card__item {
-        width: 48%;
-    }
-    .card__title {
-        font-size: 5.8vw;
-    }
-    .old__price {
-        font-size: 6.5vw;
-    }
-    .new__price {
-        font-size: 8vw;
-    }
-    .card__input-wrapper {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .card__inputs {
-        flex-direction: column;
-    }
-    .card__submit {
-        margin-top: 10px;
-    }
-    .card__item-text {
-        font-size: 4.5vw;
-    }
-    .card__date {
-        font-size: 4.8vw;
-    }
-    .review__control {
-        flex-wrap: wrap;
-        padding: 20px;
-    }
-    .review__input-wrapper {
-        margin: 0;
-        margin-bottom: 10px;
-    }
-    .review__photo {
-        margin-bottom: 0;
-        order: 3;
-    }
-    .review__input-name {
-        order: 1;
-    } 
-    .review__input-massage {
-        order: 2;
-    }
-    .review__raiting-wrapper {
-        order: 4;
-        // margin-right: 30px;
-    }
-    .review__control-raiting {
-        margin: 0;
-    }
-    .review__submit {
-        order: 5;
-        width: 60px;
-        display: inline-block;
-        text-align: center;
-
-        img {
-            margin: auto;
-        }
-    }
-    .review {
-        padding: 20px;
-    }
-    .review__date {
-        font-size: 12px;
-        position: relative;
-        top: auto;
-        right: auto;
-        margin-top: 11px;
     }
 }
