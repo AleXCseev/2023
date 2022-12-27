@@ -110,8 +110,8 @@ body {
 	width: 100%;
 	height: auto;
 	font-size: 15px;
-	font-family: 'Segoe UI', sans-serif;
-	font-weight: 400;
+	font-family: 'Campton', sans-serif;
+	font-weight: 600;
 	color: #fff;
 	background: #fff;
 	// position: relative;
@@ -160,32 +160,40 @@ body {
 }
 
 
-#section-1 {
+.section-1 {
 	background-image: url(../img/header-right.png), url(../img/sec-1.jpg);
 	background-repeat: no-repeat;
 	background-size: contain, cover;
 	background-position: right center, center;
 }
 
-#section-2 {
+.section-2 {
 	background-image: url(../img/sec-2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
-#section-3 {
+.section-3 {
 	background-image: url(../img/sec-3.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
-#section-4 {
+.section-4 {
+	background-color: #fff;
 	background-image: url(../img/sec-4.jpg);
 	background-repeat: no-repeat;
 	background-size: 50% cover;
 	background-position: left center;
+}
+
+.section-5 {
+	background-image: url(../img/sec-5.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 
