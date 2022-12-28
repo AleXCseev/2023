@@ -6,43 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="libs/animations.css"> -->
     <link rel="stylesheet" href="libs/jquery.pagepiling.min.css">
+    <link rel="stylesheet" href="libs/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/jquery.raty.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Maximal 30</title>
 </head>
 <body data-path=".">
     <div class="site__wrapper">
+        <nav class="header__nav" id="nav">
+            <div class="container">
+                <div class="header__nav-left">
+                    <div class="nav__link-wrapper" data-menuanchor="section-2">
+                        <a href="#section-2" class="header__nav-link">BAGAIMANA BEKERJANYA</a>
+                    </div>
+                    <div class="nav__link-wrapper" data-menuanchor="section-3">
+                        <a href="#section-3" class="header__nav-link">Efek</a>
+                    </div>
+                    <div class="nav__link-wrapper" data-menuanchor="section-4">
+                        <a href="#section-4" class="header__nav-link">Siapa yang akan cocok</a>
+                    </div>
+                </div>
+                <img src="img/logo.png" alt="" class="header__nav-logo">
+                <div class="header__nav-right">
+                    <div class="nav__link-wrapper" data-menuanchor="section-5">
+                        <a href="#section-5" class="header__nav-link">Review Video</a>
+                    </div>
+                    <div class="nav__link-wrapper" data-menuanchor="section-6">
+                        <a href="#section-6" class="header__nav-link">Review</a>
+                    </div>
+                    <div class="nav__link-wrapper" data-menuanchor="section-6">
+                        <a href="#section-6" class="header__nav-order">kode pesanan dks</a>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+
+        <button type="button" class="open__menu">
+            <img src="img/burger.png" alt="">
+        </button>
+
+        <div class="mobile__menu">
+            <img src="img/bam.png" alt="" class="menu__bam">
+            <img src="img/prod.png" alt="" class="menu__prod">
+            <ul class="menu__links">
+                <li class="menu__link">
+                    <a href="#section-2">
+                        BAGAIMANA BEKERJANYA
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#section-3">
+                        Efek
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#section-4">
+                        Siapa yang akan cocok
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#section-5">
+                        Review Video
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#section-6">
+                        Review
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#order" class="menu__order">
+                        kode pesanan dks
+                    </a>
+                </li>
+            </ul>
+
+            <button type="button" class="menu__close">
+                <img src="img/close.png" alt="">
+            </button>
+        </div>
+
 		<img src="img/prod.png" alt="" class="header__prod">
 
         <div id="pagepiling">
             <section class="section section-1" id="section-1">
                 <div class="container">
     <div class="header__wrapper">
-        <nav class="header__nav" id="nav">
-            <div class="header__nav-left">
-                <div class="nav__link-wrapper" data-menuanchor="section-2">
-                    <a href="#section-2" class="header__nav-link header__nav-active">КАК РАБОТАЮТ</a>
-                </div>
-                <div class="nav__link-wrapper" data-menuanchor="section-3">
-                    <a href="#section-3" class="header__nav-link">ЭФФЕКТЫ</a>
-                </div>
-                <div class="nav__link-wrapper" data-menuanchor="section-4">
-                    <a href="#section-4" class="header__nav-link">КОМУ ПОДОЙДУТ</a>
-                </div>
-            </div>
-            <img src="img/logo.png" alt="" class="header__nav-logo">
-            <div class="header__nav-right">
-                <div class="nav__link-wrapper" data-menuanchor="section-5">
-                    <a href="#section-5" class="header__nav-link">Видеообзор</a>
-                </div>
-                <div class="nav__link-wrapper" data-menuanchor="section-6">
-                    <a href="#section-6" class="header__nav-link">ОТЗЫВЫ</a>
-                </div>
-                <div class="nav__link-wrapper" data-menuanchor="section-6">
-                    <a href="#section-6" class="header__nav-order">order dks code</a>
-                </div>
-            </div>
-        </nav>
+        <img src="img/logo.png" alt="" class="header__mobile-logo">
         <div class="header__info">
             <div class="header__info-item header__item-1">
                 <div class="header__item-wrapper">
@@ -86,7 +137,7 @@
         </div>
         <div class="header__timer">
             <p class="header__timer-text">
-                скидка <span>-60%</span> действует до
+                Diskon berlaku sampai <span>60%</span>
             </p>
             <div class="header__time">
                 <span class="hours">00</span>
@@ -96,89 +147,92 @@
                 <span class="seconds">00</span>
             </div>
         </div>
-        <button type="button" class="next">
-            <img src="img/arrow.png" alt="">
+        <a href="#section-2" class="next">
+            <img src="img/arrow.png" alt="" class="arrow__mob">
             <span>discover</span>
-        </button>
+        </a>
     </div>
 </div>
             </section>
-            <section class="section section-2">
+            <section class="section section-2" id="section-2">
                 <div class="container">
     <div class="info__wrapper">
         <div class="info__content">
             <h2 class="info__title">
-                как работает
+                bagaimana bekerjanya
             </h2>
             <img src="img/info-flower.png" alt="" class="info__flower">
             <img src="img/logo.png" alt="" class="info__logo">
             <img src="img/magazine.jpg" alt="" class="info__magazine">
             <p class="info__text">
-                Невероятное притяжение к мужчинам с 
-                <span>DKS code</span>. Каждая женщина, как и мужчина, имеют свой едва различимый запах. Духи содержат уникальную формулу из 
-                <span>12 натуральных ингредиентов и феромонов</span>, которые усиливают привлекательность и притяжение в десятки раз
+                Ketertarikan yang luar biasa untuk pria dengan
+                <span>DKS code</span>.bekerja. Setiap wanita, seperti pria, memiliki baunya sendiri yang hampir tidak terlihat. Parfum mengandung formula unik dari
+                <span>12 bahan alami dan feromon</span> yang meningkatkan daya tarik dan daya tarik sepuluh kali lipat
             </p>
             <p class="info__text">
-                <span>Победители на выставке парфюмерии и  натуральной косметологии Экспо-Дубае в разделе ParfumShow2022</span>
+                <span>Pemenang di pameran Parfum dan dan Natural Cosmetology Expo-Dubai di bagian ParfumShow2022</span>
             </p>
             <p class="info__text">
-                При нанесении на кожу
+                Saat Anda memakai
                 <span>DKS code</span>
-                вы сможете ощутить легкий запах, который почти сразу же исчезнет
+                pada diri anda, anda akan mencium wangi yang light dan setelah itu wanginya akan memalingkan orang lain
             </p>
             <p class="info__text">
-                <span>Можно использовать с вашими обычными духами.</span>
+                <span>Dapat digunakan dengan parfum biasa Anda.</span>
             </p>
         </div>
-        <button type="button" class="next">
+        <a href="#section-3" class="next">
             <img src="img/arrow-long.png" alt="">
+            <img src="img/arrow.png" alt="" class="arrow__mob">
             <span>discover</span>
-        </button>
+        </a>
     </div>
 </div>
             </section>
-            <section class="section section-3">
+            <section class="section section-3" id="section-3">
                 <div class="container">
     <div class="info__wrapper advantage__wrapper">
         <div class="info__content">
             <h2 class="info__title">
-                Эффекты
+                Efek
             </h2>
             <img src="img/advantage-icon.png" alt="" class="info__flower">
             <img src="img/logo.png" alt="" class="info__logo">
             <img src="img/advantage-left.jpg" alt="" class="info__magazine">
             <ol class="advantage__list">
                 <li class="advantage__list-item">
-                    <span>Заставит соблазниться</span> любую девушку
+                    Gadis mana pun <span>akan tertarik akan wanginya</span>  
                 </li>   
                 <li class="advantage__list-item">
-                    Каждой 
-                    <span>девушке захочется обнять</span> носителя, прижаться к нему и буквально закутаться в аромат.
+                    Setiap 
+                    <span>perempuan</span> yang mencium wangi ini, rasanya 
+                    <span>langsung ingin memeluk</span> para pemakai parfum ini
                 </li> 
                 <li class="advantage__list-item">
-                    <span>Вскружит голову и заставит думать</span> и желать того, кто носит на себе этот парфюм
+                    <span>Wanginya akan memalingkan kepala Anda dan membuat Anda berpikir</span> untuk bertemu langsung pemakai parfum ini
                 </li>  
                 <li class="advantage__list-item">
-                    Всего несколько распылений и 
-                    <span>женщины будут испытывать магическое притяжение к Вам</span>, не в состоянии устоять.
+                    Hanya beberapa semprotan dan 
+                    <span>banyak perempuan yang tertarik dengan keajaiban daya tarik parfum ini</span> yang tidak bisa ditolak siapa pun
                 </li>   
                 <li class="advantage__list-item">
-                    <span>Эффекты настолько естественны</span>, что женщины даже не понимают, почему это с ними происходит.
+                    <span>Efeknya sangat alami</span> sehingga banyak perempuan bahkan tidak mengerti mengapa itu terjadi pada mereka.
                 </li>  
                 <li class="advantage__list-item">
                     DKS code 
-                    <span>усиливает лучшие мужские качества</span> и делает мужчину более привлекательным и желанным на подсознательном уровне.
+                    <span>meningkatkan kepercayaan diri Pria</span> menjadi yang terbaik dan membuat Pria lebih menarik kepada perempuan di bawah alam sadar mereka.
                 </li>  
             </ol>
         </div>
-        <button type="button" class="next">
+        <a href="#section-4" class="next">
             <img src="img/arrow-long.png" alt="">
+            <img src="img/arrow.png" alt="" class="arrow__mob">
             <span>discover</span>
-        </button>
+        </a>
     </div>
 </div>
             </section>
-            <section class="section section-4">
+            <section class="section section-4" id="section-4">
                 <div class="container">
     <div class="info2__wrapper">
         <img src="img/bam.png" alt="" class="info2__bam">
@@ -187,76 +241,77 @@
             <img src="img/logo.png" alt="" class="info2__logo">
             <div class="info2__right">
                 <h2 class="info2__title">
-                    Кому подойдут
+                    Siapa yang akan cocok
                 </h2>
                 <ul class="info2__list">
                     <li class="info2__list-item">
-                        кто желает знакомиться и 
-                        <span>соблазнять самых красивых</span> и недоступных девушек.
+                        siapa yang mau bertemu dan 
+                        <span>berkenalan perempuan cantik</span> dan perempuan dengan high quality jomblo
                     </li>
                     <li class="info2__list-item">
-                        кто хочет 
-                        <span>сильнее нравиться</span> жене или свой девушке.
+                        siapa yang mau 
+                        <span>lebih disayang</span> istri atau pacar kalian
                     </li>
                     <li class="info2__list-item">
-                        кто хочет 
-                        <span>усилить свои мужские качества</span> и быть притягательным на подсознательном уровне.
+                        siapa yang mau 
+                        <span>meningkatkan maskulinitas</span> menjadi lebih menarik secara tidak sadar.
                     </li>
                     <li class="info2__list-item">
-                        кто хочет 
-                        <span>вернуть любовь</span> и романтику в свои отношения.
+                        siapa yang mau 
+                        <span>mengembalikan romantisme dan cinta</span> di dalam hubungan anda.
                     </li>
                     <li class="info2__list-item">
-                        кто хочет 
-                        <span>больше секса</span> в своей жизни.
+                        siap yang menginginkan 
+                        <span>lebih banyak seks</span> dalam hidup mereka.
                     </li>
                 </ul>
             </div>
             <div class="info2__mob-wrapper">
                 <p class="info2__text">
-                    Феромоны – биологические соединения, вырабатываемые организмом человека ,которые вызывают сильное влечение , симпатию и возбуждение к противоположному полу.
+                    Feromon adalah senyawa biologis yang diproduksi oleh tubuh manusia yang menyebabkan ketertarikan, simpati, dan gairah yang kuat pada lawan jenis.
                 </p>
                 <p class="info2__text">
-                    Если у вас возник вопрос – действуют или нет духи с феромонами, то после испытания этого аромата все вопросы сразу же отпадут.
+                    Jika Anda memiliki pertanyaan – apakah parfum dengan feromon berfungsi atau tidak, maka setelah menguji wewangian ini, semua pertanyaan akan segera hilang.
                 </p>
                 <p class="info2__text">
-                    <span>DKS code</span> стабильно вызывает одну и ту же реакцию: самки  устремляются на источник этого вещества, даже когда поблизости нет ни  одного самца.
+                    <span>DKS code</span> secara bertahap dengan efek yang sama: perempuan berlomba mencium bau wangi ini, wangi yang sangat melekat, bahkan ketika penggunanya sudah menjauh.
                 </p>
             </div>
         </div>
-        <button type="button" class="next">
+        <a href="#section-5" class="next">
             <img src="img/arrow-long.png" alt="">
+            <img src="img/arrow.png" alt="" class="arrow__mob">
             <span>discover</span>
-        </button>
+        </a>
     </div>
 </div>
             </section>
-            <section class="section section-5">
+            <section class="section section-5" id="section-5">
                 <div class="container">
     <div class="video__wrapper">
         <div class="video__contant">
             <img src="img/video-photo.png" alt="" class="video__photo">
             <p class="video__name">Nikolas Bernard</p>
             <p class="video__prof">
-                expert  from France
+                pakar dari Prancis
             </p>
             <p class="video__text">
-                “Мужчина, который носит 
-                <span>DKS code</span> вызывает у женщин невероятные ощущения и бороться с этим они не в силах.”
+                “Seorang pria yang memakai 
+                <span>DKS code</span> membuat wanita merasa luar biasa dan mereka tidak bisa melawannya.”
             </p>
             <div class="video" data-video="9vyGu2O7xNQ">
                 <div class="video__btn">
                     <img src="img/tringle.png" alt="">
-                    Посмотреть Видео
+                    Lihat Video
                 </div>
             </div>
             <div class="video__btn-wrapper">
-                <button type="button" class="video__btn-next">
-                    order dks code
-                </button>
+                <a href="#section-6" class="video__btn-next">
+                    kode pesanan dks
+                </a>
                 <div class="video__timer">
                     <p class="video__timer-text">
-                        скидка <span>-60%</span> действует до
+                        Diskon <span>60%</span> berlaku sampai
                     </p>
                     <div class="video__time">
                         <span class="hours">00</span>
@@ -268,14 +323,174 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="next">
+        <a href="#section-6" class="next">
             <img src="img/arrow-long.png" alt="">
             <span>discover</span>
-        </button>
+        </a>
     </div>
 </div>
             </section>
-            <section class="section section-6">Определённый раздел 6</section>
+            <section class="section section-6" id="section-6">
+                <div class="container">
+    <div class="footer__wrapper">
+        <div class="review__slider owl-carousel">
+            <div class="review__slide">
+                <div class="review__photo-block">
+                    <div class="review__photo-wrapper">
+                        <img src="img/review/comm_01.jpg" alt="" class="review__photo">
+                    </div>
+                    <img src="img/female.png" alt="" class="review__male">
+                </div>
+                <h3 class="review__name">Rina</h3>
+                <p class="review__text">
+                    Suami saya baru kembali dari business trip. Saya melihat ada yang berbeda darinya.Seperti di awal kami pacaran! Suami saya memberitahu tentang dks code. Wow saya amazed bahwa parfum ini mempunyai daya tarik tersendiri!
+                </p>
+            </div>
+            <div class="review__slide">
+                <div class="review__photo-block">
+                    <div class="review__photo-wrapper">
+                        <img src="img/review/comm_02.jpg" alt="" class="review__photo">
+                    </div>
+                    <img src="img/male.png" alt="" style="transform: scaleX(-1)" class="review__male">
+                </div>
+                <h3 class="review__name">Ridho</h3>
+                <p class="review__text">
+                    Saya sebelumnya telah membeli parfum dengan pheromone. Jadi saya hanya kira-kira aja akan efeknya. Bahkan ini di luar ekpekstasi. Saya malam-malam ke klub dan banyak perempuan yang kasih nomer. Kira-kira 10 orang, wow ajaib banget!
+                </p>
+            </div>
+            <div class="review__slide">
+                <div class="review__photo-block">
+                    <div class="review__photo-wrapper">
+                        <img src="img/review/comm_05.jpg" alt="" class="review__photo">
+                    </div>
+                    <img src="img/male.png" style="transform: scaleX(-1)" alt="" class="review__male">
+                </div>
+                <h3 class="review__name">Toni</h3>
+                <p class="review__text">
+                    Kami memiliki banyak teman perempuan di kantor, bahkan kami sering ngobrol di chat gadis di tempat kerja, kami biasa aja ngobrol sebatas teman.Dan hari itu, ketika saya menggunakan parfum saya untuk pertama kalinya, saya bertemu salah teman perempuan di lorong kantor, tiba-tiba dia notice, dia tersenyum dan mulai ngobrol sama saya. Aku malu-malu, tapi senang gimana gitu
+                </p>
+            </div>
+            <div class="review__slide">
+                <div class="review__photo-block">
+                    <div class="review__photo-wrapper">
+                        <img src="img/review/comm_15.jpg" alt="" class="review__photo">
+                    </div>
+                    <img src="img/male.png" style="transform: scaleX(-1)" alt="" class="review__male">
+                </div>
+                <h3 class="review__name">Rahmat</h3>
+                <p class="review__text">
+                    Waktu saya pernah di gym, saya bahkan lupa kalau saya pakai parfum ini.Seorang trainer cewe datang ke saya. Lalu mulai ngobrol, wow saya kaget efek dari parfum ini. Padahal udah satu tahun di gym ini, tapi ga pernah sebelumnya kayak gini! 
+                </p>
+            </div>
+            <div class="review__slide">
+                <div class="review__photo-block">
+                    <div class="review__photo-wrapper">
+                        <img src="img/review/1.png" alt="" class="review__photo">
+                    </div>
+                    <img src="img/male.png" style="transform: scaleX(-1)"  alt="" class="review__male">
+                </div>
+                <h3 class="review__name">Riko</h3>
+                <p class="review__text">
+                    Saya pakai ini setelah mandi. Ini pertama kali saya pakai parfum dan ini favorit saya, kode dks. Sekarang banyak perempuan bahkan ngejar-ngejar saya. Saya akan terus menggunakan ini
+                </p>
+            </div>
+            <div class="review__slide">
+                <div class="review__photo-block">
+                    <div class="review__photo-wrapper">
+                        <img src="img/review/2.png" alt="" class="review__photo">
+                    </div>
+                    <img src="img/male.png" style="transform: scaleX(-1)"  alt="" class="review__male">
+                </div>
+                <h3 class="review__name">Ericks</h3>
+                <p class="review__text">
+                    Aku bakal yakin kalau parfum ini pasti akan efektif. Aku jarang pakai biasanya pakai parfum kalau mau nongkrong aja. Kemaren-kemaren baru ketemu teman-teman, terus ketemu satu teman yang sangat pemalu, akhirnya aku kasih tau parfum ini dan kasih dia dks code. Dan kalian tahu, temanku udah 4 kali pacaran semenjak pakai parfum dks code!
+                </p>
+            </div>
+            <div class="review__slide">
+                <div class="review__photo-block">
+                    <div class="review__photo-wrapper">
+                        <img src="img/review/comm_04.jpg" alt="" class="review__photo">
+                    </div>
+                    <img src="img/female.png" alt="" class="review__male">
+                </div>
+                <h3 class="review__name">Annisa</h3>
+                <p class="review__text">
+                    Saya beli untuk adik saya karena dia pengen punya pacar. Saya beliin dia pas dia mau acara kantor, dia coba pakai dan dia merasa nyaman dengan parfum ini. Dan banyak perempuan langsung deketin dia. Wow jarang banget ini terjadi sama dia!
+                </p>
+            </div>
+            <div class="review__slide">
+                <div class="review__photo-block">
+                    <div class="review__photo-wrapper">
+                        <img src="img/review/3.png" alt="" class="review__photo">
+                    </div>
+                    <img src="img/male.png" style="transform: scaleX(-1)"  alt="" class="review__male">
+                </div>
+                <h3 class="review__name">Bambang</h3>
+                <p class="review__text">
+                    Code Dks adalah parfum yang wangi banget! Temen kantor aku ajakin jalan setelah pulang kantor. Ga pernah pakai parfum sampai melelehkan hati orang lain!
+                </p>
+            </div>
+            <div class="review__slide">
+                <div class="review__photo-block">
+                    <div class="review__photo-wrapper">
+                        <img src="img/review/4.png" alt="" class="review__photo">
+                    </div>
+                    <img src="img/male.png" style="transform: scaleX(-1)"  alt="" class="review__male">
+                </div>
+                <h3 class="review__name">Andri</h3>
+                <p class="review__text">
+                    Saya coba pakai parfum pheronome pas pergi ke bar untuk ketemu teman-teman. Mereka udah duduk duluan sama cewe-cewe. Eh pas saya datang, malah satu cewe datang dan maunya duduk dengan saya! 
+                </p>
+            </div>
+            <div class="review__slide">
+                <div class="review__photo-block">
+                    <div class="review__photo-wrapper">
+                        <img src="img/review/5.png" alt="" class="review__photo">
+                    </div>
+                    <img src="img/male.png" style="transform: scaleX(-1)"  alt="" class="review__male">
+                </div>
+                <h3 class="review__name">Anwar</h3>
+                <p class="review__text">
+                    Botol parfum ini telah menggantikan tempatnya di antara parfum saya. Saya merasa lebih percaya diri dengannya dalam kondisi apa pun. Saya yakin, parfum ini sangat menarik bagi perempuan di luar sana dan saya lebih pede. Walaupun jujur nih, banyak perempuan yang mulai lihatin aku
+                </p>
+            </div>
+        </div>
+        <div class="footer__content" id="order">
+            <h3 class="footer__title">
+                MAU CEK <br> <span>DKS CODE?</span> 
+            </h3>
+            <p class="footer__text">
+                Masukkan nama dan nomor telepon Anda dan kami akan mengirimkan pesanan Anda dengan 
+                <span>diskon 60%</span> dengan sangat cepat!
+            </p>
+            <div class="footer__price">
+                <div class="price">
+                    <span class="old__price">200$</span>
+                    <span class="new__price">100$</span>
+                </div>
+            </div>
+            <form class="footer__form">
+                <div class="footer__input-wrapper">
+                    <input type="text" placeholder="nama Anda" required class="footer__input">
+                </div>
+                <div class="footer__input-wrapper">
+                    <input type="tel" placeholder="nomor telepon Anda" required class="footer__input">
+                </div>
+                <button type="submit" class="footer__submit">
+                    kode pesanan dks
+                </button>
+                <div class="footer__date">
+                    * Diskon <span class="red">60%</span> berlaku sampai  <span class="hours">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span>   
+                </div>
+            </form>
+            <img src="img/bam.png" alt="" class="footer__bam">
+            <div class="footer__img-wrapper">
+                <img src="img/prod.png" alt="" class="footer__prod">
+            </div>
+        </div>
+    </div>
+</div>
+            </section>
         </div>
         
     </div>
@@ -283,6 +498,7 @@
 
     <script src="libs/jquery.min.js"></script>
     <script src="libs/jquery.pagepiling.min.js"></script>
+    <script src="libs/owl.carousel.min.js"></script>
 	<script src="libs/aos.js"></script>
     <script src="libs/jquery.raty.js"></script>
     <script src="js/script.js"></script>

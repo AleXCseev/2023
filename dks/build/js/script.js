@@ -19,27 +19,74 @@ var landingFunctions = {
 		// 	e.preventDefault();
 		// })
 
-		$('#pagepiling').pagepiling({
-			navigation: false,
-			anchors: ['section-1', 'section-2', 'section-3', 'section-4', 'section-5', 'section-6'],
-    		menu: '#nav',
-			scrollingSpeed: 100,
-
-			onLeave: function(index, nextIndex, direction){
-				//after leaving section 2
-				if(index == 4 && direction =='down'){
-					$(".header__prod").fadeOut(600)
-				}
-	
-				else if(index == 5 && direction == 'up'){
-					$(".header__prod").fadeIn(600)
-				}
-			}
+		$(".review__slider").owlCarousel({
+			loop: true,
+			nav: true,
+			dots: true,
+			dotsEach: true,
+			items: 2,
+			margin: 20,
+			autoHeight: false,
+			// responsive:{
+			// 	0:{
+			// 		items: 1,
+			// 		// autoHeight: true,
+			// 		dots: true,
+			// 	},
+			// 	1024: {
+			// 		items: 2,
+			// 		// autoHeight: true,
+			// 	},
+			// 	// 1081:{
+			// 	// 	items: 3,
+			// 	// 	autoHeight: false,
+			// 	// }
+			// }
 		});
 
-		$(".next, .video__btn-next").click(function() {
-			$.fn.pagepiling.moveSectionDown();
+		$(".open__menu").click(function () {
+			$(".mobile__menu").addClass("active");
 		})
+
+		$(".menu__link a, .menu__close").click(function() {
+			$(".mobile__menu").removeClass("active");
+		})
+
+		if($(window).width() >= 1024) {
+			$('#pagepiling').pagepiling({
+				navigation: false,
+				anchors: ['section-1', 'section-2', 'section-3', 'section-4', 'section-5', 'section-6'],
+				menu: '#nav',
+				scrollingSpeed: 100,
+	
+				onLeave: function(index, nextIndex, direction){
+					//after leaving section 2
+					if(index == 4 && direction =='down'){
+						$(".header__prod").fadeOut(600)
+					}
+		
+					else if(index == 5 && direction == 'up'){
+						$(".header__prod").fadeIn(600)
+					}
+				}
+			});
+	
+			$(".next, .video__btn-next").click(function() {
+				$.fn.pagepiling.moveSectionDown();
+			})
+		} else {
+			$('[href*="#"]').on('click', function (e) {
+				var fixedOffset = 0;
+				// var cardHeight = $("#card").outerHeight(false)
+				// var windowHeight = $(window).height()
+
+				$('html, body')
+					.stop()
+					// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+					.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+				e.preventDefault();
+			})
+		}
 	},
 
 	time: function() {

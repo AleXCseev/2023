@@ -6,31 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="libs/animations.css"> -->
     <link rel="stylesheet" href="libs/jquery.pagepiling.min.css">
+    <link rel="stylesheet" href="libs/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/jquery.raty.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Maximal 30</title>
 </head>
 <body data-path=".">
     <div class="site__wrapper">
+        <nav class="header__nav" id="nav">
+            <div class="container">
+                <div class="header__nav-left">
+                    <div class="nav__link-wrapper" data-menuanchor="section-2">
+                        <a href="#section-2" class="header__nav-link">BAGAIMANA BEKERJANYA</a>
+                    </div>
+                    <div class="nav__link-wrapper" data-menuanchor="section-3">
+                        <a href="#section-3" class="header__nav-link">Efek</a>
+                    </div>
+                    <div class="nav__link-wrapper" data-menuanchor="section-4">
+                        <a href="#section-4" class="header__nav-link">Siapa yang akan cocok</a>
+                    </div>
+                </div>
+                <img src="img/logo.png" alt="" class="header__nav-logo">
+                <div class="header__nav-right">
+                    <div class="nav__link-wrapper" data-menuanchor="section-5">
+                        <a href="#section-5" class="header__nav-link">Review Video</a>
+                    </div>
+                    <div class="nav__link-wrapper" data-menuanchor="section-6">
+                        <a href="#section-6" class="header__nav-link">Review</a>
+                    </div>
+                    <div class="nav__link-wrapper" data-menuanchor="section-6">
+                        <a href="#section-6" class="header__nav-order">kode pesanan dks</a>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+
+        <button type="button" class="open__menu">
+            <img src="img/burger.png" alt="">
+        </button>
+
+        <div class="mobile__menu">
+            <img src="img/bam.png" alt="" class="menu__bam">
+            <img src="img/prod.png" alt="" class="menu__prod">
+            <ul class="menu__links">
+                <li class="menu__link">
+                    <a href="#section-2">
+                        BAGAIMANA BEKERJANYA
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#section-3">
+                        Efek
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#section-4">
+                        Siapa yang akan cocok
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#section-5">
+                        Review Video
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#section-6">
+                        Review
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#order" class="menu__order">
+                        kode pesanan dks
+                    </a>
+                </li>
+            </ul>
+
+            <button type="button" class="menu__close">
+                <img src="img/close.png" alt="">
+            </button>
+        </div>
+
 		<img src="img/prod.png" alt="" class="header__prod">
 
         <div id="pagepiling">
             <section class="section section-1" id="section-1">
                 @@include("_header.html")
             </section>
-            <section class="section section-2">
+            <section class="section section-2" id="section-2">
                 @@include("_info.html")
             </section>
-            <section class="section section-3">
+            <section class="section section-3" id="section-3">
                 @@include("_advantage.html")
             </section>
-            <section class="section section-4">
+            <section class="section section-4" id="section-4">
                 @@include("_info2.html")
             </section>
-            <section class="section section-5">
+            <section class="section section-5" id="section-5">
                 @@include("_video.html")
             </section>
-            <section class="section section-6">Определённый раздел 6</section>
+            <section class="section section-6" id="section-6">
+                @@include("_footer.html")
+            </section>
         </div>
         
     </div>
@@ -38,6 +115,7 @@
 
     <script src="libs/jquery.min.js"></script>
     <script src="libs/jquery.pagepiling.min.js"></script>
+    <script src="libs/owl.carousel.min.js"></script>
 	<script src="libs/aos.js"></script>
     <script src="libs/jquery.raty.js"></script>
     <script src="js/script.js"></script>

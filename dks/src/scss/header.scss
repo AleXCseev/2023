@@ -11,19 +11,31 @@
 .header__nav {
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .header__nav-left, .header__nav-right {
     display: flex;
-    gap: 40px;
+    gap: 56px;
+}
+
+.header__nav-left {
+    gap: 30px;
 }
 
 .header__nav-link {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.4;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -34,15 +46,15 @@
 
     &:before {
         content: "";
-        width: 34px;
-        height: 41px;
+        width: 28px;
+        height: 36px;
         background-image: url(../img/male.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
         position: absolute;
         top: -10px;
-        left: -17px;
+        left: -14px;
         z-index: -1;
         opacity: 0;
         transition: 0.3s ease;
@@ -50,19 +62,21 @@
     
     &:hover {
         color: #C81012;
-
-        &:before {
-            opacity: 0.3;
-        }
     }
 
-    // &.header__nav-active {
-    //     color: #C81012;
+    
+}
 
-    //     &:before {
-    //         opacity: 0.3;
-    //     }
-    // }
+.nav__link-wrapper {
+    &.active {
+        .header__nav-link {
+            color: #C81012;
+
+            &:before {
+                opacity: 0.3;
+            }
+        }
+    }
 }
 
 .header__nav-logo {
@@ -72,12 +86,12 @@
 
 .header__nav-order {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4;
     letter-spacing: 2.4px;
     text-transform: uppercase;
     color: #C81012;
-    padding: 14px 19px;
+    padding: 8px 24px;
     border: 2px solid #C81012;
     transition: 0.3s ease;
 
@@ -106,7 +120,7 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -290,4 +304,20 @@
     img {
         margin-bottom: 19px;
     }
+}
+
+.header__mobile-logo {
+    display: none;
+}
+
+.open__menu {
+    display: none;
+}
+
+.mobile__menu {
+    display: none;
+}
+
+.arrow__mob {
+    display: none;
 }
