@@ -1,0 +1,350 @@
+.header__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #EEEEEE;
+}
+
+.header__title-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 20px 15px 0;
+    z-index: 2;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00B4E6;
+}
+
+.header__title-bg {
+    position: absolute;
+    width: 100vw;
+    top: -5px;
+    left: 0;
+    font-weight: 700;
+    font-size: 47px;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 180, 230, 0.1);
+}
+
+.header__prod-wrapper {
+    position: relative;
+}
+
+.header__prod {
+    margin-top: -90px;
+}
+
+.header__prod-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header__prod-info-1 {
+    top: 10px;
+    left: -5px;
+
+    .header__info-arrow {
+        align-self: center;
+        position: relative;
+        right: -20px;
+    }
+}
+
+.header__info-size {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.header__info-text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+.header__prod-info-2 {
+    top: 250px;
+    left: -5px;
+
+    .header__info-arrow {
+        align-self: center;
+        position: relative;
+        right: -15px;
+    }
+}
+
+.header__prod-info-3 {
+    top: 190px;
+    right: -5px;
+
+    .header__info-arrow {
+        // align-self: center;
+        position: relative;
+        left: -5px;
+    }
+}
+
+.discount {
+    width: 134px;
+    height: 134px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 180, 230, 0.5);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    top: -10px;
+    right: -50px;
+
+    span {
+        display: inline-block;
+    }
+}
+
+.header__price {
+    width: 100%;
+    height: auto;
+    background: #494949;
+    padding: 89px 15px 20px;
+    margin-top: -80px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.old__price {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #999999;
+    text-decoration: line-through;
+    margin-bottom: 10px;
+}
+
+.new__price {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.12;
+    color: #00B4E6;
+    margin-bottom: 10px;
+}
+
+.order__btn {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    padding: 20px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(94.4deg, #EF7C12 -6.38%, #FDC439 20.31%, #EF7C12 44.94%);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+
+    span {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(94.4deg, #EF7C12 52.13%, #FDC439 91.13%, #EF7C12 125%);
+        opacity: 0;
+        animation: btn 5s infinite;
+    }
+}
+
+@keyframes btn {
+    50% {
+        opacity: 1;
+    }
+}
+
+.header__timer-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background: #323232;
+}
+
+.header__timer-text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.header__timer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    span {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.divider {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.header__info-img {
+    width: 100%;
+    height: auto;
+}
+
+.header__advantages {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: #E7EBED;
+    padding: 20px 20px 23px;
+    margin-bottom: 25px;
+}
+
+.header__advantage {
+    width: 115px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__advantage-margin-bottom {
+    margin-bottom: 42px;
+}
+
+.header__advantage-icon {
+    width: 75px;
+    height: auto;
+}
+
+.header__advantage-text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    color: #00B4E6;
+}
+
+.header__paragraf {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #222222;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 25px;
+    }
+}
+
+.header__info-img2 {
+    border-radius: 15px;
+    margin-bottom: 16px;
+}
+
+.header__delivery {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.header__delivery-stage {
+    width: 135px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__delivery-icon {
+    width: 78px;
+    height: 78px;
+    background: rgba(0, 180, 230, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.header__delivery-text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000000;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.header__subtitle {
+    width: 100%;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px 15px;
+    background: #00B4E6;
+    margin-bottom: 10px;
+}
