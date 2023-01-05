@@ -42,6 +42,7 @@
 
 .info__title-line1 {
     width: 35px;
+    animation: line 5s infinite;
 }
 
 .info__title-line2 {
@@ -50,6 +51,20 @@
 
 .info__title-line3 {
     width: 94px;
+    animation: line 5s infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes line {
+    0% {
+        width: 35px;
+    }
+    50% {
+        width: 94px;
+    }
+    100% {
+        width: 35px;
+    }
 }
 
 .info__img {
@@ -334,6 +349,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    margin-bottom: 25px;
 }
 
 .info__spec-text {

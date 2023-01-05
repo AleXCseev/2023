@@ -8,64 +8,20 @@ var landingFunctions = {
 
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 50;
-			var cardHeight = $("#card").outerHeight(false)
-			var windowHeight = $(window).height()
+			// var cardHeight = $("#card").outerHeight(false)
+			// var windowHeight = $(window).height()
 
 			$('html, body')
 				.stop()
-				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		});
 
-		$(".card__slider").owlCarousel({
-			items: 1,
-			margin: 20,
-			dots: true,
-			nav: false,
-			loop: true,
-		});
-
-		$(".review__slider").owlCarousel({
-			items: 1,
-			margin: 20,
-			dots: true,
-			nav: false,
-			loop: true,
-			autoHeight: true,
-		});
-
-		$(window).scroll(function() {
-			if($(window).scrollTop() >= 1100) {
-				$(".fixed__block").addClass("fixed")
-			} else {
-				$(".fixed__block").removeClass("fixed")
-			}
-		});
-
-		function showBtn() {
-			var $element = $('.card');
-			$(window).scroll(function() {
-				// $(".site__order-btn").addClass('active');
-				var scroll = $(window).scrollTop() + $(window).height();
-				var offset = $element.offset().top + $element.height();
-
-				if($(window).scrollTop() >= 1100) {
-					if (scroll > offset + 500 || scroll < offset - $element.height() - 200 ) {
-						$(".fixed__block").addClass("fixed")
-					} else {
-						$(".fixed__block").removeClass("fixed")
-					}
-
-				} else {
-					$(".fixed__block").removeClass("fixed")
-				}
-
-				
-			});
-		}
-	
-		showBtn()
+		$(".footer__color-btn").click(function() {
+			$(".footer__color-btn").removeClass("active")
+			$(this).addClass("active");
+		})
 
 		// AOS.init({
 		// 	disable : 'mobile',
@@ -128,34 +84,34 @@ var landingFunctions = {
 	
 		timer()
 
-		function getDate(plusDays) {
-			var today = new Date();
-			var dd = String(today.getDate() + plusDays).padStart(2, '0');
-			var mm = String(today.getMonth() + 1).padStart(2, '0');
-			if (+dd < 0) {
-				mm = String(today.getMonth()).padStart(2, '0');
-			}
+		// function getDate(plusDays) {
+		// 	var today = new Date();
+		// 	var dd = String(today.getDate() + plusDays).padStart(2, '0');
+		// 	var mm = String(today.getMonth() + 1).padStart(2, '0');
+		// 	if (+dd < 0) {
+		// 		mm = String(today.getMonth()).padStart(2, '0');
+		// 	}
 			
-			var yyyy = String(today.getFullYear());
-			// yyyy = yyyy.substr(yyyy.length - 2);
-			var currentDaysInMonth = new Date().daysInMonth()
-			if (+dd > currentDaysInMonth) {
-				dd = String(dd - currentDaysInMonth).padStart(2, '0');
-				mm = String(+mm + 1).padStart(2, '0');
-			}
-			if (+dd < 0) {
-				dd = String(currentDaysInMonth + +dd).padStart(2, '0');
-			}
-			if (+dd == 0) {
-				dd = "01"
-			}
-			return dd + "." + mm + "." + yyyy
-		}
+		// 	var yyyy = String(today.getFullYear());
+		// 	// yyyy = yyyy.substr(yyyy.length - 2);
+		// 	var currentDaysInMonth = new Date().daysInMonth()
+		// 	if (+dd > currentDaysInMonth) {
+		// 		dd = String(dd - currentDaysInMonth).padStart(2, '0');
+		// 		mm = String(+mm + 1).padStart(2, '0');
+		// 	}
+		// 	if (+dd < 0) {
+		// 		dd = String(currentDaysInMonth + +dd).padStart(2, '0');
+		// 	}
+		// 	if (+dd == 0) {
+		// 		dd = "01"
+		// 	}
+		// 	return dd + "." + mm + "." + yyyy
+		// }
 
-		$(".card__date span").text(getDate(2))
-		$(".review__date-1").text(getDate(0));
-		$(".review__date-2").text(getDate(-1));
-		$(".review__date-3").text(getDate(-2));
+		// $(".card__date span").text(getDate(2))
+		// $(".review__date-1").text(getDate(0));
+		// $(".review__date-2").text(getDate(-1));
+		// $(".review__date-3").text(getDate(-2));
 	},
 
 }
