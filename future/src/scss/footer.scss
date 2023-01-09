@@ -1,0 +1,45 @@
+.footer__line {
+    width: 100%;
+    height: auto;
+}
+
+.footer__line-wrapper {
+    width: 100%;
+    height: auto;
+    
+    padding: 50px 0 30px;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    transition: .3s ease-in-out;
+    margin-bottom: 30px;
+
+
+    &:hover {
+        color: #007ace;
+    }
+}
+
+.footer__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer__text {
+    margin-bottom: 40px;
+}
+
+.footer__text-small {
+    text-align: center;
+    font-size: 13px;
+}
+
+.fancybox-content {
+    padding: 44px 20px;
+}
