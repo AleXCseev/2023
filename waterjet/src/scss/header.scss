@@ -1,0 +1,151 @@
+.header__section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 10px;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(../img/header-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: brightness(101%) blur(1px);
+    }
+}
+
+.header__title {
+    font-family: "Paytone One", sans-serif;
+    color: rgb(203, 1, 1);
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1;
+    -webkit-text-stroke-width: 0px;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        width: 290px;
+        height: 3px;
+        background-color: rgb(131, 1, 1);
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    span {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Paytone One", sans-serif;
+        color: rgb(240, 224, 17);
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1;
+        -webkit-text-stroke-width: 4px;
+        z-index: -1;
+    }
+}
+
+.header__subtitle {
+    font-family: "Play", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.6;
+    -webkit-text-stroke-width: 0px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5px;
+
+    span {
+        width: 100%;
+        font-family: "Play", sans-serif;
+        color: rgb(1, 1, 1);
+        font-size: 19px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1;
+        -webkit-text-stroke-width: 4px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+}
+
+.header__text {
+    font-family: "Paytone One", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.6;
+    text-shadow: rgb(232 226 48) 1px 1px 2px;
+    -webkit-text-stroke: 1px rgb(255, 22, 22);
+    margin-bottom: 340px;
+    position: relative;
+    z-index: 1;
+}
+
+.header__prod-1 {
+    width: 340px;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    right: -10px;
+    animation: pulse 3s infinite;
+}
+
+.header__prod-2 {
+    width: 180px;
+    height: auto;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    animation: pulse 3s infinite;
+}
+
+.header__prod-3 {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    bottom: -10px;
+    left: 60px;
+    animation: pulse 3s infinite;
+}
+
+.header__discount {
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+    width: 90px;
+    height: auto;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,87 @@
+.galary__section {
+    width: 100%;
+    height: auto;
+}
+
+.slider__for {
+    width: 100%;
+    height: 480px;
+    margin-bottom: 5px;
+}
+
+.slider__for-slide {
+    width: 480px;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: auto;
+    }
+}
+
+// .slider__nav {
+//     width: calc(100% + 6px);
+//     margin-left: -3px;
+// }
+
+.slider__nav-slide {
+    width: 84px;
+    height: 84px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 3px;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: auto;
+    }
+}
+
+.slick-prev {
+    width: 33px;
+    height: 33px;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    background-color: transparent;
+    transform: translateY(-50%) rotate(180deg);
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 10;
+}
+
+.slick-next {
+    width: 33px;
+    height: 33px;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    background-color: transparent;
+    transform: translateY(-50%);
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 10;
+}
+
+.slider__nav {
+    .slick-prev, .slick-next {
+        width: 20px;
+        height: 20px;
+    }
+}

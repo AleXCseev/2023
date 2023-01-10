@@ -1,0 +1,418 @@
+.info__1-section {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(../img/info-1-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: contrast(96%) saturate(135%) grayscale(13%);
+    }
+}
+
+.info__1-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+    z-index: 1;
+   
+
+    &:before {
+        content: "";
+        width: 95%;
+        height: 150%;
+        background-color: #fff;
+        opacity: 0.74;
+        filter: blur(9px) drop-shadow(rgb(0, 0, 0) 0px 15px 20px);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
+
+.info__1-list-item {
+    width: 140px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__1-list-block {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-style: dashed;
+    border-color: rgb(18, 55, 105);
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    margin-bottom: 5px;
+
+    svg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.info__1-list-text {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    position: relative;
+    z-index: 1;
+
+    span {
+        width: 100%;
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.2;
+        -webkit-text-stroke-width: 4px;
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.info__order-wrapper {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.info__order {
+    display: inline-block;
+    background-color: rgb(189, 1, 1);
+    border-style: solid;
+    border-color: rgb(255, 188, 1);
+    border-width: 2px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    animation: pulse 1s infinite;
+
+    span {
+        color: rgb(255, 221, 125);
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+}
+
+.btn-ok {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: 73%;
+    left: -36px;
+    transform: translateY(-50%);
+    z-index: 2;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0%, 100%, 50% {
+        opacity: 1;
+    }
+
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+.info__2-section {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+
+.info__img {
+    width: 100%;
+    height: auto;
+}
+
+.card__block {
+    width: 100%;
+    height: auto;
+    background-image: url(../img/card-sec-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.card {
+    width: calc(100% - 30px);
+    height: auto;
+    border-style: outset;
+    border-color: rgb(255, 255, 255);
+    border-width: 3px;
+    border-radius: 25px;
+    position: relative;
+    background-image: url(../img/card-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card__discont {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 63px;
+    height: auto;
+}
+
+.card__decor {
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    width: 84px;
+    height: auto;
+}
+
+.card__prod {
+    position: absolute;
+    width: 102px;
+    height: auto;
+    top: 60px;
+    right: 5px;
+}
+
+.card__box {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 116px;
+    height: auto;
+}
+
+.card__title {
+    font-family: "Paytone One", sans-serif;
+    color: rgb(211, 14, 14);
+    font-size: 48px;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.4;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.card__price {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    padding: 0 20px;
+}
+
+.price {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card__price-text {
+    width: auto;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-right: 20px;
+}
+
+.old__price {
+    text-decoration: line-through;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.6;
+    margin-right: 10px;
+}
+
+.new__price-block {
+    width: 210px;
+    height: 32px;
+    background: linear-gradient(234deg, rgba(255, 218, 36, 1.0), rgba(226, 36, 26, 1));
+    border-radius: 27px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+
+    img {
+        position: absolute;
+        width: 40px;
+        height: auto;
+        bottom: 0px;
+        left: 10px;
+        animation: pulse 1s infinite;
+    }
+}
+
+.new__price {
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+    text-shadow: rgb(0 0 0) 1px 2px 3px;
+    animation: pulse 1s infinite;
+}
+
+.card__text {
+    font-family: "Play", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.card__text-small {
+    font-family: "Play", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.card__text-bold {
+    font-family: "Paytone One", sans-serif;
+    color: rgb(211, 14, 14);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+.card__form {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__input-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card__input {
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+    background: linear-gradient(180deg, #E9E9E9, #F6F6F6);
+    border-style: ridge;
+    border-color: rgb(179, 161, 121);
+    border-width: 2px;
+    font-weight: 700;
+}
+
+.card__submit {
+    color: rgb(241, 243, 244);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+    padding: 15px 20px;
+    background: #FBD72B;
+    background: linear-gradient(180deg, #FBD72B, #F9484A);
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.card__list {
+    width: 340px;
+    height: auto;
+    align-self: flex-end;
+    background-color: rgb(255, 255, 255);
+    border-style: dashed;
+    border-color: rgb(0, 74, 173);
+    border-width: 3px;
+    border-radius: 0px;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.6;
+    position: relative;
+    margin-right: 15px;
+}
+
+.list__box {
+    position: absolute;
+    top: 50%;
+    left: -96px;
+    transform: translateY(-50%);
+    width: 88px;
+    height: auto;
+}
+
+.card__list-title {
+    margin-bottom: 5px;
+}
+
+.card__list-item {
+    padding-left: 35px;
+    position: relative;
+    margin-bottom: 5px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    svg {
+        width: 28px;
+        height: auto;
+        position: absolute;
+        top: -3px;
+        left: 0;
+    }
+}
