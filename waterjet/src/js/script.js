@@ -2,12 +2,13 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.time()
+		this.bar()
 	}, 
 
 	initLibraris: function() {
 
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 50;
+			var fixedOffset = 0;
 			// var cardHeight = $("#card").outerHeight(false)
 			// var windowHeight = $(window).height()
 
@@ -126,6 +127,58 @@ var landingFunctions = {
 		// $(".review__date-2").text(getDate(-1));
 		// $(".review__date-3").text(getDate(-2));
 	},
+
+	bar: function() {
+
+		// if (localStorage.getItem("lotteryRotated")) {
+		// 	$(".success-part").show();
+		// 	$(".lottery-box-wrapper").hide();
+		// 	// $("a[href='#promo']").attr("href", "#order")
+		// }
+
+		$(".bar__section").hide()
+
+		$(".fixed__btn-right").click(function() {
+			$(".bar__section").show()
+
+			$([document.documentElement, document.body]).animate({
+				scrollTop: $(".bar__section").offset().top
+			}, 1200);
+		})
+
+		// if(localStorage.getItem("lotteryRotated")) {
+		// 	$(".bar").addClass("rotated");
+		// } 
+	
+		$(".bar__start").click(function() {
+
+			if(localStorage.getItem("lotteryRotated")) {
+				return false
+			} 
+
+			var $that = $(this);
+			var $lotteryRound = $that.closest(".bar__wrapper").find(".bar");
+			$lotteryRound.css("animation", "rotate 5s forwards");
+			$lotteryRound.css("animation-timing-function", "cubic-bezier(.46,.07,.19,1.06)");
+	
+			setTimeout(function() {
+				localStorage.setItem("lotteryRotated", true);
+				$(".bar").addClass("rotated");
+	
+				$(".bar__section").hide();
+
+				$([document.documentElement, document.body]).animate({
+					scrollTop: $("#order").offset().top
+				}, 1200);
+			}, 7000);
+
+		});
+	
+		// $(".result-popup-wrap").click(function () {
+		// 	$(this).fadeOut(500);
+		// })
+
+	}
 
 }
 

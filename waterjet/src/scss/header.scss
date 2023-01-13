@@ -57,22 +57,6 @@
     position: relative;
     z-index: 1;
     margin-bottom: 5px;
-
-    // span {
-    //     width: 100%;
-    //     font-family: "Play", sans-serif;
-    //     color: rgb(1, 1, 1);
-    //     font-size: 19px;
-    //     font-weight: bold;
-    //     text-align: center;
-    //     line-height: 1;
-    //     -webkit-text-stroke-width: 4px;
-    //     position: absolute;
-    //     top: 50%;
-    //     left: 50%;
-    //     transform: translate(-50%, -50%);
-    //     z-index: -1;
-    // }
 }
 
 .header__text {
@@ -133,4 +117,75 @@
     100% {
         transform: scale(1);
     }
+}
+
+.fixed__btn-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    bottom: -10px;
+    left: 0;
+    z-index: 10;
+    animation: pulse 3s infinite;
+}
+
+.btn__box {
+    width: 120px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.btn__discount {
+    color: rgb(255, 188, 1);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    background-color: rgb(207, 1, 1);
+    border-style: double;
+    border-color: rgb(255, 255, 255);
+    border-width: 4px;
+    border-radius: 29px;
+    padding: 2px 40px;
+    padding-right: 30px;
+    margin-left: -50px;
+    margin-bottom: -20px;
+}
+
+.fixed__btn-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 10;
+    animation: pulse 3s infinite;
+}
+
+.btn__loto {
+    width: 130px;
+    height: auto;
+    animation: tada 3s infinite;
+}
+
+.btn__phone-1 {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/btn-phone-1.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 175%;
+    position: absolute;
+    bottom: 5px;
+    left: -10px;
+
+}
+
+.btn__phone-2 {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
 }
