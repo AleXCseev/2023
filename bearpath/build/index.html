@@ -6,18 +6,13 @@
     <meta name="viewport" content="width=480px">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
-	<!-- <link rel="stylesheet" href="libs/aos.css"> -->
     <link rel="stylesheet" href="libs/animations.css">
-    <!-- <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    /> -->
     <link rel="stylesheet" href="libs/jquery.raty.css">
     <link rel="stylesheet" href="libs/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>3-in-1 Expandable Design Luggage</title>
+    <title>BEARPATH</title>
 </head>
-<body>
+<body data-path=".">
     <div class="site__wrapper">
 		<header class="header__section">
     <div class="header__logo">
@@ -37,7 +32,7 @@
             </div>
             <div class="header__price">
                 <div class="price">
-                    <div class="header__discount tossing">
+                    <div class="header__discount pulse">
                         <span>50%</span>
                     </div>
                     <span class="old__price">Rp 918.000</span>
@@ -261,111 +256,569 @@
             <section class="card__section">
     <div class="container">
         <div class="card__section-wrapper">
-            <div class="card" id="card">
-                <img src="img/logo-yellow.png" alt="" class="card__logo">
-                <h3 class="card__title">
-                    Karimata Trail Spectrum
-                </h3>
-                <div class="card__raiting">
-                    <img src="img/star.png" alt="">
-                    <img src="img/star.png" alt="">
-                    <img src="img/star.png" alt="">
-                    <img src="img/star.png" alt="">
-                    <img src="img/star.png" alt="">
+            <div class="card__wrapper">
+                <div class="card card__1" id="card">
+                    <img src="img/logo-yellow.png" alt="" class="card__logo">
+                    <h3 class="card__title">
+                        Karimata Trail Spectrum
+                    </h3>
+                    <div class="card__raiting">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                    </div>
+                    <div class="card__price">
+                        <div class="price">
+                            <span class="old__price">Rp 918000</span>
+                            <span class="new__price">Rp 459000</span>
+                        </div>
+                    </div>
+                    <div class="slider__wrapper">
+                        <div class="card__slider card__slider-1 owl-carousel">
+                            <div class="card__slide">
+                                <a href="img/1/1.jpg" data-fancybox="card-1">
+                                    <img src="img/1/1.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="card__slide">
+                                <a href="img/1/2.jpg" data-fancybox="card-1">
+                                    <img src="img/1/2.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="card__slide">
+                                <a href="img/1/3.jpg" data-fancybox="card-1">
+                                    <img src="img/1/3.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="card__slide">
+                                <a href="img/1/4.jpg" data-fancybox="card-1">
+                                    <img src="img/1/5.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="card__slide">
+                                <a href="img/1/5.jpg" data-fancybox="card-1">
+                                    <img src="img/1/5.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="card__slide">
+                                <a href="img/1/6.jpg" data-fancybox="card-1">
+                                    <img src="img/1/6.jpg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__number">
+                            <span class="current__number">1</span> / <span class="number">6</span>
+                        </div>
+                    </div>
+                    <p class="card__text">
+                        Матеріал: CORDURA + Еко шкіра 
+                    </p>
+                    <p class="card__text">
+                        Технологія: Водостійкі 
+                    </p>
+                    <p class="card__text">
+                        Підошва: Поліуретан + гума 
+                    </p>
+                    <p class="card__text">
+                        Сезон: Весна/Літо 
+                    </p>
+                    <p class="card__text">
+                        Колір: Койот/піксель 
+                    </p>
+                    <p class="card__text">
+                        Країна виробник: Україна
+                    </p>
+                    <form class="card__form">
+                        <div class="card__input-wrapper">
+                            <input type="text" placeholder="Имя" required class="card__input">
+                        </div>
+                        <div class="card__input-wrapper">
+                            <input type="tel" placeholder="Телефон" required class="card__input">
+                        </div>
+                        <div class="card__input-wrapper">
+                            <select class="card__select card__input" size="1">
+                                <option hidden>Размер</option>
+                                <option value="39">36 (24 см)</option>
+                                <option value="40">37 (24.5 см)</option>
+                                <option value="41">38 (25 см)</option>
+                                <option value="42">39 (25.5 см)</option>
+                                <option value="43">40 (26 см)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="order__btn card__submit">
+                            купить
+                        </button>
+                    </form>
+                    <p class="header__date">
+                        Акция продлится до <span class="date"></span>
+                    </p>
                 </div>
-                <div class="card__price">
-                    <div class="price">
-                        <span class="old__price">Rp 918.000</span>
-                        <span class="new__price">Rp 459.000</span>
-                    </div>
-                </div>
-                <div class="slider__wrapper">
-                    <div class="card__slider card__slider-1 owl-carousel">
-                        <div class="card__slide">
-                            <a href="img/1/1.jpg" data-fancybox="card-1">
-                                <img src="img/1/1.jpg" alt="" />
-                            </a>
-                        </div>
-                        <div class="card__slide">
-                            <a href="img/1/2.jpg" data-fancybox="card-1">
-                                <img src="img/1/2.jpg" alt="" />
-                            </a>
-                        </div>
-                        <div class="card__slide">
-                            <a href="img/1/3.jpg" data-fancybox="card-1">
-                                <img src="img/1/3.jpg" alt="" />
-                            </a>
-                        </div>
-                        <div class="card__slide">
-                            <a href="img/1/4.jpg" data-fancybox="card-1">
-                                <img src="img/1/5.jpg" alt="" />
-                            </a>
-                        </div>
-                        <div class="card__slide">
-                            <a href="img/1/5.jpg" data-fancybox="card-1">
-                                <img src="img/1/5.jpg" alt="" />
-                            </a>
-                        </div>
-                        <div class="card__slide">
-                            <a href="img/1/6.jpg" data-fancybox="card-1">
-                                <img src="img/1/6.jpg" alt="" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="slider__number">
-                        <span class="current__number">1</span> / <span class="number">6</span>
-                    </div>
-                </div>
-                <p class="card__text">
-                    Матеріал: CORDURA + Еко шкіра 
-                </p>
-                <p class="card__text">
-                    Технологія: Водостійкі 
-                </p>
-                <p class="card__text">
-                    Підошва: Поліуретан + гума 
-                </p>
-                <p class="card__text">
-                    Сезон: Весна/Літо 
-                </p>
-                <p class="card__text">
-                    Колір: Койот/піксель 
-                </p>
-                <p class="card__text">
-                    Країна виробник: Україна
-                </p>
-                <form class="card__form">
-                    <div class="card__input-wrapper">
-                        <input type="text" placeholder="Имя" required class="card__input">
-                    </div>
-                    <div class="card__input-wrapper">
-                        <input type="tel" placeholder="Телефон" required class="card__input">
-                    </div>
-                    <div class="card__input-wrapper">
-                        <select class="card__select" size="1">
-                            <option hidden>Размер</option>
-                            <option value="39">36 (24 см)</option>
-                            <option value="40">37 (24.5 см)</option>
-                            <option value="41">38 (25 см)</option>
-                            <option value="42">39 (25.5 см)</option>
-                            <option value="43">40 (26 см)</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="order__btn card__submit">
-                        купить
-                    </button>
-                </form>
-                <p class="header__date">
-                    Акция продлится до <span class="date"></span>
-                </p>
             </div>
+            
+            <div class="card__wrapper">
+                <img src="img/leaf-1.png" alt="" class="card__leaf-1">
+                <img src="img/leaf-1.png" alt="" class="card__leaf-2">
+                <div class="card card__2">
+                    <img src="img/logo-yellow.png" alt="" class="card__logo">
+                    <h3 class="card__title">
+                        Karimata Trail Spectrum
+                    </h3>
+                    <div class="card__raiting">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                    </div>
+                    <div class="card__price">
+                        <div class="price">
+                            <span class="old__price">Rp 918000</span>
+                            <span class="new__price">Rp 459000</span>
+                        </div>
+                    </div>
+                    <div class="card__color">
+                        <span class="card__color-text">
+                            Выбрите цвет:
+                        </span>
+                        <button 
+                            type="button" 
+                            data-color="black" 
+                            class="card__color-btn black active"
+                            data-price="459000"
+                            data-currency="Rp"
+                        >
+                            <img src="img/ok-white.png" alt="">
+                        </button>
+                        <button 
+                            type="button" 
+                            data-color="white" 
+                            class="card__color-btn white"
+                            data-price="200"
+                            data-currency="$"
+                        >
+                            <img src="img/ok-black.png" alt="">
+                        </button>
+                    </div>
+                    <div class="slider__wrapper">
+                        <div class="card__slider card__slider-2 owl-carousel">
+                            <div class="card__slide">
+                                <a href="img/2/black/1.jpg" data-fancybox="card-2">
+                                    <img 
+                                        src="img/2/black/1.jpg" 
+                                        data-black="img/2/black/1.jpg"
+                                        data-white="img/2/white/1.jpg"
+                                        alt="" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="card__slide">
+                                <a href="img/2/black/2.jpg" data-fancybox="card-2">
+                                    <img 
+                                        src="img/2/black/2.jpg" 
+                                        data-black="img/2/black/2.jpg"
+                                        data-white="img/2/white/2.jpg"
+                                        alt="" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="card__slide">
+                                <a href="img/2/black/3.jpg" data-fancybox="card-2">
+                                    <img 
+                                        src="img/2/black/3.jpg" 
+                                        data-black="img/2/black/3.jpg"
+                                        data-white="img/2/white/3.jpg"
+                                        alt="" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="card__slide">
+                                <a href="img/2/black/4.jpg" data-fancybox="card-2">
+                                    <img 
+                                        src="img/2/black/4.jpg" 
+                                        data-black="img/2/black/4.jpg"
+                                        data-white="img/2/white/4.jpg"
+                                        alt="" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="card__slide">
+                                <a href="img/2/black/5.jpg" data-fancybox="card-2">
+                                    <img 
+                                        src="img/2/black/5.jpg" 
+                                        data-black="img/2/black/5.jpg"
+                                        data-white="img/2/white/5.jpg"
+                                        alt="" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="card__slide">
+                                <a href="img/2/black/6.jpg" data-fancybox="card-2">
+                                    <img 
+                                        src="img/2/black/6.jpg" 
+                                        data-black="img/2/black/6.jpg"
+                                        data-white="img/2/white/6.jpg"
+                                        alt="" 
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__number">
+                            <span class="current__number">1</span> / <span class="number">6</span>
+                        </div>
+                    </div>
+                    <p class="card__text">
+                        Матеріал: CORDURA + Еко шкіра 
+                    </p>
+                    <p class="card__text">
+                        Технологія: Водостійкі 
+                    </p>
+                    <p class="card__text">
+                        Підошва: Поліуретан + гума 
+                    </p>
+                    <p class="card__text">
+                        Сезон: Весна/Літо 
+                    </p>
+                    <p class="card__text">
+                        Колір: Койот/піксель 
+                    </p>
+                    <p class="card__text">
+                        Країна виробник: Україна
+                    </p>
+                    <form class="card__form">
+                        <div class="card__input-wrapper">
+                            <input type="text" placeholder="Имя" required class="card__input">
+                        </div>
+                        <div class="card__input-wrapper">
+                            <input type="tel" placeholder="Телефон" required class="card__input">
+                        </div>
+                        <div class="card__input-wrapper">
+                            <select class="card__select card__input" size="1">
+                                <option hidden>Размер</option>
+                                <option value="39">36 (24 см)</option>
+                                <option value="40">37 (24.5 см)</option>
+                                <option value="41">38 (25 см)</option>
+                                <option value="42">39 (25.5 см)</option>
+                                <option value="43">40 (26 см)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="order__btn card__submit">
+                            купить
+                        </button>
+                    </form>
+                    <p class="header__date">
+                        Акция продлится до <span class="date"></span>
+                    </p>
+                </div>
+            </div>
+           
+            <div class="card__wrapper">
+                <div class="card card__3">
+                    <img src="img/logo-yellow.png" alt="" class="card__logo">
+                    <h3 class="card__title">
+                        Karimata Trail Spectrum
+                    </h3>
+                    <div class="card__raiting">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                        <img src="img/star.png" alt="">
+                    </div>
+                    <div class="card__price">
+                        <div class="price">
+                            <span class="old__price">Rp 918000</span>
+                            <span class="new__price">Rp 459000</span>
+                        </div>
+                    </div>
+                    <div class="card__color">
+                        <span class="card__color-text">
+                            Выбрите цвет:
+                        </span>
+                        <button 
+                            type="button" 
+                            data-color="black" 
+                            class="card__color-btn black active"
+                            data-price="459000"
+                            data-currency="Rp"
+                        >
+                            <img src="img/ok-white.png" alt="">
+                        </button>
+                        <button 
+                            type="button" 
+                            data-color="white" 
+                            class="card__color-btn white"
+                            data-price="200"
+                            data-currency="$"
+                        >
+                            <img src="img/ok-black.png" alt="">
+                        </button>
+                        <button 
+                            type="button" 
+                            data-color="yellow" 
+                            class="card__color-btn yellow"
+                            data-price="300"
+                            data-currency="$"
+                        >
+                            <img src="img/ok-black.png" alt="">
+                        </button>
+                    </div>
+                    <div class="slider__wrapper">
+                        <div class="card__slider card__slider-3 owl-carousel">
+                            <div class="card__slide">
+                                <a href="img/3/black/1.jpg" data-fancybox="card-3">
+                                    <img 
+                                        src="img/3/black/1.jpg" 
+                                        data-black="img/3/black/1.jpg"
+                                        data-white="img/3/white/1.jpg"
+                                        data-yellow="img/3/yellow/1.jpg"
+                                        alt="" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="card__slide">
+                                <a href="img/3/black/2.jpg" data-fancybox="card-3">
+                                    <img 
+                                        src="img/3/black/2.jpg" 
+                                        data-black="img/3/black/2.jpg"
+                                        data-white="img/3/white/2.jpg"
+                                        data-yellow="img/3/yellow/2.jpg"
+                                        alt="" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="card__slide">
+                                <a href="img/3/black/3.jpg" data-fancybox="card-3">
+                                    <img 
+                                        src="img/3/black/3.jpg" 
+                                        data-black="img/3/black/3.jpg"
+                                        data-white="img/3/white/3.jpg"
+                                        data-yellow="img/3/yellow/3.jpg"
+                                        alt="" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="card__slide">
+                                <a href="img/3/black/4.jpg" data-fancybox="card-3">
+                                    <img 
+                                        src="img/3/black/4.jpg" 
+                                        data-black="img/3/black/4.jpg"
+                                        data-white="img/3/white/4.jpg"
+                                        data-yellow="img/3/yellow/4.jpg"
+                                        alt="" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="card__slide">
+                                <a href="img/3/black/5.jpg" data-fancybox="card-3">
+                                    <img 
+                                        src="img/3/black/5.jpg" 
+                                        data-black="img/3/black/5.jpg"
+                                        data-white="img/3/white/5.jpg"
+                                        data-yellow="img/3/yellow/5.jpg"
+                                        alt="" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="card__slide">
+                                <a href="img/3/black/6.jpg" data-fancybox="card-3">
+                                    <img 
+                                        src="img/3/black/6.jpg" 
+                                        data-black="img/3/black/6.jpg"
+                                        data-white="img/3/white/6.jpg"
+                                        data-yellow="img/3/yellow/6.jpg"
+                                        alt="" 
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__number">
+                            <span class="current__number">1</span> / <span class="number">6</span>
+                        </div>
+                    </div>
+                    <p class="card__text">
+                        Матеріал: CORDURA + Еко шкіра 
+                    </p>
+                    <p class="card__text">
+                        Технологія: Водостійкі 
+                    </p>
+                    <p class="card__text">
+                        Підошва: Поліуретан + гума 
+                    </p>
+                    <p class="card__text">
+                        Сезон: Весна/Літо 
+                    </p>
+                    <p class="card__text">
+                        Колір: Койот/піксель 
+                    </p>
+                    <p class="card__text">
+                        Країна виробник: Україна
+                    </p>
+                    <form class="card__form">
+                        <div class="card__input-wrapper">
+                            <input type="text" placeholder="Имя" required class="card__input">
+                        </div>
+                        <div class="card__input-wrapper">
+                            <input type="tel" placeholder="Телефон" required class="card__input">
+                        </div>
+                        <div class="card__input-wrapper">
+                            <select class="card__select card__input" size="1">
+                                <option hidden>Размер</option>
+                                <option value="39">36 (24 см)</option>
+                                <option value="40">37 (24.5 см)</option>
+                                <option value="41">38 (25 см)</option>
+                                <option value="42">39 (25.5 см)</option>
+                                <option value="43">40 (26 см)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="order__btn card__submit">
+                            купить
+                        </button>
+                    </form>
+                    <p class="header__date">
+                        Акция продлится до <span class="date"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+            <section class="review__section">
+    <div class="container">
+        <div class="review__section-wrapper">
+            <img src="img/line-big.png" alt="" class="review__decor-big">
+            <div class="review__decor">
+                <img src="img/line-yellow.png" alt="" class="review__decor-1">
+                <img src="img/line-yellow.png" alt="" class="review__decor-2">
+                <img src="img/line-yellow.png" alt="" class="review__decor-3">
+            </div>
+            <h2 class="review__section-title">
+                Отзывы наших <br> покупателей
+            </h2>
+            <div class="slider__wrapper">
+                <div class="review__slider owl-carousel">
+                    <div class="review__slide">
+                        <div class="review__header">
+                            <span class="review__name">
+                                Александер
+                            </span>
+                            <div class="review__raiting">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            Lorem ipsum dolor sit amet consectetur. Adipiscing odio mus nisl risus pharetra eros amet velit. Rhoncus vestibulum convallis in sit amet aliquet molestie. Turpis eu lacinia in malesuada purus. Vulputate sapien quam in curabitur porttitor sagittis sed elementum ornare. Enim est nunc scelerisque viverra neque.
+                        </p>
+                        <img src="img/quote.png" alt="" class="review__quote">
+                    </div>
+                    <div class="review__slide">
+                        <div class="review__header">
+                            <span class="review__name">
+                                Александер
+                            </span>
+                            <div class="review__raiting">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            Lorem ipsum dolor sit amet consectetur. Adipiscing odio mus nisl risus pharetra eros amet velit. Rhoncus vestibulum convallis in sit amet aliquet molestie. Turpis eu lacinia in malesuada purus. Vulputate sapien quam in curabitur porttitor sagittis sed elementum ornare. Enim est nunc scelerisque viverra neque.
+                        </p>
+                        <img src="img/quote.png" alt="" class="review__quote">
+                    </div>
+                    <div class="review__slide">
+                        <div class="review__header">
+                            <span class="review__name">
+                                Александер
+                            </span>
+                            <div class="review__raiting">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            Lorem ipsum dolor sit amet consectetur. Adipiscing odio mus nisl risus pharetra eros amet velit. Rhoncus vestibulum convallis in sit amet aliquet molestie. Turpis eu lacinia in malesuada purus. Vulputate sapien quam in curabitur porttitor sagittis sed elementum ornare. Enim est nunc scelerisque viverra neque.
+                        </p>
+                        <img src="img/quote.png" alt="" class="review__quote">
+                    </div>
+                    <div class="review__slide">
+                        <div class="review__header">
+                            <span class="review__name">
+                                Александер
+                            </span>
+                            <div class="review__raiting">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            Lorem ipsum dolor sit amet consectetur. Adipiscing odio mus nisl risus pharetra eros amet velit. Rhoncus vestibulum convallis in sit amet aliquet molestie. Turpis eu lacinia in malesuada purus. Vulputate sapien quam in curabitur porttitor sagittis sed elementum ornare. Enim est nunc scelerisque viverra neque.
+                        </p>
+                        <img src="img/quote.png" alt="" class="review__quote">
+                    </div>
+                </div>
+                <div class="slider__number">
+                    <span class="current__number">1</span> / <span class="number">4</span>
+                </div>
+            </div>
+            <button type="button" class="add__review">
+                Оставить отзыв
+            </button>
         </div>
     </div>
 </section>  
 		</main>
-		
+		<footer class="footer__section">
+    <div class="header__logo">
+        <img src="img/logo.png" alt="">
+    </div>
+    <div class="container">
+        <div class="footer__section-wrapper">
+            <h2 class="header__title">
+                Lorem ipsum dolor 
+                sit amet consectetur
+            </h2>
+            <div class="header__prod-wrapper">
+                <img src="img/footer-bg.png" alt="" class="footer__bg">
+                <img src="img/footer-boot.png" alt="" class="footer__boot">
+                <img src="img/leaf-1.png" alt="" class="header__leaf header__leaf-1">
+                <img src="img/leaf-2.png" alt="" class="header__leaf header__leaf-2">
+                <img src="img/leaf-3.png" alt="" class="header__leaf header__leaf-3">
+            </div>
+            <div class="header__price">
+                <div class="price">
+                    <div class="header__discount pulse">
+                        <span>50%</span>
+                    </div>
+                    <span class="old__price">Rp 918.000</span>
+                    <span class="new__price">Rp 459.000</span>
+                </div>
+            </div>
+            <a href="#card" class="order__btn">
+                купить по скидке
+            </a>
+            <p class="header__date">
+                Акция продлится до <span class="date"></span>
+            </p>
+        </div>
+    </div>
+</footer>
 
-<!-- <div class="footer__line">
+<div class="footer__line">
     <div class="container">
         <div class="footer__line-wrapper">
             <ul class="footer__info">
@@ -377,31 +830,65 @@
             </ul>
         </div>
     </div>
-</div> --> 
+</div> 
     </div>
     <div class="footer__modal" id="modal-privacy">
-    <h6>Syarat dan ketentuan</h6>
-    <p>Halaman ini menjelaskan syarat dan ketentuan MTP. Syarat dan ketentuan berikut (acara "Syarat dan Ketentuan") mengatur penggunaan Anda atas situs web ini saat mengakses, melihat, atau menggunakan konten dan fungsi di atas. Layanan, Anda menunjukkan bahwa Anda memahami syarat dan ketentuan ini dan menerimanya.</p>
-    <p>Semua konten pada layanan ini dilindungi oleh hukum. Seluruh hak cipta. Laporan hak cipta pada konten apa pun dilarang menghapus atau mengubah informasi. Setiap penggunaan komersial dari materi ini dilarang tanpa persetujuan tertulis sebelumnya dari MTP.</p>
-    <p>MTP berhak untuk terus memodifikasi, memperbarui, atau mengembangkan Platform dan Layanannya, serta pembaruan dan teknologi publik dari waktu ke waktu.</p>
-    <p>Dengan meninggalkan informasi pribadi Anda dengan MTP, Anda menyetujui informasi pribadi Anda dibagikan dengan broker lain dan/atau afiliasi yang dikelola oleh pihak ketiga.</p>
-    <p>Layanan ini dirancang untuk memberikan informasi umum tentang broker dan produk serta layanan mereka. Informasi dalam layanan tidak dimaksudkan sebagai penawaran untuk menjual atau membongkar produk atau layanan tertentu.</p>
-    <p>Penggunaan layanan ini adalah risiko Anda sendiri. MTP tidak bertanggung jawab atas konsekuensi dari mengandalkan informasi apa pun yang dikirimkan ke Layanan atau dikirimkan kepada Anda karena risiko cedera akibat hal tersebut di atas. Materi ini disediakan "sebagaimana adanya" tanpa pemberitahuan dalam bentuk apa pun, baik tersurat maupun tersirat. MTP tidak akan bertanggung jawab atas kerusakan langsung, khususnya, kecoak sebagai akibat dari atau hukuman, termasuk, namun tidak terbatas pada, kehilangan penjualan atau keuntungan yang mungkin hilang karena penggunaan, penyalahgunaan, atau ketidakefisienan bahan-bahan ini.</p>
-    <p>Penggunaan Internet adalah risiko Anda sendiri dan tunduk pada semua hukum dan peraturan negara bagian, nasional, dan internasional yang berlaku. MTP tidak akan bertanggung jawab atas kerusakan yang disebabkan olehnya yang tidak memiliki kendali langsung, termasuk, namun tidak terbatas pada, kegagalan pada rongga peralatan mekanis atau elektronik, saluran komunikasi, telepon atau masalah koneksi lainnya, virus komputer, Escuela DhéD . Rambut putih. Kesalahan waktu operator, waktu yang tercatat.</p>
+    <h2>Kebijakan pribadi</h2>
+    <p>Toko online kami menghormati hak-hak pelanggan. Kerahasiaan yang ketat diamati saat melakukan pemesanan. Informasi disimpan dengan aman dan dilindungi dari transmisi.</p>
+    <p>Menempatkan pesanan di Situs merupakan persetujuan atas pemrosesan data Pelanggan semata-mata untuk tujuan menyediakan Layanan.</p>
+    <p>Data pribadi mencakup informasi pribadi tentang Klien: alamat rumah; nama depan, patronimik; informasi kelahiran; properti, status perkawinan; Kontak pribadi (telepon, email) dan informasi lain yang tercantum dalam Undang-Undang "Tentang Data Pribadi".</p>
+    <p>Klien memiliki hak untuk menolak pemrosesan data pribadi. Dalam hal ini, kami menjamin penghapusan semua data pribadi dari Situs dalam waktu tiga hari selama jam kerja. Pelanggan dapat mengeluarkan penolakan tersebut melalui email sederhana ke alamat yang ditentukan di halaman Situs kami. </p>
 </div>
 
 <div class="footer__modal" id="modal-delivery">
-    <h6>Kebijakan pribadi</h6>
-    <p>Dengan memberikan kami informasi pribadi, Anda menyetujui syarat dan ketentuan Pernyataan Privasi ini.</p>
-    <p>Kami mengumpulkan informasi pribadi ketika Anda berpartisipasi dalam berbagai peluang yang kami sediakan. Dengan meninggalkan informasi pribadi Anda dengan MTP, Anda secara tegas setuju bahwa informasi pribadi Anda akan dibagikan dengan broker dan/atau afiliasi yang dikelola pihak ketiga.</p>
-    <p>Informasi pribadi ini saat ini diidentifikasi sebagai nama pelanggan, alamat email dan nomor telepon.</p>
-    <p>Kami menggunakan informasi pribadi untuk tujuan berikut: menanggapi pertanyaan Anda dan memenuhi permintaan Anda, seperti mengirimi Anda buletin dan peringatan email. Mengirimkan komunikasi pemasaran yang menurut kami akan menarik minat Anda, termasuk peluang investasi.</p>
-    <p>Identifikasi tren yang bermanfaat dan tentukan efektivitas kampanye promosi kami.</p>
+    <h6>Доставка і оплата</h6>
+    <p>Доставка по Україні здійснюється за допомогою компанії «Нова Пошта» протягом 2-х днів з моменту замовлення. Вартість та деталі такої доставки різняться залежно від регіону вашого проживання та розміру посилки.</p>
+    <p>Продавець не бере на себе жодних зобов'язань щодо відшкодування будь-яких збитків Клієнта, пов'язаних з несвоєчасною доставкою замовлення, а також звільняється від будь-яких можливих штрафних санкцій.</p>
+    <p>Клієнт, який отримав товар, повинен перевірити його щодо якості та кількості.</p>
 </div>
+
+<div class="footer__modal" id="modal-refusal">
+    <h2>Syarat dan Ketentuan</h2>
+    <p>Halaman ini menguraikan syarat dan ketentuan MTP. Syarat dan ketentuan berikut ("Syarat dan Ketentuan" acara ") mengatur penggunaan Anda atas situs web ini. Dengan mengakses, melihat, atau menggunakan konten dan fungsi di atas. Layanan, Anda menunjukkan bahwa Anda memahami syarat dan ketentuan ini dan menerima.</p>
+    <p>Semua materi yang terkandung dalam layanan ini dilindungi undang-undang. Seluruh hak cipta. Menghapus atau mengubah informasi Pelaporan hak cipta atas materi apa pun dilarang. Setiap penggunaan komersial dari materi ini tunduk pada larangan berikut tanpa persetujuan tertulis sebelumnya dari MTP.</p>
+    <p>MTP berhak untuk mengubah, memperbarui, atau terus mengembangkan Platform dan Layanannya serta pembaruan publik terhadap teknologi dan dari waktu ke waktu.</p>
+    <p>Dengan menyerahkan data pribadi Anda ke MTP, Anda setuju bahwa informasi pribadi Anda dibagikan dengan broker lain dan/atau afiliasi yang dikelola pihak ketiga.</p>
+    <p>Layanan ini dirancang untuk memberikan informasi umum tentang broker serta produk dan layanan mereka. Informasi layanan tidak dimaksudkan sebagai penawaran untuk menjual atau melemahkan produk atau layanan tertentu</p>
+    <p>Penggunaan layanan ini sepenuhnya menjadi risiko Anda sendiri. MTP tidak bertanggung jawab atas konsekuensi mengandalkan informasi apa pun yang dikirimkan ke Layanan atau risiko cedera akibat hal tersebut di atas sepenuhnya menjadi tanggung jawab Anda. Materi ini disediakan "sebagaimana adanya" tanpa pemberitahuan apapun baik tersurat maupun tersirat. MTP tidak akan bertanggung jawab atas kerugian langsung, khususnya kecoa sebagai akibat atau hukuman, namun tidak terbatas pada, kehilangan penjualan atau keuntungan yang mungkin hilang karena akses, penggunaan atau ketidakmampuan untuk menggunakan materi ini.</p>
+    <p>Penggunaan Internet sepenuhnya merupakan risiko Anda sendiri dan tunduk pada semua undang-undang dan peraturan negara bagian, nasional dan internasional yang berlaku. MTP tidak akan bertanggung jawab atas segala kerusakan yang disebabkan oleh alasan yang tidak berada di bawah kendali langsung mereka, termasuk, namun tidak terbatas pada, kegagalan saluran komunikasi rongga peralatan mekanis atau elektronik, masalah sambungan telepon atau lainnya, virus komputer, sekolah DhéD. rambut putih. Cuaca operator kesalahan, mengukir cuaca. Cakram</p>
+</div>
+
+<div class="modal__review">
+    <div class="modal__review-wrapper">
+        <form class="active">
+            <input type="text" class="name__input" placeholder="Nama" required>
+            <!-- <input type="file" name="file" id="file" class="input__file"> -->
+            <!-- <label for="file" class="file">
+                <div>
+                    <img src="" alt="">
+                </div>
+                <span>Menambahkan foto</span> 
+            </label> -->
+            <div class="modal__star-raiting">
+                Peringkat: <div class="modal__raiting"></div>
+            </div>
+            <textarea cols="30" rows="10" class="modal__area" placeholder="Umpan balik Anda..."></textarea>
+            <button type="submit" class="send">Kirim</button>
+        </form>
+        <div class="send__window">
+            <div class="send__img">
+                <img src="./img/mailing.png" alt="" class="modal__send-img">
+            </div>
+            <div class="send__massage">Terima kasih atas tanggapan Anda,
+                itu akan ditampilkan di situs setelah verifikasi oleh moderator</div>
+        </div>
+        <a class="modal__close"><img src="./img/close.png" alt=""></a>
+    </div>
+</div>
+
 
   
     <script src="libs/jquery.min.js"></script>
-	<!-- <script src="libs/aos.js"></script> -->
     <script src="libs/jquery.fancybox.min.js"></script>
     <script src="libs/owl.carousel.min.js"></script>
     <script src="libs/jquery.raty.js"></script>

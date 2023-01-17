@@ -1,0 +1,64 @@
+.card__section {
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+}
+
+.card__form {
+    width: 100%;
+    height: auto;
+}
+
+.card__form-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card__input-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card__input {
+    width: 100%;
+    height: auto;
+    background-color: #fcfcfc;
+    padding: 9px 15px;
+    border: 2px solid #ebebeb;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #485058;
+    font-weight: 200;
+    transition: 0.3s ease;
+
+    &:focus {
+        border: 2px solid #039BE5;
+    }
+}
+
+.card__submit {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    background-color: #f7941d;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 400;
+    cursor: pointer;
+
+
+    svg {
+        width: 22px;
+        height: auto;
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+}

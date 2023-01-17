@@ -1,0 +1,104 @@
+.info__section {
+    width: 100%;
+    height: auto;
+}
+
+.info__block {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+.info__logo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.info__red {
+    font-weight: bold;
+    font-size: 22px;
+    color: #C62828;
+}
+
+.info__black {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.info__orange {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #F57C00;
+    font-weight: bold;
+}
+
+.info__orange-big {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #F57C00;
+}
+
+.info__list {
+    width: 100%;
+    height: auto;
+}
+
+.info__list-item {
+    font-size: 16px;
+    text-indent: 24px;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 19px;
+        background-image: url(../img/ok.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.info__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.info__list {
+    width: 100%;
+    height: auto;
+}
+
+.info__list-item-2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.info__bottom-1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FB8C00;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.info__bottom-2 {
+    color: #689F38;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info__bottom-img {
+    margin: auto;
+}
+
+.info__price-2 {
+
+}
