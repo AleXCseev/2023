@@ -9,6 +9,39 @@
 @import "footer";
 @import "modal";
 
-@media (max-width: 1280px) {
-    
+@media (max-width: 700px) {
+    .container {
+        width: calc(100% - 40px);
+    }
+    .card__section {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 540px) {
+    .fixed__btn {
+        display: flex;
+        width: calc(100vw - 20px);
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        z-index: 10;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5em;
+        border-color: rgba(0, 0, 0, 0);
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgb(245, 124, 0);
+
+        img {
+            width: 18px;
+            height: auto;
+            margin-left: 10px;
+        }
+    }
 }

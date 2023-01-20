@@ -7,7 +7,7 @@ var landingFunctions = {
 
 	initLibraris: function() {
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 20;
+			var fixedOffset = 50;
 			var cardHeight = $("#card").outerHeight(false)
 			var windowHeight = $(window).height()
 
@@ -29,6 +29,10 @@ var landingFunctions = {
 			autoplay: true,
 			autoplayTimeout: 2000,
 			autoplayHoverPause: true,
+		})
+
+		$(".tab__btn").click(function() {
+			$(this).closest(".tab__block").toggleClass("active")
 		})
 	},
 
