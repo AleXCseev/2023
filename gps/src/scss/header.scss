@@ -1,0 +1,156 @@
+.header__section {
+    width: 100%;
+    height: auto;
+}
+
+.header__img {
+    width: 100%;
+    height: auto;
+}
+
+.header__slider-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.header__slider {
+    width: 100%;
+    height: auto;
+}
+
+.header__slide {
+    width: 100%;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.header__slider-nav {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.header__slider-btn {
+    background-color: transparent;
+}
+
+.btn__next {
+}
+.btn__prev {
+}
+
+.header__price-block {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 2px 10px 0px, rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.headet__title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+.header__price {
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+}
+
+.price {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.new__price {
+    color: rgb(255, 87, 34);
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.old__price {
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+.header__raiting-block {
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.header__raiting {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 5px;
+
+    img {
+        width: 16px;
+        height: auto;
+    }
+}
+
+.header__raiting-text {
+    font-size: 16px;
+}
+
+.order__btn {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(149, 117, 205);
+    padding: 10px 15px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: "Bowlby One", sans-serif;
+}
+
+.fixed {
+    width: 100%;
+    height: auto;
+    padding: 8px 10px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 2px 10px 0px, rgba(0, 0, 0, 0.10) 0px 1px 4px 0px;
+}
+
+.fixed__btn {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    border-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0);
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    padding: 7px;
+}

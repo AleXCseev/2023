@@ -1,0 +1,131 @@
+.info__section {
+    width: 100%;
+    height: auto;
+}
+
+.info__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.info__text {
+    font-size: 16px;
+    text-align: center;
+}
+
+.text__bold {
+    font-weight: bold;
+}
+
+.info__title {
+    margin: 20px 0;
+    width: 100%;
+    height: auto;
+    background-color: rgb(149, 117, 205);
+    color: #fff;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.info__title-small {
+    font-size: 16px;
+}
+
+.info__list {
+    width: 100%;
+    height: auto;
+}
+
+.info__list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+
+    svg {
+        width: 19px;
+        height: auto;
+        margin-right: 14px;
+    }
+}
+
+.text__ok {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 18px;
+    margin-bottom: 20px;
+
+    svg {
+        width: 24px;
+        height: auto;
+        flex-shrink: 0;
+        margin-right: 14px;
+    }
+}
+
+.promo {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 11px;
+    overflow: hidden;
+    background-color: rgb(149, 206, 255);
+    padding: 3px 0;
+}
+
+.promo__title {
+    font-size: 16px;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.promo__img {
+    width: 100%;
+    height: auto;
+}
+
+.promo__price {
+    width: 100%;
+    height: auto;
+
+    .price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .old__price {
+        font-size: 18px;
+        font-weight: 500;
+        // margin-bottom: 5px;
+    }
+    
+    .new__price {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(244, 67, 54);
+    }
+}
+
+.promo__title-big {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+
+    span {
+        display: inline-block;
+        width: auto;
+    }
+
+    img {
+        width: 20px;
+        height: auto;
+    }
+}
