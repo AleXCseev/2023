@@ -621,6 +621,7 @@ body {
   font-weight: 700;
   font-size: 32px;
   color: #222222;
+  text-align: center;
 }
 .info__title:before {
   content: "";
