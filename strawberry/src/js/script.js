@@ -2,6 +2,8 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.time()
+		this.quantity()
+		this.modal()
 	}, 
 
 	initLibraris: function() {
@@ -16,6 +18,43 @@ var landingFunctions = {
 				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		})
+
+		$(".reviews").owlCarousel({
+			loop: true,
+			nav: true,
+			dots: true,
+			dotsEach: true,
+			items: 1,
+			margin: 50,
+			autoHeight: true,
+		});
+
+		$.raty.path = $("body").data("path") +  '/img/raty';
+
+		$('.modal__raiting').raty({
+			half: true,
+			space: false,
+			number: 5,
+		});
+	
+		AOS.init({
+			disable : 'mobile',
+			once: true,
+			duration: 1000,
+			offset : 0,
+		});
+	
+		$(window).resize(function() {
+			AOS.refresh();
+		})
+
+		$('[data-fancybox]').fancybox({
+			loop: true,
+			infobar: false,
+			animationEffect: false,
+			backFocus: false,
+			hash: false,
+		});
 	},
 
 	time: function() {
@@ -84,6 +123,90 @@ var landingFunctions = {
 		}
 
 		// $(".review__1 .review__date span").text(getDate(0));
+	},
+
+	quantity: function() {
+		var currentNumber;
+
+		function getRandomInt(max) {
+			return Math.floor(Math.random() * Math.floor(max));
+		}
+
+		if(localStorage.getItem("quantity")) {
+			$(".quantity").text(localStorage.getItem("quantity"));
+		} else {
+			currentNumber = 25
+			localStorage.setItem("quantity", currentNumber)
+			$(".quantity").text(currentNumber);
+		}
+
+		setInterval(function () {
+			currentNumber = localStorage.getItem("quantity");
+			if (currentNumber >= 3) {
+				currentNumber = currentNumber - getRandomInt(3);
+				$(".quantity").text(currentNumber);
+				localStorage.setItem("quantity", currentNumber)
+			} else {
+				currentNumber = 25;
+				localStorage.setItem("quantity", currentNumber)
+			}
+		}, 100000)
+	},
+
+	modal: function() {
+		function modal() {
+			$(".add__review").click(function () {
+				$(".modal__review").addClass("active")
+			})
+	
+			function close() {
+				$(".modal__review").removeClass("active")
+			}
+	
+			$(".modal__review").click( function(e) {
+				var target = e.target;
+				if(target.classList.contains("modal__close")) {
+					close()
+				}
+				if(target.classList.contains("modal")) {
+					close()
+				}
+			})
+	
+			function readURL(input) {
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
+					console.log(reader)
+					reader.onload = function (e) {
+						$('.file img').attr('src', e.target.result).css("display", "block");
+					};
+					reader.readAsDataURL(input.files[0]);
+				}
+			}
+	
+			$(".modal__review .input__file").on("change", function () {
+				readURL(this);
+			});
+	
+			$(".modal__review form").submit(function (e) {
+				e.preventDefault()
+				$(this).removeClass("active");
+				$(".send__window").addClass("active");
+				$(".modal__review .name__input").val("")
+				$(".modal__review .modal__area").val("")
+				$(".modal__review .file img").attr("src", "").css("display", "none")
+				delayClose()
+			})
+			function delayClose() {
+				setTimeout(function () {
+					$(".modal__review form").addClass("active");
+					$(".send__window").removeClass("active");
+					close();
+				}, 5000);
+			}
+		}
+	
+		modal()
 	},
 
 }
