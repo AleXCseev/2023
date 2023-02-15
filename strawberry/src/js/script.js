@@ -86,8 +86,8 @@ var landingFunctions = {
 				var m = String(59 - d.getMinutes()).padStart(2, "0");
 				var s = String(60 - d.getSeconds()).padStart(2, "0");
 				// var ms = String(1000 - d.getMilliseconds()).padStart(3, "0");
-				$(hoursSelector).text(h + "ч")
-				$(minutesSelector).text(m + "м")
+				$(hoursSelector).text(h + "г")
+				$(minutesSelector).text(m + "х")
 				$(secondsSelector).text(s + "с")
 				// $(milisecondsSelector).text(ms)
 			}
@@ -119,8 +119,11 @@ var landingFunctions = {
 			if (+dd == 0) {
 				dd = "01"
 			}
-			return dd + "." + mm + "." + yyyy
+			return dd + "." + mm 
 		}
+
+		$(".date__1").text(getDate(-1));
+		$(".date__2").text(getDate(1));
 
 		// $(".review__1 .review__date span").text(getDate(0));
 	},

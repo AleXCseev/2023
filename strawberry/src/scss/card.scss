@@ -94,8 +94,8 @@
 }
 
 .card__submit {
-    width: 100%;
-    max-width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
     background: #FFD600;
     color: #111111;
     margin-top: 10px;
