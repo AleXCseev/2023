@@ -1,0 +1,114 @@
+.card__content {
+    background-image: url(../img/card-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding: 20px 0 76px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__info {
+        color: #FFFFFF;
+    }
+    
+    .header__timer {
+        margin-bottom: 30px;
+    }
+}
+
+.card__raiting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    img {
+        width: 18px;
+        height: auto;
+        margin-right: 2px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.card__prod-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.card__prod {
+    width: auto;
+    height: 513px;
+    position: relative;
+    z-index: 3;
+}
+
+.card__prod-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-93%, -50%) scale(0.78);
+    opacity: 1;
+    transition: 3s ease-in-out;
+}
+
+.card__prod-right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-7%, -50%) scale(0.78);
+    opacity: 1;
+    transition: 3s ease-in-out;
+}
+
+.card__img-active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+}
+
+.card__icon {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 70px;
+    height: auto;
+}
+
+.card__form {
+    width: 100%;
+    height: auto;
+}
+
+.card__input-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card__input {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 65px;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: #000000;
+}
+
+.card__submit {
+    margin-top: 5px;
+    cursor: pointer;
+}
+

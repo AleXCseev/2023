@@ -1,0 +1,128 @@
+.review__section {
+    padding-bottom: 47px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.review__main {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.review__main-text {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 59px;
+}
+
+.review__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 41px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    img {
+        width: 113px;
+        height: auto;
+    }
+}
+
+.review__slider {
+}
+
+.review__slide {
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 32px 35px 44px;
+}
+
+.review__name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.review__img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 22px;
+}
+
+.review__text {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.review__raiting {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        width: 18px !important;
+        height: auto !important;
+        margin-right: 2px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.owl-nav {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    pointer-events: none;
+
+    button {
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/review-btn.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        pointer-events: auto;
+
+        span {
+            display: none;
+        }
+    }
+
+    .owl-next {
+        transform: rotate(180deg);
+    }
+}
+
+.add__review {
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    color: #000000;
+    margin-top: -7px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}

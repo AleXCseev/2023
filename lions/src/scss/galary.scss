@@ -1,0 +1,44 @@
+.galary__section {
+    padding: 50px 0 14px;
+
+    .info__block {
+        margin-bottom: 15px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            box-sizing: border-box;
+            top: 0;
+            left: 0;
+            border: 5px solid #FFFFFF;
+        }
+
+        .info__block-remainder {
+            bottom: 20px;
+        }
+    }
+}
+
+.galary__title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.galary__text {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 15px;
+}
