@@ -617,7 +617,7 @@ body {
 }
 
 .info__block-remainder {
-  width: 200px;
+  width: 240px;
   height: 60px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1245,6 +1245,7 @@ body {
   cursor: pointer;
   position: relative;
   z-index: 5;
+  padding: 2px;
 }
 
 .advantage__section {
