@@ -1,0 +1,229 @@
+.review__section {
+    background-color: #fff;
+    padding-top: 188px;
+    display: none;
+}
+
+.spray__block {
+    margin-bottom: 105px;
+    width: 100%;
+    max-width: 1050px;
+    background: #A72A48;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 150px 20px 80px;
+    position: relative;
+}
+
+.spray__decor {
+    position: absolute;
+    height: auto;
+}
+
+.spray__decor-1 {
+    top: -316px;
+    right: -85px;
+    width: 709px;
+}
+
+.spray__decor-2 {
+    top: -157px;
+    right: -412px;
+    width: 765px;
+}
+
+.spray {
+   position: absolute;
+   width: 390px;
+   height: auto;
+   top: -212px;
+   right: -189px;
+
+}
+
+.spray__title {
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.spray__text {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 17px;
+}
+
+.sprey__price {
+    width: 100%;
+
+    .price {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+
+    .new__price {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
+}
+
+.price__text {
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: line-through;
+    margin-right: 50px;
+    display: flex;
+
+    .old__price {
+        font-weight: 400;
+        font-size: 20px;
+        color: #FFFFFF;
+        // margin-left: 5px;
+    }
+}
+
+.review__wrapper {
+    width: 100%;
+    height: auto;
+    padding-bottom: 83px;
+}
+
+.review__title {
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 50px;
+
+    span {
+        font-style: italic; 
+    }
+}
+
+.review__bg-1 {
+    width: 496px;
+    height: auto;
+}
+
+.review__bg-2 {
+    width: 353px;
+    height: auto;
+    position: absolute;
+    bottom: 83px;
+    left: 631px;
+}
+
+.reviews {
+    width: 1030px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 83px;
+}
+
+.owl-carousel .owl-stage-outer {
+    padding-top: 15px;
+}
+
+.review {
+    height: 100%;
+    background: #DFE6DC;
+    padding: 30px 20px 20px;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 45px;
+        height: 29px;
+        position: absolute;
+        top: -15px;
+        right: 15px;
+        background-image: url(../img/quote.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.review__text {
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.review__name {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-align: right;
+}
+
+.owl-dots {
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-55.5%);
+    bottom: -39px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        width: 7px !important;
+        height: 7px !important;
+        border-radius: 100%;
+        background: #5F0A0A !important;
+        margin-right: 20px;
+        position: relative;
+        box-sizing: border-box;
+
+        span {
+            display: none;
+        }
+
+        &:before {
+            content: "";
+            box-sizing: border-box;
+            width: 11px;
+            height: 11px;
+            border-radius: 100%;
+            border: 1px solid #5F0A0A;
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            transition: 0.3s ease;
+            opacity: 0;
+            
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active {
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+}

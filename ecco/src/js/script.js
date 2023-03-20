@@ -4,12 +4,13 @@ var landingFunctions = {
 		this.time()
 		this.video()
 		this.bar()
+		this.card()
 	}, 
 
 	initLibraris: function() {
 		
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 20;
+			var fixedOffset = 0;
 			// var cardHeight = $("#card").outerHeight(false)
 			// var windowHeight = $(window).height()
 
@@ -19,62 +20,29 @@ var landingFunctions = {
 				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		})
-		
-		var owl = $(".galary__slider").owlCarousel({
+
+		$(".reviews").owlCarousel({
 			loop: true,
 			nav: false,
-			dots: false,
-			dotsEach: true,
-			items: 1,
-			margin: 0,
-			autoHeight: false,
-			// autoplay: true,
-			// autoplayTimeout: 5000,
-			// autoplayHoverPause: true,
-			mouseDrag: false,
-			touchDrag: false,
-			animateOut: 'fadeOut',
-			responsive:{
-				0: {
-					dots: true,
-					mouseDrag: true,
-					touchDrag: true,
-				},
-				1025: {
-					dots: false,
-					mouseDrag: false,
-					touchDrag: false,
-				}
-			}
-		});
-
-		$(".review__slider").owlCarousel({
-			loop: true,
-			nav: true,
-			dots: false,
+			dots: true,
 			dotsEach: true,
 			items: 2,
-			margin: 50,
+			margin: 230,
 			autoHeight: true,
-			stagePadding: 25,
-			responsive:{
-				0:{
-					items: 1,
-					// autoHeight: true,
-					dots: true,
-					stagePadding: 15,
-				},
-				1024: {
-					items: 2,
-					dots: false,
-					stagePadding: 25,
-					// autoHeight: true,
-				},
-				// 1081:{
-				// 	items: 3,
-				// 	autoHeight: false,
-				// }
-			}
+			// responsive:{
+			// 	0:{
+			// 		items: 1,
+			// 		// autoHeight: true,
+			// 		dots: true,
+			// 		stagePadding: 15,
+			// 	},
+			// 	1024: {
+			// 		items: 2,
+			// 		dots: false,
+			// 		stagePadding: 25,
+			// 		// autoHeight: true,
+			// 	},
+			// }
 		});
 
 	
@@ -226,7 +194,11 @@ var landingFunctions = {
 		if(localStorage.getItem("rotate")) {
 			$(".bar__section-wrapper").hide()
 			$(".card__section-wrapper").show()
+			$(".review__section").show()
+			$(".footer__section").show()
 		}
+
+		// $(".card__section-wrapper").show()
 
 		$(".order__btn-start").click(function() {
 		
@@ -242,6 +214,8 @@ var landingFunctions = {
 
 			setTimeout(function() {
 				$(".bar__section-wrapper").hide(0)
+				$(".review__section").fadeIn(1000)
+				$(".footer__section").fadeIn(1000)
 				$(".card__section-wrapper").fadeIn(1000)
 
 				$([document.documentElement, document.body]).animate(
@@ -253,6 +227,48 @@ var landingFunctions = {
 
 			}, 10000)
 		})
+	},
+
+	card: function() {
+		function cardImg(selector) {
+			function toggleDataSrcAtribute(string) {
+				$(selector + " .card__photo-img").each(function() {
+					$(this).parent().attr("href",  $(this).attr("data-" + string))
+					$(this)
+						.hide()
+						.attr("src",  $(this).attr("data-" + string))
+						.fadeIn(1000)
+				})
+			}
+	
+			$(selector + " .card__color-btn").click(function () {
+
+				$(selector + " .card__color-btn").removeClass("active")
+				$(this).addClass("active")
+
+				var color = $(this).data("color")
+				toggleDataSrcAtribute(color)
+	
+				$(selector + " .card__color-btn").removeClass("active")
+				$(this).addClass("active")
+	
+				var price = $(this).data("price")
+				var currency = $(this).data("currency");
+				$(selector + " .new__price").text(price + " " + currency)
+
+				var pricePlusSale = Math.floor(price * 100 / 30); 
+				$(selector + " .old__price").text(pricePlusSale + " " + currency)
+	
+				var id = $(this).data("id")
+	
+				if ( id !== undefined ) {
+					$(this).closest(".product-card").find('input[name=products]').val(id);
+				}
+			})
+		}
+		
+		cardImg(".card__1")
+		cardImg(".card__2")
 	},
 }
 
