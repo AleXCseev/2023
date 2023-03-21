@@ -4,6 +4,10 @@
     display: none;
 }
 
+.spray__block-wrapper {
+    position: relative;
+}
+
 .spray__block {
     margin-bottom: 105px;
     width: 100%;
@@ -25,12 +29,14 @@
     top: -316px;
     right: -85px;
     width: 709px;
+    z-index: 1;
 }
 
 .spray__decor-2 {
     top: -157px;
     right: -412px;
     width: 765px;
+    z-index: 1;
 }
 
 .spray {
@@ -39,7 +45,7 @@
    height: auto;
    top: -212px;
    right: -189px;
-
+   z-index: 2;
 }
 
 .spray__title {

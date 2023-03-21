@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="libs/owl.carousel.min.css">
 	<link rel="stylesheet" href="libs/aos.css">
     <link rel="stylesheet" href="libs/animations.css">
-    <link rel="stylesheet" href="libs/jquery.raty.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Ecco</title>
 </head>
@@ -18,16 +17,16 @@
     <div class="container">
         <div class="header__section-wrapper">
             <img src="img/logo.png" alt="" class="header__logo">
-            <h1 class="header__title">
+            <h1 class="header__title" data-aos="fade-up" data-aos-delay="200">
                 Весна - час оновлень
             </h1>
-            <h2 class="header__subtitle">
+            <h2 class="header__subtitle" data-aos="fade-up" data-aos-delay="400">
                 небувале зниження цін
             </h2>
-            <h2 class="header__subtitle-2">
+            <h2 class="header__subtitle-2" data-aos="fade-up" data-aos-delay="600">
                 на шкіряне взуття від
             </h2>
-            <p class="header__prod">
+            <p class="header__prod" data-aos="fade-up" data-aos-delay="800">
                 ECCO!
             </p>
 
@@ -35,7 +34,7 @@
                 <img src="img/header-bg.jpg" alt="" class="header__bg">
                 <img src="img/header-decor-2.png" alt="" class="header__decor header__decor-2">
                 <div class="header__block-wrapper" id="c1">
-                    <div class="header__discount">
+                    <div class="header__discount" data-aos="fade-right"  data-aos-delay="2000">
                         знижка до <span class="pulse">70%</span>
                     </div>
 
@@ -64,17 +63,17 @@
         <div class="advantage__section-wrapper">
             <img src="img/header-decor-2.png" alt="" class="advantage__decor advantage__decor-1">
             <img src="img/advantage-decor.png" alt="" class="advantage__decor advantage__decor-2">
-            <h2 class="advantage__title">
+            <h2 class="advantage__title" data-aos="fade-up" data-aos-delay="200">
                 ecco soft: найкращий вибір для весни
             </h2>
             <ol class="advantage__list">
-                <li class="advantage__list-item">
+                <li class="advantage__list-item" data-aos="fade-up" data-aos-delay="400">
                     1. Натуральна <span>шкіра</span> та амортизуюча <span>підошва</span>
                 </li>
-                <li class="advantage__list-item">
+                <li class="advantage__list-item" data-aos="fade-up" data-aos-delay="600">
                     2. Стильна та витончена модель
                 </li>
-                <li class="advantage__list-item">
+                <li class="advantage__list-item" data-aos="fade-up" data-aos-delay="800">
                     3. Устілки <span>ECCO Comfort Fibre System™</span>
                 </li>
             </ol>
@@ -94,7 +93,7 @@
             <img src="img/info-decor-1.png" alt="" class="info__decor info__decor-2">
             <div class="info__items">
                 <div class="info__items-column">
-                    <div class="info__item info__item-1">
+                    <div class="info__item info__item-1" data-aos="fade-right">
                         <img src="img/info-1.png" alt="" class="info__img">
                         <p class="info__item-text">
                             <span>NOSHANK™ - </span> <br>
@@ -104,7 +103,7 @@
                             ВІДЧУТТІВ ПІД ЧАС ХОДЬБИ.
                         </p>
                     </div>
-                    <div class="info__item info__item-2">
+                    <div class="info__item info__item-2" data-aos="fade-right">
                         <img src="img/info-2.png" alt="" class="info__img">
                         <p class="info__item-text">
                             ТЕХНОЛОГІЯ <br>
@@ -118,11 +117,11 @@
                     </div>
                 </div>
                 <div class="info__items-column">
-                    <div class="info__item info__item-3">
+                    <div class="info__item info__item-3" data-aos="fade-left">
                         <img src="img/info-3.png" alt="" class="info__img">
                         <p class="info__item-text">
-                            СПЕЦІАЛЬНО РОЗРОБЛЕНІ <br> 
-                            УСТІЛКИ <span>ECCO COMFORT <br> FIBRE SYSTEM™</span> АБСОРБУЮТЬ <br> 
+                            СПЕЦІАЛЬНО <br> РОЗРОБЛЕНІ <br>
+                            УСТІЛКИ <span>ECCO <br> COMFORT FIBRE <br> SYSTEM™</span> АБСОРБУЮТЬ <br> 
                             ЗАЙВУ ВОЛОГУ.
                         </p>
                     </div>
@@ -139,8 +138,8 @@
                 <h2 class="video__title">
                     КРОКУЙ ЗА ВЕСНОЮ У ВЗУТТІ ВІД ECCO!
                 </h2>
-                <div class="video" data-video="9vyGu2O7xNQ">
-                    <img src="img/play.png" alt="" class="video__btn">
+                <div class="video" data-video="QPpzTWZc8mw">
+                    <img src="img/play.png" alt="" class="video__btn pulse">
                 </div>
                 <p class="video__text">
                     ПОДИВІТЬСЯ, ЯКІ ВОНИ КЛАСНІ!
@@ -221,7 +220,8 @@
                 <div class="divider__horizontal"></div>
             </div>
             <button type="button" class="order__btn order__btn-start">
-                Випробуй свою удачу
+                <span class="stop">Зупинити</span>
+                <span class="start">Випробуй свою удачу</span>
             </button>
         </div>
     </div>
@@ -298,7 +298,7 @@
                     </div>
                 </div>
                 <div class="card__wrapper">
-                    <div class="card__info-block">
+                    <div class="card__info-block card__block-wrapper">
                         <div class="card__info">
                             <span>Сезон:</span>
                             <span class="card__divider"></span>
@@ -343,7 +343,7 @@
                             <button type="button" class="card__size-btn active">
                                 <span class="card__size-val">36</span>
                                 <span class="card__size-info">
-                                    24 см
+                                    23.5 см
                                 </span>
                             </button>
                             <button type="button" class="card__size-btn">
@@ -355,19 +355,19 @@
                             <button type="button" class="card__size-btn">
                                 <span class="card__size-val">38</span>
                                 <span class="card__size-info">
-                                    24 см
+                                    24.5 см
                                 </span>
                             </button>
                             <button type="button" class="card__size-btn">
                                 <span class="card__size-val">39</span>
                                 <span class="card__size-info">
-                                    24 см
+                                    25 см
                                 </span>
                             </button>
                             <button type="button" class="card__size-btn">
                                 <span class="card__size-val">40</span>
                                 <span class="card__size-info">
-                                    24 см
+                                    26 см
                                 </span>
                             </button>
                         </div>
@@ -494,6 +494,7 @@
                         <a href="img/card-2/red/6.jpg" data-fancybox="card-2">
                             <img 
                                 src="img/card-2/red/6.jpg" alt="" 
+                                data-red="img/card-2/red/6.jpg"
                                 data-white="img/card-2/white/6.jpg"
                                 data-black="img/card-2/black/6.jpg"
                                 class="card__photo-img"
@@ -502,7 +503,7 @@
                     </div>
                 </div>
                 <div class="card__wrapper">
-                    <div class="card__info-block">
+                    <div class="card__info-block card__block-wrapper">
                         <div class="card__info">
                             <span>Сезон:</span>
                             <span class="card__divider"></span>
@@ -553,25 +554,25 @@
                             <button type="button" class="card__size-btn">
                                 <span class="card__size-val">37</span>
                                 <span class="card__size-info">
-                                    24 см
+                                    24.5 см
                                 </span>
                             </button>
                             <button type="button" class="card__size-btn">
                                 <span class="card__size-val">38</span>
                                 <span class="card__size-info">
-                                    24 см
+                                    25 см
                                 </span>
                             </button>
                             <button type="button" class="card__size-btn">
                                 <span class="card__size-val">39</span>
                                 <span class="card__size-info">
-                                    24 см
+                                    25.5 см
                                 </span>
                             </button>
                             <button type="button" class="card__size-btn">
                                 <span class="card__size-val">40</span>
                                 <span class="card__size-info">
-                                    24 см
+                                    26 см
                                 </span>
                             </button>
                         </div>
@@ -641,24 +642,26 @@
 </section>
             <section class="review__section">
     <div class="container">
-        <div class="spray__block">
-            <img src="img/spray-decor-1.png" alt="" class="spray__decor spray__decor-1">
-            <img src="img/spray-decor-2.png" alt="" class="spray__decor spray__decor-2">
-            <img src="img/spray.png" alt="" class="spray">
-            <h2 class="spray__title">
-                охайне взуття - це просто
-            </h2>
-            <p class="spray__text">
-                ЗАХИСНИЙ СПРЕЙ ДЛЯ ВЗУТТЯ ВІД ECCO Зі знижкою <br> (у разі купівлі взуття)! 
-            </p>
-            <div class="sprey__price">
-                <div class="price">
-                    <span class="price__text">
-                        Ціна: &nbsp; <span class="old__price">4250 грн</span>
-                    </span>
-                    <span class="new__price">599 грн</span>
+        <div class="spray__block-wrapper">
+            <div class="spray__block">
+                <img src="img/spray.png" alt="" class="spray">
+                <h2 class="spray__title">
+                    охайне взуття - це просто
+                </h2>
+                <p class="spray__text">
+                    ЗАХИСНИЙ СПРЕЙ ДЛЯ ВЗУТТЯ ВІД ECCO Зі знижкою <br> (у разі купівлі взуття)! 
+                </p>
+                <div class="sprey__price">
+                    <div class="price">
+                        <span class="price__text">
+                            Ціна: &nbsp; <span class="old__price">4250 грн</span>
+                        </span>
+                        <span class="new__price">599 грн</span>
+                    </div>
                 </div>
             </div>
+            <img src="img/spray-decor-1.png" alt="" class="spray__decor spray__decor-1">
+            <img src="img/spray-decor-2.png" alt="" class="spray__decor spray__decor-2">
         </div>
 
         <div class="review__wrapper">
@@ -716,6 +719,14 @@
 		<footer class="footer__section">
     <div class="container">
         <div class="footer__section-wrapper">
+            <img src="img/logo.png" alt="" class="footer__logo">
+            <h2 class="footer__title">
+                БРЕНДОВЕ ВЗУТТЯ <br>
+                <span>ТЕПЕР ЩЕ ДОСТУПНІШЕ</span>
+            </h2>
+            <div class="footer__price">
+                від 1099 грн
+            </div>
             <div class="footer__imgs">
                 <img src="img/video-decor.png" alt="" class="footer__img footer__decor-2">
                 <img src="img/footer-decor-1.png" alt="" class="footer__img footer__decor-1">
@@ -730,14 +741,6 @@
                 <img src="img/footer-7.png" alt="" class="footer__img footer__img-7">
                 <img src="img/footer-8.png" alt="" class="footer__img footer__img-8">
                 <img src="img/footer-9.png" alt="" class="footer__img footer__img-9">
-            </div>
-            <img src="img/logo.png" alt="" class="footer__logo">
-            <h2 class="footer__title">
-                БРЕНДОВЕ ВЗУТТЯ <br>
-                <span>ТЕПЕР ЩЕ ДОСТУПНІШЕ</span>
-            </h2>
-            <div class="footer__price">
-                від 1099 грн
             </div>
             <a href="#order" class="footer__btn">
                 Перейти <br>
@@ -755,35 +758,10 @@
 
  
     </div>
-    <div class="footer__modal" id="modal-privacy">
-    <h2>Kebijakan pribadi</h2>
-    <p>Toko online kami menghormati hak-hak pelanggan. Kerahasiaan yang ketat diamati saat melakukan pemesanan. Informasi disimpan dengan aman dan dilindungi dari transmisi.</p>
-    <p>Menempatkan pesanan di Situs merupakan persetujuan atas pemrosesan data Pelanggan semata-mata untuk tujuan menyediakan Layanan.</p>
-    <p>Data pribadi mencakup informasi pribadi tentang Klien: alamat rumah; nama depan, patronimik; informasi kelahiran; properti, status perkawinan; Kontak pribadi (telepon, email) dan informasi lain yang tercantum dalam Undang-Undang "Tentang Data Pribadi".</p>
-    <p>Klien memiliki hak untuk menolak pemrosesan data pribadi. Dalam hal ini, kami menjamin penghapusan semua data pribadi dari Situs dalam waktu tiga hari selama jam kerja. Pelanggan dapat mengeluarkan penolakan tersebut melalui email sederhana ke alamat yang ditentukan di halaman Situs kami. </p>
-</div>
-
-<!-- <div class="footer__modal" id="modal-delivery">
-    <h6>Доставка і оплата</h6>
-    <p>Доставка по Україні здійснюється за допомогою компанії «Нова Пошта» протягом 2-х днів з моменту замовлення. Вартість та деталі такої доставки різняться залежно від регіону вашого проживання та розміру посилки.</p>
-    <p>Продавець не бере на себе жодних зобов'язань щодо відшкодування будь-яких збитків Клієнта, пов'язаних з несвоєчасною доставкою замовлення, а також звільняється від будь-яких можливих штрафних санкцій.</p>
-    <p>Клієнт, який отримав товар, повинен перевірити його щодо якості та кількості.</p>
-</div> -->
-
-<div class="footer__modal" id="modal-refusal">
-    <h2>Syarat dan Ketentuan</h2>
-    <p>Halaman ini menguraikan syarat dan ketentuan MTP. Syarat dan ketentuan berikut ("Syarat dan Ketentuan" acara ") mengatur penggunaan Anda atas situs web ini. Dengan mengakses, melihat, atau menggunakan konten dan fungsi di atas. Layanan, Anda menunjukkan bahwa Anda memahami syarat dan ketentuan ini dan menerima.</p>
-    <p>Semua materi yang terkandung dalam layanan ini dilindungi undang-undang. Seluruh hak cipta. Menghapus atau mengubah informasi Pelaporan hak cipta atas materi apa pun dilarang. Setiap penggunaan komersial dari materi ini tunduk pada larangan berikut tanpa persetujuan tertulis sebelumnya dari MTP.</p>
-    <p>MTP berhak untuk mengubah, memperbarui, atau terus mengembangkan Platform dan Layanannya serta pembaruan publik terhadap teknologi dan dari waktu ke waktu.</p>
-    <p>Dengan menyerahkan data pribadi Anda ke MTP, Anda setuju bahwa informasi pribadi Anda dibagikan dengan broker lain dan/atau afiliasi yang dikelola pihak ketiga.</p>
-    <p>Layanan ini dirancang untuk memberikan informasi umum tentang broker serta produk dan layanan mereka. Informasi layanan tidak dimaksudkan sebagai penawaran untuk menjual atau melemahkan produk atau layanan tertentu</p>
-    <p>Penggunaan layanan ini sepenuhnya menjadi risiko Anda sendiri. MTP tidak bertanggung jawab atas konsekuensi mengandalkan informasi apa pun yang dikirimkan ke Layanan atau risiko cedera akibat hal tersebut di atas sepenuhnya menjadi tanggung jawab Anda. Materi ini disediakan "sebagaimana adanya" tanpa pemberitahuan apapun baik tersurat maupun tersirat. MTP tidak akan bertanggung jawab atas kerugian langsung, khususnya kecoa sebagai akibat atau hukuman, namun tidak terbatas pada, kehilangan penjualan atau keuntungan yang mungkin hilang karena akses, penggunaan atau ketidakmampuan untuk menggunakan materi ini.</p>
-    <p>Penggunaan Internet sepenuhnya merupakan risiko Anda sendiri dan tunduk pada semua undang-undang dan peraturan negara bagian, nasional dan internasional yang berlaku. MTP tidak akan bertanggung jawab atas segala kerusakan yang disebabkan oleh alasan yang tidak berada di bawah kendali langsung mereka, termasuk, namun tidak terbatas pada, kegagalan saluran komunikasi rongga peralatan mekanis atau elektronik, masalah sambungan telepon atau lainnya, virus komputer, sekolah DhéD. rambut putih. Cuaca operator kesalahan, mengukir cuaca. Cakram</p>
-</div>
+    
   
     <script src="libs/jquery.min.js"></script>
 	<script src="libs/aos.js"></script>
-    <script src="libs/jquery.raty.js"></script>
     <script src="libs/jquery.fancybox.min.js"></script>
     <script src="libs/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>

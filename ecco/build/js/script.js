@@ -29,20 +29,20 @@ var landingFunctions = {
 			items: 2,
 			margin: 230,
 			autoHeight: true,
-			// responsive:{
-			// 	0:{
-			// 		items: 1,
-			// 		// autoHeight: true,
-			// 		dots: true,
-			// 		stagePadding: 15,
-			// 	},
-			// 	1024: {
-			// 		items: 2,
-			// 		dots: false,
-			// 		stagePadding: 25,
-			// 		// autoHeight: true,
-			// 	},
-			// }
+			responsive:{
+				0: {
+					items: 1,
+					margin: 50,
+				},
+				1080:{
+					items: 2,
+					margin: 50,
+				},
+				1280: {
+					items: 2,
+					margin: 230,
+				},
+			}
 		});
 
 	
@@ -190,6 +190,7 @@ var landingFunctions = {
 		}
 		
 		var interval = 0
+		var active = false
 
 		if(localStorage.getItem("rotate")) {
 			$(".bar__section-wrapper").hide()
@@ -201,32 +202,47 @@ var landingFunctions = {
 		// $(".card__section-wrapper").show()
 
 		$(".order__btn-start").click(function() {
-		
-			interval = setInterval(function() {
-				scrollBar(".bar__column")
-			}, 100)
-
-			setTimeout(function() {
+			if ( active ) {
 				clearInterval(interval);
 				scrollStop()
+				openClose()
 				localStorage.setItem("rotate", true)
-			}, 5000)
+			} else {
+				interval = setInterval(function() {
+					scrollBar(".bar__column")
+				}, 100)
 
+				$(this).find(".stop").show()
+				$(this).find(".start").hide()
+
+				active = true
+				setTimeout(function() {
+					clearInterval(interval);
+					scrollStop()
+					openClose()
+					localStorage.setItem("rotate", true)
+				}, 5000)
+			}
+			
+
+		})
+
+		function openClose() {
 			setTimeout(function() {
 				$(".bar__section-wrapper").hide(0)
 				$(".review__section").fadeIn(1000)
 				$(".footer__section").fadeIn(1000)
 				$(".card__section-wrapper").fadeIn(1000)
 
-				$([document.documentElement, document.body]).animate(
-					{
-						scrollTop: $(".card__section-wrapper").offset().top,
-					},
-					1000
-				);
+				// $([document.documentElement, document.body]).animate(
+				// 	{
+				// 		scrollTop: $(".card__section-wrapper").offset().top,
+				// 	},
+				// 	1000
+				// );
 
-			}, 10000)
-		})
+			}, 3000)
+		}
 	},
 
 	card: function() {
@@ -269,6 +285,16 @@ var landingFunctions = {
 		
 		cardImg(".card__1")
 		cardImg(".card__2")
+
+		function cardSize(selector) {
+			$(selector + " .card__size-btn").click(function() {
+				$(selector + " .card__size-btn").removeClass("active")
+				$(this).addClass("active")
+			})
+		}
+
+		cardSize(".card__1")
+		cardSize(".card__2")
 	},
 }
 
