@@ -2,7 +2,7 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.time()
-		this.video()
+		// this.video()
 		this.bar()
 		this.card()
 	}, 
