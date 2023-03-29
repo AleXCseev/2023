@@ -1,0 +1,146 @@
+.footer__modal{
+    display: none;
+    max-width: 600px !important;
+    margin: auto;
+    background-color: #fff;
+}
+
+.footer__modal p{
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #111;
+}
+
+.footer__modal h2{
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: #111;
+}
+
+.footer__modal h6{
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #111;
+}
+
+.modal__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 0;
+    overflow: auto;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.modal {
+    width: 560px;
+    height: auto;
+    margin: auto;
+    background-color: #fff;
+}
+
+.modal__img {
+    width: 100%;
+    height: auto;
+}
+
+.modal__block {
+    width: 100%;
+    height: auto;
+    padding: 50px 50px 30px;
+}
+
+.modal__price {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+
+    .price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .old__price {
+        font-size: 36px;
+        color: #000;
+        text-decoration: line-through;
+        margin-right: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .new__price {
+        color: rgb(201, 30, 30);
+        font-size: 36px;
+    }
+}
+
+.modal__text {
+    font-size: 16px;
+    font-family: 'TildaSans', Arial, sans-serif;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal__form {
+    width: 100%;
+    height: auto;
+}
+
+.modal__input-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.modal__input {
+    width: 100%;
+    height: auto;
+    color: #000000;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 1.33;
+
+    &::placeholder {
+        color: #b3b1b1;
+    }
+}
+
+.modal__submit {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 15px 30px;
+    background-color: #c42020;
+    margin-bottom: 0;
+}
+
+.modal__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    cursor: pointer;
+}
