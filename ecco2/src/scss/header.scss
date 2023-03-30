@@ -1,0 +1,260 @@
+.site__block {
+    width: 100%;
+    height: auto;
+}
+
+.site__block-1 {
+    background: linear-gradient(206.76deg, #78C8D9 0%, #FBDAD3 52.6%, #FFF8BD 100%);
+}
+
+.site__block-2 {
+    background: linear-gradient(26.76deg, #78C8D9 0%, #FBDAD3 52.6%, #FFF8BD 100%);
+}
+
+.header__section-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 28px 0 150px;
+    position: relative;
+}
+
+.header__decor {
+    position: absolute;
+    height: auto;
+}
+
+.header__decor-1 {
+    top: -83px;
+    left: -470px;
+    width: 570px;
+}
+
+.header__decor-2 {
+    top: -103px;
+    right: -394px;
+    width: 703px;
+}
+
+.header__content {
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.header__logo {
+    width: 210px;
+    height: auto;
+    margin-bottom: 31px;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 46px;
+    text-align: center;
+    color: #1E1437;
+    margin-bottom: 38px;
+}
+
+.header__discount {
+    width: 340px;
+    height: 118px;
+    background-image: url(../img/discount.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    margin-bottom: 27px;
+}
+
+.header__discount-text {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-3deg);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    text-align: center;
+    color: #FFD600;
+    width: 100%;
+}
+
+.order__btn {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px 85px;
+    background: #56004D;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+        background: #B500A3;
+    }
+}
+
+.header__date {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    color: #1E1437;
+    margin-top: 6px;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.header__boots {
+    width: 100%;
+    height: auto;
+    margin: 125px 0;
+    position: relative;
+    width: 100%;
+}
+
+.header__boot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__boot-1 {
+    left: 25%;
+    z-index: 2;
+}
+
+.header__boot-2 {
+    left: 75%;
+    z-index: 1;
+}
+
+.header__advantages {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(93.55deg, #60942F 0%, #386A0B 100%);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 90px 44px;
+    position: relative;
+}
+
+.header__advantage {
+    width: 290px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__advantage-icon {
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 17px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header__advantage-text {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.header__block {
+    // border: 1px solid black;
+    position: absolute;
+    z-index: -1;
+}
+
+.header__block-left {
+    width: 525px;
+    height: 548px;
+    top: 94px;
+    left: -518px;
+
+    .header__img-main {
+        right: 4%;
+        transform: rotate(-5deg);
+    }
+
+    .header__img-1 {
+        width: 58.5%;
+        left: 0;
+    }
+
+    .header__img-2 {
+        width: 58.5%;
+        left: 10%;
+    }
+}
+
+.header__img-main {
+    width: 38%;
+    position: absolute;
+    top: 1%;
+    border-radius: 30px;
+}
+
+.header__img-1 {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.header__img-2 {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.header__block-right {
+    width: 509px;
+    height: 548px;
+    top: 44px;
+    right: -503px;
+
+    .header__img-main {
+        left: 4%;
+        transform: rotate(5deg);
+    }
+
+    .header__img-3 {
+        width: 60.5%;
+        right: 0;
+    }
+
+    .header__img-4 {
+        width: 66.5%;
+        right: 0;
+    }
+}
+
+.header__img-3 {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.header__img-4 {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
