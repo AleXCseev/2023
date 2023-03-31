@@ -21,29 +21,53 @@ var landingFunctions = {
 			e.preventDefault();
 		})
 
-		$(".reviews").owlCarousel({
+		$(".galary__slider").owlCarousel({
 			loop: true,
-			nav: false,
-			dots: true,
+			nav: true,
+			dots: false,
 			dotsEach: true,
-			items: 2,
-			margin: 230,
-			autoHeight: true,
-			responsive:{
-				0: {
-					items: 1,
-					margin: 50,
-				},
-				1080:{
-					items: 2,
-					margin: 50,
-				},
-				1280: {
-					items: 2,
-					margin: 230,
-				},
-			}
+			items: 3,
+			margin: 30,
+			// autoHeight: true,
+			// responsive:{
+			// 	0: {
+			// 		items: 1,
+			// 		margin: 50,
+			// 	},
+			// 	1080:{
+			// 		items: 2,
+			// 		margin: 50,
+			// 	},
+			// 	1280: {
+			// 		items: 2,
+			// 		margin: 230,
+			// 	},
+			// }
 		});
+
+		// $(".reviews").owlCarousel({
+		// 	loop: true,
+		// 	nav: false,
+		// 	dots: true,
+		// 	dotsEach: true,
+		// 	items: 2,
+		// 	margin: 230,
+		// 	autoHeight: true,
+		// 	responsive:{
+		// 		0: {
+		// 			items: 1,
+		// 			margin: 50,
+		// 		},
+		// 		1080:{
+		// 			items: 2,
+		// 			margin: 50,
+		// 		},
+		// 		1280: {
+		// 			items: 2,
+		// 			margin: 230,
+		// 		},
+		// 	}
+		// });
 
 	
 	
@@ -234,15 +258,30 @@ var landingFunctions = {
 				$(".footer__section").fadeIn(1000)
 				$(".card__section-wrapper").fadeIn(1000)
 
-				// $([document.documentElement, document.body]).animate(
-				// 	{
-				// 		scrollTop: $(".card__section-wrapper").offset().top,
-				// 	},
-				// 	1000
-				// );
+				$([document.documentElement, document.body]).animate(
+					{
+						scrollTop: $(".card__section-wrapper").offset().top,
+					},
+					1000
+				);
 
 			}, 3000)
 		}
+
+		// function operBarModal() {
+		// 	$(".bar__modal-wrapper").addClass("active")
+
+		// 	$(".bar__modal-wrapper").click(function(e) {
+		// 		console.log(e.target);
+		// 		if(e.target.closest(".bar__modal")) {
+		// 			return false;
+		// 		} else if(e.target.closest(".bar__modal-close")) {
+		// 			$(this).removeClass("active")
+		// 		} else {
+		// 			$(this).removeClass("active")
+		// 		}
+		// 	})
+		// }
 	},
 
 	card: function() {

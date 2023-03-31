@@ -1,0 +1,106 @@
+.galary__section {
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: linear-gradient(93.55deg, #663672 0%, #AA5AAF 100%);
+        border-radius: 50px 0px 0px 50px;
+    }
+}
+
+.container {
+}
+
+.galary__section-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.galary__block {
+    width: 440px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 92px 0;
+}
+
+.galary__text {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 22px;
+
+    &:last-child {
+        margin-bottom: 34px;
+    }
+
+    span {
+        color: #FFD600;
+        font-weight: 500;
+    }
+}
+
+.galary__btn {
+    background: #FFD600;
+    padding: 20px 62px;
+    color: #36253A;
+
+    &:hover {
+        background: #FAFF00;
+    }
+}
+
+.galary__slider {
+    width: 1050px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: -390px;
+
+    .owl-nav {
+        width: 213px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: 250px;
+
+
+        button {
+            width: 41px;
+            height: 30px;
+            background-image: url(../img/arrow.png) !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            background-size: contain !important;
+            transition: 0.3s ease;
+
+            &:hover {
+                background-image: url(../img/arrow-hover.png) !important;
+            }
+
+            span {
+                display: none;
+            }
+        }
+        .owl-next {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.galary__slide {
+    width: 330px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
