@@ -2,7 +2,7 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.time()
-		this.video()
+		// this.video()
 		this.bar()
 		this.card()
 		this.modal()
@@ -29,7 +29,6 @@ var landingFunctions = {
 			dotsEach: true,
 			items: 3,
 			margin: 30,
-			// autoHeight: true,
 			responsive:{
 				0: {
 					items: 1,
