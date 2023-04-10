@@ -1,0 +1,138 @@
+.review__section {
+    padding-top: 100px;
+}
+
+.review__section-wrapper {
+    width: 100%;
+    max-width: 655px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 72px 70px 27px;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #FEFFC6;
+        border-radius: 400px 400px 0px 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.review__title {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #145908;
+    margin-bottom: 30px;
+}
+
+.review__slider {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.review {
+    width: 100%;
+    height: auto;
+}
+
+.review__text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #222222;
+    margin-bottom: 18px;
+}
+
+.review__name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    color: #145908;
+}
+
+.add__review {
+    align-self: flex-end;
+}
+
+.owl-nav {
+    width: 835px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        width: 40px;
+        height: 40px;
+        background-image: url(../img/arrow.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: cover !important;
+        transition: 0.3s ease;
+        border-radius: 100%;
+
+        &:hover {
+            background-color: #FEFFC6 !important;
+        }
+
+        span {
+            display: none;
+        }
+    }
+
+    .owl-next {
+        transform: rotate(180deg);
+    }
+}
+
+.owl-dots {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15px;
+
+    button {
+        width: 10px;
+        height: 10px;
+        background: #0F3320 !important;
+        border-radius: 100%;
+        border: 2px solid #0F3320 !important;
+        margin-right: 10px;
+        position: relative;
+        z-index: 5;
+
+        &.active {
+            background: #FFFFFF !important;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.add__review {
+    font-size: 16px;
+    line-height: 1;
+    color: #444444;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    margin-top: -12px;
+}
