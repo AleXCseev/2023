@@ -74,6 +74,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    pointer-events: none;
 
     button {
         width: 40px;
@@ -84,6 +85,7 @@
         background-size: cover !important;
         transition: 0.3s ease;
         border-radius: 100%;
+        pointer-events: auto;
 
         &:hover {
             background-color: #FEFFC6 !important;
@@ -105,7 +107,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -15px;
+    margin-top: -14px;
 
     button {
         width: 10px;
@@ -134,5 +136,5 @@
     position: relative;
     z-index: 10;
     cursor: pointer;
-    margin-top: -12px;
+    margin-top: -11px;
 }

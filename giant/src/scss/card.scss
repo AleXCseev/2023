@@ -46,6 +46,7 @@
         background: #FFE600;
         margin-top: 10px;
         color: #033422;
+        cursor: pointer;
 
         &:hover {
             background: #BDFF00;
@@ -60,6 +61,35 @@
         color: rgba(255, 255, 255, 0.8);
     }
 
+}
+
+.card__block, .footer__content {
+    .old__price-text {
+        color: #FFFFFF;
+    }
+
+    .new__price-text {
+        color: #FFE500;
+    }
+
+    .order__btn {
+        background: #FFE600;
+        margin-top: 10px;
+        color: #033422;
+        cursor: pointer;
+
+        &:hover {
+            background: #BDFF00;
+        }
+    }
+
+    .header__timer-text, .header__timer-number,  .header__timer-divider {
+        color: #FFFFFF;
+    }
+
+    .header__timer-item {
+        color: rgba(255, 255, 255, 0.8);
+    }
 }
 
 .card__title {
