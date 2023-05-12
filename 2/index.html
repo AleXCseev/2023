@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta property="og:locale" content="id_ID">
+        <meta content="width=device-width,initial-scale=1.0,shrink-to-fit=no" name="viewport">
+        <title>fb (kbmlmcscl) Kukusan Bunga Rahma</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            * {
+            resize: none;
+            box-sizing: border-box;
+            border-style: solid;
+            border-width: 0;
+            outline: 0;
+            line-height: 1.4;
+            text-rendering: optimizeLegibility
+            }
+            body {
+            background: #fff
+            }
+            #app_root,
+            body,
+            input,
+            textarea {
+            font-family: Helvetica Neue, Helvetica
+            }
+            #app_root,
+            body {
+            line-height: 1.4;
+            font-weight: 400;
+            white-space: normal;
+            color: #31373d;
+            height: 100%;
+            margin: 0;
+            font-size: 14px;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: greyscale;
+            text-rendering: optimizeLegibility
+            }
+            .div {
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0
+            }
+            input {
+            margin: 0;
+            font-size: 15px;
+            background: transparent
+            }
+            .noscroll::-webkit-scrollbar {
+            width: 0;
+            height: 0
+            }
+            .noscroll::-moz-scrollbar {
+            width: 0;
+            height: 0
+            }
+            hr {
+            border-bottom: 1px solid rgba(0, 0, 0, .2);
+            margin-top: 12px;
+            margin-bottom: 12px
+            }
+            html {
+            height: 100%
+            }
+            a {
+            line-height: 1
+            }
+            .view {
+            min-height: 0;
+            min-width: 0;
+            justify-content: flex-start
+            }
+            .text,
+            .view {
+            position: relative
+            }
+            .text {
+            display: inline-block
+            }
+            .scroll-view {
+            position: relative;
+            overflow-x: hidden;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch
+            }
+            .scroll-view-horizontal {
+            overflow-y: hidden;
+            overflow-x: scroll;
+            flex-direction: row
+            }
+            .drf-pc ol,
+            .drf-pc ul {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center
+            }
+            .drf-pc ul,
+            .drf-pr ol {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-end
+            }
+            img {
+            position: relative
+            }
+            input::-webkit-input-placeholder,
+            textarea::-webkit-input-placeholder {
+            font-weight: 300;
+            color: rgba(0, 0, 0, .3)
+            }
+            input.has-error::-webkit-input-placeholder,
+            textarea.has-error::-webkit-input-placeholder {
+            color: #e5b3b3
+            }
+            input[disabled]::-webkit-input-placeholder,
+            textarea[disabled]::-webkit-input-placeholder {
+            color: #ddd
+            }
+            .DraftEditor-editorContainer,
+            .DraftEditor-root,
+            .public-DraftEditor-content {
+            font-size: 15px;
+            height: inherit
+            }
+            .DraftEditor-root {
+            position: relative;
+            max-width: 100%
+            }
+            .DraftEditor-editorContainer {
+            background-color: hsla(0, 0%, 100%, 0);
+            border-left: .1px solid transparent;
+            position: relative
+            }
+            .public-DraftEditor-block {
+            position: relative
+            }
+            .DraftEditor-alignLeft .public-DraftStyleDefault-block {
+            text-align: left
+            }
+            .DraftEditor-alignLeft .public-DraftEditorPlaceholder-root {
+            left: 0;
+            text-align: left
+            }
+            .DraftEditor-alignCenter .public-DraftStyleDefault-block {
+            text-align: center
+            }
+            .DraftEditor-alignCenter .public-DraftEditorPlaceholder-root {
+            margin: 0 auto;
+            text-align: center;
+            width: 100%
+            }
+            .DraftEditor-alignRight .public-DraftStyleDefault-block {
+            text-align: right
+            }
+            .DraftEditor-alignRight .public-DraftEditorPlaceholder-root {
+            right: 0;
+            text-align: right
+            }
+            .public-DraftEditorPlaceholder-root {
+            color: #bdc1c9;
+            position: absolute;
+            z-index: 0
+            }
+            .public-DraftEditorPlaceholder-hasFocus {
+            color: #bdc1c9
+            }
+            .DraftEditorPlaceholder-hidden {
+            display: none
+            }
+            .public-DraftStyleDefault-block {
+            position: relative;
+            white-space: pre-wrap
+            }
+            .public-DraftStyleDefault-ltr {
+            direction: ltr
+            }
+            .public-DraftStyleDefault-rtl {
+            direction: rtl;
+            text-align: right
+            }
+            .public-DraftStyleDefault-listLTR {
+            direction: ltr
+            }
+            .public-DraftStyleDefault-listRTL {
+            direction: rtl
+            }
+            .public-DraftStyleDefault-ol,
+            .public-DraftStyleDefault-ul {
+            margin: 8px 0;
+            padding: 0
+            }
+            .public-DraftStyleDefault-depth0.public-DraftStyleDefault-listLTR {
+            margin-left: 1em
+            }
+            .public-DraftStyleDefault-depth0.public-DraftStyleDefault-listRTL {
+            margin-right: 1em
+            }
+            .public-DraftStyleDefault-depth1.public-DraftStyleDefault-listLTR {
+            margin-left: 3em
+            }
+            .public-DraftStyleDefault-depth1.public-DraftStyleDefault-listRTL {
+            margin-right: 3em
+            }
+            .public-DraftStyleDefault-depth2.public-DraftStyleDefault-listLTR {
+            margin-left: 4.5em
+            }
+            .public-DraftStyleDefault-depth2.public-DraftStyleDefault-listRTL {
+            margin-right: 4.5em
+            }
+            .public-DraftStyleDefault-depth3.public-DraftStyleDefault-listLTR {
+            margin-left: 6em
+            }
+            .public-DraftStyleDefault-depth3.public-DraftStyleDefault-listRTL {
+            margin-right: 6em
+            }
+            .public-DraftStyleDefault-depth4.public-DraftStyleDefault-listLTR {
+            margin-left: 7.5em
+            }
+            .public-DraftStyleDefault-depth4.public-DraftStyleDefault-listRTL {
+            margin-right: 7.5em
+            }
+            .public-DraftStyleDefault-unorderedListItem {
+            list-style-type: square;
+            position: relative
+            }
+            .public-DraftStyleDefault-unorderedListItem.public-DraftStyleDefault-depth0 {
+            list-style-type: disc
+            }
+            .public-DraftStyleDefault-unorderedListItem.public-DraftStyleDefault-depth1 {
+            list-style-type: circle
+            }
+            .public-DraftStyleDefault-orderedListItem {
+            list-style-type: none;
+            position: relative
+            }
+            .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-listLTR:before {
+            left: -30px;
+            position: absolute;
+            text-align: right;
+            width: 30px
+            }
+            .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-listRTL:before {
+            position: absolute;
+            right: -30px;
+            text-align: left;
+            width: 30px
+            }
+            .public-DraftStyleDefault-orderedListItem:before {
+            content: counter(a) ". ";
+            counter-increment: a
+            }
+            .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth1:before {
+            content: counter(b) ". ";
+            counter-increment: b
+            }
+            .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth2:before {
+            content: counter(c) ". ";
+            counter-increment: c
+            }
+            .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth3:before {
+            content: counter(d) ". ";
+            counter-increment: d
+            }
+            .public-DraftStyleDefault-orderedListItem.public-DraftStyleDefault-depth4:before {
+            content: counter(e) ". ";
+            counter-increment: e
+            }
+            .public-DraftStyleDefault-depth0.public-DraftStyleDefault-reset {
+            counter-reset: a
+            }
+            .public-DraftStyleDefault-depth1.public-DraftStyleDefault-reset {
+            counter-reset: b
+            }
+            .public-DraftStyleDefault-depth2.public-DraftStyleDefault-reset {
+            counter-reset: c
+            }
+            .public-DraftStyleDefault-depth3.public-DraftStyleDefault-reset {
+            counter-reset: d
+            }
+            .public-DraftStyleDefault-depth4.public-DraftStyleDefault-reset {
+            counter-reset: e
+            }
+            .public-DraftStyleDefault-ol,
+            .public-DraftStyleDefault-ul {
+            display: inline-flex;
+            flex-direction: column
+            }
+            p.draft-block {
+            margin: 0
+            }
+            .draft-block-header-one {
+            font-weight: 700;
+            font-size: 23px
+            }
+            .draft-block-header-two {
+            font-weight: 500;
+            font-size: 20px
+            }
+            .draft-block-header-three {
+            font-weight: 500;
+            font-size: 17px
+            }
+            .draft-block-atomic,
+            .draft-block-header-one,
+            .draft-block-header-three,
+            .draft-block-header-two {
+            margin: 0
+            }
+            .draft-editor-editable .draft-block-header-one,
+            .draft-editor-editable .draft-block-header-three,
+            .draft-editor-editable .draft-block-header-two {
+            color: #333
+            }
+            h1,
+            h2,
+            h3,
+            h4 {
+            margin: 0
+            }
+            .email-view {
+            font-weight: "400"
+            }
+            .no-click-child * {
+            pointer-events: none
+            }
+            img {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges
+            }
+            [type=text]::-ms-clear,
+            input[type=text]::-ms-reveal {
+            : none;
+            width: 0;
+            height: 0
+            }
+            input[type=search]::-webkit-search-cancel-button,
+            input[type=search]::-webkit-search-decoration,
+            input[type=search]::-webkit-search-results-button,
+            input[type=search]::-webkit-search-results-decoration {
+            display: none
+            }
+            .rotate-animation {
+            -webkit-animation: a 1s infinite linear
+            }
+            @keyframes a {
+            0% {
+            transform: rotate(0deg)
+            }
+            to {
+            transform: rotate(359deg)
+            }
+            }
+            .draft-block.draft-block-blockquote {
+            font-size: 22px;
+            color: rgba(0, 0, 0, .44);
+            font-style: italic
+            }
+            .draft-quote {
+            position: relative;
+            padding-right: 4px;
+            padding-left: 4px
+            }
+            .draft-quote>span {
+            opacity: 0
+            }
+            .draft-quote:before {
+            position: absolute;
+            top: -8px;
+            font-size: 30px;
+            opacity: 1
+            }
+            .draft-quote-start:before {
+            right: 2px;
+            content: "\201C"
+            }
+            .draft-quote-end:before {
+            left: 2px;
+            content: "\201D"
+            }
+            .draft-right-align {
+            text-align: right
+            }
+            .draft-center-align {
+            text-align: center
+            }
+            .draft-justify-align {
+            text-align: justify
+            }
+            .dvd {
+            z-index: 1
+            }
+            .bgw>div,
+            .ibgw>div {
+            z-index: 2
+            }
+            @media print {
+            .no-print {
+            display: none !important;
+            height: 0
+            }
+            }
+            .bgw {
+            display: block
+            }
+            .ci_im_pd {
+            align-items: center;
+            justify-content: center;
+            padding-left: 18px;
+            padding-right: 18px
+            }
+            @media(max-width:800px) {
+            .ci_im_pd {
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0;
+            padding-bottom: 0
+            }
+            }
+            @media(max-width:800px) {
+            .chkfm_sb {
+            padding-left: 12px;
+            padding-right: 12px
+            }
+            }
+            .cmn_flex_wrapper {
+            align-items: stretch;
+            justify-content: stretch;
+            max-width: 100%
+            }
+            .cmn_flex_row {
+            flex-direction: row
+            }
+            .input_style_box_wrapper {
+            background-color: #ffffff;
+            border-color: rgba(0, 0, 0, .15);
+            border-radius: 4px;
+            padding-left: 6px;
+            padding-right: 6px;
+            padding-top: 3px;
+            padding-bottom: 3px
+            }
+            @media(max-width:800px) {
+            .input_style_box_wrapper {
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 5px;
+            padding-bottom: 5px
+            }
+            }
+            .input_style_box_wrapper_border.p1 {
+            border-width: 1px;
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-right-width: 1px
+            }
+            .input_style_box_wrapper_bg {
+            background-color: #ffffff
+            }
+            .chkfm_prod {
+            padding-left: 24px;
+            padding-right: 24px
+            }
+            @media(max-width:800px) {
+            .chkfm_prod {
+            padding-left: 12px;
+            padding-right: 12px
+            }
+            }
+            .cntr_inp_btn {
+            height: 28px;
+            width: 28px
+            }
+            @media(max-width:800px) {
+            .cntr_inp_btn {
+            height: 32px;
+            width: 32px
+            }
+            }
+            .cntr_inp_content {
+            height: 28px;
+            width: 50px
+            }
+            @media(max-width:800px) {
+            .cntr_inp_content {
+            height: 32px;
+            width: 70px
+            }
+            }
+            .btn {
+            flex-direction: row;
+            user-select: none;
+            border-width: 1px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 4px;
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-right-width: 1px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 5px;
+            padding-bottom: 5px
+            }
+            .btn_big.p1 {
+            padding-left: 19px;
+            padding-right: 19px;
+            padding-top: 8px;
+            padding-bottom: 8px
+            }
+            .btn_text {
+            font-weight: 400;
+            font-size: 15px
+            }
+        </style>
+    </head>
+    <body style="background-color:#ffffff" class="bdinit" cz-shortcut-listen="true">
+        <script>setTimeout(function () { document.body.classList.add('bdinit') }, 100)</script>
+        <div id="app_root">
+            <div style="align-items:stretch;position:relative;flex:1;height:100%" class="view div ">
+                <div style="flex:1;align-items:stretch" class="app-App  view div ">
+                    <div style="flex:1" class="page-Page  view div " id="top">
+                        <div style="flex:0 0 0;min-height:100vh;overflow-x:visible;overflow-y:visible"
+                            class="div scroll-view div-with-flex  ">
+                            <div class="view div ">
+                                <div style="padding-top:6px;padding-bottom:6px" class="bgw view div ">
+                                    <div class="ci_im_pd view div ">
+                                        <div style="width:100%;max-width:600px;border-width:0;border-top-width:0;border-bottom-width:0;border-left-width:0;border-right-width:0;text-decoration:none"
+                                            class="view div ">
+                                            <div style="background-color:rgba(255,255,255,0)"
+                                                class="view div ">
+                                                <div style="display:block;text-align:center;line-height:.8;overflow:hidden"
+                                                    class="view div ">
+                                                    <div style="width: 100%; padding-top: 16.7501%; background-color: rgb(208, 208, 208); display: block; opacity: 0; transition: opacity 0.3s ease 0s;"
+                                                        class="lazyimg_p  view div "></div>
+                                                    <picture
+                                                        style="top:0;left:0;right:0;bottom:0;position:absolute;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover">
+                                                        <source type="image/webp"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.webp 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.webp 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.webp 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.webp 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.webp 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.webp 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.webp 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.webp 800w">
+                                                        <img src="img/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.jpg"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.jpg 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.jpg 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.jpg 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.jpg 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.jpg 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.jpg 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.jpg 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQmY4MJujp2LhqUhQTrPUEYSzGyz5R6H5Sr5fXxLg.jpg 800w"
+                                                            draggable="false" alt="-"
+                                                            style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s ease 0s; opacity: 1;"
+                                                            class="lazyimg">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view div ">
+                                <div style="padding-top:6px;padding-bottom:6px" class="bgw view div ">
+                                    <div class="ci_im_pd view div ">
+                                        <div style="width:100%;max-width:600px;border-width:0;border-top-width:0;border-bottom-width:0;border-left-width:0;border-right-width:0;text-decoration:none"
+                                            class="view div ">
+                                            <div style="background-color:rgba(255,255,255,0)"
+                                                class="view div ">
+                                                <div style="display:block;text-align:center;line-height:.8;overflow:hidden"
+                                                    class="view div ">
+                                                    <div style="width: 100%; padding-top: 16.7133%; background-color: rgb(9, 9, 9); display: block; opacity: 0; transition: opacity 0.3s ease 0s;"
+                                                        class="lazyimg_p  view div "></div>
+                                                    <picture
+                                                        style="top:0;left:0;right:0;bottom:0;position:absolute;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover">
+                                                        <source type="image/webp"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.webp 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.webp 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.webp 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.webp 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.webp 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.webp 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.webp 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.webp 800w">
+                                                        <img src="img/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.jpg"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.jpg 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.jpg 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.jpg 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.jpg 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.jpg 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.jpg 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.jpg 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQXrFihUK14Ms9ZhQmzlDgyDSAFp4WSKueyBOila3lOQ.jpg 800w"
+                                                            draggable="false" alt="-"
+                                                            style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s ease 0s; opacity: 1;"
+                                                            class="lazyimg">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view div ">
+                                <div style="padding-top:6px;padding-bottom:6px" class="bgw view div ">
+                                    <div class="ci_im_pd view div ">
+                                        <div style="width:100%;max-width:600px;border-width:0;border-top-width:0;border-bottom-width:0;border-left-width:0;border-right-width:0;text-decoration:none"
+                                            class="view div ">
+                                            <div style="background-color:rgba(255,255,255,0)"
+                                                class="view div ">
+                                                <div style="display:block;text-align:center;line-height:.8;overflow:hidden"
+                                                    class="view div ">
+                                                    <div style="width: 100%; padding-top: 100.3%; background-color: rgb(233, 234, 234); display: block; opacity: 0; transition: opacity 0.3s ease 0s;"
+                                                        class="lazyimg_p  view div "></div>
+                                                    <picture
+                                                        style="top:0;left:0;right:0;bottom:0;position:absolute;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover">
+                                                        <source type="image/webp"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.webp 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.webp 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.webp 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.webp 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.webp 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.webp 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.webp 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.webp 800w">
+                                                        <img src="img/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.jpg"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.jpg 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.jpg 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.jpg 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.jpg 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.jpg 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.jpg 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.jpg 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQT3BVTDZYZ3h4QhQTr6SnNSOt0qpTNeykBE3y0dArw.jpg 800w"
+                                                            draggable="false" alt="-"
+                                                            style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s ease 0s; opacity: 1;"
+                                                            class="lazyimg">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view div ">
+                                <div style="padding-top:6px;padding-bottom:6px" class="bgw view div ">
+                                    <div class="ci_im_pd view div ">
+                                        <div style="width:100%;max-width:600px;border-width:0;border-top-width:0;border-bottom-width:0;border-left-width:0;border-right-width:0;text-decoration:none"
+                                            class="view div ">
+                                            <div style="background-color:rgba(255,255,255,0)"
+                                                class="view div ">
+                                                <div style="display:block;text-align:center;line-height:.8;overflow:hidden"
+                                                    class="view div ">
+                                                    <div style="width: 100%; padding-top: 100.3%; background-color: rgb(227, 223, 218); display: block; opacity: 0; transition: opacity 0.3s ease 0s;"
+                                                        class="lazyimg_p  view div "></div>
+                                                    <picture
+                                                        style="top:0;left:0;right:0;bottom:0;position:absolute;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover">
+                                                        <source type="image/webp"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.webp 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.webp 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.webp 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.webp 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.webp 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.webp 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.webp 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.webp 800w">
+                                                        <img src="img/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.jpg"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.jpg 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.jpg 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.jpg 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.jpg 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.jpg 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.jpg 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.jpg 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQT4WYddCCo6LSLhQTrGuAH4jasgHMTqe50jXyOHrDlg.jpg 800w"
+                                                            draggable="false" alt="-"
+                                                            style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s ease 0s; opacity: 1;"
+                                                            class="lazyimg">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view div ">
+                                <div style="padding-top:6px;padding-bottom:6px" class="bgw view div ">
+                                    <div class="ci_im_pd view div ">
+                                        <div style="width:100%;max-width:600px;border-width:0;border-top-width:0;border-bottom-width:0;border-left-width:0;border-right-width:0;text-decoration:none"
+                                            class="view div ">
+                                            <div style="background-color:rgba(255,255,255,0)"
+                                                class="view div ">
+                                                <div style="display:block;text-align:center;line-height:.8;overflow:hidden"
+                                                    class="view div ">
+                                                    <div style="width: 100%; padding-top: 100.286%; background-color: rgb(197, 196, 147); display: block; opacity: 0; transition: opacity 0.3s ease 0s;"
+                                                        class="lazyimg_p  view div "></div>
+                                                    <picture
+                                                        style="top:0;left:0;right:0;bottom:0;position:absolute;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover">
+                                                        <source type="image/webp"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.webp 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.webp 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.webp 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.webp 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.webp 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.webp 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.webp 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.webp 800w">
+                                                        <img src="img/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.jpg"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.jpg 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.jpg 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.jpg 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.jpg 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.jpg 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.jpg 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.jpg 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQmUE2GmcRB6Lt9hQTSdPkz9za4MVZSn6xHcZDcxSjzA.jpg 800w"
+                                                            draggable="false" alt="-"
+                                                            style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s ease 0s; opacity: 1;"
+                                                            class="lazyimg">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view div ">
+                                <div style="padding-top:6px;padding-bottom:6px" class="bgw view div ">
+                                    <div class="ci_im_pd view div ">
+                                        <div style="width:100%;max-width:600px;border-width:0;border-top-width:0;border-bottom-width:0;border-left-width:0;border-right-width:0;text-decoration:none"
+                                            class="view div ">
+                                            <div style="background-color:rgba(255,255,255,0)"
+                                                class="view div ">
+                                                <div style="display:block;text-align:center;line-height:.8;overflow:hidden"
+                                                    class="view div ">
+                                                    <div style="width: 100%; padding-top: 122.85%; background-color: rgb(219, 207, 193); display: block; opacity: 0; transition: opacity 0.3s ease 0s;"
+                                                        class="lazyimg_p  view div "></div>
+                                                    <picture
+                                                        style="top:0;left:0;right:0;bottom:0;position:absolute;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover">
+                                                        <source type="image/webp"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.webp 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.webp 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.webp 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.webp 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.webp 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.webp 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.webp 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.webp 800w">
+                                                        <img src="img/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.jpg"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.jpg 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.jpg 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.jpg 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.jpg 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.jpg 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.jpg 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.jpg 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBXX58M5KVzSKSucgE6nsMC0Yw.jpg 800w"
+                                                            draggable="false" alt="-"
+                                                            style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s ease 0s; opacity: 1;"
+                                                            class="lazyimg">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view div ">
+                                <div style="padding-top:6px;padding-bottom:6px" class="bgw view div ">
+                                    <div class="ci_im_pd view div ">
+                                        <div style="width:100%;max-width:600px;border-width:0;border-top-width:0;border-bottom-width:0;border-left-width:0;border-right-width:0;text-decoration:none"
+                                            class="view div ">
+                                            <div style="background-color:rgba(255,255,255,0)"
+                                                class="view div ">
+                                                <div style="display:block;text-align:center;line-height:.8;overflow:hidden"
+                                                    class="view div ">
+                                                    <div style="width: 100%; padding-top: 100.3%; background-color: rgb(45, 44, 44); display: block; opacity: 0; transition: opacity 0.3s ease 0s;"
+                                                        class="lazyimg_p  view div "></div>
+                                                    <picture
+                                                        style="top:0;left:0;right:0;bottom:0;position:absolute;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover">
+                                                        <img src="img/hQm6T2MM21QcClshQTBSFTLxUjrqCXStKZ2lvrbLkOJw.jpg"
+                                                            style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s ease 0s; opacity: 1;"
+                                                            class="lazyimg">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view div ">
+                                <div style="padding-top:6px;padding-bottom:6px" class="bgw view div ">
+                                    <div class="ci_im_pd view div ">
+                                        <div style="width:100%;max-width:600px;border-width:0;border-top-width:0;border-bottom-width:0;border-left-width:0;border-right-width:0;text-decoration:none"
+                                            class="view div ">
+                                            <div style="background-color:rgba(255,255,255,0)"
+                                                class="view div ">
+                                                <div style="display:block;text-align:center;line-height:.8;overflow:hidden"
+                                                    class="view div ">
+                                                    <div style="width: 100%; padding-top: 100.3%; background-color: rgb(210, 221, 188); display: block; opacity: 0; transition: opacity 0.3s ease 0s;"
+                                                        class="lazyimg_p  view div "></div>
+                                                    <picture
+                                                        style="top:0;left:0;right:0;bottom:0;position:absolute;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover">
+                                                        <source type="image/webp"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.webp 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.webp 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.webp 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.webp 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.webp 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.webp 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.webp 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.webp 800w">
+                                                        <img src="img/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.jpg"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.jpg 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.jpg 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.jpg 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.jpg 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.jpg 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.jpg 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.jpg 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQmUWEhhZsynLSphQTBnQpBOEOmX7HQR6fGEFFW5Qo3g.jpg 800w"
+                                                            draggable="false" alt="-"
+                                                            style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s ease 0s; opacity: 1;"
+                                                            class="lazyimg">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view div ">
+                                <div style="padding-top:6px;padding-bottom:6px" class="bgw view div ">
+                                    <div class="ci_im_pd view div ">
+                                        <div style="width:100%;max-width:600px;border-width:0;border-top-width:0;border-bottom-width:0;border-left-width:0;border-right-width:0;text-decoration:none"
+                                            class="view div ">
+                                            <div style="background-color:rgba(255,255,255,0)"
+                                                class="view div ">
+                                                <div style="display:block;text-align:center;line-height:.8;overflow:hidden"
+                                                    class="view div ">
+                                                    <div style="width: 100%; padding-top: 100.3%; background-color: rgb(232, 230, 230); display: block; opacity: 0; transition: opacity 0.3s ease 0s;"
+                                                        class="lazyimg_p  view div "></div>
+                                                    <picture
+                                                        style="top:0;left:0;right:0;bottom:0;position:absolute;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover">
+                                                        <source type="image/webp"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.webp 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.webp 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.webp 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.webp 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.webp 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.webp 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.webp 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.webp 800w">
+                                                        <img src="img/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.jpg"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.jpg 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.jpg 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.jpg 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.jpg 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.jpg 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.jpg 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.jpg 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQm6lv2s3GDTfKHhQTBFuQ65itu6C9QEidacdFtWdP8Q.jpg 800w"
+                                                            draggable="false" alt="-"
+                                                            style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s ease 0s; opacity: 1;"
+                                                            class="lazyimg">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view div ">
+                                <div style="padding-top:6px;padding-bottom:6px" class="bgw view div ">
+                                    <div class="ci_im_pd view div ">
+                                        <div style="width:100%;max-width:600px;border-width:0;border-top-width:0;border-bottom-width:0;border-left-width:0;border-right-width:0;text-decoration:none"
+                                            class="view div ">
+                                            <div style="background-color:rgba(255,255,255,0)"
+                                                class="view div ">
+                                                <div style="display:block;text-align:center;line-height:.8;overflow:hidden"
+                                                    class="view div ">
+                                                    <div style="width: 100%; padding-top: 136.15%; background-color: rgb(32, 31, 31); display: block; opacity: 0; transition: opacity 0.3s ease 0s;"
+                                                        class="lazyimg_p  view div "></div>
+                                                    <picture
+                                                        style="top:0;left:0;right:0;bottom:0;position:absolute;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover">
+                                                        <source type="image/webp"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.webp 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.webp 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.webp 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.webp 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.webp 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.webp 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.webp 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.webp 800w">
+                                                        <img src="img/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.jpg"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.jpg 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.jpg 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.jpg 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.jpg 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.jpg 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.jpg 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.jpg 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQT4iaHbjJbQipchQksQVvzrmeCBkhSiKd2OhErCrNxA.jpg 800w"
+                                                            draggable="false" alt="-"
+                                                            style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s ease 0s; opacity: 1;"
+                                                            class="lazyimg">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view div ">
+                                <div style="padding-top:6px;padding-bottom:6px" class="bgw view div ">
+                                    <div class="ci_im_pd view div ">
+                                        <div style="width:100%;max-width:600px;border-width:0;border-top-width:0;border-bottom-width:0;border-left-width:0;border-right-width:0;text-decoration:none"
+                                            class="view div ">
+                                            <div style="background-color:rgba(255,255,255,0)"
+                                                class="view div ">
+                                                <div style="display:block;text-align:center;line-height:.8;overflow:hidden"
+                                                    class="view div ">
+                                                    <div style="width: 100%; padding-top: 154.7%; background-color: rgb(227, 37, 44); display: block; opacity: 0; transition: opacity 0.3s ease 0s;"
+                                                        class="lazyimg_p  view div "></div>
+                                                    <picture
+                                                        style="top:0;left:0;right:0;bottom:0;position:absolute;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover">
+                                                        <source type="image/webp"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.webp 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.webp 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.webp 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.webp 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.webp 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.webp 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.webp 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.webp 800w">
+                                                        <img src="img/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.jpg"
+                                                            srcset="//bdsgp.my.id/img/100/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.jpg 100w,//bdsgp.my.id/img/200/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.jpg 200w,//bdsgp.my.id/img/300/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.jpg 300w,//bdsgp.my.id/img/400/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.jpg 400w,//bdsgp.my.id/img/500/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.jpg 500w,//bdsgp.my.id/img/600/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.jpg 600w,//bdsgp.my.id/img/700/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.jpg 700w,//bdsgp.my.id/img/800/bsogmh5mbsogrlyufj_2/hQT4tmNhVQ9l2AhQks2I316hycxujS5qvkDDec1pDNA.jpg 800w"
+                                                            draggable="false" alt="-"
+                                                            style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s ease 0s; opacity: 1;"
+                                                            class="lazyimg">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view div ">
+                                <div style="align-items:center" class="view div ">
+                                    <div style="max-width:1024px;width:100%;margin-left:auto;margin-right:auto"
+                                        class="view div ">
+                                        <div style="align-items:center" class="view div ">
+                                            <div style="max-width:480px;width:100%;padding-top:24px;margin-left:auto;margin-right:auto"
+                                                class="view div ">
+                                                <div style="flex-direction:column;flex-basis:auto;flex:1;padding-top:24px;padding-bottom:24px;background-color:#FAFAFA;box-shadow:none;border-color:rgba(0,0,0,.1);border-width:1px;border-top-width:1px;border-bottom-width:1px;border-left-width:1px;border-right-width:1px;-webkit-box-shadow:none"
+                                                    class="chkfm_prod view div ">
+
+                                                    <form class="form">
+                                                      <div class="input__wrapper">
+                                                            <input type="text" placeholder="Nama" required class="input">
+                                                      </div>
+                                                      <div class="input__wrapper">
+                                                            <input type="tel" placeholder="Telepon" required class="input">
+                                                      </div>
+                                                      <button type="submit" class="btn button-beli-sekarang btn_big p1 view div "
+                                                            style="border-color: rgba(47, 160, 15, 0.5); background-color: rgb(47, 160, 15); cursor: pointer;">
+                                                            <span class="text"
+                                                                style="width: 0px; overflow: hidden;">`</span><span
+                                                                class="btn_text text"
+                                                                style="color: rgb(255, 255, 255); font-size: 16px;">BELI
+                                                            SEKARANG</span>
+                                                        </button>
+                                                    </form>
+
+                                                    <div class="cmn_flex_wrapper view div ">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view div ">
+                                <div style="padding-top:6px;padding-bottom:6px" class="bgw view div ">
+                                    <div class="ci_im_pd view div ">
+                                        <div style="width:100%;max-width:600px;border-width:0;border-top-width:0;border-bottom-width:0;border-left-width:0;border-right-width:0;text-decoration:none"
+                                            class="view div ">
+                                            <div style="background-color:rgba(255,255,255,0)"
+                                                class="view div ">
+                                                <div style="display:block;text-align:center;line-height:.8;overflow:hidden"
+                                                    class="view div ">
+                                                    <div style="width: 100%; padding-top: 80.6%; background-color: rgb(188, 185, 180); display: block; opacity: 0; transition: opacity 0.3s ease 0s;"
+                                                        class="lazyimg_p  view div "></div>
+                                                    <picture
+                                                        style="top:0;left:0;right:0;bottom:0;position:absolute;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover">
+                                                        
+                                                        <img src="img/hQXUXWF5NS4CiCfhQm5FLu5XLGu7jTOqyKPeo5brrDw.jpg"
+                                                            alt="-"
+                                                            style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s ease 0s; opacity: 1;"
+                                                            class="lazyimg">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view div ">
+                                <div style="padding-top:6px;padding-bottom:6px" class="bgw view div ">
+                                    <div class="ci_im_pd view div ">
+                                        <div style="width:100%;max-width:600px;border-width:0;border-top-width:0;border-bottom-width:0;border-left-width:0;border-right-width:0;text-decoration:none"
+                                            class="view div ">
+                                            <div style="background-color:rgba(255,255,255,0)"
+                                                class="view div ">
+                                                <div style="display:block;text-align:center;line-height:.8;overflow:hidden"
+                                                    class="view div ">
+                                                    <div style="width: 100%; padding-top: 100%; background-color: rgb(217, 217, 211); display: block; opacity: 0; transition: opacity 0.3s ease 0s;"
+                                                        class="lazyimg_p  view div "></div>
+                                                    <picture
+                                                        style="top:0;left:0;right:0;bottom:0;position:absolute;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover">
+                                                        
+                                                        <img src="img/hQXBr4MywUri02phQm5P2UlzZ4vz0SF2imef3gV3w.jpg"
+                                                            alt="-"
+                                                            style="width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s ease 0s; opacity: 1;"
+                                                            class="lazyimg">
+                                                    </picture>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .action_icon_circle {
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-top: 4px;
+            padding-bottom: 4px
+            }
+            @media(max-width:800px) {
+            .action_icon_circle {
+            padding-left: 6px;
+            padding-right: 6px;
+            padding-top: 6px;
+            padding-bottom: 6px
+            }
+            }
+            .link {
+            font-weight: 400;
+            color: #1976D2
+            }
+            .rpd.p1 {
+            padding-left: 18px;
+            padding-right: 18px;
+            padding-top: 12px;
+            padding-bottom: 12px
+            }
+            @media(max-width:800px) {
+            .rpd.p1 {
+            padding-left: 12px;
+            padding-right: 12px
+            }
+            }
+            @media(max-width:800px) {
+            .fill_om {
+            flex: 1
+            }
+            }
+            @media(min-width:801px) {
+            :not(.antiMaxW801).cmn_show_mobile {
+            display: none
+            }
+            }
+            @media(max-width:800px) {
+            .cmn_show_hide {
+            display: none
+            }
+            }
+            @media(min-width:801px) {
+            :not(.antiMaxW801).fcmn_show_mobile {
+            display: none !important
+            }
+            }
+            @media(max-width:800px) {
+            .fcmn_show_hide {
+            display: none !important
+            }
+            }
+            .color_swatch_groups {
+            flex-direction: row
+            }
+            @media(max-width:800px) {
+            .color_swatch_groups {
+            flex-direction: column
+            }
+            }
+            .color_swatch_group {
+            flex-direction: column
+            }
+            @media(max-width:800px) {
+            .color_swatch_group {
+            flex-direction: row-reverse
+            }
+            }
+            .color_swatch_cell {
+            cursor: pointer;
+            border-top-width: 1px;
+            border-left-width: 1px;
+            border-color: rgba(0, 0, 0, .1);
+            height: 20px;
+            width: 20px
+            }
+            @media(max-width:800px) {
+            .color_swatch_cell {
+            flex-direction: row-reverse;
+            border-left-width: 0;
+            border-right-width: 1px
+            }
+            }
+            .alignable_block_wrapper {
+            margin-top: 12px;
+            margin-bottom: 12px
+            }
+            .alignable_center_with_mxw {
+            max-width: 80%
+            }
+            @media(max-width:800px) {
+            .alignable_center_with_mxw {
+            max-width: 100%
+            }
+            }
+            .alignable_block_halfc {
+            clear: both;
+            display: inline
+            }
+            @media(max-width:500px) {
+            .alignable_block_halfc {
+            display: flex;
+            width: 100%;
+            align-items: center
+            }
+            }
+            .alignable_block_half {
+            max-width: 61.80%
+            }
+            @media(max-width:500px) {
+            .alignable_block_half {
+            align-items: center;
+            max-width: 100%
+            }
+            }
+            @media(max-width:500px) {
+            .alignable_editor_half {
+            align-items: center;
+            max-width: 80%
+            }
+            }
+            .alignable_block_left {
+            margin-right: 24px;
+            float: left
+            }
+            @media(max-width:500px) {
+            .alignable_block_left {
+            margin-right: 0
+            }
+            }
+            .alignable_block_right {
+            margin-left: 24px;
+            float: right
+            }
+            @media(max-width:500px) {
+            .alignable_block_right {
+            margin-left: 0
+            }
+            }
+            .aliganble_center_ctr {
+            clear: both;
+            align-items: center
+            }
+            @media(max-width:500px) {
+            .aliganble_center_ctr {
+            margin-left: -18px;
+            margin-right: -18px
+            }
+            }
+            @media(max-width:400px) {
+            .editor-table-wrapper {
+            margin-left: -8px;
+            margin-right: -8px
+            }
+            }
+            .notification_shadow {
+            margin-bottom: 12px
+            }
+            @media(max-width:400px) {
+            .notification_shadow {
+            margin-bottom: 1px
+            }
+            }
+            .notification_wrapper {
+            padding-left: 24px;
+            padding-top: 6px;
+            padding-right: 12px;
+            padding-bottom: 12px
+            }
+            @media(max-width:400px) {
+            .notification_wrapper {
+            width: 100%;
+            padding-bottom: 16px;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0
+            }
+            }
+            .notification_block {
+            border-top-width: 1px;
+            width: 340px
+            }
+            @media(max-width:400px) {
+            .notification_block {
+            border-top-width: 0;
+            margin-top: -1px;
+            width: 100%
+            }
+            }
+            .btn_input {
+            padding-left: 14px;
+            padding-right: 14px;
+            padding-top: 3px;
+            padding-bottom: 3px
+            }
+            @media(max-width:800px) {
+            .btn_input {
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 5px;
+            padding-bottom: 5px
+            }
+            }
+            .btn_bigr.p1 {
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-top: 12px;
+            padding-bottom: 12px
+            }
+            .btn_icon_only {
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 5px;
+            padding-bottom: 5px
+            }
+            .input_style_input {
+            border-width: 0;
+            background-color: rgba(255, 255, 255, 0);
+            border-top-width: 0;
+            border-bottom-width: 0;
+            border-left-width: 0;
+            border-right-width: 0
+            }
+            .input_style_disabled_box_wrp.p1 {
+            cursor: not-allowed;
+            border-color: rgba(0, 0, 0, .05);
+            background-color: #fafafa
+            }
+            .input_style_one_line {
+            height: 29px
+            }
+            @media(max-width:800px) {
+            .input_style_one_line {
+            height: 33px
+            }
+            }
+            .input_style_input_text {
+            font-weight: 400;
+            font-size: 15px
+            }
+            @media(max-width:800px) {
+            .input_style_input_text {
+            font-size: 16px
+            }
+            }
+            .btn_inp_i {
+            margin-top: 16px
+            }
+            @media(max-width:800px) {
+            .btn_inp_i {
+            margin-top: 18px
+            }
+            }
+            .input_style_popover.p1 {
+            margin-left: 60px;
+            margin-bottom: -12px
+            }
+            .err_p {
+            background-color: #EF5350;
+            z-index: 9;
+            border-radius: 4px;
+            position: absolute;
+            right: -6px;
+            margin-left: -20px;
+            margin-bottom: -12px;
+            bottom: 100%;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-top: 4px;
+            padding-bottom: 4px
+            }
+            .ch_iwn {
+            margin-top: 23px
+            }
+            @media(max-width:800px) {
+            .ch_iwn {
+            margin-top: 26px
+            }
+            }
+            .selectable_icon {
+            height: 19px
+            }
+            @media(max-width:800px) {
+            .selectable_icon {
+            height: 22px
+            }
+            }
+            .searchinput_wrapper {
+            height: 29px
+            }
+            @media(max-width:800px) {
+            .searchinput_wrapper {
+            height: 33px
+            }
+            }
+            .responsive-group-of-item {
+            display: inline-block;
+            text-align: left;
+            vertical-align: top
+            }
+            .rsp-grp-hide-next+div {
+            display: none
+            }
+            .rsp-grp-end-rch+div+.endReach {
+            display: none
+            }
+            .edit_checkout_price {
+            text-align: right
+            }
+            @media(max-width:500px) {
+            .edit_checkout_price {
+            text-align: left
+            }
+            }
+            @media(min-width:800px) {
+            :not(.antiMaxW800).chkfm_rgh {
+            order: 2
+            }
+            }
+            @media(max-width:800px) {
+            .chkfm_btm {
+            background-color: white;
+            border-top-width: 1px;
+            z-index: 1;
+            order: 2
+            }
+            }
+            @media(max-width:800px) {
+            .chkfm_lg {
+            justify-content: center
+            }
+            }
+            .chkfm_f {
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-top: 36px;
+            padding-bottom: 36px
+            }
+            @media(max-width:800px) {
+            .chkfm_f {
+            padding-left: 12px;
+            padding-right: 12px
+            }
+            }
+        </style>
+    </body>
+</html>

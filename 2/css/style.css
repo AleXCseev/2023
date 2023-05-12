@@ -1,0 +1,28 @@
+.form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input__wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.input {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background: #fff !important;
+    opacity: 1;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.input::placeholder {
+    color: #000;
+}
