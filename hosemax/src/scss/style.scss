@@ -1,0 +1,25 @@
+@import "fonts";
+@import "main";
+@import "header";
+@import "info";
+@import "video";
+@import "advantage";
+@import "card";
+@import "review";
+@import "footer";
+@import "modal";
+
+@media (max-width: 1920px) {
+    .advantage__section-wrapper {
+        position: relative;
+    }
+    .advantage__section-wrapper-2 {
+        position: relative;
+    }
+    .advantage__decor {
+        right: -390px;
+    }
+    .advantage__decor-2 {
+        left: -390px;
+    }
+}
