@@ -29,6 +29,18 @@ var landingFunctions = {
 			margin: 50,
 			stagePadding: 25,
 			autoHeight: true,
+			responsive:{
+				0:{
+					items:1,
+					dots: true,
+					stagePadding: 20,
+				},
+				1080:{
+					items: 2,
+					dots: false,
+					stagePadding: 25,
+				}
+			}
 		});
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
