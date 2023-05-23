@@ -1,0 +1,137 @@
+.review__section-wrapper {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:before {
+        content: "";
+        width: 800px;
+        height: 800px;
+        border-radius: 100%;
+        background: #FFC700;
+        opacity: 0.15;
+        filter: blur(100px);
+        position: absolute;
+        bottom: -368px;
+        right: -640px;
+        z-index: -1;
+    }
+}
+
+.review__slider {
+    padding: 0 100px;
+    position: relative;
+}
+
+.review__slide {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.review__img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 10px 20px rgba(36, 121, 250, 0.25);
+    border-radius: 30px;
+    margin-bottom: 13px;
+}
+
+.review__text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.review__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review__footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.review__name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    color: #0A1E39;
+    margin-bottom: 12px;
+}
+
+.review__rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        width: 18px !important;
+        height: 18px !important;
+        margin-right: 3px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.review__quote {
+    width: 50px !important;
+    height: auto;
+}
+
+.owl-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    button {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 1px solid #2479FA !important;
+        background-image: url(../img/arrow.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        transition: 0.3s ease;
+
+        &.active {
+            background-color: rgba(255, 255, 255, 0.5) !important;
+        }
+
+        span {
+            display: none;
+        }
+    }
+
+    .owl-next {
+        transform: rotate(180deg);
+    }
+}
+
+.add__review {
+    margin-top: 25px;
+    align-self: flex-end;
+    margin-right: 100px;
+    font-size: 16px;
+    line-height: 1;
+    color: #444444;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
