@@ -119,10 +119,15 @@
 .advantage__manual {
     width: 380px;
     height: auto;
-    transform: rotate(30deg);
     position: absolute;
     top: 310px;
     right: -500px;
+
+    img {
+        transform: rotate(30deg);
+        width: 100%;
+        height: auto;
+    }
 }
 
 .advantage__text {

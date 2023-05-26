@@ -15,14 +15,20 @@
     .header__img {
         top: 0px;
     }
+
 }
 
 .footer__manual {
     position: absolute;
     top: 190px;
     right: -110px;
-    transform: rotate(5.76deg);
     width: 420px;
+
+    img {
+        transform: rotate(5.76deg);
+        width: 100%;
+        height: auto;
+    }
 }
 
 .footer__line {
@@ -47,4 +53,8 @@
     a:hover {
         text-decoration: underline;
     }
+}
+
+.footer__prod-mobile {
+    display: none;
 }
