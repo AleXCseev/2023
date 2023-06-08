@@ -54,12 +54,15 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
-	border-radius: 40px;
+	// border-radius: 40px;
 	margin-right: 50px;
 	width: 217px;
 	height: 217px;
 	flex-shrink: 0;
 	transition: 0.3s ease;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 
 	div {
 		display: flex;
@@ -82,16 +85,16 @@
 }
 
 .discount__block-1 {
-	background: url(../img/discount-1.png);
+	background-image: url(../img/discount-1.png);
 }
 
 .discount__block-2 {
-	background: url(../img/discount-2.png);
+	background-image: url(../img/discount-2.png);
 
 }
 
 .discount__active {
-    background: url(../img/discount-3.png);
+    background-image: url(../img/discount-3.png);
 }
 
 .bar__text {
