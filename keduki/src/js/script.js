@@ -50,6 +50,7 @@ var landingFunctions = {
 			dotsEach: true,
 			items: 2,
 			margin: 50,
+			autoHeight: true,
 			responsive:{
 				0: {
 					items: 1,
