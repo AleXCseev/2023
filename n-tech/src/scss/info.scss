@@ -1,0 +1,166 @@
+.info__section-wrapper {
+    padding-bottom: 354px;
+}
+
+.info__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 139px;
+    gap: 30px;
+    position: relative;
+}
+
+.info__flower-1 {
+    position: absolute;
+    width: 663px;
+    height: auto;
+    bottom: -578px;
+    right: -580px;
+}
+
+.info__item {
+    width: auto;
+    height: auto;
+    padding: 0 30px 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.info__item-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    margin-bottom: 23px;
+}
+
+.info__item-title {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.info__item-text {
+    font-size: 20px;
+    text-align: center;
+    color: #222222;
+}
+
+.info__item-1 {
+    background: #E3F4FE;
+    border: 1px solid #B6E3FF;
+
+    .info__item-icon {
+        background: #B6E3FF;
+        border: 1px solid #009DFF;
+    }
+    
+    .info__item-title {
+        color: #009DFF;
+    }
+}
+
+.info__item-2 {
+    background: #FFEDE3;
+    border: 1px solid #FFDCC8;
+
+    .info__item-icon {
+        background: #FFDCC8;
+        border: 1px solid #FF5421;
+    }
+    
+    .info__item-title {
+        color: #FF5421;
+    }
+}
+
+.info__item-3 {
+    background: #FCEFFF;
+    border: 1px solid #F3D7FF;
+
+    .info__item-icon {
+        background: #F3D7FF;
+        border: 1px solid #960DFD;
+    }
+    
+    .info__item-title {
+        color: #960DFD;
+    }
+}
+
+
+.info__title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #007319;
+    margin-bottom: 137px;
+}
+
+.info__wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.info__block {
+    width: 340px;
+    height: auto;
+    position: relative;
+}
+
+.info__text {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #222222;
+    margin-bottom: 34px;
+
+    &:last-of-type {
+        margin-bottom: 42px;
+    }
+}
+
+.info__img-1 {
+    position: absolute;
+    width: 554px;
+    height: auto;
+    border-radius: 30px;
+    left: -604px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.info__img-2 {
+    position: absolute;
+    bottom: -150px;
+    left: -1090px;
+    width: auto;
+    height: auto;
+
+    img {
+        width: 563px;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    &:before {
+        content: "";
+        width: 412px;
+        height: 363px;
+        position: absolute;
+        top: -363px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url(../img/info-flower-2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}

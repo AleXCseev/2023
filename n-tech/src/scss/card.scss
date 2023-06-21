@@ -1,0 +1,165 @@
+.card__section-wrapper {
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    background: #B6E3FE;
+    border: 1px solid #009DFF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    margin-bottom: 100px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.card__left {
+    width: 485px;
+    height: auto;
+    background: #E3F4FE;
+    padding: 45px 50px 46px;
+}
+
+.card__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 11px;
+}
+
+.card__logo {
+    width: auto;
+    height: 30px;
+    margin-right: 20px;
+}
+
+
+.card__name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #007319;
+    margin-bottom: 10px;
+
+    p {
+        width: auto;
+        flex-shrink: 0;
+        margin-right: 20px;
+    }
+}   
+
+.card__raiting {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        margin-right: 2px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.card__price {
+    margin-bottom: 9px;
+
+    .price {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .new__price {
+        margin-right: 24px;
+        font-size: 30px;
+    }
+
+    .old__price {
+        font-size: 20px;
+        margin-left: 0;
+        font-weight: 500;
+
+        &:before {
+            height: 2px;
+        }
+    }
+}
+
+.card__info {
+    font-weight: 500;
+    font-size: 18px;
+    color: #222222;
+    margin-bottom: 14px;
+
+    span {
+        color: #FF3D00;
+    }
+}
+
+.card__text {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #222222;
+    padding: 12px 0;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        width: calc(100% + 100px);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -50px;
+        background: #CBEBFE;
+        z-index: -1;
+    }
+}
+
+.card__form {
+    width: 100%;
+    height: auto;
+}
+
+.card__input-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card__input {
+    width: 100%;
+    height: auto;
+    border: 1px solid #009DFF;
+    border-radius: 16px;
+    padding: 15px 20px; 
+    font-size: 18px;
+    line-height: 1;
+    color: #222222;
+    transition: 0.3s ease;
+
+    &:focus {
+        background-color: #CBEBFE;
+    }
+}
+
+.card__select {
+    background-image: url(../img/tringle.png);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+
+.card__submit {
+    cursor: pointer;
+    margin-top: 6px;
+}
