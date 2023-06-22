@@ -2,7 +2,7 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.time()
-		this.bar()
+		// this.bar()
 		this.modal()
 	}, 
 
@@ -10,37 +10,62 @@ var landingFunctions = {
 		
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 0;
-			// var cardHeight = $("#card").outerHeight(false)
-			// var windowHeight = $(window).height()
+			var cardHeight = $("#order").outerHeight(false)
+			var windowHeight = $(window).height()
 
 			$('html, body')
 				.stop()
-				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		})
 
-		function copyTitle() {
-			if($(window).width() <= 1080) {
-				var title = $(".info__title").clone()
-				$(".info__title").hide()
-				title.addClass("info__title-clone")
-				if($(".info__title-clone").length) {
-					return false
-				} else {
-					$(".info__item-1").prepend(title)
-				}
-			} else {
-				$(".info__title").show()
-				$(".info__title-clone").remove()
-			}
+		// function copyTitle() {
+		// 	if($(window).width() <= 1080) {
+		// 		var title = $(".info__title").clone()
+		// 		$(".info__title").hide()
+		// 		title.addClass("info__title-clone")
+		// 		if($(".info__title-clone").length) {
+		// 			return false
+		// 		} else {
+		// 			$(".info__item-1").prepend(title)
+		// 		}
+		// 	} else {
+		// 		$(".info__title").show()
+		// 		$(".info__title-clone").remove()
+		// 	}
+		// }
+
+		// copyTitle()
+
+		// $(window).resize(function() {
+		// 	copyTitle()
+		// })
+
+		function cardSlider (selector) {
+			var owl = $(selector + " .card__main-foto").owlCarousel({
+				items: 1,
+				margin: 100,
+				dots: false,
+				nav: false,
+				loop: true,
+				mouseDrag: false,
+				touchDrag: false,
+				animateOut: 'fadeOut',
+			});
+	
+			$(selector + " .card__foto").each(function() {
+				$(this).click(function() {
+					$(selector + " .card__foto").removeClass("active")
+					var position = $(this).data("slide") - 1
+					owl.trigger("to.owl.carousel", [position, 300])
+					$(this).addClass("active")
+				})
+			})
 		}
-
-		copyTitle()
-
-		$(window).resize(function() {
-			copyTitle()
-		})
+	
+		cardSlider(".card__1")
+		cardSlider(".card__2")
 		
 
 		var owl = $(".galary").owlCarousel({
@@ -52,24 +77,51 @@ var landingFunctions = {
 			margin: 50,
 			mouseDrag: false,
 			touchDrag: false,
-			// responsive:{
-			// 	0: {
-			// 		items: 1,
-			// 		dots: true,
-			// 	},
-			// 	1080:{
-			// 		items: 2,
-			// 		dots: false,
-			// 	},
-			// }
+			responsive:{
+				0: {
+					dots: true,
+				},
+				1080:{
+					dots: false,
+				},
+			}
 		});
 
-		$('.next__btn').click(function() {
+		$('.prev__btn').click(function() {
 			owl.trigger('next.owl.carousel');
 		})
 
-		$('.prev__btn').click(function() {
+		$('.next__btn').click(function() {
 			owl.trigger('prev.owl.carousel');
+		})
+
+
+		var owlReview = $(".review__slider").owlCarousel({
+			loop: true,
+			nav: false,
+			dots: false,
+			dotsEach: true,
+			items: 3,
+			margin: 30,
+			autoHeight: true,
+			responsive:{
+				0: {
+					items: 1,
+					dots: true,
+				},
+				1081:{
+					items: 3,
+					dots: false,
+				},
+			}
+		});
+
+		$('.review__prev-btn').click(function() {
+			owlReview.trigger('next.owl.carousel');
+		})
+
+		$('.review__next-btn').click(function() {
+			owlReview.trigger('prev.owl.carousel');
 		})
 
 

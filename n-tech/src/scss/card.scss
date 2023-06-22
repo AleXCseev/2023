@@ -1,4 +1,15 @@
 .card__section-wrapper {
+    padding-bottom: 139px;
+    position: relative;
+}
+
+.card__flower {
+    position: absolute;
+    width: 475px;
+    height: auto;
+    top: -154px;
+    right: -413px;
+    z-index: 1;
 }
 
 .card {
@@ -12,7 +23,7 @@
     overflow: hidden;
     margin-bottom: 100px;
 
-    &:last-of-type {
+    &:last-child {
         margin-bottom: 0;
     }
 }
@@ -22,6 +33,7 @@
     height: auto;
     background: #E3F4FE;
     padding: 45px 50px 46px;
+    position: relative;
 }
 
 .card__header {
@@ -163,3 +175,93 @@
     cursor: pointer;
     margin-top: 6px;
 }
+
+
+.card__right {
+    width: 583px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: -625px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: stretch;
+}
+
+.card__main-foto {
+    width: 451px;
+    height: auto;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.card__main-slide {
+    width: 100%;
+    height: auto;
+}
+
+.card__other-foto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 102px;
+    height: auto;
+}
+
+.card__foto {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    opacity: 0.7;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    &:hover {
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    }
+
+    &.active {
+        opacity: 1;
+    }
+}
+
+.card__delivery {
+    width: 100%;
+    max-width: 543px;
+    height: auto;
+    margin: auto;
+    margin-top: -50px;
+    padding: 25px 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #960DFD;
+    background: #F3D7FF;
+}
+
+.card__delivery-icon {
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    width: 139px;
+    height: auto;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.card__delivery-text {
+    color: #111;
+    font-size: 20px;
+}
+
