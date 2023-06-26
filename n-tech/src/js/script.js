@@ -80,9 +80,13 @@ var landingFunctions = {
 			responsive:{
 				0: {
 					dots: true,
+					mouseDrag: true,
+					touchDrag: true,
 				},
 				1080:{
 					dots: false,
+					mouseDrag: false,
+					touchDrag: false,
 				},
 			}
 		});
@@ -103,15 +107,22 @@ var landingFunctions = {
 			dotsEach: true,
 			items: 3,
 			margin: 30,
-			autoHeight: true,
+			autoHeight: false,
+			autoplay: true,
+			autoplayTimeout: 5000,
+			autoplayHoverPause: true,
 			responsive:{
 				0: {
 					items: 1,
 					dots: true,
+					autoplay: false,
+					autoHeight: true,
 				},
 				1081:{
 					items: 3,
 					dots: false,
+					autoplay: true,
+					autoHeight: false,
 				},
 			}
 		});
@@ -155,58 +166,40 @@ var landingFunctions = {
 	},
 
 	time: function() {
-		Date.prototype.daysInMonth = function () {
-			return 32 - new Date(this.getFullYear(), this.getMonth(), 32).getDate();
-		};
-		
-		if (!String.prototype.padStart) {
-			String.prototype.padStart = function padStart(targetLength, padString) {
-				targetLength = targetLength >> 0; //truncate if number or convert non-number to 0;
-				padString = String((typeof padString !== 'undefined' ? padString : ' '));
-				if (this.length > targetLength) {
-					return String(this);
-				}
-				else {
-					targetLength = targetLength - this.length;
-					if (targetLength > padString.length) {
-						padString += padString.repeat(targetLength / padString.length); //append to original to ensure we are longer than needed
-					}
-					return padString.slice(0, targetLength) + String(this);
-				}
-			};
+		var saleStart = 7;
+		var saleEnd = 7;
+		var localStartDate = parseInt(localStorage.getItem("saleStartDate") || (Date.now() - 86400000*saleStart));
+		var localEndDate = parseInt(localStorage.getItem("saleEndDate") || (Date.now() + 86400000*saleEnd));
+
+		function pad(num) {
+			return ("0" + num).substr(-2);
+		}		  
+
+		function saleDates() {
+
+			if (Date.now() >= new Date(localEndDate).getTime()) {
+				localStartDate = Date.now() - 86400000*saleEnd;
+				localEndDate = Date.now() + 86400000*saleEnd;
+				// console.log(localStartDate, localEndDate, 2)
+			}
+			localStorage.setItem("saleStartDate", localStartDate);
+
+			localStorage.setItem("saleEndDate", localEndDate);
+			// console.log(localStartDate, localEndDate, 3)
+
+			var ds = new Date(localStartDate)
+			var de = new Date(localEndDate)
+
+			// console.log(ds, de, 4)
+
+			var dateStartResult = pad(ds.getDate()) + "." + pad(ds.getMonth() + 1) + "." + ds.getFullYear();
+			var dateEndResult = pad(de.getDate()) + "." + pad(de.getMonth() + 1) + "." + de.getFullYear();
+			$(".js-date-sale-start").text(dateStartResult);
+			$(".date").text(dateEndResult);
+
 		}
 
-		function getDate(plusDays) {
-			var today = new Date();
-			var dd = String(today.getDate() + plusDays).padStart(2, '0');
-			var mm = String(today.getMonth() + 1).padStart(2, '0');
-			if (+dd < 0) {
-				mm = String(today.getMonth()).padStart(2, '0');
-			}
-			
-			var yyyy = String(today.getFullYear());
-			yyyy = yyyy.substr(yyyy.length - 2);
-			var currentDaysInMonth = new Date().daysInMonth()
-			if (+dd > currentDaysInMonth) {
-				dd = String(dd - currentDaysInMonth).padStart(2, '0');
-				mm = String(+mm + 1).padStart(2, '0');
-			}
-			if (+dd < 0) {
-				dd = String(currentDaysInMonth + +dd).padStart(2, '0');
-			}
-			if (+dd == 0) {
-				dd = "01"
-			}
-			return dd + "." + mm + "." + yyyy
-		}
-
-		// $(".date__1").text(getDate(-5));
-    	// $(".date__2").text(getDate(2));
-
-		$(".date").text(getDate(2))
-		// $(".card__date .date").text(getDate(2))
-		
-		// $(".year").text(new Date().getFullYear())
+		saleDates()
 	},
 
 	bar: function() {

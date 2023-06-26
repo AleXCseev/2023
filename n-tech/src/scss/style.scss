@@ -337,6 +337,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-radius: 30px;
     }
     .card__other-foto {
         width: 100%;
@@ -511,8 +512,15 @@
         font-size: 5.5vw;
     }
     .header__list {
-        gap: 7.5vw;
+        gap: 0;
         margin-bottom: 7.5vw;
+    }
+    .header__list-item {
+        margin-right: 6vw;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
     .new__price {
         font-size: 8vw;
@@ -527,6 +535,12 @@
         border-radius: 4.5vw;
         padding: 4.5vw;
         font-size: 4.5vw;
+
+        &:hover {
+            &:before {
+                transform: none;
+            }
+        }
     }
     .header__date {
         font-size: 4.5vw;
@@ -535,6 +549,7 @@
     .info__item {
         padding: 0 7.5vw 10.5vw;
         border-radius: 7.5vw;
+        margin-bottom: 19vw;
     }
     .info__item-title {
         font-size: 5.5vw;
@@ -555,17 +570,22 @@
         }
     }
     .info__items {
-        gap: 19vw;
-        margin-bottom: 17vw;
+        gap: 0;
+        margin-bottom: 0;
     }
     .info__flower-1 {
         width: 65vw;
-        bottom: 3vw;
+        bottom: 22vw;
         right: -32vw;
     }
     .info__title {
         font-size: 7.5vw;
         margin-bottom: 10vw;
+
+        span {
+            display: block;
+            text-align: center;
+        }
     }
     .info__img-1 {
         margin-bottom: 5vw;
@@ -599,13 +619,16 @@
         font-size: 5.5vw;
     }
     .galary__wrapper {
-        gap: 7.5vw;
+        gap: 0;
     }
     .galary__section-wrapper {
         padding-bottom: 19vw;
     }
     .card__left {
         padding: 12vw 4.8vw 10vw;
+    }
+    .galary__btns {
+        margin-top: -30px;
     }
     .card__logo {
         height: 7.2vw;
@@ -645,8 +668,18 @@
         margin-bottom: 4.8vw;
     }
     .card__other-foto {
-        gap: 2.5vw;
+        gap: 0;
         margin-bottom: 4.5vw;
+    }
+    .card__foto {
+        margin-right: 2.5vw;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .price {
+        width: 100%;
     }
     .card__text {
         font-size: 4.8vw;
