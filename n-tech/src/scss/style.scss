@@ -180,7 +180,10 @@
     .header__boot {
         bottom: 50px !important;
         left: -50px !important;
-        transform: scaleX(-1);
+
+        img {
+            transform: scaleX(-1);
+        }
     }
     .header__list {
         display: flex;

@@ -5,7 +5,7 @@
     position: relative;
 
     .header__content {
-        width: 400px;
+        width: 460px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -18,7 +18,7 @@
 
     .header__img {
         right: auto;
-        left: -1387px;
+        left: -1340px;
         bottom: 39px;
         top: auto;
         z-index: 1;
@@ -30,10 +30,13 @@
     }
 
     .header__boot {
-        transform: scaleX(-1);
         bottom: -4px;
         left: auto;
         right: 6px;
+
+        img {
+            transform: scaleX(-1);
+        }
     }
 }
 
