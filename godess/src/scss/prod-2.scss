@@ -1,0 +1,230 @@
+.prod_2 {
+    background: #F9E0FE;
+
+    .review_slide {
+        background-color: #F1CCF8;
+    }
+
+   
+
+    svg {
+        fill: #582163;
+    }
+
+    .review_slide__name {
+        color: #582163;
+    }
+
+    .review_btn {
+        border: 1px solid #582163;
+
+        &:hover {
+            background-color: #582163;
+
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+
+    .prod_1__card {
+        background-color: #F1CCF8;
+    }
+
+    .prod_1__card-title {
+        color: #582163;
+    }
+
+    .card_input__wrapper {
+        border: 1px solid #A577AE;
+    }
+
+    .card_input__icon {
+        background-color: #A577AE;
+    }
+}
+
+.prod_2__info-text-red {
+    color: #FE2167;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 13px;
+}
+
+.prod_2__info {
+    padding: 82px 350px 82px 0;
+    position: relative;
+    z-index: 1;
+
+    img {
+        width: 300px;
+        position: absolute;
+        right: 0;
+        top: -50px;
+    }
+
+    &:before {
+        content: "";
+        border: 1px solid rgba(88, 33, 99, 0.30);
+        width: 1330px;
+        height: 100%;
+        background: #F1CCF8;
+        border-radius: 0px 0px 50px 0px;
+        position: absolute;
+        top: 0;
+        right: 200px;
+        z-index: -1;
+    }
+}
+
+.prod_2__text {
+    color: #111;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.prod_2__advantages {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 175px;
+    margin-bottom: 120px;
+    position: relative;
+
+    .header_wrapper {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.prod_2__advantage-column {
+    width: 310px;
+    height: auto;
+}
+
+.prod_2__advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    flex-shrink: 0;
+    margin-bottom: 45px;
+}
+
+.prod_2__advantage-icon {
+    width: 100px;
+    height: 100px;
+    background: #582163;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-bottom: 16px;
+}
+
+.prod_2__advantage-title {
+    color: #582163;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.prod_2__advantage-text {
+    color: #111;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.prod_2__advantage-left {
+    align-items: flex-start;
+
+    .prod_2__advantage-title {
+        text-align: left;
+    }
+
+    .prod_2__advantage-text {
+        text-align: left;
+    }
+}
+
+.prod_2__advantage-prod {
+    width: 418px;
+    height: auto;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.prod_2__comparison {
+    padding-bottom: 140px;
+}
+
+.comparison_title {
+    color: #582163;
+    text-align: center;
+    font-family: "Philosopher", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.07;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.comparison_text {
+    color: #FE2167;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 41px;
+}
+
+.comparison_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.comparison_item {
+    width: 31.5%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+        border: 3px solid #582163;
+    }
+}
+
+.comparison_item__jaw {
+    width: 105px;
+    height: 44px;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.comparison_item__left {
+    background: #582163;
+}
+
+.comparison_item__right {
+    background: #FE2167;
+}
