@@ -19,6 +19,30 @@ var landingFunctions = {
 			e.preventDefault();
 		})
 
+
+		function copyTitle() {
+			if($(window).width() <= 1080) {
+				var title = $(".prod_1__info-title-1").clone()
+				$(".prod_1__info-title-1").hide()
+				title.addClass("info__title-clone")
+				if($(".info__title-clone").length) {
+					return false
+				} else {
+					$(".prod_1__info").prepend(title)
+				}
+			} else {
+				$(".prod_1__info-title-1").show()
+				$(".info__title-clone").remove()
+			}
+		}
+
+		copyTitle()
+
+		$(window).resize(function() {
+			copyTitle()
+		})
+		
+
 		var owl = $(".review_slider").owlCarousel({
 			loop: true,
 			nav: false,
@@ -27,6 +51,14 @@ var landingFunctions = {
 			items: 2,
 			margin: 30,
 			autoHeight: true,
+			responsive:{
+				0:{
+					items:1,
+				},
+				1081:{
+					items:2,
+				}
+			}
 		});
 
 		$('.prev_btn').click(function() {
