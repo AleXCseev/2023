@@ -20,26 +20,28 @@ var landingFunctions = {
 		})
 
 
-		function copyTitle() {
+		function copyTitle(selector) {
 			if($(window).width() <= 1080) {
-				var title = $(".prod_1__info-title-1").clone()
-				$(".prod_1__info-title-1").hide()
+				var title = $(selector + " .prod_1__info-title-1").clone()
+				$(selector + " .prod_1__info-title-1").hide()
 				title.addClass("info__title-clone")
-				if($(".info__title-clone").length) {
+				if($(selector + " .info__title-clone").length) {
 					return false
 				} else {
-					$(".prod_1__info").prepend(title)
+					$(selector + " .prod_1__info").prepend(title)
 				}
 			} else {
-				$(".prod_1__info-title-1").show()
-				$(".info__title-clone").remove()
+				$(selector + " .prod_1__info-title-1").show()
+				$(selector + " .info__title-clone").remove()
 			}
 		}
 
-		copyTitle()
+		copyTitle(".prod_1")
+		copyTitle(".prod_2")
 
 		$(window).resize(function() {
-			copyTitle()
+			copyTitle(".prod_1")
+			copyTitle(".prod_2")
 		})
 		
 
@@ -54,6 +56,11 @@ var landingFunctions = {
 			responsive:{
 				0:{
 					items:1,
+					dots: true,
+				},
+				541:{
+					items:1,
+					dots: false,
 				},
 				1081:{
 					items:2,
