@@ -39,8 +39,6 @@ var landingFunctions = {
 			showBtn()
 		}
 	
-		
-
 
 		function copyTitle(selector) {
 			if($(window).width() <= 1080) {
