@@ -1157,7 +1157,8 @@
 
         .header_info {
             margin-top: 2vw;
-            font-size: 3vw;
+            font-size: 2.9vw;
+            justify-content: flex-start;
         }
     }
     .card_input__wrapper {
@@ -1520,4 +1521,41 @@
     .fancybox-content {
         padding: 44px 20px;
     }
+    .fixed {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        // display: block;
+        width: 100%;
+        height: auto;
+        background: #FFD600;
+        z-index: 10;
+    }
+
+    .fixed__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vw 0;
+
+        .order_btn {
+            width: 71%; 
+            padding: 4vw;
+            font-size: 4.8vw;
+        }
+        .header_wrapper__text {
+            font-size: 4vw;
+            line-height: 1.3;
+            margin-bottom: 0;
+        }
+
+        .new__price {
+            font-size: 5vw;
+        }
+    }
+
+    
+    .new__price {
+    }
+    
 }

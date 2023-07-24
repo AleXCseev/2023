@@ -1757,8 +1757,8 @@ body {
   color: #555;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1;
-  margin-top: 12px;
+  line-height: 1.5;
+  margin-top: 10px;
   cursor: pointer;
 }
 .add_review:hover {
@@ -1981,6 +1981,9 @@ body {
 .prod_2 svg {
   fill: #582163;
 }
+.prod_2 .prod_1__info-title, .prod_2 .add_review {
+  color: #582163;
+}
 .prod_2 .review_slide__name {
   color: #582163;
 }
@@ -1992,6 +1995,13 @@ body {
 }
 .prod_2 .review_btn:hover svg {
   fill: #fff;
+}
+.prod_2 .owl-dots button {
+  background-color: #582163 !important;
+  border-color: #582163 !important;
+}
+.prod_2 .review_slide__footer:before {
+  background: #582163;
 }
 .prod_2 .prod_1__card {
   background-color: #F1CCF8;
@@ -2845,6 +2855,10 @@ body {
 }
 .footer__line-item a:hover {
   text-decoration: underline;
+}
+
+.fixed {
+  display: none;
 }
 
 @media (max-width: 1480px) {
@@ -4092,7 +4106,10 @@ body {
   }
   .card_form .header_info {
     margin-top: 2vw;
-    font-size: 3vw;
+    font-size: 2.9vw;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
   }
   .card_input__wrapper {
     height: 12vw;
@@ -4491,5 +4508,39 @@ body {
   }
   .fancybox-content {
     padding: 44px 20px;
+  }
+  .fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #FFD600;
+    z-index: 10;
+  }
+  .fixed__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    padding: 1vw 0;
+  }
+  .fixed__wrapper .order_btn {
+    width: 71%;
+    padding: 4vw;
+    font-size: 4.8vw;
+  }
+  .fixed__wrapper .header_wrapper__text {
+    font-size: 4vw;
+    line-height: 1.3;
+    margin-bottom: 0;
+  }
+  .fixed__wrapper .new__price {
+    font-size: 5vw;
   }
 }

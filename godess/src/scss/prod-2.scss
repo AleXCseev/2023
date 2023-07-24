@@ -13,6 +13,10 @@
         fill: #582163;
     }
 
+    .prod_1__info-title, .add_review {
+        color: #582163;
+    }
+
     .review_slide__name {
         color: #582163;
     }
@@ -27,6 +31,17 @@
                 fill: #fff;
             }
         }
+    }
+
+    .owl-dots {
+        button {
+            background-color: #582163 !important;
+            border-color: #582163 !important;
+        }
+    }
+
+    .review_slide__footer:before {
+        background: #582163;
     }
 
     .prod_1__card {

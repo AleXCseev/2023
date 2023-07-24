@@ -19,6 +19,28 @@ var landingFunctions = {
 			e.preventDefault();
 		})
 
+		function showBtn() {
+			var $element = $('.header_section');
+	
+			$(window).scroll(function() {
+				var scroll = $(window).scrollTop() + $(window).height();
+				var offset = $element.offset().top + $element.height();
+				var bodyOffset = $("body").offset().top + $("body").height() - 700;
+
+				if ((scroll < bodyOffset) && (scroll > offset)) {
+					$(".fixed").fadeIn(500);
+				} else {
+					$(".fixed").fadeOut(500)
+				}
+			});
+		}
+
+		if($(window).width() <= 540) {
+			showBtn()
+		}
+	
+		
+
 
 		function copyTitle(selector) {
 			if($(window).width() <= 1080) {
