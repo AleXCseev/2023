@@ -1,0 +1,139 @@
+.info_section__wrapper {
+    padding: 175px 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.info_decor {
+    position: absolute;
+}
+
+.info_decor-1 {
+    top: 277px;
+    left: -160px;
+}
+
+.info_decor-2 {
+    bottom: -110px;
+    left: -230px;
+
+    img {
+        transform: rotate(15deg);
+    }
+}
+
+.info_title {
+    color: #FF3700;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.27;
+    margin-bottom: 31px;
+    width: 100%;
+    max-width: 750px;
+}
+
+.info_text {
+    color: #222;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 85px;
+}
+
+.info_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.info_item {
+    width: 265px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+.info_item__title {
+    color: #2A3689;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.info_item__text {
+    color: #222;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.info_item__img {
+    width: 200px;
+    height: auto;
+}
+
+.info_item__line {
+    position: absolute;
+    
+}
+
+.info_item__1 {
+    .info_item__line {
+        left: 48%;
+        bottom: -450px;
+    }
+}
+
+.info_item__2 {
+    .info_item__line {
+        left: 36%;
+        bottom: -147px;
+    }
+}
+
+.info_item__3 {
+    .info_item__line {
+        left: -8%;
+        bottom: -184px;
+    }
+}
+
+.info_prod {
+    width: 653px;
+    height: auto;
+    position: relative;
+}
+
+.info_prod__1 {
+    position: absolute;
+    bottom: -18%;
+    left: -39%;
+    width: 72%;
+}
+
+.info_prod__2 {
+    position: absolute;
+    bottom: -19%;
+    right: -42%;
+    width: 72%;
+}
+
+.info_prod__img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    transform: scaleX(-1);
+}
