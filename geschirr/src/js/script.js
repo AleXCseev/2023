@@ -41,29 +41,29 @@ var landingFunctions = {
 		}
 	
 
-		function copyTitle(selector) {
-			if($(window).width() <= 1080) {
-				var title = $(selector + " .prod_1__info-title-1").clone()
-				$(selector + " .prod_1__info-title-1").hide()
-				title.addClass("info__title-clone")
-				if($(selector + " .info__title-clone").length) {
-					return false
-				} else {
-					$(selector + " .prod_1__info").prepend(title)
-				}
-			} else {
-				$(selector + " .prod_1__info-title-1").show()
-				$(selector + " .info__title-clone").remove()
-			}
-		}
+		// function copyTitle(selector) {
+		// 	if($(window).width() <= 1080) {
+		// 		var title = $(selector + " .prod_1__info-title-1").clone()
+		// 		$(selector + " .prod_1__info-title-1").hide()
+		// 		title.addClass("info__title-clone")
+		// 		if($(selector + " .info__title-clone").length) {
+		// 			return false
+		// 		} else {
+		// 			$(selector + " .prod_1__info").prepend(title)
+		// 		}
+		// 	} else {
+		// 		$(selector + " .prod_1__info-title-1").show()
+		// 		$(selector + " .info__title-clone").remove()
+		// 	}
+		// }
 
-		copyTitle(".prod_1")
-		copyTitle(".prod_2")
+		// copyTitle(".prod_1")
+		// copyTitle(".prod_2")
 
-		$(window).resize(function() {
-			copyTitle(".prod_1")
-			copyTitle(".prod_2")
-		})
+		// $(window).resize(function() {
+		// 	copyTitle(".prod_1")
+		// 	copyTitle(".prod_2")
+		// })
 		
 
 		var owl = $(".review_slider").owlCarousel({
@@ -71,31 +71,31 @@ var landingFunctions = {
 			nav: false,
 			dots: false,
 			dotsEach: true,
-			items: 2,
+			items: 3,
 			margin: 30,
 			autoHeight: true,
-			responsive:{
-				0:{
-					items:1,
-					dots: true,
-				},
-				541:{
-					items:1,
-					dots: false,
-				},
-				1081:{
-					items:2,
-				}
-			}
+			// responsive:{
+			// 	0:{
+			// 		items:1,
+			// 		dots: true,
+			// 	},
+			// 	541:{
+			// 		items:1,
+			// 		dots: false,
+			// 	},
+			// 	1081:{
+			// 		items:2,
+			// 	}
+			// }
 		});
 
-		$('.prev_btn').click(function() {
-			owl.trigger('next.owl.carousel');
-		})
+		// $('.prev_btn').click(function() {
+		// 	owl.trigger('next.owl.carousel');
+		// })
 
-		$('.next_btn').click(function() {
-			owl.trigger('prev.owl.carousel');
-		})
+		// $('.next_btn').click(function() {
+		// 	owl.trigger('prev.owl.carousel');
+		// })
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
 
