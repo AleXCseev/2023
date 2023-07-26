@@ -8,6 +8,11 @@
 
 .header_decor {
     position: absolute;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .header_decor-1 {
@@ -325,5 +330,45 @@
         margin-right: 20px;
         flex-shrink: 0;
         margin-top: 5px;
+    }
+}
+
+
+
+
+
+
+.header_2 {
+    .header__items {
+        width: 320px;
+    }
+    .header_item {
+        width: 144px;
+    }
+    .header_timer {
+        top: 20px;
+        right: -310px;
+    }
+    .header_decor-2 {
+        width: 368px;
+        left: -383px;
+    }
+    .header_img__man {
+        bottom: -1px;
+        width: 112%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .header_img__prod {
+        bottom: -5%;
+        left: 50%;
+        width: 86%;
+        transform: translateX(-50%);
+    }
+    .header_content {
+        padding: 100px 0 115px;
+    }
+    .header_info__block {
+        margin-bottom: -69px;
     }
 }
