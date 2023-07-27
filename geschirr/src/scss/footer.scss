@@ -28,6 +28,10 @@
     .header_decor-2 {
         bottom: -5px;
     }
+
+    .header_decor-4 {
+        display: none;
+    }
 }
 
 .footer__line {
@@ -49,8 +53,13 @@
 .footer__line-item {
     color: #7D7D7D;
     font-size: 14px;
+    text-align: center;
 
     a:hover {
         text-decoration: underline;
     }
+}
+
+.fixed {
+    display: none;
 }
