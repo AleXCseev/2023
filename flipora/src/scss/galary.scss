@@ -1,11 +1,25 @@
-
 .galary_section__wrapper {
+    padding-bottom: 60px;
+
+    .tiktok_logo {
+        margin-bottom: 30px;
+    }
 }
-.header_title {
-}
-.tiktok_logo {
-}
+
 .galary_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
+
 .galary_item {
+    width: 189px;
+    height: auto;
+    margin-bottom: 30px;
+
+    video {
+        width: 100%;
+        height: auto;
+    }
 }

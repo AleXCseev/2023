@@ -10,7 +10,7 @@ var landingFunctions = {
 
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 0;
-			var cardHeight = $("#card").outerHeight(false)
+			var cardHeight = $(".card").outerHeight(false)
 			var windowHeight = $(window).height()
 
 			$('html, body')
@@ -20,27 +20,37 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		function initOwl(selector) {
-			var owl = $(selector).owlCarousel({
-				loop: true,
-				margin: 10,
-				nav: true,
-				items: 1,
-				dots: false,
-				autoHeight: true,
-			})
+		var owl = $(".review_slider").owlCarousel({
+			loop: true,
+			nav: false,
+			dots: false,
+			dotsEach: true,
+			items: 3,
+			margin: 30,
+			autoHeight: true,
+			responsive:{
+				0:{
+					items:1,
+					dots: true,
+				},
+				541:{
+					items:2,
+					dots: true,
+				},
+				1081:{
+					items:3,
+					dots: false,
+				}
+			}
+		});
 
-			owl.on("changed.owl.carousel", function(e) {
-				var index = e.relatedTarget.relative(e.item.index);
-				$(this).closest(".slider__wrapper").find(".current__number").html(index + 1);
-			});
-		}
+		$('.next_btn').click(function() {
+			owl.trigger('next.owl.carousel');
+		})
 
-		initOwl('.galary__slider')
-		initOwl('.card__slider-1')
-		initOwl('.card__slider-2')
-		initOwl('.card__slider-3')
-		initOwl('.review__slider')
+		$('.prev_btn').click(function() {
+			owl.trigger('prev.owl.carousel');
+		})
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
 
