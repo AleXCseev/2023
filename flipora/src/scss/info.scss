@@ -45,13 +45,13 @@
     &:before {
         background: #00F2EA;
         transform: translate(-10px, -10px);
-        animation: title 5s infinite;
+        animation: title 10s infinite;
     }
 
     &:after {
         background: #FF004F;
         transform: translate(10px, 10px);
-        animation: title-reverse 5s infinite;
+        animation: title-reverse 10s infinite;
     }
 }
 

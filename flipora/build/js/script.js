@@ -1,8 +1,7 @@
 var landingFunctions = {
 	init: function() {
 		this.initLibraris()
-		this.time()
-		this.card()
+		// this.time()
 		this.modal()
 	}, 
 
@@ -20,37 +19,33 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		var owl = $(".review_slider").owlCarousel({
+		$(".card_slider").owlCarousel({
 			loop: true,
-			nav: false,
-			dots: false,
+			nav: true,
+			dots: true,
 			dotsEach: true,
-			items: 3,
+			items: 1,
 			margin: 30,
-			autoHeight: true,
-			responsive:{
-				0:{
-					items:1,
-					dots: true,
-				},
-				541:{
-					items:2,
-					dots: true,
-				},
-				1081:{
-					items:3,
-					dots: false,
-				}
-			}
 		});
 
-		$('.next_btn').click(function() {
-			owl.trigger('next.owl.carousel');
-		})
+		$(".review_slider").owlCarousel({
+			loop: true,
+			nav: true,
+			dots: true,
+			dotsEach: true,
+			items: 1,
+			margin: 30,
+			autoHeight: true,
+			video:true,
+		});
 
-		$('.prev_btn').click(function() {
-			owl.trigger('prev.owl.carousel');
-		})
+		$(".card_input").focus(function() {
+			$(this).parent().addClass("focus")
+		});
+
+		$(".card_input").focusout(function() {
+			$(this).parent().removeClass("focus")
+		});
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
 
@@ -137,39 +132,9 @@ var landingFunctions = {
 		$(".date").text(getDate(2))
 	},
 
-	card: function() {
-		function cardImg(selector) {
-			function toggleDataSrcAtribute(string) {
-				$(selector + " .card__slide img").each(function() {
-					$(this)
-						// .hide()
-						.attr("src",  $(this).attr("data-" + string))
-						.parent().attr("href",  $(this).attr("data-" + string))
-						// .fadeIn(1000)
-				})
-			}
-	
-			$(selector + " .card__color-btn").click(function () {
-				var color = $(this).data("color")
-				toggleDataSrcAtribute(color)
-	
-				$(selector + " .card__color-btn").removeClass("active")
-				$(this).addClass("active")
-
-				var price = $(this).data("price")
-				var currency = $(this).data("currency")
-				$(this).closest(".card").find(".new__price").hide().text(Number(price) + " " + currency).fadeIn(600)
-				$(this).closest(".card").find(".old__price").hide().text((Number(price) * 2) + " " + currency).fadeIn(600)
-			})
-		}
-		
-		cardImg(".card__2")
-		cardImg(".card__3")
-	},
-
 	modal: function() {
 		function modal() {
-			$(".add__review").click(function () {
+			$(".add_review").click(function () {
 				$(".modal__review").addClass("active")
 			})
 	

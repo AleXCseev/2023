@@ -42,10 +42,13 @@
     justify-content: center;
     align-items: center;
     margin-top: -20px;
+    z-index: 1000;
 }
 
 .header_decor {
     position: absolute;
+    display: inline-block;
+    width: auto;
 
     img {
         animation: anim 5s infinite;
@@ -90,7 +93,7 @@
     right: 14px;
 
     img {
-        animation-delay: 1s;
+        animation-delay: 1.5s;
     }
 }
 
@@ -136,6 +139,7 @@
     border-radius: 10px;
     position: relative;
     margin-bottom: 35px;
+    width: 100%;
 
     &:before {
         opacity: 0;

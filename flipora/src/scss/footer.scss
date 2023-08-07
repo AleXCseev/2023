@@ -1,0 +1,32 @@
+.footer_section {
+    padding-bottom: 50px;
+
+    .header_section__wrapper {
+        padding: 25px 0 0;
+    }
+}
+
+.footer__line {
+    background-color: #FFB7C5;
+}
+
+.footer__line-wrapper {
+    padding: 10px 0;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.fancybox-content {
+    padding: 44px 20px;
+}
