@@ -1,0 +1,155 @@
+.advantage__section-wrapper {
+    padding: 108px 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantage__section-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 161px;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.advantage__column {
+    width: 340px;
+    height: auto;
+}
+
+.advantage {
+    margin-bottom: 105px;
+}
+
+.advantage__icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+
+
+    img {
+        position: relative;
+        z-index: 1;
+    }
+
+    &:after {
+        content: "";
+        width: 200%;
+        height: 200%;
+        background-image: url(../img/splash.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+}
+
+.advantage__title {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+.advantage__text {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.advantage__1, .advantage__2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .advantage__title, .advantage__text {
+        text-align: right;
+    }
+
+}
+
+.advantage__center {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: -203px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.advantage__dots {
+    width: 845px;
+    height: auto;
+}
+
+.advantage__phone {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.advantage__phone-1 {
+    left: 43%;
+    animation: phones-1 20s infinite;
+    transform: translate(-50%, -60%);
+}
+
+.advantage__phone-2 {
+    left: 57%;
+    animation: phones-2 20s infinite;
+    transform: translate(-50%, -40%);
+    // animation-direction: reverse;
+    // animation-delay: 5s;
+}
+
+@keyframes phones-1 {
+   0% {
+        transform: translate(-50%, -60%);
+   }
+   25% {
+        transform: translate(-50%, -40%);
+   }
+   45% {
+        transform: translate(-50%, -40%);
+   }
+   70% {
+        transform: translate(-50%, -60%);
+   }
+}
+
+@keyframes phones-2 {
+    0% {
+         transform: translate(-50%, -40%);
+    }
+    25% {
+         transform: translate(-50%, -60%);
+    }
+    45% {
+         transform: translate(-50%, -60%);
+    }
+    70% {
+         transform: translate(-50%, -40%);
+    }
+ }
