@@ -552,6 +552,59 @@
         margin-bottom: 15px;
         border-radius: 0;
     }
+    .owl-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 21px;
+
+        button {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-image: url(../img/arrow.png) !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            border: 2px solid #fff !important;
+
+            span {
+                display: none;
+            }
+        }
+    }
+    .owl-next {
+        transform: rotate(180deg);
+    }
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -30px;
+        margin-bottom: 16px;
+
+        button {
+            width: 10px;
+            height: 10px;
+            margin-right: 10px;
+            border-radius: 100%;
+            background: #E43625 !important;
+
+            &.active {
+                background: #FFF !important;
+            }
+        }
+    }
+    .add__review {
+        align-self: center;
+        margin: 0;
+    }
+    .footer__section .header__phones {
+        bottom: auto;
+        right: auto;
+    }
+    .footer__phone-1 {
+        position: relative;
+    }
 }
 
 @media (max-width: 700px) {
@@ -1024,5 +1077,63 @@
     }
     .card__galary-2 img {
         width: 63vw;
+    }
+    .review__section-title {
+        font-size: 7.8vw;
+        margin-bottom: 10vw;
+    }
+    .review__slide {
+        border-radius: 4.8vw;
+        padding: 5.5vw 7vw;
+    }
+    .review__name {
+        font-size: 4.8vw;
+        margin-bottom: 2.2vw;
+    }
+    .review__quote {
+        width: 16vw !important;
+    }
+    .review__header {
+        margin-bottom: 4.8vw;
+    }
+    .review__text {
+        font-size: 4.8vw;
+    }
+    .review__section-wrapper {
+        padding-bottom: 9vw;
+    }
+    .footer__section .header__content {
+        padding: 12vw 0 11vw;
+    }
+    .footer__phone-1 {
+        position: relative;
+        width: 46.4vw;
+        left: auto;
+        right: -46vw;
+    }
+    .footer__section .header__phones {
+        width: 100%;
+        position: relative;
+    }
+    .footer__phone-2, .footer__phone-3, .footer__phone-4 {
+        width: 29vw;
+    }
+    .footer__phone-2 {
+        left: 31vw;
+    }
+    .footer__phone-3 {
+        left: 16vw;
+    }
+    .footer__phone-4 {
+        left: 0vw;
+    }
+    .footer__line-wrapper {
+        padding: 15px 0 100px;
+    }
+    .footer__section {
+        background-image: url(../img/footer-bg-mobile.jpg);
+    }
+    .fancybox-content {
+        padding: 44px 20px;
     }
 }
