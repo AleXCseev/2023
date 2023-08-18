@@ -32,10 +32,16 @@
         width: 300px;
     }
     .advantage {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
+    }
+    .advantage__3 {
+        margin-bottom: 90px;
     }
     .advantage__phone {
         width: 220px;
+    }
+    .advantage__text {
+        font-size: 18px;
     }
     .fixed__wrapper {
         padding: 15px;
@@ -55,11 +61,11 @@
         font-size: 16px;
     }
     .fixed__delivery {
-        padding: 15px;
-        font-size: 20px;
+        padding: 15px 10px;
+        font-size: 18px;
     }
     .fixed__delivery img {
-        height: 24px;
+        height: 18px;
         margin-right: 10px;
     }
     .advantage__section-title {
@@ -173,6 +179,12 @@
     .card__logo-2 {
         width: 100%;
     }
+    .card__galary-1 {
+        width: 620px;
+    }
+    .card__galary-2 img {
+        width: 230px;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -254,6 +266,9 @@
     .advantage__center {
         margin-top: -100px;
     }
+    .advantage__phone {
+        animation: none;
+    }
     .advantage__dots {
         width: 750px;
     }
@@ -301,7 +316,7 @@
         top: -96px;
         width: auto;
         right: auto;
-        left: 28%;
+        left: 31%;
 
         .info__item-title {
             text-align: center;
@@ -343,11 +358,11 @@
     }
     .info__item-title {
         text-align: right;
-        font-size: 30px;
+        font-size: 28px;
     }
     .info__item-text {
         text-align: right;
-        font-size: 20px;
+        font-size: 18px;
     }
     .info__item-2 {
         top: 50px;
@@ -367,15 +382,15 @@
         right: -6px;
     }
     .info__item-3 {
-        width: 160px;
+        width: 140px;
         top: 150px;
     }
     .info__item-3 .info__line {
         width: 168px;
         right: auto;
-        left: -146px;
-        top: 50px;
-        height: 56px;
+        left: -168px;
+        top: 43px;
+        height: 66px;
         border: none;
         border-top: 2px solid #fff;
         border-left: 2px solid #fff;
@@ -399,7 +414,7 @@
         }
     }
     .info__item-4 {
-        top: 350px;
+        top: 360px;
     }
     .info__item-4 .info__line {
         width: 161px;
@@ -627,13 +642,19 @@
         margin-bottom: -3vw;
     }
     .header__title {
-        font-size: 8.5vw;
-        margin-bottom: 7.5vw;
+        font-size: 8vw;
+        margin-bottom: 7vw;
     }
     .header__country {
         width: 82vw;
-        font-size: 5.8vw;
+        font-size: 5.4vw;
         margin-bottom: 4.5vw;
+        text-align: center;
+
+        span {
+            display: inline-block;
+            width: 100%;
+        }
 
         img {
             width: 17vw;
@@ -641,10 +662,10 @@
         }
     }
     .header__country span {
-        padding: 0 4.8vw;
+        padding: 0 4.6vw;
     }
     .header__text {
-        font-size: 8.5vw;
+        font-size: 8vw;
     }
     .header__phones {
         margin-bottom: 30vw;
@@ -768,11 +789,12 @@
         width: auto;
         flex-shrink: 0;
         margin-right: 3vw;
-        font-size: 6.5vw;
+        font-size: 6.2vw;
     }
     .fixed__wrapper .order__btn {
         width: auto;
-        padding: 3vw 5vw;
+        padding: 3vw 4vw;
+        font-size: 4.2vw;
     }
     .info__title {
         font-size: 7.8vw;
@@ -792,7 +814,7 @@
         margin-bottom: 1vw;
     }
     .info__item-text {
-        font-size: 4.8vw;
+        font-size: 4.2vw;
     }
     .info__item-1 {
         top: -23vw;
@@ -815,17 +837,17 @@
         height: 25vw;
     }
     .info__item-3 {
-        width: 39vw;
+        width: 33vw;
         top: 35vw;
     }
     .info__item-3 .info__line {
         width: 39vw;
-        left: -33vw;
+        left: -39vw;
         top: 12vw;
         height: 15vw;
     }
     .info__item-5 {
-        top: 60vw;
+        top: 58vw;
     }
     .info__item-5 .info__line {
         width: 22vw;
@@ -929,7 +951,7 @@
         margin-bottom: 3vw;
     }
     .display__item-number {
-        font-size: 8.8vw;
+        font-size: 8vw;
         margin-bottom: 3vw;
     }
     .display__item-text {
@@ -1125,7 +1147,7 @@
         left: 16vw;
     }
     .footer__phone-4 {
-        left: 0vw;
+        left: 1vw;
     }
     .footer__line-wrapper {
         padding: 15px 0 100px;

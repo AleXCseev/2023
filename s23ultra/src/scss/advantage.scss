@@ -116,16 +116,14 @@
 
 .advantage__phone-1 {
     left: 43%;
-    animation: phones-1 20s infinite;
+    animation: phones-1 14s infinite;
     transform: translate(-50%, -60%);
 }
 
 .advantage__phone-2 {
     left: 57%;
-    animation: phones-2 20s infinite;
+    animation: phones-2 14s infinite;
     transform: translate(-50%, -40%);
-    // animation-direction: reverse;
-    // animation-delay: 5s;
 }
 
 @keyframes phones-1 {
