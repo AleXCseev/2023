@@ -192,3 +192,32 @@
     top: 7%;
     transform: rotate(-45deg);
 }
+
+.spin__finish {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.spin__finish-text {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-top: 80px;
+}
+
+.spin__finish-img {
+    width: 340px;
+    height: auto;
+    margin-top: -80px;
+}

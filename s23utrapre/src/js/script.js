@@ -214,12 +214,14 @@ var landingFunctions = {
 			$(this).find("img").hide()
 			$(this).find("span").text("")
 			$(".spiner__item").css({opacity: "1"})
-			// $(this).find("span").text("STOP")
+			$(this).attr("disabled", true)
+			$(this).find("span").text("STOP")
 
 			if(options.count !== 4) {
 
 				timeout = setTimeout(function() {
 					$(".spin").find("span").text("Повторить попытку")
+					$(".spin").attr("disabled", false)
 				}, options.distance)
 
 
@@ -251,12 +253,18 @@ var landingFunctions = {
 
 			if(options.count === 4) {
 
+				setTimeout(function() {
+					$(".spiner__block").hide()
+					$(".spin").hide()
+					$(".spin__finish").css({display: "flex"});
+
+				}, options.distance + 1000)
 
 
 				setTimeout(function() {
 					var link = $("body").data("link");
 					window.location.href = link;
-				}, 7000)
+				}, options.distance + 4000)
 			}
 		})
 	}

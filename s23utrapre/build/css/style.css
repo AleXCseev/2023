@@ -998,3 +998,41 @@ body {
        -o-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+
+.spin__finish {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  display: none;
+}
+
+.spin__finish-text {
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+
+.spin__finish-img {
+  width: 340px;
+  height: auto;
+  margin-top: -80px;
+}
