@@ -10,6 +10,7 @@
     flex-direction: column;
     align-items: center;
     padding: 50px 0 46px;
+    position: relative;
 }
 
 .header__logo {
@@ -203,7 +204,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
 }
 
 .spin__finish-text {
@@ -220,4 +228,55 @@
     width: 340px;
     height: auto;
     margin-top: -80px;
+}
+
+
+.left__phones {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 42px;
+    left: 50px;
+}
+
+.left__phone {
+    position: absolute;
+    bottom: 0;
+}
+
+.left__phone-1 {
+    position: relative;
+    width: 311px;
+    height: auto;
+    z-index: 2;
+}
+
+.left__phone-2, .left__phone-3, .left__phone-4 {
+    width: 196px;
+    height: auto;
+    left: 0;
+    transition: 2s ease;
+    // opacity: 0.8;
+}
+
+.left__phone-2 {
+    &.active {
+        transform: translate(-156%);
+        // opacity: 1;
+    }
+    
+}
+
+.left__phone-3 {
+    &.active {
+        transform: translate(-52%);
+        // opacity: 1;
+    }
+}
+
+.left__phone-4 {
+    &.active {
+        transform: translate(-104%);
+        // opacity: 1;
+    }
 }

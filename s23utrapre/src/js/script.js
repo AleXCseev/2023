@@ -25,9 +25,9 @@ var landingFunctions = {
 
 	
 
-		// setTimeout(function() {
-		// 	$(".header__phone").addClass("active")
-		// }, 1000)
+		setTimeout(function() {
+			$(".left__phone").addClass("active")
+		}, 1000)
 
 
 
@@ -256,7 +256,7 @@ var landingFunctions = {
 				setTimeout(function() {
 					$(".spiner__block").hide()
 					$(".spin").hide()
-					$(".spin__finish").css({display: "flex"});
+					$(".spin__finish").addClass("visible");
 
 				}, options.distance + 1000)
 

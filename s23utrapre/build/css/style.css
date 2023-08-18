@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/Lato-Regular.woff") format("woff");
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/Lato-Semibold.woff") format("woff");
+  src: url("../fonts/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../fonts/Lato-Bold.woff") format("woff");
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -779,6 +779,7 @@ body {
   -webkit-align-items: center;
           align-items: center;
   padding: 50px 0 46px;
+  position: relative;
 }
 
 .header__logo {
@@ -1018,7 +1019,16 @@ body {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .spin__finish-text {
@@ -1035,4 +1045,54 @@ body {
   width: 340px;
   height: auto;
   margin-top: -80px;
+}
+
+.left__phones {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 42px;
+  left: 50px;
+}
+
+.left__phone {
+  position: absolute;
+  bottom: 0;
+}
+
+.left__phone-1 {
+  position: relative;
+  width: 311px;
+  height: auto;
+  z-index: 2;
+}
+
+.left__phone-2, .left__phone-3, .left__phone-4 {
+  width: 196px;
+  height: auto;
+  left: 0;
+  -webkit-transition: 2s ease;
+  -o-transition: 2s ease;
+  transition: 2s ease;
+}
+
+.left__phone-2.active {
+  -webkit-transform: translate(-156%);
+      -ms-transform: translate(-156%);
+       -o-transform: translate(-156%);
+          transform: translate(-156%);
+}
+
+.left__phone-3.active {
+  -webkit-transform: translate(-52%);
+      -ms-transform: translate(-52%);
+       -o-transform: translate(-52%);
+          transform: translate(-52%);
+}
+
+.left__phone-4.active {
+  -webkit-transform: translate(-104%);
+      -ms-transform: translate(-104%);
+       -o-transform: translate(-104%);
+          transform: translate(-104%);
 }
