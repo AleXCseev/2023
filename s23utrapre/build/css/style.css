@@ -1249,7 +1249,7 @@ body {
     left: auto;
     bottom: auto;
     right: auto;
-    margin-top: 53px;
+    margin-top: 80px;
   }
   .header__section-wrapper {
     padding-bottom: 0;
@@ -1345,5 +1345,11 @@ body {
   .right__phone-3 {
     width: 25vw;
     top: -8vw;
+  }
+  .right__phone-2.active {
+    -webkit-transform: translateX(-55%) rotate(-10deg);
+        -ms-transform: translateX(-55%) rotate(-10deg);
+         -o-transform: translateX(-55%) rotate(-10deg);
+            transform: translateX(-55%) rotate(-10deg);
   }
 }
