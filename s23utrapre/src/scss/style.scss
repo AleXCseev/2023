@@ -5,5 +5,149 @@
 @import "footer";
 
 
-@media (max-width: 1280px) {
+@media (max-width: 1480px) {
+    .container {
+        width: 1000px;
+    }
+    .left__phone-1 {
+        width: 260px;
+    }
+    .left__phone-2, .left__phone-3, .left__phone-4 {
+        width: 166px;
+    }
+    .right__phones {
+        right: -50px;
+    }
+    .right__phone-1 {
+        width: 230px;
+    }
+    .right__phone-2 {
+        width: 170px;
+    }
+    .right__phone-3 {
+        width: 150px;
+    }
+    .spiner {
+        margin: 42px 0 24px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .container {
+        width: 700px;
+    }
+    .left__phones {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        align-self: flex-end;
+        margin-right: 80px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .right__phones {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        right: auto;
+        margin-top: 53px;
+    }
+    .header__section-wrapper {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: calc(100vw - 30px);
+    }
+}
+
+@media (max-width: 540px) {
+    .header__section {
+        background-image: url(../img/mobile-bg.jpg);
+    }
+    .header__section-wrapper {
+        padding-top: 7.5vw;
+    }
+    .header__logo {
+        width: 48vw;
+        margin-bottom: 4.8vw;
+    }
+    .header__logo-2 {
+        width: 76vw;
+        margin-bottom: 4vw;
+    }
+    .header__title {
+        font-size: 8.5vw;
+    }
+    .left__phones {
+        margin-right: 0;
+        margin-top: 4.8vw;
+        margin-bottom: 10vw;
+    }
+    .left__phone-1 {
+        width: 46.4vw;
+    }
+    .left__phone-2, .left__phone-3, .left__phone-4 {
+        width: 29vw;
+    }
+    .header__text {
+        font-size: 5.8vw;
+    }
+    .spiner {
+        width: 100%;
+        height: 92.8vw;
+        margin: 10vw 0 5.5vw;
+    }
+    .spiner:before {
+        width: 105vw;
+        height: 118vw;
+    }
+    .spiner__item {
+        width: 45.4vw;
+    }
+    .spin {
+        width: 44.5vw;
+        height: 44.5vw;
+    }
+    .spin:before {
+        width: 68vw;
+        height: 68vw;
+    }
+    .spin img {
+        width: 50vw;
+    }
+    .spin span {
+        font-size: 4.8vw;
+    }
+    .spin .stop {
+        font-size: 9vw;
+    }
+    .spin__finish-text {
+        font-size: 5.5vw;
+        margin-top: 19vw;
+    }
+    .spin__finish-img {
+        width: 82vw;
+        margin-top: -19vw;
+    }
+    .header__info {
+        font-size: 4.8vw;
+    }
+    .right__phones {
+        margin-top: 12vw;
+    }
+    .right__phone-1 {
+        width: 42.5vw;
+    }
+    .right__phone-2 {
+        width: 33vw;
+        top: -3vw;
+    }
+    .right__phone-3 {
+        width: 25vw;
+        top: -8vw;
+    }
+    
 }
