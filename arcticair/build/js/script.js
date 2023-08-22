@@ -2,6 +2,7 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.bar()
+		this.paralax()
 	}, 
 
 	initLibraris: function() {
@@ -71,7 +72,7 @@ var landingFunctions = {
 				var el = $(".bar__column__1 .bar__item-active span").text()
 				$(".bar__item-center span").text(el)
 				$(".bar__item-center span").addClass("scale");
-			}, 50)
+			}, 0)
 		}
 		
 		var interval = 0
@@ -82,10 +83,6 @@ var landingFunctions = {
 		$(".order__btn-start").click(function() {
 			if(count !== 4) {
 
-				timeout = setTimeout(function() {
-					$(".order__btn-start").click()
-				}, 1500)
-
 				$(".quantity").text(3 - count)
 
 				if(status) {
@@ -94,6 +91,10 @@ var landingFunctions = {
 					interval = setInterval(function() {
 						scrollBar(".bar__column")
 					}, 150)
+
+					timeout = setTimeout(function() {
+						$(".order__btn-start").click()
+					}, 1500)
 	
 					$(".start").hide()
 					$(".stop").fadeIn(200)
@@ -147,6 +148,52 @@ var landingFunctions = {
 			}
 		})
 	},
+
+	paralax: function() {
+		var scenesParallax = [];
+
+		mQ("(max-width: 1023px)", function () {
+		if (!scenesParallax.length) return
+		scenesParallax.forEach(function (scene) {
+			scene.disable();
+			scene.element.removeAttribute('style');
+		})
+		}, function () {
+		if (scenesParallax.length === 0) {
+			$('.parallax').each(function (i) {
+				scenesParallax[i] = new Parallax($(this).children('div').attr('data-depth', randomNum(10, 20)).end().get(0), {
+					frictionX: 0.0004,
+					frictionY: 0.0004,
+					invertX: Math.random() >= 0.1,
+					invertY: Math.random() >= 0.1
+				});
+			})
+		} else {
+			scenesParallax.forEach(function (scene) {
+				scene.enable();
+			})
+		}
+		});
+	
+		function randomNum(min, max) {
+		var numLow = min, numHigh = max,
+			adjustedHigh = (parseFloat(numHigh) - parseFloat(numLow)) + 1;
+		return Math.floor(Math.random() * adjustedHigh) + parseFloat(numLow);
+		}
+	
+		function mQ(mqStr, match, mismatch) {
+			var mq = matchMedia(mqStr);
+			mq.addListener(widthChange);
+			widthChange(mq);
+			function widthChange(mq) {
+				if (mq.matches) {
+					match();
+				} else {
+					mismatch();
+				}
+			}
+		}
+	}
 }
 
 $(document).ready(function() {

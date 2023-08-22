@@ -1,4 +1,6 @@
 .footer__line {
+    background: #FFAE00;
+
     .container {
         min-height: auto;
     }
@@ -17,11 +19,10 @@
 }
 
 .footer__line-item {
-    color: #E3E3E3;
+    color: #555;
     text-align: center;
     font-size: 14px;
     font-weight: 400;
-    opacity: 0.5;
 
     a:hover {
         text-decoration: underline;

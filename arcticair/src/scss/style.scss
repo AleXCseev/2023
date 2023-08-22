@@ -5,30 +5,24 @@
 @import "footer";
 
 
-@media (max-width: 1480px) {
+@media (max-width: 1280px) {
     .container {
         width: 1000px;
     }
-    .left__phone-1 {
+    .bar {
+        width: 780px;
+        height: 350px;
+    }
+    .bar__item span {
+        font-size: 80px;
+    }
+    .header__prod-box {
         width: 260px;
+        top: 135px;
+        left: -85px;
     }
-    .left__phone-2, .left__phone-3, .left__phone-4 {
-        width: 166px;
-    }
-    .right__phones {
-        right: -50px;
-    }
-    .right__phone-1 {
-        width: 230px;
-    }
-    .right__phone-2 {
-        width: 170px;
-    }
-    .right__phone-3 {
-        width: 150px;
-    }
-    .spiner {
-        margin: 42px 0 24px;
+    .prod__img {
+        width: 350px;
     }
 }
 
@@ -36,24 +30,58 @@
     .container {
         width: 700px;
     }
-    .left__phones {
+    .header__info {
         position: relative;
-        bottom: auto;
-        left: auto;
-        align-self: flex-end;
-        margin-right: 80px;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        top: 0;
+        left: 0;
+        margin-bottom: 12px;
     }
-    .right__phones {
+    .header__info-title {
+        text-align: center;
+    }
+    .header__info-text {
+        text-align: center;
+    }
+    .bar {
+        width: 100%;
+        height: 350px;
+    }
+    .header__prod-box {
+        display: none;
+    }
+    .prod {
         position: relative;
-        left: auto;
         bottom: auto;
         right: auto;
-        margin-top: 80px;
+        margin-bottom: 7px;
     }
-    .header__section-wrapper {
-        padding-bottom: 0;
+    .header__section {
+        background-color: #FFD146;
+        background-position: left center;
+    }
+    .header__decor-5 {
+        width: 110px;
+        bottom: auto;
+        top: 259px;
+        left: 60px;
+    }
+    .header__decor-1 {
+        bottom: 33px;
+        left: auto;
+        right: 0;
+    }
+    .header__decor-2 {
+        top: -30px;
+        left: 0px;
+    }
+    .header__decor-3 {
+        top: 450px;
+        left: auto;
+        right: 180px;
+    }
+    .header__decor-4 {
+        top: 340px;
+        right: 50px;
     }
 }
 
@@ -66,90 +94,127 @@
 @media (max-width: 540px) {
     .header__section {
         background-image: url(../img/mobile-bg.jpg);
+        background-position: center top;
+        background-size: contain;
     }
     .header__section-wrapper {
-        padding-top: 7.5vw;
+        padding: 3.8vw 0 13vw;
     }
-    .header__logo {
-        width: 48vw;
-        margin-bottom: 4.8vw;
-    }
-    .header__logo-2 {
-        width: 76vw;
-        margin-bottom: 4vw;
-    }
-    .header__title {
+    .header__info-title {
         font-size: 8.5vw;
+        margin-bottom: 1.5vw;
     }
-    .left__phones {
-        margin-right: 0;
-        margin-top: 4.8vw;
-        margin-bottom: 10vw;
-    }
-    .left__phone-1 {
-        width: 46.4vw;
-    }
-    .left__phone-2, .left__phone-3, .left__phone-4 {
-        width: 29vw;
-    }
-    .header__text {
-        font-size: 5.8vw;
-    }
-    .spiner {
-        width: 100%;
-        height: 92.8vw;
-        margin: 10vw 0 5.5vw;
-    }
-    .spiner:before {
-        width: 105vw;
-        height: 118vw;
-    }
-    .spiner__item {
-        width: 45.4vw;
-    }
-    .spin {
-        width: 44.5vw;
-        height: 44.5vw;
-    }
-    .spin:before {
-        width: 68vw;
-        height: 68vw;
-    }
-    .spin img {
-        width: 50vw;
-    }
-    .spin span {
+    .header__info-text {
         font-size: 4.8vw;
-    }
-    .spin .stop {
-        font-size: 9vw;
-    }
-    .spin__finish-text {
-        font-size: 5.5vw;
-        margin-top: 19vw;
-    }
-    .spin__finish-img {
-        width: 82vw;
-        margin-top: -19vw;
     }
     .header__info {
-        font-size: 4.8vw;
+        top: auto;
+        left: auto;
+        margin-bottom: 3vw;
     }
-    .right__phones {
-        margin-top: 12vw;
+    .header__title {
+        font-size: 8.8vw;
+        margin-bottom: 0;
     }
-    .right__phone-1 {
-        width: 42.5vw;
+    .header__subtitle {
+        font-size: 5.5vw;
+        margin-bottom: 0;
     }
-    .right__phone-2 {
-        width: 33vw;
-        top: -3vw;
+    .header__text {
+        font-size: 4.5vw;
+        margin-bottom: 3vw;
     }
-    .right__phone-3 {
-        width: 25vw;
-        top: -8vw;
+    .header__decor-2 {
+        top: -4.8vw;
+        left: -8vw;
+
+        img {
+            width: 26.8vw;
+        }
     }
-    .right__phone-2.active {
-        transform: translateX(-55%) rotate(-10deg);
+    .prod__img {
+        width: 68vw;
+    }
+    .prod__decor-1 {
+        width: 18vw;
+        bottom: 1.4vw;
+        left: -2vw;
+    }
+    .prod__decor-2 {
+        width: 17.6vw;
+        bottom: 10vw;
+        left: 4.8vw;
+    }
+    .header__decor-5 {
+        width: 17.4vw;
+        top: 44vw;
+        left: 0;
+    }
+    .header__decor-3 {
+        top: 85vw;
+        left: auto;
+        right: 12vw;
+
+        img {
+            width: 19.5vw;
+        }
+    }
+    .header__decor-4 {
+        top: 66vw;
+        right: -2vw;
+
+        img {
+            width: 12.8vw;
+        }
+    }
+    .bar__info-text {
+        font-size: 4.2vw;
+
+        br {
+            display: none;
+        }
+    }
+    .bar__info {
+        width: 84vw;
+        padding: 2.4vw 4.8vw;
+    }
+    .bar {
+        width: 100%;
+        height: 45vw;
+        border-radius: 3vw;
+        border: 3px solid #00A3FF;
+        margin-bottom: 4.8vw;
+    }
+    .divider {
+        width: 3px;
+    }
+    .divider__1 {
+        left: calc(33.33% - 3px);
+    }
+    .divider__2 {
+        right: calc(33.33% - 3px);
+    }
+    .bar__item span {
+        font-size: 9.5vw;
+    }
+    .divider__horizontal {
+        height: 13.8vw;
+    }
+    .order__btn {
+        position: relative;
+        z-index: 2;
+    }
+    .header__decor-1 {
+        z-index: auto;
+        bottom: -2vw;
+        left: auto;
+        right: -12vw;
+
+        img {
+            width: 23.6vw;
+        }
+    }
+    .fancybox-content {
+        padding: 44px 20px;
     }
 }
