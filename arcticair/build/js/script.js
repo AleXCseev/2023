@@ -152,7 +152,7 @@ var landingFunctions = {
 	paralax: function() {
 		var scenesParallax = [];
 
-		mQ("(max-width: 1023px)", function () {
+		mQ("(max-width: 1081px)", function () {
 		if (!scenesParallax.length) return
 		scenesParallax.forEach(function (scene) {
 			scene.disable();
