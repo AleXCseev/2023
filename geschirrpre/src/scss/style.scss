@@ -1,0 +1,252 @@
+@import "fonts";
+@import "main";
+@import "modal";
+@import "header";
+@import "footer";
+
+
+@media (max-width: 1280px) {
+    .container {
+        width: 1000px;
+    }
+    .bar {
+        width: 780px;
+        height: 350px;
+    }
+    .bar__item span {
+        font-size: 80px;
+    }
+    .header__prod-box {
+        width: 260px;
+        top: 135px;
+        left: -85px;
+    }
+    .header__decor-2 {
+        top: 490px;
+        left: -100px;
+    }
+    .prod__img {
+        width: 300px;
+        right: -115px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .container {
+        width: 700px;
+    }
+    .header__info {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-bottom: 12px;
+    }
+    .header__info-title {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: -2px;
+    }
+    .header__info-text {
+        text-align: center;
+    }
+    .bar {
+        width: 100%;
+        height: 350px;
+    }
+    .header__prod-box {
+        position: static;
+        margin: auto;
+    }
+    .prod__img {
+        display: none;
+    }
+    .prod {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-bottom: 7px;
+    }
+    .prod__decor-1 {
+        width: 185px;
+        height: auto;
+        bottom: 20px;
+        right: -38px;
+        z-index: auto;
+    }
+    .header__section {
+        background: none;
+    }
+    .header__decor-5 {
+        width: 110px;
+        bottom: auto;
+        top: 259px;
+        left: 60px;
+    }
+    .header__decor-1 {
+        bottom: 110px;
+        left: auto;
+        right: 80px;
+    }
+    .header__decor-2 {
+        top: auto;
+        bottom: 35px;
+        left: 70px;
+
+        img {
+            transform: scaleX(-1);
+        }
+    }
+    .header__decor-4 {
+        top: 0px;
+        right: auto;
+        left: 50px;
+
+        img {
+            transform: scaleX(-1);
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: calc(100vw - 30px);
+    }
+}
+
+@media (max-width: 540px) {
+    .header__section-wrapper {
+        padding: 3.8vw 0 13vw;
+    }
+    .header__info-title {
+        font-size: 7.8vw;
+        margin-bottom: -0.5vw;
+
+        img {
+            width: 8.9vw;
+            margin-right: 3.5vw;
+        }
+    }
+    .header__info-text {
+        font-size: 4.8vw;
+    }
+    .header__info {
+        top: auto;
+        left: auto;
+        margin-bottom: 3vw;
+    }
+    .header__title {
+        font-size: 8.8vw;
+        margin-bottom: 0;
+    }
+    .header__subtitle {
+        font-size: 5.5vw;
+        margin-bottom: 0;
+    }
+    .header__text {
+        font-size: 4.5vw;
+        margin-bottom: 3vw;
+    }
+    .header__decor-2 {
+        top: auto;
+        left: -8vw;
+        bottom: 8.5vw;
+
+        img {
+            width: 31vw;
+        }
+    }
+    .prod__img {
+        width: 68vw;
+    }
+    .prod__decor-1 {
+        width: 25vw;
+        bottom: -4vw;
+        left: auto;
+        right: -11vw;
+        transform: rotate(-15deg);
+    }
+    .header__decor-5 {
+        width: 17.4vw;
+        top: 44vw;
+        left: 0;
+    }
+    .header__decor-3 {
+        top: 85vw;
+        left: auto;
+        right: 12vw;
+
+        img {
+            width: 19.5vw;
+        }
+    }
+    .header__decor-4 {
+        top: 0vw;
+        right: auto;
+        left: -10vw;
+
+        img {
+            width: 30.4vw;
+        }
+    }
+    .bar__info-text {
+        font-size: 4.2vw;
+
+        br {
+            display: none;
+        }
+    }
+    .bar__info {
+        width: 84vw;
+        padding: 2.4vw 4.8vw;
+    }
+    .bar {
+        width: 100%;
+        height: 45vw;
+        border-radius: 3vw;
+        border: 3px solid #00A3FF;
+        margin-bottom: 4.8vw;
+    }
+    .divider {
+        width: 3px;
+    }
+    .divider__1 {
+        left: calc(33.33% - 3px);
+    }
+    .divider__2 {
+        right: calc(33.33% - 3px);
+    }
+    .bar__item span {
+        font-size: 9.5vw;
+    }
+    .divider__horizontal {
+        height: 13.8vw;
+    }
+    .order__btn {
+        position: relative;
+        z-index: 2;
+    }
+    .header__decor-1 {
+        z-index: auto;
+        bottom: 28vw;
+        left: auto;
+        right: 0vw;
+
+        img {
+            width: 24.1vw;
+        }
+    }
+    .header__prod-box {
+        width: 54vw;
+        position: relative;
+        top: auto;
+        left: -2vw;
+        z-index: 2;
+    }
+    .fancybox-content {
+        padding: 44px 20px;
+    }
+    .order__btn {
+        padding: 4.5vw;
+        font-size: 5.5vw;
+    }
+}
