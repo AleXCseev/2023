@@ -1,0 +1,30 @@
+.footer__line {
+    background: #FFAE00;
+
+    .container {
+        min-height: auto;
+    }
+}
+
+.footer__line-wrapper {
+    padding: 15px 0;
+
+}
+
+.footer__line-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__line-item {
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
