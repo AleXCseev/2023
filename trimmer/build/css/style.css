@@ -1378,7 +1378,7 @@ body {
 }
 
 .file div {
-  width: 40px;
+  width: 50px;
   height: 50px;
   border-radius: 4px;
   background-color: transparent;
@@ -1391,7 +1391,7 @@ body {
 
 .file div img {
   display: none;
-  width: 38px;
+  width: 48px;
   height: 48px;
   border-radius: 4px;
   position: absolute;
