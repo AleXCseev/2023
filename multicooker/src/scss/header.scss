@@ -1,0 +1,245 @@
+.header__section {
+    padding: 45px 0 61px;
+    position: relative;
+}
+
+.header__title {
+    color: #F19C25;
+    text-align: center;
+    font-family: "Syne", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header__subtitle {
+    color: #FFF;
+    font-family: "Syne", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;  
+    margin-bottom: 33px;
+}
+
+.header__img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.header__prod {
+    width: 100%;
+    height: auto;
+}
+
+.header__flag {
+    width: 140px;
+    height: 140px;
+    background-image: url(../img/flag.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 17px;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+}
+
+.header__logo {
+    margin: auto;
+}
+
+.header__icon {
+    position: absolute;
+    width: 70px;
+    height: auto;
+}
+
+.header__icon-1 {
+    top: -24px;
+    right: 126px;
+}
+
+.header__icon-2 {
+    top: 11px;
+    right: 46px;
+}
+
+.header__icon-3 {
+    top: 81px;
+    right: -8px;
+}
+
+.header__price {
+    margin-top: -20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.price {
+    display: inline-flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.old__price {
+    color: #F19C25;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+
+.new__price {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.header__discount {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #9E610A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: absolute;
+    right: -30px;
+    top: -20px;
+    z-index: -1;
+}
+
+.order__btn {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    border-radius: 30px;
+    background: linear-gradient(253deg, #F12525 -16.85%, #960808 95.83%);
+    color: #FFF;
+    font-family: "Syne", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+
+    span {
+        position: relative;
+        z-index: 2;
+    }
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 30px;
+        opacity: 0;
+        background: linear-gradient(73deg, #F12525 -16.85%, #960808 95.83%);
+        animation: btn 5s linear infinite;
+    }
+}
+@keyframes btn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.header__timer {
+    margin: 15px 0;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    border: 1px solid #F19C25;
+    background: rgba(60, 63, 74, 0.50);
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px;
+}
+
+.header__timer-text {
+    color: #FFF;
+    font-family: "Syne", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.header__time {
+    color: #FFF;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Syne", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.header__info {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.quantity {
+    color: #FD7E41;
+    font-weight: 900;
+}
+
+.header__decor {
+    position: absolute;
+}
+
+.header__decor-1 {
+    bottom: -5px;
+    left: -49px;
+}
+
+.header__decor-2 {
+    bottom: 50px;
+    right: -25px;
+}
+
+.header__decor-3 {
+    transform: rotate(24.9deg);
+    top: -60px;
+    left: 29px;
+}
+
+.header__decor-4 {
+    left: 25px;
+    bottom: 147px;
+}
+
+.header__decor-5 {
+    bottom: 15px;
+    right: -44px;
+    transform: scaleX(-1);
+    filter: blur(2.5px);
+}
