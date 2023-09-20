@@ -21,20 +21,10 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-
-		$(".card__slider").owlCarousel({
+		$(".galary__slider").owlCarousel({
 			loop: true,
 			margin: 20,
-			nav: true,
-			items: 1,
-			dots: true,
-			autoHeight: true,
-		})
-
-		$(".review__slider").owlCarousel({
-			loop: true,
-			margin: 20,
-			nav: true,
+			nav: false,
 			items: 1,
 			dots: true,
 			autoHeight: true,

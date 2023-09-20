@@ -114,7 +114,7 @@
     font-weight: 900;
     text-transform: uppercase;
     position: absolute;
-    right: -30px;
+    right: -25px;
     top: -20px;
     z-index: -1;
 }
@@ -148,7 +148,7 @@
         left: 0;
         border-radius: 30px;
         opacity: 0;
-        background: linear-gradient(73deg, #F12525 -16.85%, #960808 95.83%);
+        background: linear-gradient(73deg, #f52a2a -16.85%, #8a0303 95.83%);
         animation: btn 5s linear infinite;
     }
 }
@@ -201,7 +201,7 @@
 
 .header__info {
     color: #FFF;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     line-height: normal;
     text-align: center;

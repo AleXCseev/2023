@@ -1,5 +1,5 @@
 .galary__section {
-    padding: 50px 0;
+    padding: 50px 0 35px;
     background: #FCC232;
 }
 
@@ -43,6 +43,7 @@
 
 .galary__img {
     position: relative;
+    margin-bottom: 40px;
 }
 
 .galary__prod {
@@ -54,14 +55,42 @@
     position: absolute;
 }
 
+.galary__decor {
+    position: absolute;
+}
+
+.galary__decor-1 {
+    filter: blur(2.5px);
+    transform: scaleX(-1);
+    bottom: 0;
+    right: -40px;
+}
+
 .galary__items {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .galary__item {
+    width: 147px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .galary__item-icon {
+    margin-bottom: 10px;
 }
 
 .galary__item-text {
+    color: #25272E;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Syne", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
 }
