@@ -125,17 +125,17 @@
 
 .review__title {
     color: #25272E;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
     line-height: 1;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     text-align: center;
 }
 
 .review__text {
     color: #46474A;
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     line-height: 1.55;
 }
@@ -148,16 +148,10 @@
     box-shadow: 0px 8px 80px rgba(37, 39, 46, 0.25);
 }
 
-.review__item-1 {
-}
-
 .review__item-2 {
     background: #3C3F4A;
 
     .review__name, .review__title, .review__text {
         color: #fff;
     }
-}
-
-.review__item-3 {
 }

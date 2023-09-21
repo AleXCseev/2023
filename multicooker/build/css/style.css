@@ -223,7 +223,7 @@ body {
   color: #F19C25;
   text-align: center;
   font-family: "Syne", sans-serif;
-  font-size: 36px;
+  font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -231,11 +231,12 @@ body {
 .header__subtitle {
   color: #FFF;
   font-family: "Syne", sans-serif;
-  font-size: 50px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 33px;
+  text-align: center;
 }
 
 .header__img {
@@ -511,7 +512,7 @@ body {
 .galary__title {
   color: #25272E;
   font-family: "Syne", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -679,15 +680,15 @@ body {
 }
 
 .card__text-5 .card__text-right {
-  min-width: 242px;
+  min-width: 276px;
 }
 
 .card__text-6 .card__text-right {
-  min-width: 231px;
+  min-width: 302px;
 }
 
 .card__text-11 .card__text-right {
-  min-width: 312px;
+  min-width: 276px;
 }
 
 .card__text-3 .card__text-right {
@@ -936,17 +937,17 @@ body {
 
 .review__title {
   color: #25272E;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 1;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
 .review__text {
   color: #46474A;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.55;
 }

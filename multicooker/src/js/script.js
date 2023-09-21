@@ -28,6 +28,9 @@ var landingFunctions = {
 			items: 1,
 			dots: true,
 			autoHeight: true,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true,
 		})
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
