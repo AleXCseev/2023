@@ -1,0 +1,252 @@
+.footer {
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.review__block {
+    width: 360px;
+    height: auto;
+    padding: 100px 0 204px;
+    position: relative;
+}
+
+.review__logo {
+    width: 202px;
+    height: auto;
+    margin-bottom: 19px;
+}
+
+.review__title {
+    color: #FFC806;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.reviews {
+    width: 575px;
+    height: auto;
+    position: absolute;
+    top: 125px;
+    right: -615px;
+}
+
+.review__slider {
+    width: 100%;
+    height: auto;
+}
+
+.review__slider-1 {
+    position: relative;
+    z-index: 5;
+}
+
+.review__slider .owl-stage-outer {
+    padding: 25px 0 20px !important; 
+}
+
+.review__slide {
+    border-radius: 30px;
+    background: #052F6B;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.review__text {
+    color: #FFF;
+    font-size: 20px;
+    padding: 40px 50px 9px;
+}
+
+.review__footer {
+    background-color: #093A7F;
+    border-radius: 0 0 30px 30px;
+    padding: 13px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review__name {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.review__rating {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 18px !important;
+        height: auto;
+        margin-right: 3px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.review__quote {
+    position: absolute;
+    top: -25px;
+    left: 50px;
+    width: 82px;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(110deg, #FF6222 0%, #FF2001 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: auto !important;
+        height: 30px;
+    }
+}
+
+.reviews .slider__btns {
+    position: absolute;
+    top: 50px;
+    right: -165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    height: 278px;
+
+    .slider__btn {
+        border-color: #fff;
+        position: relative;
+        z-index: 2;
+
+        &:hover {
+            border-color: #086ECD;
+        }
+    }
+
+    svg {
+        fill: #fff;
+    }
+
+    .prev__btn {
+        transform: rotate(90deg);
+    }
+
+    .next__btn {
+        transform: rotate(-90deg);
+    }
+}
+
+.reviews .owl-dots {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    width: 10px;
+    height: 278px;
+    right: -145px;
+    pointer-events: none;
+
+    button {
+        margin-right: 0;
+        margin-bottom: 10px;
+        border: none !important;
+        background-color: #086ECD !important;
+        pointer-events: auto;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.active {
+            border: none !important;
+            background-color: #fff !important;
+        }
+    }
+}
+
+.review__slider-2 {
+    position: absolute;
+    top: 75px;
+    left: 85px;
+    opacity: 0.3;
+
+    .owl-dots {
+        // top: -95px;
+        // right: -60px;
+        display: none;
+    }
+}
+
+.add__review {
+    color: #EAEAEA;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer__block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .header__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding-bottom: 205px;
+    }
+
+    .header__title {
+        text-align: center;
+    }
+}
+
+.footer__boot {
+    position: absolute;
+    height: auto;
+}
+
+.footer__boot-1 {
+    left: -400px;
+    bottom: -25px;
+    width: 766px;
+}
+
+.footer__boot-2 {
+    bottom: 10px;
+    right: -330px;
+    width: 545px;
+}
+
+.footer__line {
+    background-color: rgba(5, 47, 107, 0.8);
+}
+
+.footer__line-wrapper {
+    padding: 10px 0;
+}
+
+.footer__line-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__line-item {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+}

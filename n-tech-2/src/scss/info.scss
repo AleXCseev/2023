@@ -230,6 +230,10 @@
     position: absolute;
     top: 50px;
     width: 333px !important;
+
+    .owl-dots {
+        display: none;
+    }
    
 
     img {
@@ -292,6 +296,7 @@
         border: 2px solid #086ECD !important;
         transition: 0.3s ease;
         margin-right: 10px;
+        cursor: default !important;
 
         &:last-child {
             margin-right: 0;

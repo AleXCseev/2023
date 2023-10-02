@@ -26,9 +26,19 @@ var landingFunctions = {
 				dots: true,
 				nav: false,
 				loop: true,
-				// mouseDrag: false,
-				// touchDrag: false,
+				mouseDrag: false,
+				touchDrag: false,
 				// animateOut: 'fadeOut',
+				responsive:{
+					0:{
+						mouseDrag: true,
+						touchDrag: true,
+					},
+					1081:{
+						mouseDrag: false,
+						touchDrag: false,
+					}
+				}
 			});
 	
 			$(selector + ' .prev__btn').click(function() {
@@ -42,37 +52,61 @@ var landingFunctions = {
 	
 		galarySlider(".info__slider-1")
 		galarySlider(".info__slider-2")
-		galarySlider(".card-1")
-		galarySlider(".card-2")
-		galarySlider(".card-3")
-		galarySlider(".card-4")
 
+		function cardSlider (selector) {
+			var owlCard = $(selector + " .card__slider").owlCarousel({
+				items: 1,
+				margin: 100,
+				dots: true,
+				nav: false,
+				loop: true,
+	
+			});
+	
+			$(selector + ' .prev__btn').click(function() {
+				owlCard.trigger('prev.owl.carousel');
+			})
+	
+			$(selector + ' .next__btn').click(function() {
+				owlCard.trigger('next.owl.carousel');
+			})
+		}
 
-		// $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	nav: false,
-		// 	dots: false,
-		// 	dotsEach: true,
-		// 	items: 3,
-		// 	margin: 30,
-		// 	autoHeight: true,
-		// 	responsive:{
-		// 		0:{
-		// 			items:1,
-		// 			dots: true,
-		// 			nav: true,
-		// 		},
-		// 		541:{
-		// 			items:2,
-		// 			dots: true,
-		// 			nav: true,
-		// 		},
-		// 		1081:{
-		// 			items:3,
-		// 			dots: false,
-		// 		}
-		// 	}
-		// });
+		cardSlider(".card-1")
+		cardSlider(".card-2")
+		cardSlider(".card-3")
+		cardSlider(".card-4")
+
+		var owlReview = $(".review__slider").owlCarousel({
+			loop: true,
+			nav: false,
+			dots: true,
+			dotsEach: true,
+			items: 1,
+			margin: 30,
+			autoHeight: true,
+			stagePadding: 10,
+			mouseDrag: false,
+			touchDrag: false,
+			responsive:{
+				0:{
+					mouseDrag: true,
+					touchDrag: true,
+				},
+				1081:{
+					mouseDrag: false,
+					touchDrag: false,
+				}
+			}
+		});
+
+		$('.reviews .prev__btn').click(function() {
+			owlReview.trigger('prev.owl.carousel');
+		})
+
+		$('.reviews .next__btn').click(function() {
+			owlReview.trigger('next.owl.carousel');
+		})
 
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
@@ -82,6 +116,8 @@ var landingFunctions = {
 			space: false,
 			number: 5,
 		});
+
+		$(".owl-dots").off()
 	
 		// AOS.init({
 		// 	disable : 'mobile',
