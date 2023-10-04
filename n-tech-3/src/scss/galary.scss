@@ -1,0 +1,94 @@
+.galary__section {
+    background-color: #252525;
+    margin-top: -140px;
+}
+
+.galary__wrapper {
+    padding: 182px 0 82px;
+}
+
+.galary__title {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 6.4px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        width: 420px;
+        height: 225px;
+        background-image: url(../img/galary-logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: -43px;
+        left: -183px;
+        opacity: 0.4;
+        z-index: -1;
+    }
+}
+
+.galary__text {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.galary__block {
+    width: 575px;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.galary__slider {
+    width: 100%;
+    height: auto;
+}
+
+.galary__btns {
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+}
+
+.slider__btn {
+    width: 95px;
+    height: 45px;
+    border: 1px solid #808080;
+    background-image: url(../img/tringle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;    
+    transition: 0.3s ease;
+
+    &:hover {
+        border-color: #fff;
+        background-image: url(../img/tringle-hover.png);
+    }
+}
+
+.prev__btn {
+}
+
+.next__btn {
+    transform: rotate(180deg);
+}
+
+.galary__slider-decor {
+    width: 1340px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: -1340px;
+    transform: translateY(-50%);
+}
