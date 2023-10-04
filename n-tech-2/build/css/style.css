@@ -278,7 +278,7 @@ body {
   max-width: 500px;
   height: auto;
   padding: 50px;
-  background: #E7E6E1;
+  background: #E5F2FA;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
 }
@@ -786,7 +786,7 @@ body {
 
 .header__title {
   color: #FFF;
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 36px;
@@ -1400,7 +1400,6 @@ body {
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
   margin-right: 10px;
-  cursor: default !important;
 }
 .owl-dots button:last-child {
   margin-right: 0;
@@ -1678,6 +1677,13 @@ body {
   font-size: 18px;
   position: relative;
   z-index: 1;
+}
+.card__info-text span {
+  font-weight: 700;
+}
+.card__info-text a {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .card__form {
@@ -2386,6 +2392,9 @@ body {
     font-size: 20px;
     margin-bottom: 18px;
   }
+  .info__discount {
+    padding: 10px 60px 10px;
+  }
   .info__discount-text {
     font-size: 24px;
   }
@@ -2408,6 +2417,9 @@ body {
   }
   .card {
     width: 100%;
+  }
+  .center {
+    display: none;
   }
   .center__block-2 {
     display: none;
@@ -2817,5 +2829,70 @@ body {
   }
   .size-table-wrapper table {
     margin-bottom: 0;
+  }
+  .footer {
+    background-image: url(../img/footer-bg-mobile.jpg);
+  }
+  .review__block {
+    padding: 12vw 0 16vw;
+  }
+  .review__logo {
+    width: 48.8vw;
+    margin-bottom: 5vw;
+  }
+  .review__title {
+    font-size: 7vw;
+    margin-bottom: 10vw;
+  }
+  .reviews {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+  .review__slider {
+    width: calc(100% + 20px);
+  }
+  .review__text {
+    font-size: 4.8vw;
+    padding: 9.8vw 4.8vw 3vw;
+  }
+  .review__footer {
+    padding: 3vw 4.8vw;
+  }
+  .review__name {
+    font-size: 4.8vw;
+  }
+  .reviews .owl-dots {
+    margin-top: 4.8vw;
+  }
+  .footer__decor {
+    margin-top: 15vw;
+    margin-bottom: 3vw;
+  }
+  .footer__boot-2 {
+    position: relative;
+    width: 60%;
+    margin-left: auto;
+    bottom: auto;
+    right: -2vw;
+  }
+  .footer__boot-1 {
+    top: -18vw;
+    width: 85%;
+    left: -5vw;
+    z-index: 2;
+  }
+  .footer__block .header__content {
+    padding-bottom: 12vw;
+  }
+  .fancybox-content {
+    padding: 44px 20px 20px;
   }
 }

@@ -19,6 +19,8 @@ var landingFunctions = {
 			e.preventDefault();
 		})
 
+		$(".owl-dots").off()
+
 		function galarySlider (selector) {
 			var owl = $(selector + " .info__slider, " + selector + " .card__slider").owlCarousel({
 				items: 1,
@@ -48,6 +50,10 @@ var landingFunctions = {
 			$(selector + ' .next__btn').click(function() {
 				owl.trigger('next.owl.carousel');
 			})
+
+			$(selector + ' .owl-dot').click(function () {
+				owl.trigger('to.owl.carousel', [$(this).index(), 300]);
+			  });
 		}
 	
 		galarySlider(".info__slider-1")
@@ -60,7 +66,6 @@ var landingFunctions = {
 				dots: true,
 				nav: false,
 				loop: true,
-	
 			});
 	
 			$(selector + ' .prev__btn').click(function() {
@@ -70,6 +75,10 @@ var landingFunctions = {
 			$(selector + ' .next__btn').click(function() {
 				owlCard.trigger('next.owl.carousel');
 			})
+
+			$(selector + ' .owl-dot').click(function () {
+				owlCard.trigger('to.owl.carousel', [$(this).index(), 300]);
+			});
 		}
 
 		cardSlider(".card-1")
@@ -108,6 +117,9 @@ var landingFunctions = {
 			owlReview.trigger('next.owl.carousel');
 		})
 
+		$('.reviews .owl-dot').click(function () {
+			owlReview.trigger('to.owl.carousel', [$(this).index(), 300]);
+		});
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
 
@@ -117,7 +129,7 @@ var landingFunctions = {
 			number: 5,
 		});
 
-		$(".owl-dots").off()
+		
 	
 		// AOS.init({
 		// 	disable : 'mobile',

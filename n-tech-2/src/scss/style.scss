@@ -236,6 +236,9 @@
         font-size: 20px;
         margin-bottom: 18px;
     }
+    .info__discount {
+        padding: 10px 60px 10px;
+    }
     .info__discount-text {
         font-size: 24px;
     }
@@ -259,6 +262,9 @@
     }
     .card {
         width: 100%;
+    }
+    .center {
+        display: none;
     }
     .center__block-2 {
         display: none;
@@ -645,5 +651,63 @@
     }
     .size-table-wrapper table {
         margin-bottom: 0;
+    }
+    .footer {
+        background-image: url(../img/footer-bg-mobile.jpg);
+    }
+    .review__block {
+        padding: 12vw 0 16vw;
+    }
+    .review__logo {
+        width: 48.8vw;
+        margin-bottom: 5vw;
+    }
+    .review__title {
+        font-size: 7vw;
+        margin-bottom: 10vw;
+    }
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .review__slider {
+        width: calc(100% + 20px);
+    }
+    .review__text {
+        font-size: 4.8vw;
+        padding: 9.8vw 4.8vw 3vw;
+    }
+    .review__footer {
+        padding: 3vw 4.8vw;
+    }
+    .review__name {
+        font-size: 4.8vw;
+    }
+    .reviews .owl-dots {
+        margin-top: 4.8vw;
+    }
+    .footer__decor {
+        margin-top: 15vw;
+        margin-bottom: 3vw;
+    }
+    .footer__boot-2 {
+        position: relative;
+        width: 60%;
+        margin-left: auto;
+        bottom: auto;
+        right: -2vw;
+    }
+    .footer__boot-1 {
+        top: -18vw;
+        width: 85%;
+        left: -5vw;
+        z-index: 2;
+    }
+    .footer__block .header__content {
+        padding-bottom: 12vw;
+    }
+    .fancybox-content {
+        padding: 44px 20px 20px;
     }
 }
