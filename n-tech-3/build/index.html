@@ -42,7 +42,7 @@
                     Встречайте Зиму с Элегантностью и Теплом
                 </h1>
                 <div class="header__decor">
-                    <div class="header__discount tossing">
+                    <div class="header__discount">
                         <span class="header__discount-text">
                             АКЦИЯ
                         </span>
@@ -245,13 +245,13 @@
         </div> 
     </div>
 </section>
-        <section class="card__section" id="card">
+        <section class="card__section">
     <div class="container">
         <div class="card__section-wrapper">
             <h2 class="card__section-title">
                 Каталог
             </h2>
-            <div class="card card__1">
+            <div class="card card__1" id="card">
                 <div class="card__galary">
                     <div class="card__boot">
                         <img src="img/card-bg.png" alt="" class="card__bg">
@@ -454,12 +454,12 @@
                         <div class="card__input-wrapper card__select-wrapper">
                             <select name="size" id="size-1" class="card__select card__input" size="1">
                                 <option value="" hidden="">Оберіть розмір</option>
-                                <option value="40">40 (26.5 см)</option>
+                                <option value="40">40 (26,5 см)</option>
                                 <option value="41">41 (27 см)</option>
-                                <option value="42">42 (27.5 см)</option>
+                                <option value="42">42 (27,5 см)</option>
                                 <option value="43">43 (28 см)</option>
-                                <option value="44">44 (28.5 см)</option>
-                                <option value="45">45 (29.5 см)</option>
+                                <option value="44">44 (28,5 см)</option>
+                                <option value="45">45 (29,5 см)</option>
                             </select>
                         </div>
                         <button type="submit" class="order__btn card__submit">
@@ -491,16 +491,274 @@
                     </div>
                 </div>
             </div>
+            <div class="card card__3">
+                <div class="card__galary">
+                    <div class="card__boot">
+                        <img src="img/card-bg.png" alt="" class="card__bg">
+                        <img src="img/card-boot-3.png" alt="" class="card__boot-img">
+                    </div>
+                    <div class="card__photos">
+                        <a href="img/card-3/1-1000.jpg" data-fancybox="card-3">
+                            <img src="img/card-3/1-1000.jpg" alt="" />
+                        </a>
+                        <a href="img/card-3/2-1000.jpg" data-fancybox="card-3">
+                            <img src="img/card-3/2-1000.jpg" alt="" />
+                        </a>
+                        <a href="img/card-3/3-1000.jpg" data-fancybox="card-3">
+                            <img src="img/card-3/3-1000.jpg" alt="" />
+                        </a>
+                        <a href="img/card-3/4-1000.jpg" data-fancybox="card-3">
+                            <img src="img/card-3/4-1000.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="card__content">
+                    <h3 class="card__title">
+                        ТЕРМОКОСТЮМИ <br>
+                        NORTH-TECH U-17
+                    </h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="440" height="12" viewBox="0 0 440 12" fill="#940418">
+                        <path d="M0 6L10 11.7735V0.226497L0 6ZM9 7H440V5H9V7Z" />
+                    </svg>
+                    <div class="card__info">
+                        <span class="card__info-text">
+                            Сезон:
+                        </span>
+                        <div class="card__divider"></div>
+                        <span class="card__info-text card__info-bold">
+                            Зима
+                        </span>
+                    </div>
+                    <div class="card__info">
+                        <span class="card__info-text">
+                            Верх:
+                        </span>
+                        <div class="card__divider"></div>
+                        <span class="card__info-text card__info-bold">
+                            Технологичный материал softpower
+                        </span>
+                    </div>
+                    <div class="card__info">
+                        <span class="card__info-text">
+                            Подкладка:
+                        </span>
+                        <div class="card__divider"></div>
+                        <span class="card__info-text card__info-bold">
+                            Аэрогель w-term
+                        </span>
+                    </div>
+                    <div class="card__info">
+                        <span class="card__info-text">
+                            Производитель:
+                        </span>
+                        <div class="card__divider"></div>
+                        <span class="card__info-text card__info-bold">
+                            Норвегия
+                        </span>
+                    </div>
+                    <div class="card__info">
+                        <span class="card__info-text">
+                            Цвет:
+                        </span>
+                        <div class="card__divider"></div>
+                        <span class="card__info-text card__info-bold">
+                            Черный
+                        </span>
+                    </div>
+                    <div class="card__info">
+                        <span class="card__info-text">
+                            Цена:
+                        </span>
+                        <div class="card__divider"></div>
+                        <div class="price">
+                            <span class="old__price">2399 грн</span>
+                            <span class="new__price">1098 грн</span>
+                        </div>
+                    </div>
+                    <div class="card__info">
+                        <span class="card__info-text">
+                            Пол:
+                        </span>
+                        <div class="card__divider"></div>
+                        <div class="card__male">
+                            <button type="button" data-male="man" data-price="131314" data-currency="грн" data-id="42343" class="card__male-btn active">
+                                Мужской
+                            </button>
+                            &nbsp;/&nbsp;
+                            <button type="button" data-male="woman" data-price="1313" data-currency="грн" data-id="43" class="card__male-btn">
+                                Женский
+                            </button>
+                        </div>
+                    </div>
+                    <form class="card__form">
+                        <div class="card__input-wrapper">
+                            <input type="text" placeholder="Ім’я" required class="card__input">
+                        </div>
+                        <div class="card__input-wrapper">
+                            <input type="tel" placeholder="Телефон" required class="card__input">
+                        </div>
+                        <div class="card__input-wrapper card__select-wrapper">
+                            <select name="size" id="size-1" class="card__select card__input select-man active" size="1">
+                                <option value="" hidden="">Оберіть розмір</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                            <select name="size" id="size-1" class="card__select card__input select-woman" size="1">
+                                <option value="" hidden="">Оберіть розмір</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="order__btn card__submit">
+                            <span>ЗАКАЗАТЬ</span>
+                        </button>
+                        <p class="header__date">
+                            Акція триватиме до <span class="date">29.09.23</span>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="sprey">
+                <img src="img/sprey.png" alt="" class="sprey__img">
+                <h2 class="sprey__title">
+                    При заказе ботинок N-TECH!
+                </h2>
+                <p class="sprey__text">
+                    Получи скидку на ЗАЩИТНЫЙ СПРЕЙ ДЛЯ ОБУВИ!
+                </p>
+                <div class="sprey__price">
+                    <div class="price">
+                        <p class="sprey__price-text">
+                            Цена: <span class="old__price">4250 грн</span>
+                        </p>
+                        <span class="new__price">599 грн</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
-        
-
- <!-- <div class="footer__line">
+        <section class="review__section" id="review">
+    <div class="container">
+        <div class="review__section-wrapper">
+            <h2 class="review__title">
+                ОТЗЫВЫ НАШИХ ПОКУПАТЕЛЕЙ
+            </h2>
+            <div class="review__slider owl-carousel">
+                <div class="review__slide">
+                    <p class="review__name">
+                        Олексій
+                    </p>
+                    <p class="review__text">
+                        “Тільки справжнє, фірмове взуття від бренд <span>N-TECH</span>. Замовляйте вже сьогодні по божевільним знижкам!”
+                    </p>
+                    <p class="review__date">
+                        <span class="date__1">01.10.2023</span>
+                    </p>
+                </div>
+                <div class="review__slide">
+                    <p class="review__name">
+                        Олексій
+                    </p>
+                    <p class="review__text">
+                        “Тільки справжнє, фірмове взуття від бренд <span>N-TECH</span>. Замовляйте вже сьогодні по божевільним знижкам!”
+                    </p>
+                    <p class="review__date">
+                        <span class="date__2">01.10.2023</span>
+                    </p>
+                </div>
+                <div class="review__slide">
+                    <p class="review__name">
+                        Олексій
+                    </p>
+                    <p class="review__text">
+                        “Тільки справжнє, фірмове взуття від бренд <span>N-TECH</span>. Замовляйте вже сьогодні по божевільним знижкам!”
+                    </p>
+                    <p class="review__date">
+                        <span class="date__3">01.10.2023</span>
+                    </p>
+                </div>
+                <div class="review__slide">
+                    <p class="review__name">
+                        Олексій
+                    </p>
+                    <p class="review__text">
+                        “Тільки справжнє, фірмове взуття від бренд <span>N-TECH</span>. Замовляйте вже сьогодні по божевільним знижкам!”
+                    </p>
+                    <p class="review__date">
+                        <span class="date__4">01.10.2023</span>
+                    </p>
+                </div>
+                <div class="review__slide">
+                    <p class="review__name">
+                        Олексій
+                    </p>
+                    <p class="review__text">
+                        “Тільки справжнє, фірмове взуття від бренд <span>N-TECH</span>. Замовляйте вже сьогодні по божевільним знижкам!”
+                    </p>
+                    <p class="review__date">
+                        <span class="date__5">01.10.2023</span>
+                    </p>
+                </div>
+            </div>
+            <div class="review__btns">
+                <button type="button" class="slider__btn prev__btn"></button>
+                <button type="button" class="slider__btn next__btn"></button>
+            </div>
+        </div>
+    </div>
+</section>
+        <footer class="footer__section">
+    <div class="container">
+        <div class="footer__section-wrapper">
+            <div class="header__content">
+                <img src="img/logo.png" alt="" class="footer__logo">
+                <p class="header__text">
+                    Норвежские мужские ботинки:
+                </p>
+                <h2 class="header__title">
+                    Встречайте Зиму с Элегантностью и Теплом
+                </h2>
+                <div class="header__decor">
+                    <div class="header__discount tossing">
+                        <span class="header__discount-text">
+                            АКЦИЯ
+                        </span>
+                        <span class="discount pulse">
+                            -50%
+                        </span>
+                    </div>
+                    <img src="img/header-boot-1.png" alt="" class="header__boot header__boot-1">
+                    <img src="img/header-boot-2.png" alt="" class="header__boot header__boot-2">
+                </div>
+                <div class="header__price">
+                    <p class="header__price-text">
+                        Цены: <br>
+                        <span>
+                            От 1089 грн
+                        </span>
+                    </p>
+                </div>
+                <a href="#card" class="order__btn">
+                    <span>Подробнее</span>
+                    <img src="img/arrow.jpg" alt="">
+                </a>
+                <p class="header__date">
+                    Акция продлится до <span class="date">29.09.23</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer__line">
         <div class="container">
             <div class="footer__line-wrapper">
                 <ul class="footer__line-list">
-                    <li class="footer__line-item">
+                    <!-- <li class="footer__line-item">
                         <a data-fancybox data-src="#modal-privacy" href="javascript:;">Політика конфіденційності</a>
                     </li>
                     <li class="footer__line-item">
@@ -508,11 +766,17 @@
                     </li>
                     <li class="footer__line-item">
                         ТОВ "SaleShop" г.Харьков, ул. Шевченка, 32, ЕГРПОУ 39129343
+                    </li> -->
+                    <li class="footer__line-item">
+                        Разработка лендинга <a href="https://itcreative.info/" target="_blank">itcreative.info</a> 
                     </li>
                 </ul>
             </div>
         </div>
-    </div> -->
+    </div>
+</footer>
+
+ 
 
 
 

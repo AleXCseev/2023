@@ -1,0 +1,61 @@
+.review__section-wrapper {
+    padding-bottom: 80px;
+}
+
+.review__title {
+    color: #252525;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 6.4px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.review__name {
+    color: #252525;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.review__text {
+    color: #252525;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-indent: 15px;
+    margin-bottom: 10px;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.review__date {
+    text-align: right;
+    color: #252525;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.review__btns {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .slider__btn {
+        &:hover {
+            border-color: #252525;
+            background-image: url(../img/tringle-hover-black.png);
+        }
+    }
+
+}
+

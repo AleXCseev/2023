@@ -59,6 +59,9 @@
     width: 200px;
     height: auto;
     margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .slider__btn {
@@ -77,9 +80,6 @@
     }
 }
 
-.prev__btn {
-}
-
 .next__btn {
     transform: rotate(180deg);
 }
@@ -92,3 +92,11 @@
     right: -1340px;
     transform: translateY(-50%);
 }
+
+.owl-carousel .animated {
+    -webkit-animation-duration: 300ms;
+            animation-duration: 300ms;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; 
+  }
+  

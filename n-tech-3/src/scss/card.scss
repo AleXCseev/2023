@@ -145,6 +145,7 @@
 .card__form {
     width: 100%;
     height: auto;
+    margin-top: 20px;
 
     .header__date {
         margin-top: 10px;
@@ -227,4 +228,139 @@
         width: 750px;
         margin-bottom: -30px;
     }
+}
+
+.card__3 {
+    margin-bottom: 207px;
+
+    .card__select {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+    .card__boot {
+        width: 406px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .card__photos {
+        a {
+            position: relative;
+            height: 110px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+.card__male {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    color: #252525;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card__male-btn {
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &.active {
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}
+
+.sprey {
+    width: 850px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    padding: 30px 0 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 1877px;
+        height: 100%;
+        top: 0;
+        left: 46%;
+        transform: translateX(-50%);
+        background-image: url(../img/sprey-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+}
+
+.sprey__title {
+    color: #252525;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.sprey__text {
+    color: #252525;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.sprey__price {
+    .price {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .old__price {
+        text-decoration: line-through;
+        margin-right: 26px;
+    }
+    
+    .new__price {
+        color: #DC1C37;
+        font-size: 48px;
+        font-weight: 700;
+    }
+}
+
+.sprey__price-text {
+    width: auto;
+    color: #252525;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.sprey__img {
+    position: absolute;
+    top: 30%;
+    right: -300px;
+    transform: translateY(-50%);
+    width: 341px;
+    height: auto;
 }

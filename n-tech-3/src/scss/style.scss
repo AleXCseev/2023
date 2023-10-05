@@ -6,8 +6,225 @@
 @import "advantage";
 @import "galary";
 @import "card";
+@import "review";
 @import "footer";
 
 
+@media (max-width: 1480px) {
+    .container {
+        width: 1200px;
+    }
+    .header__content {
+        width: 700px;
+    }
+    .header__title {
+        font-size: 58px;
+    }
+    .header__boot-1 {
+        width: 440px;
+        top: 57px;
+        right: -320px;
+    }
+    .header__boot-2 {
+        width: 430px;
+        top: -10px;
+        left: -290px;
+    }
+    .header__discount {
+        width: 180px;
+        height: 180px;
+        top: 215px;
+        right: 0px;
+    }
+    .discount {
+        font-size: 52px;
+    }
+    .header__wrapper {
+        padding: 60px 0 200px;
+    }
+    .info__column {
+        width: 570px;
+    }
+    .info__logo {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .info__decor {
+        top: -270px;
+        right: -1204px;
+    }
+}
+
 @media (max-width: 1280px) {
+    .container {
+        width: 1000px;
+    }
+    .header__wrapper {
+        width: 100%;
+    }
+    .header__content {
+        width: 660px;
+    }
+    .header__text {
+        font-size: 30px;
+    }
+    .header__title {
+        font-size: 54px;
+    }
+    .header__boot-1 {
+        width: 400px;
+        top: 100px;
+        right: -280px;
+    }
+    .header__boot-2 {
+        width: 380px;
+        top: 20px;
+        left: -250px;
+    }
+    .header__discount {
+        width: 170px;
+        height: 170px;
+        top: 200px;
+        right: 0px;
+    }
+    .header__wrapper {
+        padding: 60px 0 160px;
+    }
+    .info__column {
+        width: 490px;
+    }
+    .info__text {
+        font-size: 16px;
+    }
+    .info__decor {
+        width: 1000px;
+        top: -140px;
+        right: -920px;
+    }
+    .info__man {
+        width: 290px;
+        top: 170px;
+        left: 250px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .container {
+        width: 700px;
+    }
+    .header__nav-item {
+        display: none;
+    }
+    .header__nav {
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    .header__decor {
+        position: relative;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .header__boot-2 {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+    .header__boot-1 {
+        right: 0;
+        top: -100px;
+        z-index: 1;
+    }
+    .header__discount {
+        width: 170px;
+        height: 170px;
+        top: auto;
+        right: 122px;
+        bottom: -25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: calc(100vw - 30px);
+    }
+    .header__content {
+        width: 100%;
+    }
+    .header__boot-1 {
+        right: -10vw;
+        top: -100px;
+        width: 68vw;
+    }
+    .header__boot-2 {
+        left: -8vw;
+        width: 64vw;
+    }
+    .header__boot-1 {
+        right: -10vw;
+        top: -20vw;
+        width: 70vw;
+    }
+    .header__decor {
+        margin-top: 20vw;
+        margin-bottom: 7vw;
+    }
+    .header__discount {
+        top: auto;
+        right: 17vw;
+        bottom: -1vw;
+    }
+}
+
+@media (max-width: 540px) {
+    .header__wrapper {
+        padding: 6vw 0 25vw;
+    }
+    .header__logo {
+        width: 31vw;
+    }
+    .header__nav {
+        margin-bottom: 6vw;
+    }
+    .header__text {
+        font-size: 4.6vw;
+        margin-bottom: 1vw;
+    }
+    .header__title {
+        font-size: 9.5vw;
+    }
+    .header__discount {
+        width: 31.4vw;
+        height: 31.4vw;
+        top: auto;
+        right: 8vw;
+        bottom: -5vw;
+    }
+    .header__discount-text {
+        font-size: 4vw;
+        margin-bottom: 0;
+    }
+    .discount {
+        font-size: 9.5vw;
+        margin-bottom: 2vw;
+    }
+    .header__price {
+        margin-bottom: 1vw;
+    }
+    .header__price-text {
+        font-size: 8vw;
+    }
+    .header__price-text span {
+        font-size: 12vw;
+    }
+    .order__btn {
+        padding: 3vw 8.5vw;
+    }
+    .order__btn span {
+        font-size: 9vw;
+        margin-right: 8vw;
+    }
+    .header__date {
+        font-size: 4.8vw;
+        margin-top: 4.8vw;
+    }
 }

@@ -43,7 +43,7 @@
 
 .info__imgs {
     width: auto;
-    display: flex;
+    display: inline-flex;
     justify-content: flex-start;
     align-items: center;
     position: relative;
@@ -52,7 +52,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 25px;
+        right: -255px;
         display: flex;
         justify-content: flex-start;
         align-items: center;

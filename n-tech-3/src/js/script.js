@@ -2,14 +2,14 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.time()
-		this.modal()
+		// this.modal()
 	}, 
 
 	initLibraris: function() {
 		
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 50;
-			// var cardHeight = $(".card").outerHeight(false)
+			var fixedOffset = 0;
+			// var cardHeight = $($(this).attr("href")).outerHeight(false)
 			// var windowHeight = $(window).height()
 
 			$('html, body')
@@ -31,6 +31,7 @@ var landingFunctions = {
 				mouseDrag: false,
 				touchDrag: false,
 				animateOut: 'fadeOut',
+				smartSpeed: 100,
 				responsive:{
 					0:{
 						mouseDrag: true,
@@ -67,36 +68,59 @@ var landingFunctions = {
 	
 		galarySlider(".galary__section")
 
-		// var owlReview = $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	nav: false,
-		// 	dots: true,
-		// 	dotsEach: true,
-		// 	items: 1,
-		// 	margin: 30,
-		// 	autoHeight: true,
-		// 	stagePadding: 10,
-		// 	mouseDrag: false,
-		// 	touchDrag: false,
-		// 	responsive:{
-		// 		0:{
-		// 			mouseDrag: true,
-		// 			touchDrag: true,
-		// 		},
-		// 		1081:{
-		// 			mouseDrag: false,
-		// 			touchDrag: false,
-		// 		}
-		// 	}
-		// });
+		$(".card__male-btn").click(function() {
+			$(".card__male-btn").removeClass("active")
+			$(this).addClass("active")
 
-		// $('.reviews .prev__btn').click(function() {
-		// 	owlReview.trigger('prev.owl.carousel');
-		// })
+			var male = $(this).data("male")
+			var price = $(this).data("price")
+			var currency = $(this).data("currency")
+			var id = $(this).data("id")
 
-		// $('.reviews .next__btn').click(function() {
-		// 	owlReview.trigger('next.owl.carousel');
-		// })
+			$(".card__select").removeClass("active")
+
+			if(male === "man") {
+				$(".card__select.select-man").addClass("active")
+			} else {
+				$(".card__select.select-woman").addClass("active")
+			}
+
+			$(this).closest(".card").find(".new__price").text(price + " " + currency)
+			$(this).closest(".card").find(".old__price").text(Number(price * 2) + " " + currency)
+		})
+
+
+
+		var owlReview = $(".review__slider").owlCarousel({
+			loop: true,
+			nav: false,
+			dots: false,
+			dotsEach: true,
+			items: 3,
+			margin: 20,
+			autoHeight: true,
+			// stagePadding: 10,
+			// mouseDrag: false,
+			// touchDrag: false,
+			// responsive:{
+			// 	0:{
+			// 		mouseDrag: true,
+			// 		touchDrag: true,
+			// 	},
+			// 	1081:{
+			// 		mouseDrag: false,
+			// 		touchDrag: false,
+			// 	}
+			// }
+		});
+
+		$('.review__btns .prev__btn').click(function() {
+			owlReview.trigger('prev.owl.carousel');
+		})
+
+		$('.review__btns .next__btn').click(function() {
+			owlReview.trigger('next.owl.carousel');
+		})
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
 
@@ -148,25 +172,6 @@ var landingFunctions = {
 			};
 		}
 
-		function timer () {
-			function runMultiple(hoursSelector, minutesSelector, secondsSelector, milisecondsSelector) {
-				var d = new Date();
-				var h = String(23 - d.getHours()).padStart(2, "0");
-				var m = String(59 - d.getMinutes()).padStart(2, "0");
-				var s = String(59 - d.getSeconds()).padStart(2, "0");
-				// var ms = String(1000 - d.getMilliseconds()).padStart(3, "0");
-				$(hoursSelector).text(h)
-				$(minutesSelector).text(m)
-				$(secondsSelector).text(s)
-				// $(milisecondsSelector).text(ms)
-			}
-			setInterval(function () {
-				runMultiple(".hours", ".minutes", ".seconds")
-			}, 1000);
-		}
-	
-		timer()
-
 		function getDate(plusDays) {
 			var today = new Date();
 			var dd = String(today.getDate() + plusDays).padStart(2, '0');
@@ -195,6 +200,11 @@ var landingFunctions = {
     	// $(".date__2").text(getDate(2));
 
 		$(".date").text(getDate(7))
+		$(".date__1").text(getDate(-1))
+		$(".date__2").text(getDate(-1))
+		$(".date__3").text(getDate(-2))
+		$(".date__4").text(getDate(-3))
+		$(".date__5").text(getDate(-4))
 		
 		// $(".year").text(new Date().getFullYear())
 	},
