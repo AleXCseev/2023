@@ -53,6 +53,24 @@
         top: -270px;
         right: -1204px;
     }
+    .card__bg {
+        width: 1100px;
+    }
+    .sprey {
+        width: 760px;
+        padding: 20px 0;
+    }
+    .sprey__title {
+        font-size: 42px;
+    }
+    .sprey__img {
+        top: 30%;
+        right: -260px;
+        width: 280px;
+    }
+    .sprey__text {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -96,15 +114,57 @@
     .info__text {
         font-size: 16px;
     }
-    .info__decor {
-        width: 1000px;
-        top: -140px;
-        right: -920px;
+    .advantage__section-text {
+        font-size: 18px;
+        margin-bottom: 10px;
     }
-    .info__man {
-        width: 290px;
-        top: 170px;
-        left: 250px;
+    .advantage__section-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .advantage__wrapper {
+        padding: 50px 0 80px;
+    }
+    .card__content {
+        width: 400px;
+    }
+    .card__galary {
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__bg {
+        width: 1000px;
+    }
+    .card__boot-img {
+        width: 100%;
+        margin-left: 20px;
+    }
+    .card__boot {
+        width: 600px;
+        height: auto;
+        margin-bottom: -30px;
+    }
+    .card__2 .card__boot {
+        width: 650px;
+        margin-bottom: -30px;
+    }
+    .card__3 .card__boot {
+        width: 340px;
+        margin-bottom: 20px;
+    }
+    .card__1 {
+        margin-bottom: 130px;
+    }
+    .sprey {
+        width: 650px;
+    }
+    .sprey__title {
+        font-size: 34px;
+    }
+    .sprey__text {
+        font-size: 20px;
     }
 }
 
@@ -141,6 +201,164 @@
         right: 122px;
         bottom: -25px;
     }
+    .info__decor {
+        width: 1000px;
+        top: -140px;
+        right: -920px;
+    }
+    .info__man {
+        width: 290px;
+        top: 170px;
+        left: 250px;
+    }
+    .info__column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info__text {
+        font-size: 18px;
+    }
+    .info__decor {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        margin-top: -100px;
+    }
+    .info__man {
+        width: 290px;
+        top: 170px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .info__column .header__date {
+        text-align: center;
+    }
+    .info__imgs {
+        width: 400px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .info__imgs a {
+        position: static;
+        transform: none;
+        margin-top: 25px;
+    } 
+    .info__wrapper {
+        padding: 50px 0 32px;
+    }
+    .info__logo {
+        width: 80%;
+    }
+    .advantage {
+        width: 100%;
+    }
+    .advantage__1 {
+        order: 1;
+    }
+    .advantage__2 {
+        order: 2;
+    }
+    .advantage__4 {
+        order: 3;
+    }
+    .advantage__3 {
+        order: 4;
+    }
+    .advantage__7 {
+        order: 5;
+    }
+    .advantage__5 {
+        order: 6;
+    }
+    .advantage__8 {
+        order: 7;
+    }
+    .advantage__9 {
+        order: 8;
+    }
+    .advantage__6 {
+        order: 9;
+    }
+    .advantage__img {
+        width: 80%;
+    }
+    .advantage__wrapper {
+        padding: 100px 0 160px;
+    }
+    .galary__btns {
+        margin: auto;
+    }
+    .galary__block {
+        margin-bottom: 40px;
+    }
+    .galary__wrapper {
+        padding: 140px 0 69px;
+    }
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__galary {
+        margin-bottom: 30px;
+    }
+    .card__content {
+        width: 100%;
+        max-width: 500px;
+    }
+    .card__2 {
+        flex-direction: column-reverse;
+    }
+    .card__1 {
+        margin-bottom: 200px;
+    }
+    .card__2 {
+        margin-bottom: 130px;
+    }
+    .card__2 .card__bg {
+        transform: translate(-50%, -50%);
+        left: 60%;
+    }
+    .card__content {
+        svg {
+            display: none;
+        }
+    }
+    .card__title {
+        text-align: center !important;
+        margin-bottom: 30px;
+        position: relative;
+
+        &:before {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #940418;
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+        }
+    }
+    .sprey__img {
+        position: static;
+        transform: none;
+        margin-bottom: 30px;
+    }
+    .sprey:before {
+        width: 1877px;
+        height: 222px;
+        top: auto;
+        bottom: 0;
+        left: 46%;
+    }
+    .sprey {
+        padding: 0 0 30px;
+    }
+    .card__3 {
+        margin-bottom: 80px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -172,6 +390,19 @@
         top: auto;
         right: 17vw;
         bottom: -1vw;
+    }
+    .galary__block {
+        width: 100%;
+    }
+    .card__galary {
+        width: 100%;
+    }
+    .card__boot {
+        width: 100% !important;
+        margin-bottom: -30px;
+    }
+    .card__3 .card__boot {
+        width: 70% !important;
     }
 }
 
@@ -226,5 +457,171 @@
     .header__date {
         font-size: 4.8vw;
         margin-top: 4.8vw;
+    }
+    .info__wrapper {
+        padding: 5vw 0 15vw;
+    }
+    .info__logo {
+        width: 101vw;
+        margin-left: -8vw;
+        margin-bottom: 4.8vw;
+    }
+    .info__text {
+        font-size: 4.5vw;
+        margin-bottom: 4.8vw;
+    }
+    .info__decor {
+        width: 251vw;
+        left: 30%;
+        margin-top: -40vw;
+        margin-bottom: -15vw;
+    }
+    .info__man {
+        width: 70vw;
+        top: 55%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+    .info__column .order__btn {
+        margin-top: 2vw;
+    }
+    .info__column .header__date {
+        margin-bottom: 12vw;
+    }
+    .info__img-1 {
+        width: 47vw;
+    }
+    .info__img-2 {
+        width: 47vw;
+    }
+    .info__imgs a {
+        margin-top: 5.5vw;
+    }
+    .info__imgs a img {
+        width: 24vw;
+        margin-right: 4vw;
+    }
+    .info__imgs a span {
+        font-size: 4.5vw;
+        font-weight: 600;
+    }
+    .advantage__img {
+        width: 100%;
+    }
+    .advantage__wrapper {
+        padding: 18vw 0 25vw;
+    }
+    .advantage__section-text {
+        font-size: 4.8vw;
+        margin-bottom: 1vw;
+    }
+    .advantage__section-title {
+        font-size: 8.2vw;
+        margin-bottom: 10vw;
+    }
+    .advantage__title {
+        font-size: 4.5vw;
+        margin-bottom: 2vw;
+    }
+    .advantage__text {
+        font-size: 4.5vw;
+    }
+    .advantage {
+        margin-bottom: 8vw;
+    }
+    .advantage__section {
+        background-position: 39% 100%;
+    }
+    .galary__title {
+        font-size: 14vw;
+    }
+    .galary__text {
+        font-size: 4.6vw;
+        letter-spacing: 2px;
+        margin-bottom: 18vw;
+    }
+    .galary__title:before {
+        width: 101.5vw;
+        height: 54vw;
+        top: -7vw;
+        left: -27vw;
+    }
+    .galary__wrapper {
+        padding: 40vw 0 14vw;
+    }
+    .galary__section {
+        margin-top: -46vw;
+    }
+    .galary__slider-decor {
+        width: 204vw;
+        right: -204vw;
+    }
+    .card__section-title {
+        font-size: 15vw;
+        margin-bottom: 20vw;
+    }
+    .card__bg {
+        width: 210vw;
+        top: 35%;
+        left: 70%;
+    }
+    .card__boot {
+        margin-bottom: -3vw;
+    }
+    .card__galary {
+        margin-bottom: 7vw;
+    }
+    .card__title {
+        margin-bottom: 7vw;
+    }
+    .card__title:before {
+        bottom: -3.2vw;
+    }
+    .card__info-text {
+        font-size: 4.5vw;
+    }
+    .old__price {
+        font-size: 4.5vw;
+        margin-right: 2vw;
+    }
+    .new__price {
+        font-size: 6vw;
+    }
+    .card__submit span {
+        font-size: 9vw;
+        margin-right: 0;
+    }
+    .card__input {
+        font-size: 4.5vw;
+        padding: 3vw;
+    }
+    .card__2 .card__boot-img {
+        margin-left: 0;
+    }
+    .card__2 .card__boot {
+        width: 115% !important;
+        margin-bottom: -2vw;
+    }
+    .card__1 {
+        margin-bottom: 48vw;
+    }
+    .card__2 {
+        margin-bottom: 30vw;
+    }
+    .card__3 .card__boot {
+        width: 75% !important;
+    }
+    .card__boot-img {
+        width: 100%;
+        margin-left: 4vw;
+    }
+    .card__male {
+        font-size: 4.5vw;
+    }
+    .card__3 {
+        margin-bottom: 25vw;
+    }
+    .card__3 .card__photos a {
+        height: 14.5vw;
     }
 }
