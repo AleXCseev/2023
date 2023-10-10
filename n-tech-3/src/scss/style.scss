@@ -71,6 +71,12 @@
     .sprey__text {
         font-size: 24px;
     }
+    .footer__section .header__boot-1 {
+        right: -540px;
+    }
+    .footer__section .header__boot-2 {
+        top: 60px;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -81,7 +87,7 @@
         width: 100%;
     }
     .header__content {
-        width: 660px;
+        width: 640px;
     }
     .header__text {
         font-size: 30px;
@@ -166,6 +172,19 @@
     .sprey__text {
         font-size: 20px;
     }
+    .footer__section .header__boot-1 {
+        right: -520px;
+    }
+    .footer__section .header__boot-2 {
+        top: 90px;
+        right: -260px;
+    }
+    .footer__section .header__discount {
+        right: -180px;
+    }
+    .footer__section .header__boot-1 {
+        right: -465px;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -179,22 +198,23 @@
         justify-content: center;
         margin-bottom: 25px;
     }
-    .header__decor {
+    .header__decor, .footer__section .header__decor {
         position: relative;
         margin-top: 100px;
         margin-bottom: 50px;
     }
-    .header__boot-2 {
+    .header__boot-2, .footer__section .header__boot-2 {
         position: relative;
         top: auto;
         left: auto;
+        right: auto;
     }
-    .header__boot-1 {
+    .header__boot-1, .footer__section .header__boot-1 {
         right: 0;
         top: -100px;
         z-index: 1;
     }
-    .header__discount {
+    .header__discount, .footer__section .header__discount {
         width: 170px;
         height: 170px;
         top: auto;
@@ -359,6 +379,32 @@
     .card__3 {
         margin-bottom: 80px;
     }
+    .footer__section .header__content {
+        margin: auto;
+        align-items: center;
+    }
+    .footer__section .header__text {
+        text-align: center;
+    }
+    .footer__section .header__title {
+        text-align: center;
+    }
+    .footer__section .header__price-text {
+        text-align: center;
+    }
+    .footer__section .header__date {
+        text-align: center;
+    }
+    .footer__section .header__content {
+        padding-bottom: 100px;
+    }
+    .footer__section .header__date {
+        color: #fff;
+
+        span {
+            color: #fff;
+        }
+    }
 }
 
 @media (max-width: 700px) {
@@ -368,27 +414,22 @@
     .header__content {
         width: 100%;
     }
-    .header__boot-1 {
-        right: -10vw;
-        top: -100px;
-        width: 68vw;
-    }
-    .header__boot-2 {
+    .header__boot-2, .footer__section .header__boot-2 {
         left: -8vw;
         width: 64vw;
     }
-    .header__boot-1 {
+    .header__boot-1, .footer__section .header__boot-1 {
         right: -10vw;
         top: -20vw;
         width: 70vw;
     }
-    .header__decor {
+    .header__decor, .footer__section .header__decor {
         margin-top: 20vw;
         margin-bottom: 7vw;
     }
-    .header__discount {
+    .header__discount, .footer__section .header__discount {
         top: auto;
-        right: 17vw;
+        right: 10vw;
         bottom: -1vw;
     }
     .galary__block {
@@ -404,6 +445,13 @@
     .card__3 .card__boot {
         width: 70% !important;
     }
+    .sprey {
+        width: 100%;
+    }
+    .sprey__title {
+        font-size: 30px;
+    }
+    
 }
 
 @media (max-width: 540px) {
@@ -417,13 +465,14 @@
         margin-bottom: 6vw;
     }
     .header__text {
-        font-size: 4.6vw;
+        font-size: 4.8vw;
+        letter-spacing: 2px;
         margin-bottom: 1vw;
     }
     .header__title {
         font-size: 9.5vw;
     }
-    .header__discount {
+    .header__discount, .footer__section .header__discount {
         width: 31.4vw;
         height: 31.4vw;
         top: auto;
@@ -591,10 +640,6 @@
         font-size: 9vw;
         margin-right: 0;
     }
-    .card__input {
-        font-size: 4.5vw;
-        padding: 3vw;
-    }
     .card__2 .card__boot-img {
         margin-left: 0;
     }
@@ -623,5 +668,103 @@
     }
     .card__3 .card__photos a {
         height: 14.5vw;
+    }
+    .sprey:before {
+        display: none;
+    }
+    .sprey {
+        background-image: url(../img/sprey-bg-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        margin-left: -15px;
+        padding: 0 15px 35vw;
+    }
+    .card__section-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25vw 0 15vw;
+    }
+    .sprey__img {
+        width: 85%;
+    }
+    .sprey__title {
+        font-size: 12vw;
+        margin-bottom: 2vw;
+
+        br {
+            display: block;
+        }
+    }
+    .sprey__text {
+        font-size: 6.5vw;
+        margin-bottom: 1vw;
+    }
+    .sprey__price-text {
+        font-size: 4.5vw;
+    }
+    .sprey__price .old__price {
+        margin-right: 5vw;
+    }
+    .sprey__price .new__price {
+        font-size: 11.5vw;
+    }
+    .review__title {
+        font-size: 9.5vw;
+        letter-spacing: 4px;
+        margin-bottom: 9vw;
+    }
+    .review__btns {
+        width: 200px;
+        margin-top: 14vw;
+    }
+    .review__name {
+        font-size: 5.5vw;
+        margin-bottom: 2vw;
+    }
+    .review__text {
+        font-size: 4.5vw;
+        text-indent: 3vw;
+        margin-bottom: 2vw;
+    }
+    .review__date {
+        font-size: 4.5vw;
+    }
+    .review__section-wrapper {
+        padding-bottom: 19vw;
+    }
+    .footer__logo {
+        width: 31vw;
+        margin-bottom: 5.5vw;
+    }
+    .footer__section {
+        background-image: url(../img/footer-bg-mobile.png);
+        background-position: center bottom 25vw;
+        background-size: 100%;
+    }
+    .footer__section .header__content {
+        padding-bottom: 11vw;
+    }
+    .footer__section .header__price {
+        margin-bottom: 5vw;
+    }
+
+    .footer__line {
+        position: relative;
+        z-index: 1;
+    }
+    .footer__line-wrapper {
+        padding: 12vw 0;
+    }
+    .footer__line-item {
+        font-size: 4.2vw;
+    }
+    .size-table-wrapper {
+        padding: 15px;
+    }
+    .size-table tbody td {
+        padding: 5px;
     }
 }

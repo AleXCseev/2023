@@ -32,12 +32,15 @@ var landingFunctions = {
 				touchDrag: false,
 				animateOut: 'fadeOut',
 				smartSpeed: 100,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				autoplayHoverPause: false,
 				responsive:{
 					0:{
 						mouseDrag: true,
 						touchDrag: true,
 					},
-					1081:{
+					541:{
 						mouseDrag: false,
 						touchDrag: false,
 					}
@@ -52,9 +55,19 @@ var landingFunctions = {
 				loop: true,
 				mouseDrag: false,
 				touchDrag: false,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				autoplayHoverPause: false,
 				// animateOut: 'fadeOut',
 			});
-	
+
+			if($(window).width() > 541) {
+				owl.on('changed.owl.carousel', function(event) {
+					var item = event.item.index - 2; 
+					owl2.trigger('to.owl.carousel', [item, 300]);
+				})
+			}
+
 			$(selector + ' .prev__btn').click(function() {
 				owl.trigger('prev.owl.carousel');
 				owl2.trigger('prev.owl.carousel');
@@ -68,27 +81,68 @@ var landingFunctions = {
 	
 		galarySlider(".galary__section")
 
+		// function priceWithDiscount (price, discount, currency) {
+		// 	const priceArray = price.toString().split(".")
+
+		// 	if(priceArray.length === 1) {
+		// 		let priceNormal = price * 100 / (100 - discount)
+		// 		priceNormal = Math.ceil(priceNormal);
+
+		// 		if(currency) {
+		// 			return String(priceNormal) + " " + currency;
+		// 		}
+
+		// 		return priceNormal
+		// 	}
+
+		// 	let priceDots = priceArray.join("")
+		// 	priceDots = priceDots * 100 / (100 - discount)
+		// 	priceDots = Math.ceil(priceDots);
+
+		// 	if(currency) {
+		// 		return priceDots.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " " + currency;
+		// 	}
+
+		// 	return priceDots.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+		// }
+
+		function priceWithDiscount (targetPrice, discount) {
+			let re = new RegExp("[0-9\.]+");
+			let result = targetPrice.match(re);
+			if (result.length > 0) {
+				let hasDots = result[0].indexOf(".") > -1;
+				let priceNumber = result[0].replace(/\./g, "");
+				let discountPrice = Math.ceil(priceNumber * 100 / (100 - discount));
+				let newPrice = hasDots
+					? ("" + discountPrice).replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+					: discountPrice;
+				return targetPrice.replace(re, newPrice);
+			}
+			return targetPrice;
+		}
+
+
 		$(".card__male-btn").click(function() {
 			$(".card__male-btn").removeClass("active")
 			$(this).addClass("active")
 
 			var male = $(this).data("male")
 			var price = $(this).data("price")
-			var currency = $(this).data("currency")
+			// var currency = $(this).data("currency")
 			var id = $(this).data("id")
 
 			$(".card__select").removeClass("active")
+			$(".table__size").removeClass("active")
 
 			if(male === "man") {
-				$(".card__select.select-man").addClass("active")
+				$(".select-man").addClass("active")
 			} else {
-				$(".card__select.select-woman").addClass("active")
+				$(".select-woman").addClass("active")
 			}
 
-			$(this).closest(".card").find(".new__price").text(price + " " + currency)
-			$(this).closest(".card").find(".old__price").text(Number(price * 2) + " " + currency)
+			$(this).closest(".card").find(".new__price").text(price)
+			$(this).closest(".card").find(".old__price").text(priceWithDiscount(price, 50))
 		})
-
 
 
 		var owlReview = $(".review__slider").owlCarousel({
@@ -97,21 +151,16 @@ var landingFunctions = {
 			dots: false,
 			dotsEach: true,
 			items: 3,
-			margin: 20,
+			margin: 30,
 			autoHeight: true,
-			// stagePadding: 10,
-			// mouseDrag: false,
-			// touchDrag: false,
-			// responsive:{
-			// 	0:{
-			// 		mouseDrag: true,
-			// 		touchDrag: true,
-			// 	},
-			// 	1081:{
-			// 		mouseDrag: false,
-			// 		touchDrag: false,
-			// 	}
-			// }
+			responsive:{
+				0:{
+					items: 1,
+				},
+				1081:{
+					items: 3,
+				}
+			}
 		});
 
 		$('.review__btns .prev__btn').click(function() {
@@ -206,7 +255,6 @@ var landingFunctions = {
 		$(".date__4").text(getDate(-3))
 		$(".date__5").text(getDate(-4))
 		
-		// $(".year").text(new Date().getFullYear())
 	},
 
 	modal: function() {

@@ -22,6 +22,21 @@
     margin-bottom: 70px;
 }
 
+.header__nav-left {
+    display: inline-flex;;
+    justify-content: flex-end;
+
+    .header__nav-item {
+        margin-right: 80px;
+    }
+}
+
+.header__nav-right {
+    display: inline-flex;
+    justify-content: flex-end;
+    gap: 60px;
+}
+
 .header__nav-item {
     color: #252525;
     text-align: center;
