@@ -39,6 +39,18 @@ var landingFunctions = {
 			// }
 		});
 
+		if($(window).width() < 541) {
+			$(".galary").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav: true,
+				dots: true,
+				dotsEach: true,
+				items: 1,
+				margin: 30,
+				autoHeight: true,
+			});
+		}
+
 		$.raty.path = $("body").data("path") +  '/img/raty';
 
 		$('.modal__raiting').raty({
