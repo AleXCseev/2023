@@ -372,6 +372,7 @@
     .footer__logo {
         position: static;
         transform: none;
+        margin-bottom: 20px;
     }
     .footer__items {
         position: static;
@@ -433,6 +434,12 @@
     .footer__order-wrapper {
         margin-top: 0;
     }
+    .card__right {
+        padding: 42px 0 60px;
+    }
+    .card__form {
+        width: 100%;
+    }
 }
 
 @media (max-width: 700px) {
@@ -453,7 +460,7 @@
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 600px) {
     .header__content {
         padding: 7vw 0 12vw;
     }
@@ -471,7 +478,7 @@
     .header__boot {
         transform: rotate(15deg);
         width: 120vw;
-        margin-left: -5vw;
+        margin-left: -10vw;
         margin-top: -5vw;
         margin-bottom: -8vw;
     }
@@ -489,12 +496,12 @@
         margin-left: 0;
     }
     .old__price {
-        font-size: 7vw;
-        padding: 0 4vw;
+        font-size: 6vw;
+        padding: 0 3vw;
         margin-bottom: 2vw;
     }
     .new__price {
-        font-size: 9.8vw;
+        font-size: 8vw;
     }
     .header__discount {
         font-size: 9.8vw;
@@ -578,6 +585,13 @@
         border: 3px solid #fff;
         z-index: 1;
     }
+    .info__price {
+        display: flex;
+        justify-content: center;
+    }
+    .info__price .price {
+        justify-content: center;
+    }
     .info__boot-center {
         width: 115vw;
         left: 46%;
@@ -601,7 +615,7 @@
     }
     .info__decor-1 {
         width: 208.2vw;
-        transform: translate(-42%, -7.2%);
+        transform: translate(-42%, -6.4%);
     }
     .info__left {
         width: 87vw;
@@ -616,11 +630,11 @@
         left: -21vw;
     }
     .info__right a {
-        padding: 4.8vw;
-        font-size: 4.8vw;
+        padding: 4.5vw;
+        font-size: 4.5vw;
     }
     .info__price .old__price {
-        margin-right: 4.8vw;
+        margin-right: 2vw;
     }
     .info__center:before {
         width: calc(100% + 6px);
@@ -880,6 +894,10 @@
     .footer__title {
         font-size: 7vw;
         margin-bottom: 2vw;
+
+        br {
+            display: none;
+        }
     }
     .footer__boot-1 {
         width: 84%;
