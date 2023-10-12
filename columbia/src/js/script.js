@@ -27,29 +27,43 @@ var landingFunctions = {
 			items: 3,
 			margin: 30,
 			autoHeight: true,
-			// responsive:{
-			// 	0:{
-			// 		mouseDrag: true,
-			// 		touchDrag: true,
-			// 	},
-			// 	1081:{
-			// 		mouseDrag: false,
-			// 		touchDrag: false,
-			// 	}
-			// }
+			responsive:{
+				0:{
+					items: 1,
+					nav: true,
+					dots: true,
+				},
+				541:{
+					items: 2,
+					nav: false,
+					dots: false,
+				},
+				1081:{
+					items: 3,
+					nav: false,
+					dots: false,
+				}
+
+			}
 		});
 
-		if($(window).width() < 541) {
-			$(".galary").addClass("owl-carousel").owlCarousel({
-				loop: true,
-				nav: true,
-				dots: true,
-				dotsEach: true,
-				items: 1,
-				margin: 30,
-				autoHeight: true,
-			});
-		}
+		if($(window).on("resize", function() {
+			if($(window).width() <= 540) {
+				$(".galary").addClass("owl-carousel").owlCarousel({
+					loop: true,
+					nav: true,
+					dots: true,
+					dotsEach: true,
+					items: 1,
+					margin: 30,
+					autoHeight: true,
+				});
+			} else {
+				$(".galary").owlCarousel('destroy')
+			}
+		})) 
+		
+		
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
 
