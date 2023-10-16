@@ -1,0 +1,38 @@
+@import "fonts";
+@import "main";
+@import "modal";
+@import "header";
+@import "footer";
+
+
+@media (max-width: 700px) {
+    .container {
+        width: calc(100% - 30px);
+    }
+}
+
+@media (max-width: 540px) {
+    .links__section-wrappper {
+        padding: 12vw 0;
+    }
+    .logo {
+        width: 48vw;
+        margin-bottom: 4.8vw;
+    }
+    .links__title {
+        font-size: 6vw;
+        margin-bottom: 10vw;
+    }
+    .links__text {
+        font-size: 4.8vw;
+        margin-bottom: 4.8vw;
+    }
+    .link {
+        padding: 5.5vw 20vw;
+        font-size: 4.8vw;
+        margin-bottom: 4vw;
+    }
+    .icon {
+        width: 14.5vw;
+    }
+}
