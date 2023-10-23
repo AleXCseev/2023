@@ -1,0 +1,151 @@
+.advantage__section-wrapper {
+    padding: 120px 0;
+    position: relative;
+}
+
+.advantages {
+    width: 750px;
+    height: auto;
+    position: relative;
+}
+
+.advantage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.advantage__img-block {
+    width: 300px;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 50px;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        background-image: url(../img/advantage-tringle.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+}
+
+.advantage__img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.advantage__decor {
+    width: 260px;
+    height: auto;
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+
+   
+}
+
+.advantage__wrapper {
+}
+
+.advantage__title {
+    color: #50187B;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: #50187B;
+        position: absolute;
+        left: 0;
+        bottom: -14px;
+    }
+}
+
+.advantage__text {
+    color: #331D44;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.advantage__1 {
+}
+
+.advantage__2 {
+    flex-direction: row-reverse;
+    margin: 20px 0 70px;
+
+    .advantage__img-block {
+        margin: 0;
+        margin-left: 50px;
+
+        &:before {
+            transform: rotate(-90deg);
+            top: auto;
+            bottom: -20px;
+        }
+    }
+
+    .advantage__decor {
+        width: 125px;
+        top: -16px;
+        transform: none;
+        left: auto;
+        right: -17px;
+    }
+}
+
+.advantage__3 {
+    .advantage__img-block:before {
+        transform: rotate(180deg);
+        top: auto;
+        left: auto;
+        bottom: -20px;
+        right: -20px;
+    }
+
+    .advantage__decor {
+        left: auto;
+        transform: none;
+        left: -18px;
+        width: 136px;
+    }
+}
+
+.advantage__boot-block {
+    width: 100%;
+}
+
+.advantage__boot {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-15deg);
+    width: 640px;
+    height: auto;
+    right: -620px;
+}
+
+.advantage__snow {
+    position: absolute;
+    width: 719px;
+    height: auto;
+    top: -180px;
+    right: -790px;
+}
