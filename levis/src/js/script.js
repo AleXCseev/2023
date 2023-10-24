@@ -1,6 +1,7 @@
 var landingFunctions = {
 	init: function() {
 		this.initLibraris()
+		this.card()
 		this.time()
 		this.modal()
 	}, 
@@ -18,52 +19,27 @@ var landingFunctions = {
 				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		})
+	
+		$(".galary__slider").owlCarousel({
+			loop: true,
+			nav: true,
+			dots: true,
+			dotsEach: true,
+			items: 1,
+			margin: 0,
+			autoHeight: false,
+		});
 
 		$(".review__slider").owlCarousel({
 			loop: true,
-			nav: false,
-			dots: false,
+			nav: true,
+			dots: true,
 			dotsEach: true,
-			items: 3,
-			margin: 30,
+			items: 1,
+			margin: 0,
 			autoHeight: true,
-			responsive:{
-				0:{
-					items: 1,
-					nav: true,
-					dots: true,
-				},
-				541:{
-					items: 2,
-					nav: false,
-					dots: false,
-				},
-				1081:{
-					items: 3,
-					nav: false,
-					dots: false,
-				}
-
-			}
 		});
 
-		if($(window).on("resize", function() {
-			if($(window).width() <= 540) {
-				$(".galary").addClass("owl-carousel").owlCarousel({
-					loop: true,
-					nav: true,
-					dots: true,
-					dotsEach: true,
-					items: 1,
-					margin: 30,
-					autoHeight: true,
-				});
-			} else {
-				$(".galary").owlCarousel('destroy')
-			}
-		})) 
-		
-		
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
 
@@ -91,6 +67,79 @@ var landingFunctions = {
 			backFocus: false,
 			hash: false,
 		});
+	},
+
+	card: function() {
+
+		function cardSlider (selector) {
+			var owl = $(selector + " .card__main-photo").owlCarousel({
+				items: 1,
+				margin: 0,
+				dots: false,
+				nav: false,
+				loop: true,
+				mouseDrag: false,
+				touchDrag: false,
+				animateOut: 'fadeOut',
+			});
+	
+			$(selector + " .card__photo").each(function() {
+			
+				$(this).click(function() {
+					// $(selector + " .card__photo").removeClass("active")
+					var position = $(this).data("slide") - 1
+					owl.trigger("to.owl.carousel", [position, 300])
+					// $(this).addClass("active")
+				})
+			})
+		}
+	
+		cardSlider(".card__1")
+
+		function cardImg(selector) {
+			function toggleDataSrcAtribute(string) {
+				$(selector + " .card__photo-img").each(function() {
+					$(this).parent().attr("href",  $(this).attr("data-" + string))
+					$(this)
+						.hide()
+						.attr("src",  $(this).attr("data-" + string))
+						.fadeIn(1000)
+				})
+				$(selector + " .card__photo").each(function() {
+					$(this)
+						.hide()
+						.attr("src",  $(this).attr("data-" + string))
+						.fadeIn(1000)
+				})
+			}
+	
+			$(selector + " .card__color").click(function () {
+
+				$(selector + " .card__color").removeClass("active")
+				$(this).addClass("active")
+
+				var color = $(this).data("color")
+				toggleDataSrcAtribute(color)
+	
+				$(selector + " .card__color").removeClass("active")
+				$(this).addClass("active")
+	
+				var price = $(this).data("price")
+				var currency = $(this).data("currency");
+				$(selector + " .new__price").text(price + " " + currency)
+
+				var pricePlusSale = Math.floor(price * 100 / 40); 
+				$(selector + " .old__price").text(pricePlusSale + " " + currency)
+	
+				var id = $(this).data("id")
+	
+				if ( id !== undefined ) {
+					$(this).closest(".product-card").find('input[name=products]').val(id);
+				}
+			})
+		}
+		
+		cardImg(".card__1")
 	},
 
 	time: function() {
