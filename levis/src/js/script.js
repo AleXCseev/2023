@@ -120,6 +120,10 @@ var landingFunctions = {
 
 				var color = $(this).data("color")
 				toggleDataSrcAtribute(color)
+
+				var art = $(this).data("art")
+
+				$(selector + " .card__title span").text(color + " " + art)
 	
 				$(selector + " .card__color").removeClass("active")
 				$(this).addClass("active")

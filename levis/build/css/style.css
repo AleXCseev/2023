@@ -830,7 +830,6 @@ body {
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
-  gap: 30px;
   margin-bottom: 31px;
 }
 
@@ -850,6 +849,9 @@ body {
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
+}
+.header__item:first-child {
+  margin-right: 30px;
 }
 .header__item img {
   width: auto;
@@ -2501,6 +2503,9 @@ body {
     padding-right: 40px;
     position: relative;
   }
+  .card__title {
+    font-size: 30px;
+  }
   .card__left {
     width: 520px;
     left: -560px;
@@ -3004,6 +3009,10 @@ body {
   .header__item {
     width: 46%;
     padding: 4.8vw 4.8vw 4vw;
+    margin-right: 0;
+  }
+  .header__item:first-child {
+    margin-right: 0;
   }
   .header__item img {
     height: 10vw;
