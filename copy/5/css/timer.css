@@ -1,0 +1,56 @@
+/*Ð¢Ð°Ð¹Ð¼ÐµÑ€*/
+.countbox {
+    height: 59px;
+    width: 100%;
+    padding-left: 22px;
+    margin: 0 auto;
+}
+.countbox .countbox-num {
+    float: left;
+}
+.countbox .countbox-space {
+    float: left;
+    height: 48px;
+    width: 28px;
+    line-height: 48px;
+    text-align: left;
+    position: relative;
+}
+.countbox .countbox-space:after {
+    content: ':';
+    display: block;
+    font-weight: 700;
+    font-size: 34px;
+    color:#2c2e34;
+    position: absolute;
+    top:-7px;
+    right: 12px;
+    text-shadow: 0 1px 0  rgba(255,255,255,.25);
+    -webkit-text-shadow: 0 1px 0  rgba(255,255,255,.25);
+}
+.countbox-hours1, .countbox-mins1, .countbox-secs1, .countbox-hours2, .countbox-mins2, .countbox-secs2 {
+    float: left;
+    margin-right: 7px;
+    width: 30px;
+    height: 38px;
+    line-height: 42px;
+    text-align: center;
+    z-index: 1;
+    color: #373a41;
+    background: url(../images/timer.png) no-repeat 0 0;
+    font-size: 28px;
+    font-family:'Bebas Neue Bold';
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.countbox-secs2 {
+    margin-right: 0;
+}
+.countbox-hours-text, .countbox-mins-text, .countbox-secs-text {
+    font-size: 16px;
+    font-weight: 400;
+    font-family:'Bebas Neue Regular';
+    color:#fff;
+    text-align: center;
+    text-transform: uppercase;
+}

@@ -1,0 +1,109 @@
+.slider-reviews .review-item {
+	position: relative;
+}
+
+.slider-reviews .review-item {
+	background: #c7c7c736;
+	padding: 16px 21px 10px;
+	width: 100%;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.slider-reviews .review-item .photo {
+    margin-right: 7px;
+	float: left;
+	width: 60px;
+    display: inline-block;
+}
+
+.slider-reviews .review-item .review-text {
+	width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+}
+
+.slider-reviews .review-item .review-text p {
+    margin-bottom: 6px;
+}
+
+.slider-reviews .review-item .review-text .name {
+    font-size: 13px;
+	color: #365899;
+	padding: 0;
+	display: flex;
+    justify-content: space-between;
+}
+
+.slider-reviews .review-item .review-text .name .review-rating {
+	color: #efae06;
+    margin-right: 10px;
+}
+
+.slider-reviews .review-item .review-text a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
+    color: #365899;
+    transition: .2s;
+}
+
+.slider-reviews .review-item .review-text .date {
+    font-size: 12px;
+    color: #6b6b6b;
+}
+
+.slider-reviews .review-item .review-text .date span {
+	display: inline-block;
+}
+
+.slider-reviews .rnext,
+.slider-reviews .rprev {
+	background: #ffc000;
+    position: absolute;
+    height: 40px;
+    width: 25px;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+	bottom: -50px;
+	z-index: 200;
+	cursor: pointer;
+	padding: 7px 0px;
+}
+
+.slider-reviews .rnext {
+	right: 175px;
+	transform: translateX(50%);
+}
+
+.slider-reviews .rprev{
+	left: 150px;
+	transform: translateX(50%);
+}
+
+.sect7 .el-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 11px 10px;
+    font-weight: 700;
+    font-size: 18px;
+    border: 3px solid #3e77aa;
+    border-radius: 6px;
+    background: #3e77aa;
+    transition: .3s;
+    color: #fff;
+    display: block;
+    text-align: center;
+	margin: 0 auto;
+	width: 236px;
+    height: 50px;
+    position: relative;
+    margin-top: 33px;
+}
+
+.modalk .box {
+	max-width: 470px;
+}
