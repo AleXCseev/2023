@@ -42,6 +42,38 @@ var landingFunctions = {
 		// $(window).resize(function() {
 		// 	copyTitle()
 		// })
+
+		var owl = $(".galary__slider-back").owlCarousel({
+			loop: true,
+			nav: false,
+			dots: false,
+			dotsEach: true,
+			items: 1,
+			margin: 0,
+			autoHeight: false,
+			mouseDrag: false,
+			touchDrag: false,
+		})
+
+		$(".galary__slider").owlCarousel({
+			loop: true,
+			nav: true,
+			dots: false,
+			dotsEach: true,
+			items: 1,
+			margin: 0,
+			autoHeight: false,
+			mouseDrag: false,
+			touchDrag: false,
+		})
+
+		$('.owl-prev').click(function() {
+			owl.trigger('prev.owl.carousel');
+		})
+
+		$('.owl-next').click(function() {
+			owl.trigger('next.owl.carousel');
+		})
 		
 
 		// $(".review__slider").owlCarousel({

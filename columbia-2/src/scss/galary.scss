@@ -1,0 +1,149 @@
+.galary__section {
+    position: relative;
+}
+
+.galary__line {
+    position: absolute;
+    width: 1400px;
+    bottom: -370px;
+    left: -370px;
+}
+
+.galary__section-wrapper {
+    position: relative;
+    padding: 130px 0 150px;
+
+    .order__btn {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 0;
+        font-size: 20px;
+        font-weight: 600;
+
+        &:before {
+            border-radius: 20px;
+        }
+    }
+}
+
+.galary__content {
+    width: 555px;
+    height: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.galary__title {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #7AC8FF -0.05%, #3FB0FF 100.05%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+
+.galary__text {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 31px;
+}
+
+.galary__item {
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:last-child {
+        margin-bottom: 40px;
+    }
+}
+
+.galary__item-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 14px;
+    background: linear-gradient(180deg, #7AC8FF 0%, #139EFF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.galary__item-wrapper {
+}
+
+.galary__item-title {
+    color: #FFC700;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.galary__item-text {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.galary__block {
+    width: 458px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: -533px;
+    transform: translateY(-50%);
+}
+
+.galary__slider, .galary__slider-back {
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+
+    img {
+        border-radius: 30px;
+    }
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-image: url(../img/arrow.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-color: #086ECD !important;
+
+        span {
+            display: none;
+        }
+
+        &.owl-next {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.galary__slider-back {
+    position: absolute;
+    top: -50px;
+    left: -165px;
+}
