@@ -11,6 +11,19 @@
     align-items: center;
     padding: 30px 0 107px;
     position: relative;
+
+    &:before {
+        content: "";
+        width: 1000px;
+        height: 1000px;
+        border-radius: 100%;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(0, 92, 169, 0.50) 0%, rgba(0, 92, 169, 0.00) 100%);
+        filter: blur(50px);
+        position: absolute;
+        top: -289px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .header__logo {
@@ -211,6 +224,7 @@
     img {
         width: 79px;
         height: auto;
+        animation-delay: 0.5s;
     }
 }
 
@@ -231,6 +245,7 @@
     img {
         width: 100px;
         height: auto;
+        animation-delay: 1s;
     }
 }
 
