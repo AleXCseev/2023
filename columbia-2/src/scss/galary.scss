@@ -4,9 +4,9 @@
 
 .galary__line {
     position: absolute;
-    width: 1400px;
-    bottom: -370px;
-    left: -370px;
+    // width: 1400px;
+    bottom: 0;
+    left: 0;
 }
 
 .galary__section-wrapper {
@@ -146,4 +146,12 @@
     position: absolute;
     top: -50px;
     left: -165px;
+}
+
+.galary__number {
+    display: none;
+}
+
+.galary__snow {
+    display: none;
 }

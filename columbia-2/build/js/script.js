@@ -56,7 +56,7 @@ var landingFunctions = {
 			touchDrag: false,
 		})
 
-		$(".galary__slider").owlCarousel({
+		var owlGalary = $(".galary__slider").owlCarousel({
 			loop: true,
 			nav: true,
 			dots: false,
@@ -66,6 +66,16 @@ var landingFunctions = {
 			autoHeight: false,
 			mouseDrag: false,
 			touchDrag: false,
+			responsive:{
+				0: {
+					mouseDrag: true,
+					touchDrag: true,
+				},
+				1080:{
+					mouseDrag: false,
+					touchDrag: false,
+				},
+			}
 		})
 
 		$('.galary__slider .owl-prev').click(function() {
@@ -75,6 +85,13 @@ var landingFunctions = {
 		$('.galary__slider .owl-next').click(function() {
 			owl.trigger('next.owl.carousel');
 		})
+
+		owlGalary.on("changed.owl.carousel", function(e) {
+			var index = e.relatedTarget.relative(e.item.index);
+			$(this).closest(".galary__block").find(".current__number").text(String(index + 1));
+			// $(this).closest(".review__slider-block").find(".sum__number").text(String(e.item.count));
+		});
+
 
 		function cardSliders(selector) {
 			var owlCard = $(selector + " .card__slider").owlCarousel({
