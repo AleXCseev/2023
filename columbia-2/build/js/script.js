@@ -108,25 +108,31 @@ var landingFunctions = {
 		
 		
 
-		// $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	nav: true,
-		// 	dots: false,
-		// 	dotsEach: true,
-		// 	items: 2,
-		// 	margin: 50,
-		// 	autoHeight: true,
-		// 	responsive:{
-		// 		0: {
-		// 			items: 1,
-		// 			dots: true,
-		// 		},
-		// 		1080:{
-		// 			items: 2,
-		// 			dots: false,
-		// 		},
-		// 	}
-		// });
+		var owlReview = $(".review__slider").owlCarousel({
+			loop: true,
+			nav: true,
+			dots: false,
+			dotsEach: true,
+			items: 1,
+			margin: 50,
+			autoHeight: true,
+			// responsive:{
+			// 	0: {
+			// 		items: 1,
+			// 		dots: true,
+			// 	},
+			// 	1080:{
+			// 		items: 2,
+			// 		dots: false,
+			// 	},
+			// }
+		});
+
+		owlReview.on("changed.owl.carousel", function(e) {
+			var index = e.relatedTarget.relative(e.item.index);
+			$(this).closest(".review__slider-block").find(".current__number").text(String(index + 1));
+			// $(this).closest(".review__slider-block").find(".sum__number").text(String(e.item.count));
+		});
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
 
@@ -312,8 +318,8 @@ var landingFunctions = {
 		if (scenesParallax.length === 0) {
 			$('.parallax').each(function (i) {
 				scenesParallax[i] = new Parallax($(this).children('div').attr('data-depth', randomNum(10, 20)).end().get(0), {
-					frictionX: 0.0004,
-					frictionY: 0.0004,
+					frictionX: 0.0008,
+					frictionY: 0.0008,
 					invertX: Math.random() >= 0.1,
 					invertY: Math.random() >= 0.1
 				});
