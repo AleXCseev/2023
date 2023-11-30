@@ -324,6 +324,14 @@
     .discount__wrapper {
         margin-bottom: 50px;
     }
+    .discount__active {
+        background: linear-gradient(135deg, #28A7FF 0%, #02295E 100%) !important;
+        border: none !important;
+    
+        div {
+            color: #FFC700 !important;
+        }
+    }
     .card__right {
         position: relative;
         transform: none;
@@ -524,7 +532,7 @@
         width: 18vw;
     }
     .header__snow-4 {
-        bottom: 80vw;
+        bottom: 94vw;
         left: auto;
         right: 2vw;
     }
@@ -711,7 +719,7 @@
         z-index: 5;
     }
     .bar__star-3 {
-        bottom: 49vw;
+        bottom: 58vw;
         right: 2vw;
     }
     .bar__star-3 img {
@@ -908,5 +916,8 @@
     }
     .fancybox-content {
         padding: 40px 20px 20px;
+    }
+    .fancybox-slide {
+        padding: 15px;
     }
 }

@@ -107,9 +107,9 @@ var landingFunctions = {
 			})
 	
 			owlCard.on('changed.owl.carousel', function(event) {
-				var item = event.item.index - 3;  
+				var index = event.relatedTarget.relative(event.item.index);
 				$(selector + ' .card__photo').removeClass("active")
-				$(selector + ' .card__photo').eq(item).addClass("active")
+				$(selector + ' .card__photo').eq(index).addClass("active")
 			})
 	
 			$(selector + ' .card__photo').click(function(){
@@ -176,6 +176,9 @@ var landingFunctions = {
 			animationEffect: false,
 			backFocus: false,
 			hash: false,
+			video: {
+				autoStart: true
+			  }
 		});
 	},
 
