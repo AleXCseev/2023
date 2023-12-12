@@ -1405,3 +1405,40 @@ body {
   line-height: 1.11;
   letter-spacing: 2px;
 }
+
+@media (max-width: 1480px) {
+  .container {
+    width: 1200px;
+  }
+  .header__content {
+    width: 500px;
+  }
+  .header__subtitle {
+    font-size: 18px;
+  }
+  .header__title {
+    font-size: 46px;
+  }
+  .header__right {
+    width: 690px;
+    height: 580px;
+    right: -730px;
+  }
+  .header__item {
+    width: 300px;
+    padding: 20px 30px 20px 20px;
+  }
+  .header__item-2 {
+    width: 240px;
+  }
+  .header__item-title {
+    font-size: 17px;
+  }
+  .header__item-text {
+    font-size: 14px;
+  }
+  .header__right-bg {
+    width: 440px;
+    height: 440px;
+  }
+}
