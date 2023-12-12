@@ -20,33 +20,23 @@ var landingFunctions = {
 			e.preventDefault();
 		})
 
-		$(".review__slider").owlCarousel({
-			loop: true,
-			nav: true,
-			dots: true,
-			dotsEach: true,
-			items: 2,
-			margin: 50,
-			autoHeight: false,
-			responsive:{
-				0:{
-					items:1,
-					autoHeight: true,
-				},
-				1081:{
-					items:2,
-					autoHeight: false,
-				}
-			}
-		});
+		$(".advantage__btn").click(function() {
+			$(".advantage__btn").removeClass("active")
+			$(this).addClass("active")
+			var data = $(this).data("item")
+			$(".advantage__item").hide()
+			$("." + data).fadeIn(300) 
+		})
 
-		$.raty.path = $("body").data("path") +  '/img/raty';
+		$(".header__links-lang a").click(function() {
+			$(".header__links-lang a").removeClass("active")
+			$(this).addClass("active")
+		})
 
-		$('.modal__raiting').raty({
-			half: true,
-			space: false,
-			number: 5,
-		});
+		$(".registration__btn").click(function() {
+			$(".registration__btn").removeClass("active")
+			$(this).addClass("active")
+		})
 	
 		AOS.init({
 			disable : 'mobile',

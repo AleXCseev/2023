@@ -1,0 +1,342 @@
+.login__section-wrapper {
+    padding: 35px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.registration__block {
+    width: 650px;
+    height: auto;
+    border-radius: 30px;
+    border: 1px solid #EEE;
+    background: #FFF;
+    padding: 30px 14px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration__wrapper {
+    width: 650px;
+
+    .form__title {
+        margin-bottom: 25px;
+    }
+
+    .submit__btn {
+        margin-top: 30px;
+    }
+}
+
+.registration__title {
+    color: #444;
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.34;
+    margin-bottom: 25px;
+}
+
+.form {
+    width: 100%;
+    height: auto;
+}
+
+.registration__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.registration__btn {
+    width: auto;
+    border-radius: 40px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    color: #444;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 20px 70px;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    &.active {
+        background: #5D76F9;
+        color: #fff;
+        border-color: #5D76F9;
+    }
+
+    &:last-child {
+        padding: 20px 50px;
+    }
+}
+
+.form__wrapper {
+    width: 100%;
+    padding: 0 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__title {
+    color: #444;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.67;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+
+    &:last-child {
+        margin-bottom: 20px;
+    }
+}
+
+.input__wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    height: auto;
+    color: #979797;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.67;
+    padding: 10px 20px;
+    border-bottom: 1px solid #979797;
+    text-align: center;
+}
+
+.radio__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 75px;
+    margin-bottom: -5px;
+
+    input[type="radio"]{
+        display: none;
+    }
+
+    label {
+        color: #979797;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.67;
+        position: relative;
+        cursor: pointer;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -25px;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            border: 1px solid #E3E3E3;
+        }
+
+        &:after {
+            content: "";
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            background-color: #5D76F9;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -22.5px;
+        }
+    }
+
+    input[type="radio"]:checked+label:after{
+        opacity: 1;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.input__wrapper-checkbox {
+    margin-top: 20px;
+}
+
+.input__text {
+    width: auto;
+    color: #444;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.67;
+
+    span {
+        color: #5D76F9;
+        font-weight: 700;
+    }
+
+    a {
+        font-weight: 500;
+        text-decoration: underline;
+    }
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid #5B5B5B;
+    background: #FFF;
+    margin-right: 10px;
+}
+
+.capcha {
+    width: auto;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.submit__btn {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.39;
+    letter-spacing: 0.9px;
+    padding: 10px 40px;
+    border-radius: 35px;
+    background: #EDC809;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+
+    &:hover {
+        background: #5D76F9;
+    }
+}
+
+.form__social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        margin-right: 40px;
+        border-radius: 100%;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.forgot {
+    color: #979797;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.67;
+    text-decoration-line: underline;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+}
+
+.registration__wrapper-title {
+    color: #444;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.67;
+    margin-bottom: 60px;
+    position: relative;
+
+    &:before, &:after {
+        content: "";
+        width: 38%;
+        height: 2px;
+        background: #D9D9D9;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &:before {
+        left: 0;
+    }
+
+    &:after {
+        right: 0;
+    }
+}
+
+.login__decor-1 {
+    background: radial-gradient(50% 50% at 50% 50%, #5D76F9 0%, rgba(93, 118, 249, 0.15) 100%);
+    mix-blend-mode: multiply;
+    filter: blur(150px);
+    z-index: -1;
+    bottom: -342px;
+    left: -280px;
+}
+
+.login__decor-2 {
+    background: radial-gradient(50% 50% at 50% 50%, #EDC809 0%, rgba(237, 200, 9, 0.20) 100%);
+    mix-blend-mode: multiply;
+    filter: blur(150px);
+    z-index: -1;
+    bottom: -547px;
+    left: 0px;
+    animation-delay: 2s;
+}
+
+.login__decor-3 {
+    background: radial-gradient(50% 50% at 50% 50%, #EDC809 0%, rgba(237, 200, 9, 0.20) 100%);
+    mix-blend-mode: multiply;
+    filter: blur(150px);
+    z-index: -1;
+    bottom: -42px;
+    right: -608px;
+}
+
+.login__decor-4 {
+    background: radial-gradient(50% 50% at 50% 50%, #5D76F9 0%, rgba(93, 118, 249, 0.15) 100%);
+    mix-blend-mode: multiply;
+    filter: blur(150px);
+    z-index: -1;
+    bottom: -340px;
+    right: -426px;
+    animation-delay: 2s;
+}

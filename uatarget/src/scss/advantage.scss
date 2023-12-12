@@ -1,0 +1,120 @@
+.advantage__section-wrapper {
+    position: relative;
+    padding: 100px 0;
+}
+
+.advantage__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.advantage__btn {
+    color: #444;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 20px 70px;
+    border-radius: 40px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    margin-right: 40px;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &.active {
+        background: #5D76F9;
+        color: #FFF;
+        border-color: #5D76F9;
+    }
+
+    // &:hover {
+    //     background: #EDC809;
+    //     border-color: #EDC809;
+    //     color: #444;
+    // }
+}
+
+.advantage__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.advantage__icon {
+    width: auto;
+    height: auto;
+}
+
+.advantage__block {
+    width: 555px;
+    height: auto;
+}
+
+.advantage__title {
+    color: #444;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.advantage__list {
+    
+}
+
+.advantage__list-item {
+    color: #444;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #5D76F9;
+        margin-right: 12px;
+        line-height: normal;
+        margin-bottom: 3px;
+        transform: rotate(45deg);
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.advantage__order {
+    margin: auto;
+    margin-top: 80px;
+    padding: 20px 70px;
+    font-size: 26px;
+}
+
+.advertising {
+    display: none;
+}
+
+.advantage__decor {
+    background: radial-gradient(50% 50% at 50% 50%, #EDC809 0%, rgba(237, 200, 9, 0.20) 100%);
+    mix-blend-mode: multiply;
+    filter: blur(150px);
+    left: 0;
+    top: -418px;
+    z-index: -1;
+}
