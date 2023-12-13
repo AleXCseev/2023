@@ -1,9 +1,8 @@
 var landingFunctions = {
 	init: function() {
 		this.initLibraris()
-		this.time()
-		this.bar()
-		this.modal()
+		// this.time()
+		// this.modal()
 	}, 
 
 	initLibraris: function() {
@@ -37,17 +36,33 @@ var landingFunctions = {
 			$(".registration__btn").removeClass("active")
 			$(this).addClass("active")
 		})
+
+		function menu() {
+			$(".burger__btn").click(function() {
+				$(".mobile__menu").addClass("active")
+			})
 	
-		AOS.init({
-			disable : 'mobile',
-			once: true,
-			duration: 1000,
-			offset : 0,
-		});
+			$(".close__menu").click(function() {
+				$(".mobile__menu").removeClass("active")
+			})
 	
-		$(window).resize(function() {
-			AOS.refresh();
-		})
+			$(".header__link a").click(function() {
+				$(".mobile__menu").removeClass("active")
+			})
+		}
+
+		menu()
+	
+		// AOS.init({
+		// 	disable : 'mobile',
+		// 	once: true,
+		// 	duration: 1000,
+		// 	offset : 0,
+		// });
+	
+		// $(window).resize(function() {
+		// 	AOS.refresh();
+		// })
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -111,102 +126,6 @@ var landingFunctions = {
 		// $(".card__date .date").text(getDate(2))
 		
 		// $(".year").text(new Date().getFullYear())
-	},
-
-	bar: function() {
-		function scrollBar(selector, center) {
-			$(selector + " .bar__item").each(function(item) {
-				if($(this).hasClass("bar__item-top-opacity")) {
-					$(this).removeClass("bar__item-top-opacity")
-					$(this).addClass("bar__item-top")
-				} else if($(this).hasClass("bar__item-top")) {
-					$(this).removeClass("bar__item-top")
-					$(this).addClass("bar__item-center")
-				} else if($(this).hasClass("bar__item-center")) {
-					$(this).removeClass("bar__item-center")
-					$(this).addClass("bar__item-bottom")
-				} else if($(this).hasClass("bar__item-bottom")) {
-					$(this).removeClass("bar__item-bottom")
-					$(this).addClass("bar__item-bottom-opacity")
-				} else if($(this).hasClass("bar__item-bottom-opacity")) {
-					$(this).removeClass("bar__item-bottom-opacity")
-					$(this).addClass("bar__item-top-opacity")
-				}
-			}) 
-		}
-
-		function scrollStop(selector) {
-			setTimeout(function() {
-				var el = $(".bar__column__1 .bar__item-active span").text()
-				$(".bar__item-center span").addClass("bar__item-logos").text(el)
-				$(".bar__item-center").addClass("scale");
-			}, 20)
-		}
-		
-		var interval = 0
-		var active = false
-
-		if(localStorage.getItem("rotate")) {
-			$(".bar__section-wrapper").hide()
-			$(".site__block-2").show()
-		}
-
-		$(".order__btn-start").click(function() {
-			if ( active ) {
-				clearInterval(interval);
-				scrollStop()
-				openClose()
-				localStorage.setItem("rotate", true)
-			} else {
-				interval = setInterval(function() {
-					scrollBar(".bar__column")
-				}, 100)
-
-				$(this).find(".stop").show()
-				$(this).find(".start").hide()
-
-				active = true
-				setTimeout(function() {
-					clearInterval(interval);
-					scrollStop()
-					openClose()
-					localStorage.setItem("rotate", true)
-				}, 3000)
-			}
-			
-
-		})
-
-		function openClose() {
-			setTimeout(function() {
-				$(".bar__section-wrapper").hide(0)
-				$(".site__block-2").fadeIn(1000)
-				
-
-				$([document.documentElement, document.body]).animate(
-					{
-						scrollTop: $(".card__section-wrapper").offset().top,
-					},
-					1000
-				);
-
-			}, 3000)
-		}
-
-		// function operBarModal() {
-		// 	$(".bar__modal-wrapper").addClass("active")
-
-		// 	$(".bar__modal-wrapper").click(function(e) {
-		// 		console.log(e.target);
-		// 		if(e.target.closest(".bar__modal")) {
-		// 			return false;
-		// 		} else if(e.target.closest(".bar__modal-close")) {
-		// 			$(this).removeClass("active")
-		// 		} else {
-		// 			$(this).removeClass("active")
-		// 		}
-		// 	})
-		// }
 	},
 
 	modal: function() {
