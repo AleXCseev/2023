@@ -19,6 +19,19 @@ var landingFunctions = {
 			e.preventDefault();
 		})
 
+	
+		if($(window).width() <= 540) {
+			$(".prtner__icons").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav: true,
+				dots: false,
+				dotsEach: true,
+				items: 1,
+				margin: 30,
+				autoHeight: true,
+			});
+		} 
+
 		$(".advantage__btn").click(function() {
 			$(".advantage__btn").removeClass("active")
 			$(this).addClass("active")

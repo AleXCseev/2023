@@ -112,6 +112,7 @@
 .header__section-wrapper {
     padding: 82px 0 167px;
     position: relative;
+    z-index: 1;
 }
 
 .header__content {
@@ -317,6 +318,7 @@
     mix-blend-mode: multiply;
     filter: blur(150px);
     animation: decor 5s infinite;
+    z-index: -1;
 }
 
 .header__decor {
@@ -343,8 +345,8 @@
     z-index: 100;
     border: 1px solid #EEE;
     background: #FFF;
-    transition: 0.6s ease;
-    transform: translateX(100vw);
+    transition: 1s ease;
+    transform: translateX(150vw);
 
     &.active {
         transform: translateX(0);
