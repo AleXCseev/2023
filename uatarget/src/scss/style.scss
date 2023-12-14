@@ -61,6 +61,15 @@
     .rules__img {
         width: 560px;
     }
+    .registration__block {
+        width: 575px;
+    }
+    .registration__wrapper {
+        width: 575px;
+    }
+    .registration__btn {
+        padding: 20px 50px;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -161,6 +170,28 @@
     }
     .rules__img {
         width: 470px;
+    }
+    .registration__block {
+        width: 475px;
+    }
+    .registration__wrapper {
+        width: 475px;
+    }
+    .registration__btn {
+        padding: 15px 30px !important;
+        font-size: 18px;
+    }
+    .registration__title {
+        font-size: 50px;
+    }    
+    .input__text {
+        font-size: 16px;
+    }
+    .form__wrapper {
+        padding: 0;
+    }
+    .capcha {
+        width: 100%;
     }
 }
 
@@ -317,6 +348,37 @@
     .login__decor-2 {
         display: none;
     }
+    .login__section-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .registration__block {
+        margin-bottom: 40px;
+    }
+    .registration__block, .registration__wrapper {
+        width: 100%;
+        max-width: 650px;
+    }
+    .form__wrapper {
+        padding: 0 35px;
+    }
+    .registration__btn {
+        font-size: 20px;
+        padding: 20px 50px !important;
+    }
+    .registration__btn:last-child {
+        padding: 20px 70px !important;
+    }
+    .input__text {
+        font-size: 18px;
+    }
+    .registration__title {
+        font-size: 56px;
+    }
+    .registration__wrapper-title {
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -325,6 +387,10 @@
     }
     .header__nav {
         padding: 15px 0;
+    }
+    .registration__btn, .registration__btn:last-child {
+        font-size: 3vw;
+        padding: 2.5vw 9vw !important;
     }
 }
 
@@ -368,8 +434,9 @@
         right: 10vw;
     }
     .header__item {
-        width: 40.4vw;
+        width: 41vw;
         padding: 4vw 4.5vw 4vw;
+        border-radius: 4.8vw;
     }
     .header__item-number {
         font-size: 5vw;
@@ -382,9 +449,12 @@
         left: 55%;
     }
     .header__item-title {
-        font-size: 2.4vw;
+        font-size: 2.3vw;
         letter-spacing: 0.2px;
-        max-width: 23vw;
+        max-width: 24vw;
+    }
+    .header__item-2 .header__item-top {
+        margin-bottom: 2.4vw;
     }
     .header__item-text {
         font-size: 1.7vw;
@@ -459,7 +529,7 @@
         width: auto;
         max-width: 100%;
         margin-top: 7vw;
-        padding: 4.8vw 17vw;
+        padding: 4.8vw 12vw;
         font-size: 5.5vw;
     }
     .items__section-title {
@@ -607,7 +677,110 @@
         margin-bottom: 2vw;
     }
     .login__decor-1 {
-        bottom: 35%;
+        bottom: 31%;
         left: -4vw;
+    }
+    .rules__img {
+        margin-top: 7vw;
+    }
+    .rules__target {
+        margin-top: 7vw;
+        font-size: 5.8vw;
+    }
+    .login__decor-4 {
+        bottom: -100px;
+        right: -366px;
+    }
+    .login__section-wrapper {
+        padding: 12vw 0 24vw;
+    }
+    .registration__block {
+        padding: 7vw 2.4vw 4.8vw;
+    }
+    .registration__title {
+        font-size: 13vw;
+        margin-bottom: 4.8vw;
+    }
+    .registration__btn, .registration__btn:last-child {
+        font-size: 3.8vw;
+        padding: 3.5vw 4.5vw !important;
+    }
+    .registration__btns {
+        margin-bottom: 11vw;
+    }
+    .form__title {
+        font-size: 4.5vw;
+        margin-bottom: 2.4vw;
+    }
+    .form__wrapper {
+        padding: 0 2.4vw;
+    }
+    .input {
+        font-size: 4.5vw;
+        padding: 2.4vw 4.8vw;
+    }
+    .input__wrapper-checkbox {
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+    .input__text {
+        font-size: 4.5vw;
+    }
+    .capcha {
+
+        margin-bottom: 4vw;
+    }
+    .submit__btn {
+        font-size: 4.5vw;
+        padding: 2.4vw 9.8vw;
+        margin-bottom: 2.4vw;
+    }
+    .form__title:last-of-type {
+        font-size: 4vw;
+        line-height: 2.14;
+        margin-bottom: 4vw;
+    }
+    .registration__wrapper-title {
+        font-size: 4.5vw;
+        margin-bottom: 9.8vw;
+    }
+    .registration__block {
+        margin-bottom: 9.8vw;
+    }
+    .forgot {
+        font-size: 4.5vw;
+        margin-top: 6vw;
+        margin-bottom: 4vw;
+    }
+    .login__section-wrapper .login__decor-3 {
+        bottom: 35%;
+        right: -380px;
+    }
+    .login__section-wrapper .login__decor-4 {
+        width: 440px;
+        height: 440px;
+        bottom: -303px;
+        right: -360px;
+    }
+    .login__section-wrapper .login__decor-1 {
+        width: 434px;
+        height: 434px;
+        bottom: 12%;
+        left: -402px;
+    }
+    .radio__wrapper {
+        margin-right: 18vw;
+    }
+    .radio__wrapper label {
+        font-size: 4.5vw;
+    }
+    .mobile__menu .header__link {
+        margin-bottom: 6vw;
+    }
+    .mobile__menu .header__nav-block {
+        margin-top: 30vw;
+    }
+    .mobile__menu .header__logo {
+        margin-bottom: 14vw;
     }
 }

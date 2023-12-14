@@ -77,13 +77,13 @@ var landingFunctions = {
 		// 	AOS.refresh();
 		// })
 
-		$('[data-fancybox]').fancybox({
-			loop: true,
-			infobar: false,
-			animationEffect: false,
-			backFocus: false,
-			hash: false,
-		});
+		// $('[data-fancybox]').fancybox({
+		// 	loop: true,
+		// 	infobar: false,
+		// 	animationEffect: false,
+		// 	backFocus: false,
+		// 	hash: false,
+		// });
 	},
 
 	time: function() {
