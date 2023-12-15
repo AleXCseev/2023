@@ -29,6 +29,9 @@ var landingFunctions = {
 				items: 1,
 				margin: 30,
 				autoHeight: true,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				autoplayHoverPause: true,
 			});
 		} 
 
@@ -38,6 +41,20 @@ var landingFunctions = {
 			var data = $(this).data("item")
 			$(".advantage__item").hide()
 			$("." + data).fadeIn(300) 
+		})
+
+		var hash = window.location.hash
+
+		if(hash === "#advantage") {
+			$("[data-item='advertising']").click()
+		}
+
+		$(".advert").click(function() {
+			$("[data-item='advertising']").click()
+		})
+
+		$(".pub").click(function() {
+			$("[data-item='publisher']").click()
 		})
 
 		$(".header__links-lang a").click(function() {
@@ -50,14 +67,14 @@ var landingFunctions = {
 			$(this).addClass("active")
 		})
 
-		// $(".header__item").hover(
-		// 	function() {
-		// 		$(".header__item").removeClass("header__item-animation")
-		// 	},
-		// 	function() {
-		// 		$(".header__item").addClass("header__item-animation")
-		// 	}
-		// )
+		$(".header__item").hover(
+			function() {
+				$(".header__item").removeClass("header__item-animation")
+			},
+			function() {
+				$(".header__item").addClass("header__item-animation")
+			}
+		)
 
 		function menu() {
 			$(".burger__btn").click(function() {
@@ -70,8 +87,9 @@ var landingFunctions = {
 				$("body").css('overflow', 'auto')
 			})
 	
-			$(".header__link a").click(function() {
+			$(".mobile__menu a").click(function() {
 				$(".mobile__menu").removeClass("active")
+				console.log("ok")
 				$("body").css('overflow', 'auto')
 			})
 		}

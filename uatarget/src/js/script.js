@@ -50,17 +50,29 @@ var landingFunctions = {
 			$(this).addClass("active")
 		})
 
+		// $(".header__item").hover(
+		// 	function() {
+		// 		$(".header__item").removeClass("header__item-animation")
+		// 	},
+		// 	function() {
+		// 		$(".header__item").addClass("header__item-animation")
+		// 	}
+		// )
+
 		function menu() {
 			$(".burger__btn").click(function() {
 				$(".mobile__menu").addClass("active")
+				$("body").css('overflow', 'hidden')
 			})
 	
 			$(".close__menu").click(function() {
 				$(".mobile__menu").removeClass("active")
+				$("body").css('overflow', 'auto')
 			})
 	
 			$(".header__link a").click(function() {
 				$(".mobile__menu").removeClass("active")
+				$("body").css('overflow', 'auto')
 			})
 		}
 
