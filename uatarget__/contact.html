@@ -33,11 +33,10 @@
                 <li class="header__link">
                     <a href="rules.html">Правила</a>
                 </li>
-                <li class="header__link">
-                    <a href="contact.html">Контакти</a>
+                <li class="header__link active">
+                    <a href="#">Контакти</a>
                 </li>
             </ul>
-            
             <div class="header__nav-block">
                 <ul class="header__links header__links-lang">
                     <li class="header__link">
@@ -50,13 +49,13 @@
                         <a href="#">Рус</a>
                     </li>
                 </ul>
-                <a href="login.html" class="order__btn order__btn-login">Реєстрація</a>
+                <a href="login.html" class="order__btn order__btn-login">Авторизація</a>
             </div>
         </div>
     </div>
 </div>
 
-<section class="login__section">
+<section class="contact__section">
     <nav class="header__nav">
         <div class="container">
             <div class="header__nav-block">
@@ -73,8 +72,8 @@
                     <li class="header__link">
                         <a href="rules.html">Правила</a>
                     </li>
-                    <li class="header__link">
-                        <a href="contact.html">Контакти</a>
+                    <li class="header__link active">
+                        <a href="#">Контакти</a>
                     </li>
                 </ul>
                 <button type="button" class="burger__btn">
@@ -93,37 +92,36 @@
                         <a href="index.html">Рус</a>
                     </li>
                 </ul>
-                <a href="login.html" class="order__btn order__btn-login">Реєстрація</a>
+                <a href="login.html" class="order__btn order__btn-login">Авторизація</a>
             </div>
         </div>
     </nav>
     <div class="container">
-        <div class="login__section-wrapper">
+        <div class="contact__section-wrapper">
             <div class="decor login__decor-1"></div>
             <div class="decor login__decor-2"></div>
             <div class="decor login__decor-4"></div>
             <div class="decor login__decor-3"></div>
-            <div class="registration__block">
-                <h2 class="registration__title">
-                    Реєстрація
-                </h2>
-                <form class="form">
-                    <div class="registration__btns">
-                        <button type="button" class="registration__btn">Рекламодавець</button>
-                        <button type="button" class="registration__btn active">Вебмайстер</button>
-                    </div>
-                    <div class="form__wrapper">
-                        <h2 class="form__title">
-                            Введіть свої дані
-                        </h2>
-                        <div class="input__wrapper">
-                            <input type="text" placeholder="Ваше ім'я *" required class="input">
+            <h2 class="contact__section-title">
+                Контактна інформація
+            </h2>
+            <div class="contact__block">
+                <div class="contact__left">
+                    <h3 class="contact__left-title">
+                        Напишіть нам зараз
+                    </h3>
+                    <form class="contact__form">
+                        <div class="contact__input-wrapper">
+                            <label for="name">Ваше ім'я *</label>
+                            <input id="name" type="text" required class="contact__input">
                         </div>
-                        <div class="input__wrapper">
-                            <input type="mail" placeholder="Адреса електронної пошти *" required class="input">
+                        <div class="contact__input-wrapper">
+                            <label for="mail">Адреса електронної пошти *</label>
+                            <input id="mail" type="mail" required class="contact__input">
                         </div>
-                        <div class="input__wrapper">
-                            <input type="tel" placeholder="Номер телефону *" required class="input">
+                        <div class="contact__input-wrapper">
+                            <label for="phone">Номер телефону</label>
+                            <input id="phone" type="phone" class="contact__input">
                         </div>
                         <div class="input__wrapper">
                             <div class="radio__wrapper">
@@ -131,79 +129,57 @@
                                 <label for="telegram">Telegram</label>
                             </div>
                             <div class="radio__wrapper">
-                                <input type="radio" id="watsapp" name="social" value="Watsapp" />
+                                <input type="radio"  id="watsapp" name="social" value="Watsapp" />
                                 <label for="watsapp">Watsapp</label>
                             </div>
                         </div>
-                        <div class="input__wrapper">
-                            <input type="text" placeholder="Логін месенджера *" name="massanger" required class="input">
+                        <div class="contact__input-wrapper">
+                            <label for="massanger">Логін месенджера *</label>
+                            <input id="massanger" type="text" required class="contact__input">
                         </div>
-                        <div class="input__wrapper input__wrapper-checkbox">
-                            <input type="checkbox" class="checkbox" name="policy">
-                            <p class="input__text">
-                                Я згоден з <a href="rules.html" class="input__link">Положення та умови</a> від <a href="index.html"><span>UAtarget.</span></a>
-                            </p>
+                        <div class="contact__input-wrapper">
+                            <label for="text">Текстове повідомлення</label>
+                            <textarea name="text" id="text" class="textarea"></textarea>
                         </div>
-                        <img src="img/capcha.png" alt="" class="capcha">
-                        <button type="submit" class="submit__btn">
-                            Зареєструватися
+                        <button type="submit" class="submit__btn submit__contact">
+                            НАДІСЛАТИ
                         </button>
-                    </div>
-                </form>
-                <h2 class="form__title">
-                    Або увійти за допомогою
-                </h2>
-                <div class="form__social-links">
-                    <a href="#">
-                        <img src="img/fb-icon.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="img/google-icon.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="img/apple-icon.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="registration__wrapper">
-                <h3 class="registration__wrapper-title">
-                    АБО
-                </h3>
-                <div class="registration__block">
-                    <h2 class="registration__title">
-                        Вхід
-                    </h2>
-                    <form class="form">
-                        <div class="form__wrapper">
-                            <h2 class="form__title">
-                                Введіть свої дані
-                            </h2>
-                            <div class="input__wrapper">
-                                <input type="mail" placeholder="Адреса електронної пошти *" required class="input">
-                            </div>
-                            <div class="input__wrapper">
-                                <input type="text" placeholder="Пароль *" required class="input">
-                            </div>
-                            <button type="submit" class="submit__btn">
-                                Ввійти
-                            </button>
-                        </div>
                     </form>
-                    <h2 class="form__title">
-                        Або увійти за допомогою
-                    </h2>
-                    <div class="form__social-links">
-                        <a href="#">
-                            <img src="img/fb-icon.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="img/google-icon.png" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="img/apple-icon.png" alt="">
-                        </a>
+                </div>
+                <div class="contact__right">
+                    <h3 class="contact__left-title">
+                        Про нас
+                    </h3>
+                    <p class="contact__text">
+                        <span>UAtarget</span> - це платформа, яка об'єднує рекламодавців і власників веб-ресурсів в одному зручному середовищі. Нашою головною метою є забезпечення якісних рекламних рішень, які приносять користь і рекламодавцям, і веб-майстрам.
+                    </p>
+                    <img src="img/contact-img.png" alt="" class="contact__img">
+                    <h3 class="contact__left-title">
+                        Оберіть спосіб зв'язку
+                    </h3>
+                    <div class="contact__items">
+                        <div class="contact__item">
+                            <p class="contact__item-text">
+                                Підтримка рекламодавців
+                            </p>
+                            <a href="customer@uatarget.com" class="contact__link">customer@uatarget.com</a>
+                            <a href="tel:+380993446721" class="contact__tel">+380 99 344 67 21</a>
+                        </div>
+                        <div class="contact__item">
+                            <p class="contact__item-text">
+                                Підтримка вебмайстрів
+                            </p>
+                            <a href="support@uatarget.com" class="contact__link">support@uatarget.com</a>
+                            <a href="tel:+380976780923" class="contact__tel">+380 97 678 09 23</a>
+                        </div>
+                        <div class="contact__item">
+                            <p class="contact__item-text">
+                                Служба підтримки
+                            </p>
+                            <a href="customer@uatarget.com" class="contact__link">customer@uatarget.com</a>
+                            <a href="tel:+380993446721" class="contact__tel">+380 99 344 67 21</a>
+                        </div>
                     </div>
-                    <a href="#" class="forgot">Забули пароль?</a>
                 </div>
             </div>
         </div>
@@ -222,7 +198,7 @@
                             <a href="index.html">Інформація про компанію</a>
                         </li>
                         <li class="header__link">
-                            <a href="index.html#info">Рекламодавцям</a>
+                            <a href="index.html#advantage">Рекламодавцям</a>
                         </li>
                         <li class="header__link">
                             <a href="index.html#info">Вебмайстрам</a>
@@ -230,8 +206,8 @@
                         <li class="header__link">
                             <a href="rules.html">Правила</a>
                         </li>
-                        <li class="header__link">
-                            <a href="contact.html">Контакти</a>
+                        <li class="header__link active">
+                            <a href="#">Контакти</a>
                         </li>
                     </ul>
                 </div>
