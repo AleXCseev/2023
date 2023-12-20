@@ -20,43 +20,43 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		function initOwl(selector) {
-			var owl = $(selector).owlCarousel({
-				loop: true,
-				margin: 10,
-				nav: true,
-				items: 1,
-				dots: false,
-				autoHeight: true,
-			})
-
-			owl.on("changed.owl.carousel", function(e) {
-				var index = e.relatedTarget.relative(e.item.index);
-				$(this).closest(".slider__wrapper").find(".current__number").html(index + 1);
-			});
-		}
-
-		initOwl('.galary__slider')
-		initOwl('.card__slider-1')
-		initOwl('.card__slider-2')
-		initOwl('.card__slider-3')
-		initOwl('.review__slider')
-
-		$.raty.path = $("body").data("path") +  '/img/raty';
-
-		$('.modal__raiting').raty({
-			half: true,
-			space: false,
-			number: 5,
-		});
-
-		$('[data-fancybox]').fancybox({
+		var owl = $(".card__slider").owlCarousel({
 			loop: true,
-			infobar: false,
-			animationEffect: false,
-			backFocus: false,
-			hash: false,
-		});
+			margin: 0,
+			nav: false,
+			items: 1,
+			dots: false,
+			dotsEach: true,
+			autoHeight: true,
+			autoHeight: false,
+			mouseDrag: false,
+			touchDrag: false,
+		})
+
+		$(".card__btn").click(function(){
+			$(".card__btn").removeClass("active")
+			var position = $(this).data("slide") - 1
+			owl.trigger("to.owl.carousel", [position, 300])
+			$(this).addClass("active")
+		})
+
+		$(".review__slider").owlCarousel({
+			loop: true,
+			margin: 30,
+			nav: false,
+			items: 1,
+			dots: true,
+			dotsEach: true,
+			autoHeight: true,
+		})
+
+		// $('[data-fancybox]').fancybox({
+		// 	loop: true,
+		// 	infobar: false,
+		// 	animationEffect: false,
+		// 	backFocus: false,
+		// 	hash: false,
+		// });
 	},
 
 	time: function() {
