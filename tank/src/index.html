@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=480px">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <meta name="viewport" content="width=480 user-scalable=no">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <!-- <link rel="stylesheet" href="libs/jquery.fancybox.min.css"> -->
     <link rel="stylesheet" href="libs/animations.css">
@@ -16,11 +17,15 @@
     <div class="site__wrapper">
 		@@include("_header.html")
 		<main class="main">
-            @@include("_info.html")
-            @@include("_card.html") 
-            @@include("_advantage.html")
-            @@include("_review.html")  
-            @@include("_card.html") 
+        @@include("_info.html")
+        <div class="card__section-1">
+          @@include("_card.html") 
+        </div>
+        @@include("_advantage.html")
+        @@include("_review.html")  
+        <div class="card__section-2" id="order">
+          @@include("_card.html") 
+        </div>
 		</main>
 		<!-- @@include("_footer.html")  -->
     </div>

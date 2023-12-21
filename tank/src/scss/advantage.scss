@@ -25,7 +25,7 @@
         text-align: center;
         font-size: 20px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 20px;
     }
 
@@ -34,7 +34,7 @@
         text-align: center;
         font-size: 20px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 20px;
     }
 
@@ -43,7 +43,7 @@
         text-align: center;
         font-size: 12px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.4;
     }
 }
 
@@ -64,8 +64,8 @@
         text-align: center;
         font-size: 28px;
         font-weight: 700;
-        line-height: normal;
-        margin-bottom: 30px;
+        line-height: 1.4;
+        margin-bottom: 23px;
     }
 
     .advantage__text {
@@ -73,8 +73,12 @@
         text-align: center;
         font-size: 12px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.4;
         padding-right: 15px;
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust:none;
     }
 }
 
@@ -95,7 +99,7 @@
         text-align: center;
         font-size: 28px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 30px;
     }
 
@@ -104,7 +108,7 @@
         text-align: center;
         font-size: 36px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -115,7 +119,7 @@
             text-align: center;
             font-size: 12px;
             font-weight: 600;
-            line-height: normal;
+            line-height: 1.4;
             display: inline-block;
             padding: 8px 7px 7px;
             margin: 0 5px;
@@ -152,32 +156,48 @@
         color: #000;
         font-size: 28px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 20px;
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
     }
 
     .advantage__title-2 {
         color: #000;
         font-size: 36px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 10px;
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
     }
 
     .advantage__title-3 {
         color: #000;
         font-size: 20px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 35px;
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
     }
 
     .advantage__text {
         color: #000;
         font-size: 12px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 466px;
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust:none;
     }
 
     .advantage__items {
@@ -187,7 +207,7 @@
         color: #888;
         font-size: 12px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.4;
     }
 
     .advantage__absolute {
@@ -198,7 +218,7 @@
         text-align: right;
         font-size: 8px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
     }
 }
 
@@ -218,9 +238,13 @@
         color: #1DF9F1;
         font-size: 20px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 15px;
         text-align: center;
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
     }
 
     .advantage__subtitle {
@@ -228,8 +252,12 @@
         text-align: center;
         font-size: 20px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 15px;
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
     }
 
     .advantage__text {
@@ -237,7 +265,11 @@
         text-align: center;
         font-size: 16px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.4;
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
     }
 }
 
@@ -257,7 +289,7 @@
         color: #1DF9F1;
         font-size: 20px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         text-align: center;
         margin-bottom: 30px;
     }
@@ -267,7 +299,7 @@
         text-align: center;
         font-size: 20px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 35px;
     }
 
@@ -276,17 +308,25 @@
         text-align: center;
         font-size: 16px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 394px;
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
     }
 
     .advantage__bottom-text {
         color: #FFF;
         font-size: 18px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 144px;
         padding-left: 23px;
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
     }
 
     .advantage__items {
@@ -300,7 +340,7 @@
             text-align: center;
             font-size: 9px;
             font-weight: 400;
-            line-height: normal;
+            line-height: 1.4;
         }
     }
 }
@@ -324,7 +364,7 @@
         color: #FFF;
         font-size: 16px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 20px;
     }
 
@@ -332,7 +372,7 @@
         color: #FFF;
         font-size: 16px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.4;
         padding-left: 19px;
         margin-bottom: 504px;
     }
@@ -352,7 +392,7 @@
         text-align: center;
         font-size: 12px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.4;
     }
 
     .advantage__bottom-text-2 {
@@ -362,9 +402,9 @@
         top: 27px;
         color: #FFF;
         text-align: center;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.4;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -376,7 +416,7 @@
         text-align: center;
         font-size: 16px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.4;
         left: 170px;
         bottom: 0;
         width: 100px;
@@ -406,7 +446,7 @@
         text-align: center;
         font-size: 20px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 15px;
     }
 
@@ -415,8 +455,12 @@
         text-align: center;
         font-size: 20px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 50px;
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
     }
 
     .advantage__text {
@@ -424,7 +468,11 @@
         text-align: center;
         font-size: 12px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.4;
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust:none;
     }
 
     .advantage__info {
@@ -433,18 +481,18 @@
         text-align: center;
         font-size: 10px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.4;
         width: auto;
     }
 
     .advantage__info-1 {
         left: 7px;
-        top: 433px;
+        top: 439px;
     }
 
     .advantage__info-2 {
         right: 17px;
-        top: 365px;
+        top: 371px;
     }
 }
 
@@ -475,7 +523,7 @@
             text-align: center;
             font-size: 10px;
             font-weight: 400;
-            line-height: normal;
+            line-height: 1.4;
         }
     }
 
@@ -493,7 +541,7 @@
         text-align: center;
         font-size: 12px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.4;
         width: 70px;
         display: inline-block;
         height: auto;
@@ -511,22 +559,22 @@
     }
 
     .advantage__absolute-3 {
-        top: 290px;
+        top: 293px;
         left: 18px;
     }
 
     .advantage__absolute-4 {
-        top: 290px;
+        top: 293px;
         right: 129px;
     }
 
     .advantage__absolute-5 {
-        top: 466px;
+        top: 472px;
         left: 19px;
     }
 
     .advantage__absolute-6 {
-        top: 466px;
+        top: 472px;
         right: 134px;
     }
 }
@@ -548,7 +596,7 @@
         text-align: center;
         font-size: 28px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 16px;
     }
 
@@ -557,8 +605,12 @@
         text-align: center;
         font-size: 20px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.4;
         margin-bottom: 10px;
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
     }
 
     .advantage__text {
@@ -566,8 +618,12 @@
         text-align: center;
         font-size: 12px;
         font-weight: 400;
-        line-height: normal;
-        margin-bottom: 67px;
+        line-height: 1.4;
+        margin-bottom: 58px;
+        text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust:none;
     }
 
     .advantage__control {
@@ -581,7 +637,7 @@
         text-align: center;
         font-size: 12px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.4;
         position: absolute;
         top: -200px;
     }
@@ -615,7 +671,7 @@
         color: #FFF;
         font-size: 16px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.4;
         padding-left: 25px;
     }
 
