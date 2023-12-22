@@ -56,47 +56,49 @@
     </div>
 </div>
 
-<section class="login__section">
-    <nav class="header__nav">
-        <div class="container">
-            <div class="header__nav-block">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="" class="header__logo">
-                </a>
-                <ul class="header__links">
-                    <li class="header__link">
-                        <a href="index.html#advantage">Рекламодавцям</a>
-                    </li>
-                    <li class="header__link">
-                        <a href="index.html#info">Вебмайстрам</a>
-                    </li>
-                    <li class="header__link">
-                        <a href="rules.html">Правила</a>
-                    </li>
-                    <li class="header__link">
-                        <a href="contact.html">Контакти</a>
-                    </li>
-                </ul>
-                <button type="button" class="burger__btn">
-                    <img src="img/burger.png" alt="">
-                </button>
-            </div>
-            <div class="header__nav-block header__nav-block-2">
-                <ul class="header__links header__links-lang">
-                    <li class="header__link">
-                        <a class="active" href="index.html">Укр</a>
-                    </li>
-                    <li class="header__link header__link-divider">
-                        /
-                    </li>
-                    <li class="header__link">
-                        <a href="index.html">Рус</a>
-                    </li>
-                </ul>
-                <a href="login.html" class="order__btn order__btn-login">Реєстрація</a>
-            </div>
+<nav class="header__nav">
+    <div class="container">
+        <div class="header__nav-block">
+            <a href="index.html">
+                <img src="img/logo.png" alt="" class="header__logo">
+            </a>
+            <ul class="header__links">
+                <li class="header__link">
+                    <a href="index.html#advantage">Рекламодавцям</a>
+                </li>
+                <li class="header__link">
+                    <a href="index.html#info">Вебмайстрам</a>
+                </li>
+                <li class="header__link">
+                    <a href="rules.html">Правила</a>
+                </li>
+                <li class="header__link">
+                    <a href="contact.html">Контакти</a>
+                </li>
+            </ul>
+            <button type="button" class="burger__btn">
+                <img src="img/burger.png" alt="">
+            </button>
         </div>
-    </nav>
+        <div class="header__nav-block header__nav-block-2">
+            <ul class="header__links header__links-lang">
+                <li class="header__link">
+                    <a class="active" href="index.html">Укр</a>
+                </li>
+                <li class="header__link header__link-divider">
+                    /
+                </li>
+                <li class="header__link">
+                    <a href="index.html">Рус</a>
+                </li>
+            </ul>
+            <a href="login.html" class="order__btn order__btn-login">Реєстрація</a>
+        </div>
+    </div>
+</nav>
+
+<section class="login__section">
+  
     <div class="container">
         <div class="login__section-wrapper">
             <div class="decor login__decor-1"></div>
@@ -118,12 +120,15 @@
                         </h2>
                         <div class="input__wrapper">
                             <input type="text" placeholder="Ваше ім'я *" required class="input">
+                            <p class="input__alert">Помилка при введені данних</p>
                         </div>
                         <div class="input__wrapper">
                             <input type="mail" placeholder="Адреса електронної пошти *" required class="input">
+                            <p class="input__alert">Помилка при введені данних</p>
                         </div>
                         <div class="input__wrapper">
                             <input type="tel" placeholder="Номер телефону *" required class="input">
+                            <p class="input__alert">Помилка при введені данних</p>
                         </div>
                         <div class="input__wrapper">
                             <div class="radio__wrapper">
@@ -137,12 +142,14 @@
                         </div>
                         <div class="input__wrapper">
                             <input type="text" placeholder="Логін месенджера *" name="massanger" required class="input">
+                            <p class="input__alert">Помилка при введені данних</p>
                         </div>
                         <div class="input__wrapper input__wrapper-checkbox">
                             <input type="checkbox" class="checkbox" name="policy">
                             <p class="input__text">
                                 Я згоден з <a href="rules.html" class="input__link">Положення та умови</a> від <a href="index.html"><span>UAtarget.</span></a>
                             </p>
+                            <p class="input__alert">Помилка при введені данних</p>
                         </div>
                         <img src="img/capcha.png" alt="" class="capcha">
                         <button type="submit" class="submit__btn">
@@ -180,9 +187,11 @@
                             </h2>
                             <div class="input__wrapper">
                                 <input type="mail" placeholder="Адреса електронної пошти *" required class="input">
+                                <p class="input__alert">Помилка при введені данних</p>
                             </div>
                             <div class="input__wrapper">
                                 <input type="text" placeholder="Пароль *" required class="input">
+                                <p class="input__alert">Помилка при введені данних</p>
                             </div>
                             <button type="submit" class="submit__btn">
                                 Ввійти
