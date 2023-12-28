@@ -67,3 +67,22 @@ $(".new__price").each(function() {
 	var price = $(this).text().trim()
 	$(this).closest(".price").find(".old__price").text(priceWithDiscount(price, 50))
 })
+
+
+function getDate(plusDays) {
+			var now = new Date;
+			now.setDate(now.getDate() + plusDays);
+			var dayNum = "";
+			if (now.getDate() < 10) {
+				dayNum = "0"
+			}
+			dayNum += now.getDate();
+			var monthNum = "";
+			if (now.getMonth() + 1 < 10) {
+				monthNum = "0"
+			}
+			monthNum += now.getMonth() + 1;
+			
+			// return dayNum + "." + monthNum + "." + now.getFullYear();
+			return dayNum + "." + monthNum + "." + String(now.getFullYear()).substr(String(now.getFullYear()).length - 2);
+		}
